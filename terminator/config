@@ -1,22 +1,10 @@
 [global_config]
-  suppress_multiple_term_dialog = True
   inactive_color_offset = 1.0
-[keybindings]
-  switch_to_tab_4 = <Primary>4
-  switch_to_tab_5 = <Primary>5
-  switch_to_tab_2 = <Primary>2
-  switch_to_tab_3 = <Primary>3
-  switch_to_tab_1 = <Primary>1
 [profiles]
   [[default]]
     palette = "#000000:#f02b2b:#5cba00:#d6ab00:#2d83fa:#e14ee1:#15c9b9:#b4b9bd:#000000:#f02b2b:#5cba00:#d6ab00:#2d83fa:#e14ee1:#15c9b9:#b4b9bd"
     background_image = None
-    word_chars = "-A-Za-z0-9,./?%&#_"
-    use_system_font = False
-    cursor_color = "#808080"
     foreground_color = "#b4b9bd"
-    scroll_on_output = False
-    font = Ubuntu Mono 11
     background_color = "#1d3954"
     scrollback_infinite = True
 [layouts]
