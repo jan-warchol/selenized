@@ -2,10 +2,10 @@
   inactive_color_offset = 1.0
 [profiles]
   [[default]]
-    palette = "#000000:#f02b2b:#5cba00:#d6ab00:#2d83fa:#e14ee1:#15c9b9:#b4b9bd:#000000:#f02b2b:#5cba00:#d6ab00:#2d83fa:#e14ee1:#15c9b9:#b4b9bd"
+    palette = "#000000:#ff3333:#5cba00:#d6ab00:#3389ff:#e14ee1:#15c9b9:#b4b9bd:#000000:#ff3333:#5cba00:#d6ab00:#3389ff:#e14ee1:#15c9b9:#b4b9bd"
     background_image = None
-    foreground_color = "#b4b9bd"
-    background_color = "#1d3954"
+    foreground_color = "#b1bcc5"
+    background_color = "#224c66"
     scrollback_infinite = True
 [layouts]
   [[default]]
