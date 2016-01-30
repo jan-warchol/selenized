@@ -1,6 +1,8 @@
 Selenized color scheme
 ----------------------
 
+![Screenshot of selenized](http://i.imgur.com/6KvQrbR.png)
+
 This is a color scheme I use with my terminal.  It has moderate brightness and
 medium foreground/background contrast to reduce eye strain, but at the same
 time it uses quite saturated colors with contrasting hues for unambiguous 
@@ -9,6 +11,25 @@ syntax highlighting.
 This is very much work in progress.  Expect the colors to change (albeit not
 very much); I also plan to add a dark-on-light version and configuration files
 for other terminal emulators (and possibly also other programs).
+
+
+
+The colors
+----------
+
+These are HEX values for Selenized 6-colors ("steel" variant, i.e. with gray
+background).  I plan to add 8-color version later, as well as a variant with
+non-gray background.
+
+- foreground: `#c1c1c1` (Lab lightness 78)
+- background: `#424242` (Lab lightness 28)
+- red: `#ff5a5a` (Lab lightness 63)
+- green: `#67c315` (Lab lightness 71)
+- yellow: `#e6b91d` (Lab lightness 77)
+- blue: `#4e97ff` (Lab lightness 63)
+- violet: `#ff6fff` (Lab lightness 70)
+- cyan: `#2dd4c4` (Lab lightness 77)
+- black: `#595959` (Lab lightness 38)
 
 
 
