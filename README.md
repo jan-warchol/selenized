@@ -1,7 +1,7 @@
 Selenized color scheme
 ----------------------
 
-![Screenshot of selenized](http://i.imgur.com/6KvQrbR.png)
+![Screenshot of selenized](http://i.imgur.com/08cgQrD.jpg)
 
 This is a color scheme I use with my terminal.  It has moderate brightness and
 medium foreground/background contrast to reduce eye strain, but at the same
@@ -17,19 +17,20 @@ for other terminal emulators (and possibly also other programs).
 The colors
 ----------
 
-These are HEX values for Selenized 6-colors ("steel" variant, i.e. with gray
-background).  I plan to add 8-color version later, as well as a variant with
-non-gray background.
+These are HEX values for Selenized 6-colors.  I plan to add 8-color version
+later.
 
-- foreground: `#c1c1c1` (Lab lightness 78)
-- background: `#424242` (Lab lightness 28)
-- red: `#ff5a5a` (Lab lightness 63)
-- green: `#67c315` (Lab lightness 71)
-- yellow: `#e6b91d` (Lab lightness 77)
-- blue: `#4e97ff` (Lab lightness 63)
-- violet: `#ff6fff` (Lab lightness 70)
-- cyan: `#2dd4c4` (Lab lightness 77)
-- black: `#595959` (Lab lightness 38)
+| Color | Selenized | Selenized dark | Selenized steel |
+| ----- | --------- | -------------- | --------------- |
+| foreground | `#b2c3d1` | `#8fa0ae` | `#c1c1c1` |
+| background | `#274559` | `#04293b` | `#424242` |
+| red | `#ff5a5a` | `#ff5a5a` | `#dc3840` |
+| green | `#67c315` | `#67c315` | `#3fa000` |
+| yellow | `#e6b91d` | `#e6b91d` | `#be9600` |
+| blue | `#4e97ff` | `#4e97ff` | `#0777da` |
+| violet | `#ff6fff` | `#ff6fff` | `#db49da` |
+| cyan | `#2dd4c4` | `#2dd4c4` | `#00afa1` |
+| black | `#4c5c68` | `#2e3d49` | `#595959` |
 
 
 
