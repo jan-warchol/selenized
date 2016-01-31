@@ -24,13 +24,13 @@ later.
 | ----- | --------- | -------------- | --------------- |
 | foreground | `#b2c3d1` | `#8fa0ae` | `#c1c1c1` |
 | background | `#274559` | `#04293b` | `#424242` |
-| red | `#ff5a5a` | `#ff5a5a` | `#dc3840` |
-| green | `#67c315` | `#67c315` | `#3fa000` |
-| yellow | `#e6b91d` | `#e6b91d` | `#be9600` |
-| blue | `#4e97ff` | `#4e97ff` | `#0777da` |
-| violet | `#ff6fff` | `#ff6fff` | `#db49da` |
-| cyan | `#2dd4c4` | `#2dd4c4` | `#00afa1` |
-| black | `#4c5c68` | `#2e3d49` | `#595959` |
+| red        | `#ff5a5a` | `#ff5a5a` | `#dc3840` |
+| green      | `#67c315` | `#67c315` | `#3fa000` |
+| yellow     | `#e6b91d` | `#e6b91d` | `#be9600` |
+| blue       | `#4e97ff` | `#4e97ff` | `#0777da` |
+| violet     | `#ff6fff` | `#ff6fff` | `#db49da` |
+| cyan       | `#2dd4c4` | `#2dd4c4` | `#00afa1` |
+| black      | `#4c5c68` | `#2e3d49` | `#595959` |
 
 
 
