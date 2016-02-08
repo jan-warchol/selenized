@@ -55,6 +55,10 @@ design principles behind Solarized, but there are a couple issues with it:
     window (e.g. browser) that uses black-on-white text (as most of the
     websites do), solarized becomes too hard to read in that context.
   - the dark version is too dark.
+  - I know that Ethan says on Solarized website that he tested the scheme on a
+    variety of monitors in different lighting conditions, but nevertheless I
+    have encountered situations when solarized's legibility was poor due to bad
+    display.
 - terminals weren't built for 8 colors - they were built for 6 colors.
   Solarized tries to implement more colors using some very ugly hacks which
   cause all applications that are not solarized-aware to look weird.
