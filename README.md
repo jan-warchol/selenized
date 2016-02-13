@@ -17,17 +17,26 @@ Selenized dark
 
 ![Selenized dark screenshot](http://i.imgur.com/dlKkhXM.png)
 
-| Color      | Value     |
-| ---------- | --------- |
-| foreground | `#8fa0ae` |
-| background | `#04293b` |
-| red        | `#dc3840` |
-| yellow     | `#be9600` |
-| green      | `#3fa000` |
-| cyan       | `#00afa1` |
-| blue       | `#0777da` |
-| violet     | `#db49da` |
-| black      | `#2e3d49` |
+| Color          | Value     |
+| -------------- | --------- |
+| background     | `#04293b` |
+| foreground     | `#8fa0ae` |
+| black          | `#2e3d49` |
+| red            | `#dc3840` |
+| yellow         | `#be9600` |
+| green          | `#3fa000` |
+| cyan           | `#00afa1` |
+| blue           | `#0777da` |
+| magenta        | `#db49da` |
+| white          | `#8fa0ae` |
+| bright black   | `#2e3d49` |
+| bright red     | `#dc3840` |
+| bright yellow  | `#be9600` |
+| bright green   | `#3fa000` |
+| bright cyan    | `#00afa1` |
+| bright blue    | `#0777da` |
+| bright magenta | `#db49da` |
+| bright white   | `#8fa0ae` |
 
 
 
@@ -41,17 +50,26 @@ just the lightness is shifted).
 
 ![Selenized medium screenshot](http://i.imgur.com/vjKW18k.png)
 
-| Color      | Value     |
-| ---------- | --------- |
-| foreground | `#b2c3d1` |
-| background | `#274559` |
-| red        | `#ff5a5a` |
-| yellow     | `#e6b91d` |
-| green      | `#67c315` |
-| cyan       | `#2dd4c4` |
-| blue       | `#4e97ff` |
-| violet     | `#ff6fff` |
-| black      | `#4c5c68` |
+| Color          | Value     |
+| -------------- | --------- |
+| background     | `#274559` |
+| foreground     | `#b2c3d1` |
+| black          | `#4c5c68` |
+| red            | `#ff5a5a` |
+| yellow         | `#e6b91d` |
+| green          | `#67c315` |
+| cyan           | `#2dd4c4` |
+| blue           | `#4e97ff` |
+| magenta        | `#ff6fff` |
+| white          | `#b2c3d1` |
+| bright black   | `#4c5c68` |
+| bright red     | `#ff5a5a` |
+| bright yellow  | `#e6b91d` |
+| bright green   | `#67c315` |
+| bright cyan    | `#2dd4c4` |
+| bright blue    | `#4e97ff` |
+| bright magenta | `#ff6fff` |
+| bright white   | `#b2c3d1` |
 
 
 
