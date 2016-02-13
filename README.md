@@ -1,36 +1,64 @@
-Selenized color scheme
-----------------------
+Selenized color palette
+=======================
 
-![Screenshot of selenized](http://i.imgur.com/vjKW18k.png)
+Selenized is a color palette for terminal emulators.  It is designed to be easy
+on eyes (by reducing foreground/background contrast) while retaining reasonably
+strong - yet balanced - accent colors.
 
-This is a color scheme I use with my terminal.  It has moderate brightness and
-medium foreground/background contrast to reduce eye strain, but at the same
-time it uses quite saturated colors with contrasting hues for unambiguous 
-syntax highlighting.
-
-This is work in progress; expect the colors to change slightly. I also plan to
-add a dark-on-light version and configuration files for other terminal
-emulators (and possibly also other programs).
+Note that currently Selenized defines 6 accent colors and 5 monotones, because
+that's the standard in terminal emulators.  I plan to add an expanded version
+with 8 or 9 accent colors later.  Keep in mind that this is work in progress -
+the colors are expected to change slightly.
 
 
 
-The colors
-----------
+Selenized dark
+--------------
 
-Here are HEX values for Selenized 6-colors.  I plan to add 8-color version
-later.
+![Selenized dark screenshot](http://i.imgur.com/dlKkhXM.png)
 
-| Color | Selenized | Selenized dark |
-| ----- | --------- | -------------- |
-| foreground | `#b2c3d1` | `#8fa0ae` |
-| background | `#274559` | `#04293b` |
-| red        | `#ff5a5a` | `#dc3840` |
-| yellow     | `#e6b91d` | `#be9600` |
-| green      | `#67c315` | `#3fa000` |
-| cyan       | `#2dd4c4` | `#00afa1` |
-| blue       | `#4e97ff` | `#0777da` |
-| violet     | `#ff6fff` | `#db49da` |
-| black      | `#4c5c68` | `#2e3d49` |
+| Color      | Value     |
+| ---------- | --------- |
+| foreground | `#8fa0ae` |
+| background | `#04293b` |
+| red        | `#dc3840` |
+| yellow     | `#be9600` |
+| green      | `#3fa000` |
+| cyan       | `#00afa1` |
+| blue       | `#0777da` |
+| violet     | `#db49da` |
+| black      | `#2e3d49` |
+
+
+
+Selenized medium
+----------------
+
+Sometimes the dark version is a bit too dark when used side-by-side with some
+other program that has black text on white background.  In these situations
+medium version comes handy (it has exactly the same hues and overall contrast,
+just the lightness is shifted).
+
+![Selenized medium screenshot](http://i.imgur.com/vjKW18k.png)
+
+| Color      | Value     |
+| ---------- | --------- |
+| foreground | `#b2c3d1` |
+| background | `#274559` |
+| red        | `#ff5a5a` |
+| yellow     | `#e6b91d` |
+| green      | `#67c315` |
+| cyan       | `#2dd4c4` |
+| blue       | `#4e97ff` |
+| violet     | `#ff6fff` |
+| black      | `#4c5c68` |
+
+
+
+Selenized light
+---------------
+
+I plan to add a dark-on-light variant when I finish adjusting current ones.
 
 
 
