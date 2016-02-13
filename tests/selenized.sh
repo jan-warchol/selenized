@@ -1,26 +1,26 @@
 #!/bin/bash
 
 echo "
-                        _            _             _
-               ___  ___| | ___ _ __ (_)_______  __| |
-              / __|/ _ \ |/ _ \ '_ \| |_  / _ \/ _' |
-              \__ \  __/ |  __/ | \ | |/ /  __/ (_| |
-              |___/\___|_|\___|_| |_|_/___\___|\__,_|
+                         _            _             _
+                ___  ___| | ___ _ __ (_)_______  __| |
+               / __|/ _ \ |/ _ \ '_ \| |_  / _ \/ _' |
+               \__ \  __/ |  __/ | \ | |/ /  __/ (_| |
+               |___/\___|_|\___|_| |_|_/___\___|\__,_|
 
-                 Readability and comfort above all
+                  Readability and comfort above all
 
-                        author: Jan Warchoł
-                               v0.2
+                         author: Jan Warchoł
+                                v0.2
 "
 
-echo -en "\e[0m            "
+echo -en "\e[0m              "
 for color in 0 7 6 4 5 1 3 2 7 0; do
     echo -en "\e[4${color}m    "
 done
 echo -e "\e[0m"
 
 echo -n "
- Selenized is a color palette based on Solarized (by Ethan Shoonover).
+ Selenized is a color palette based on Ethan Shoonover's Solarized.
  I have adjusted hues and lightness to decrease ambiguity and ensure
  readability in all conditions.
 "
