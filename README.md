@@ -1,7 +1,7 @@
 Selenized color scheme
 ----------------------
 
-![Screenshot of selenized](http://i.imgur.com/08cgQrD.jpg)
+![Screenshot of selenized](http://i.imgur.com/vjKW18k.png)
 
 This is a color scheme I use with my terminal.  It has moderate brightness and
 medium foreground/background contrast to reduce eye strain, but at the same
