@@ -20,17 +20,17 @@ The colors
 Here are HEX values for Selenized 6-colors.  I plan to add 8-color version
 later.
 
-| Color | Selenized | Selenized dark | Selenized steel |
-| ----- | --------- | -------------- | --------------- |
-| foreground | `#b2c3d1` | `#8fa0ae` | `#c1c1c1` |
-| background | `#274559` | `#04293b` | `#424242` |
-| red        | `#ff5a5a` | `#dc3840` | `#ff5a5a` |
-| yellow     | `#e6b91d` | `#be9600` | `#e6b91d` |
-| green      | `#67c315` | `#3fa000` | `#67c315` |
-| cyan       | `#2dd4c4` | `#00afa1` | `#2dd4c4` |
-| blue       | `#4e97ff` | `#0777da` | `#4e97ff` |
-| violet     | `#ff6fff` | `#db49da` | `#ff6fff` |
-| black      | `#4c5c68` | `#2e3d49` | `#595959` |
+| Color | Selenized | Selenized dark |
+| ----- | --------- | -------------- |
+| foreground | `#b2c3d1` | `#8fa0ae` |
+| background | `#274559` | `#04293b` |
+| red        | `#ff5a5a` | `#dc3840` |
+| yellow     | `#e6b91d` | `#be9600` |
+| green      | `#67c315` | `#3fa000` |
+| cyan       | `#2dd4c4` | `#00afa1` |
+| blue       | `#4e97ff` | `#0777da` |
+| violet     | `#ff6fff` | `#db49da` |
+| black      | `#4c5c68` | `#2e3d49` |
 
 
 
