@@ -17,26 +17,26 @@ Selenized dark
 
 ![Selenized dark screenshot](http://i.imgur.com/dlKkhXM.png)
 
-| Color          | sRGB/hex  | CIELab     |
-| -------------- | --------- | ---------- |
-| background     | `#04293b` | 15 -07 -15 |
-| foreground     | `#8fa0ae` | 65 -04 -09 |
-| black          | `#2e3d49` | 25 -04 -09 |
-| red            | `#dc3840` | 51  64  36 |
-| green          | `#3fa000` | 58 -47  59 |
-| yellow         | `#be9600` | 64  07  68 |
-| blue           | `#0777da` | 49  01 -59 |
-| magenta        | `#db49da` | 57  69 -46 |
-| cyan           | `#00afa1` | 64 -42 -04 |
-| white          | `#8fa0ae` | 65 -04 -09 |
-| bright black   | `#2e3d49` | 25 -04 -09 |
-| bright red     | `#dc3840` | 51  64  36 |
-| bright green   | `#3fa000` | 58 -47  59 |
-| bright yellow  | `#be9600` | 64  07  68 |
-| bright blue    | `#0777da` | 49  01 -59 |
-| bright magenta | `#db49da` | 57  69 -46 |
-| bright cyan    | `#00afa1` | 64 -42 -04 |
-| bright white   | `#8fa0ae` | 65 -04 -09 |
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#04293b` | `15 -07 -15` |
+| foreground     | `#8fa0ae` | `65 -04 -09` |
+| black          | `#2e3d49` | `25 -04 -09` |
+| red            | `#dc3840` | `51  64  36` |
+| green          | `#3fa000` | `58 -47  59` |
+| yellow         | `#be9600` | `64  07  68` |
+| blue           | `#0777da` | `49  01 -59` |
+| magenta        | `#db49da` | `57  69 -46` |
+| cyan           | `#00afa1` | `64 -42 -04` |
+| white          | `#8fa0ae` | `65 -04 -09` |
+| bright black   | `#2e3d49` | `25 -04 -09` |
+| bright red     | `#dc3840` | `51  64  36` |
+| bright green   | `#3fa000` | `58 -47  59` |
+| bright yellow  | `#be9600` | `64  07  68` |
+| bright blue    | `#0777da` | `49  01 -59` |
+| bright magenta | `#db49da` | `57  69 -46` |
+| bright cyan    | `#00afa1` | `64 -42 -04` |
+| bright white   | `#8fa0ae` | `65 -04 -09` |
 
 
 
@@ -50,26 +50,26 @@ just the lightness is shifted).
 
 ![Selenized medium screenshot](http://i.imgur.com/vjKW18k.png)
 
-| Color          | sRGB/hex  | CIELab     |
-| -------------- | --------- | ---------- |
-| background     | `#274559` | 28 -07 -16 |
-| foreground     | `#b2c3d1` | 78 -04 -09 |
-| black          | `#4c5c68` | 38 -04 -09 |
-| red            | `#ff5a5a` | 62  64  36 |
-| green          | `#67c315` | 71 -48  66 |
-| yellow         | `#e6b91d` | 78  07  75 |
-| blue           | `#4e97ff` | 62  03 -60 |
-| magenta        | `#ff6fff` | 69  69 -46 |
-| cyan           | `#2dd4c4` | 77 -45 -04 |
-| white          | `#b2c3d1` | 78 -04 -09 |
-| bright black   | `#4c5c68` | 38 -04 -09 |
-| bright red     | `#ff5a5a` | 62  64  36 |
-| bright green   | `#67c315` | 71 -48  66 |
-| bright yellow  | `#e6b91d` | 78  07  75 |
-| bright blue    | `#4e97ff` | 62  03 -60 |
-| bright magenta | `#ff6fff` | 69  69 -46 |
-| bright cyan    | `#2dd4c4` | 77 -45 -04 |
-| bright white   | `#b2c3d1` | 78 -04 -09 |
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#274559` | `28 -07 -16` |
+| foreground     | `#b2c3d1` | `78 -04 -09` |
+| black          | `#4c5c68` | `38 -04 -09` |
+| red            | `#ff5a5a` | `62  64  36` |
+| green          | `#67c315` | `71 -48  66` |
+| yellow         | `#e6b91d` | `78  07  75` |
+| blue           | `#4e97ff` | `62  03 -60` |
+| magenta        | `#ff6fff` | `69  69 -46` |
+| cyan           | `#2dd4c4` | `77 -45 -04` |
+| white          | `#b2c3d1` | `78 -04 -09` |
+| bright black   | `#4c5c68` | `38 -04 -09` |
+| bright red     | `#ff5a5a` | `62  64  36` |
+| bright green   | `#67c315` | `71 -48  66` |
+| bright yellow  | `#e6b91d` | `78  07  75` |
+| bright blue    | `#4e97ff` | `62  03 -60` |
+| bright magenta | `#ff6fff` | `69  69 -46` |
+| bright cyan    | `#2dd4c4` | `77 -45 -04` |
+| bright white   | `#b2c3d1` | `78 -04 -09` |
 
 
 
