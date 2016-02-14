@@ -1,36 +1,113 @@
-Selenized color scheme
-----------------------
+Selenized color palette
+=======================
 
-![Screenshot of selenized](http://i.imgur.com/08cgQrD.jpg)
+Selenized is a color palette for terminal emulators.  It is designed to be easy
+on eyes (by reducing foreground/background contrast) while retaining reasonably
+strong - yet balanced - accent colors.
 
-This is a color scheme I use with my terminal.  It has moderate brightness and
-medium foreground/background contrast to reduce eye strain, but at the same
-time it uses quite saturated colors with contrasting hues for unambiguous 
-syntax highlighting.
-
-This is work in progress; expect the colors to change slightly. I also plan to
-add a dark-on-light version and configuration files for other terminal
-emulators (and possibly also other programs).
+Note that currently Selenized defines 6 accent colors and 5 monotones, because
+that's the standard in terminal emulators.  I plan to add an expanded version
+with 8 or 9 accent colors later.  Keep in mind that this is work in progress -
+the colors are expected to change slightly.
 
 
 
-The colors
-----------
+Selenized dark
+--------------
 
-Here are HEX values for Selenized 6-colors.  I plan to add 8-color version
-later.
+![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
 
-| Color | Selenized | Selenized dark | Selenized steel |
-| ----- | --------- | -------------- | --------------- |
-| foreground | `#b2c3d1` | `#8fa0ae` | `#c1c1c1` |
-| background | `#274559` | `#04293b` | `#424242` |
-| red        | `#ff5a5a` | `#dc3840` | `#ff5a5a` |
-| green      | `#67c315` | `#3fa000` | `#67c315` |
-| yellow     | `#e6b91d` | `#be9600` | `#e6b91d` |
-| blue       | `#4e97ff` | `#0777da` | `#4e97ff` |
-| violet     | `#ff6fff` | `#db49da` | `#ff6fff` |
-| cyan       | `#2dd4c4` | `#00afa1` | `#2dd4c4` |
-| black      | `#4c5c68` | `#2e3d49` | `#595959` |
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#07293b` | `15 -07 -15` |
+| foreground     | `#90a0ae` | `65 -04 -09` |
+| black          | `#213f52` | `25 -07 -15` |
+| red            | `#dd3031` | `50  66  44` |
+| green          | `#559f1e` | `59 -40  54` |
+| yellow         | `#ba9610` | `64  06  65` |
+| blue           | `#2d7bdf` | `51  04 -59` |
+| magenta        | `#c455d5` | `55  58 -46` |
+| cyan           | `#12ab9e` | `63 -40 -04` |
+| white          | `#90a0ae` | `65 -04 -09` |
+| bright black   | `#5d7b90` | `50 -07 -15` |
+| bright red     | `#ed413d` | `55  66  44` |
+| bright green   | `#63ad2d` | `64 -40  54` |
+| bright yellow  | `#c9a323` | `69  06  65` |
+| bright blue    | `#4188ee` | `56  04 -59` |
+| bright magenta | `#d363e3` | `60  58 -46` |
+| bright cyan    | `#2db9ab` | `68 -40 -04` |
+| bright white   | `#aabbc9` | `75 -04 -09` |
+
+
+
+Selenized medium
+----------------
+
+Sometimes the dark version is a bit too dark when used side-by-side with some
+other program that has black text on white background.  In these situations
+medium version comes handy (it has exactly the same hues and overall contrast,
+just the lightness is shifted).
+
+![Selenized medium screenshot](http://i.imgur.com/5qpQRPe.png)
+
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#27465a` | `28 -07 -16` |
+| foreground     | `#b2c4d1` | `78 -04 -09` |
+| black          | `#3f5e73` | `38 -07 -16` |
+| red            | `#ff594f` | `63  66  44` |
+| green          | `#79c344` | `72 -40  54` |
+| yellow         | `#e1b83c` | `77  06  65` |
+| blue           | `#5d9cff` | `64  04 -59` |
+| magenta        | `#ea79fb` | `68  58 -46` |
+| cyan           | `#4cd0c1` | `76 -40 -04` |
+| white          | `#b2c4d1` | `78 -04 -09` |
+| bright black   | `#7e9db5` | `63 -07 -16` |
+| bright red     | `#ff685b` | `68  66  44` |
+| bright green   | `#87d151` | `77 -40  54` |
+| bright yellow  | `#f0c64a` | `82  06  65` |
+| bright blue    | `#6daaff` | `69  04 -59` |
+| bright magenta | `#f987ff` | `73  58 -46` |
+| bright cyan    | `#5cdecf` | `81 -40 -04` |
+| bright white   | `#c0d1df` | `83 -04 -09` |
+
+
+
+Selenized black
+---------------
+
+Don't like colorful backgrounds and prefer oldschool look?  Or maybe you'd like
+some more contrast?  Try this variation.
+
+![Selenized black screenshot](http://i.imgur.com/rec8DZu.png)
+
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#1b1b1b` | `10   0   0` |
+| foreground     | `#ababab` | `70   0   0` |
+| black          | `#303030` | `20   0   0` |
+| red            | `#ed413d` | `55  66  44` |
+| green          | `#63ad2d` | `64 -40  54` |
+| yellow         | `#c9a323` | `69  06  65` |
+| blue           | `#4188ee` | `56  04 -59` |
+| magenta        | `#d363e3` | `60  58 -46` |
+| cyan           | `#2db9ab` | `68 -40 -04` |
+| white          | `#ababab` | `70   0   0` |
+| bright black   | `#777777` | `50   0   0` |
+| bright red     | `#ff594f` | `63  66  44` |
+| bright green   | `#79c344` | `72 -40  54` |
+| bright yellow  | `#e1b83c` | `77  06  65` |
+| bright blue    | `#5d9cff` | `64  04 -59` |
+| bright magenta | `#ea79fb` | `68  58 -46` |
+| bright cyan    | `#4cd0c1` | `76 -40 -04` |
+| bright white   | `#c6c6c6` | `80   0   0` |
+
+
+
+Selenized light
+---------------
+
+I plan to add a dark-on-light variant when I finish adjusting current ones.
 
 
 
@@ -55,6 +132,10 @@ design principles behind Solarized, but there are a couple issues with it:
     window (e.g. browser) that uses black-on-white text (as most of the
     websites do), solarized becomes too hard to read in that context.
   - the dark version is too dark.
+  - I know that Ethan says on Solarized website that he tested the scheme on a
+    variety of monitors in different lighting conditions, but nevertheless I
+    have encountered situations when solarized's legibility was poor due to bad
+    display.
 - terminals weren't built for 8 colors - they were built for 6 colors.
   Solarized tries to implement more colors using some very ugly hacks which
   cause all applications that are not solarized-aware to look weird.

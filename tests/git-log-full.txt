@@ -1,0 +1,65 @@
+* [33mcommit 52482020b3a9572a6af0ecc2206eff7a8e4f4e59[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[m[33m, [m[1;33mtag: v1.2[m[33m[33m)[m
+[31m|[m Author: Jan Warchoł <jan.warchol@gmail.com>
+[31m|[m Date:   Sat Nov 21 15:46:10 2015 +0100
+[31m|[m
+[31m|[m     Grep: context sizes from Fibonacci sequence
+[31m|[m
+[31m|[m     It's surprising how well Fibonacci sequence fits my daily needs.  When
+[31m|[m     I had aliases with 5, 11 and 22 lines of context, sometimes I couldn't
+[31m|[m     find right granularity.  With 5, 8, 13 and 21 it's perfect :)
+[31m|[m
+[31m|[m  .config/bash/aliases.sh     | 4 [32m++[m[31m--[m
+[31m|[m  .config/bash/git-aliases.sh | 4 [32m+++[m[31m-[m
+[31m|[m  2 files changed, 5 insertions(+), 3 deletions(-)
+[31m|[m
+*   [33mcommit c3d2c21ac37f6410de726ac2365d4e615c9f2edf[m
+[34m|[m[35m\[m  Merge: 295b1c9 93ec65a
+[34m|[m [35m|[m Author: Jan Warchoł <jan.warchol@gmail.com>
+[34m|[m [35m|[m Date:   Sun Nov 22 10:55:31 2015 +0100
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Merge branch 'devel' into master
+[34m|[m [35m|[m
+[34m|[m * [33mcommit 548147abffa76f4d2612edea64b26d7b370d4772[m[33m ([m[1;31morigin/devel[m[33m)[m
+[34m|[m [35m|[m Author: Jan Warchoł <jan.warchol@gmail.com>
+[34m|[m [35m|[m Date:   Sat Nov 21 15:49:11 2015 +0100
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Use LESS and GREP_OPTIONS for defaults
+[34m|[m [35m|[m
+[34m|[m [35m|[m     This is much more elegant than having aliases.
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Cherry-picked from sensible-dotfiles: Default settings for less and grep
+[34m|[m [35m|[m     (9f785c03c820439d83928169590bb0f74a779d92)
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Concerning commit f902c14f0a0593 (which removed --RAW-CONTROL-CHARS from
+[34m|[m [35m|[m     default less' options due to security concern): I have read the manpage
+[34m|[m [35m|[m     of less more carefully and I realized that the issue concerns only
+[34m|[m [35m|[m     --raw-control-chars option, which processes all escape sequences.  In
+[34m|[m [35m|[m     contrast, --RAW-CONTROL-CHARS parses only color codes (no other control
+[34m|[m [35m|[m     characters), so there is no problem with it.
+[34m|[m [35m|[m
+[34m|[m [35m|[m  .config/bash/aliases.sh | 16 [32m++++++++++++[m[31m----[m
+[34m|[m [35m|[m  .config/git/config      |  3 [32m+[m[31m--[m
+[34m|[m [35m|[m  2 files changed, 13 insertions(+), 6 deletions(-)
+[34m|[m [35m|[m
+[34m|[m * [33mcommit a8d4795cfe8c057f52f90ab9e0865210aa862d4f[m
+[34m|[m [35m|[m Author: Jan Warchoł <jan.warchol@gmail.com>
+[34m|[m [35m|[m Date:   Sun Nov 22 10:49:17 2015 +0100
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Aliases: don't postprocess grep output
+[34m|[m [35m|[m
+[34m|[m [35m|[m     I found a much better way than the hack introduced with 56c3af785978: I
+[34m|[m [35m|[m     can remove colon from word-characters in my terminal emulator settings.
+[34m|[m [35m|[m     (This setting is managed in my ansible system setup, not in dotfiles.)
+[34m|[m [35m|[m
+[34m|[m [35m|[m  .config/bash/aliases.sh | 6 [32m+[m[31m-----[m
+[34m|[m [35m|[m  1 file changed, 1 insertion(+), 5 deletions(-)
+[34m|[m [35m|[m
+[34m|[m * [33mcommit e9c10d6e249d3908954fdce16043e7f0775d85ba[m
+[34m|[m [35m|[m Author: Jan Warchoł <jan.warchol@gmail.com>
+[34m|[m [35m|[m Date:   Fri Nov 13 16:42:04 2015 +0100
+[34m|[m [35m|[m
+[34m|[m [35m|[m     Git aliases: fix grep target
+[34m|[m [35m|[m
+[34m|[m [35m|[m  .config/git/config | 25 [32m+++++++++++++++[m[31m----------[m
+[34m|[m [35m|[m  1 file changed, 15 insertions(+), 10 deletions(-)
+[34m|[m [35m|[m

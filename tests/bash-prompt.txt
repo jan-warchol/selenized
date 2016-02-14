@@ -1,0 +1,2 @@
+[34mjanek@think [36m~/src/selenized/terminator[m (master + u+2)
+$
