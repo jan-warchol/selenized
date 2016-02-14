@@ -13,6 +13,12 @@
     foreground_color = "#b2c4d1"
     background_color = "#27465a"
     scrollback_infinite = True
+  [[selenized-black]]
+    palette = "#303030:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#ababab:#777777:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#c6c6c6"
+    background_image = None
+    foreground_color = "#ababab"
+    background_color = "#1b1b1b"
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]

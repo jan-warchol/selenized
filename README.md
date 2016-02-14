@@ -73,6 +73,37 @@ just the lightness is shifted).
 
 
 
+Selenized black
+---------------
+
+Don't like colorful backgrounds and prefer oldschool look?  Or maybe you'd like
+some more contrast?  Try this variation.
+
+![Selenized black screenshot](http://i.imgur.com/rec8DZu.png)
+
+| Color          | sRGB/hex  | CIELab       |
+| -------------- | --------- | ------------ |
+| background     | `#1b1b1b` | `10   0   0` |
+| foreground     | `#ababab` | `70   0   0` |
+| black          | `#303030` | `20   0   0` |
+| red            | `#ed413d` | `55  66  44` |
+| green          | `#63ad2d` | `64 -40  54` |
+| yellow         | `#c9a323` | `69  06  65` |
+| blue           | `#4188ee` | `56  04 -59` |
+| magenta        | `#d363e3` | `60  58 -46` |
+| cyan           | `#2db9ab` | `68 -40 -04` |
+| white          | `#ababab` | `70   0   0` |
+| bright black   | `#777777` | `50   0   0` |
+| bright red     | `#ff594f` | `63  66  44` |
+| bright green   | `#79c344` | `72 -40  54` |
+| bright yellow  | `#e1b83c` | `77  06  65` |
+| bright blue    | `#5d9cff` | `64  04 -59` |
+| bright magenta | `#ea79fb` | `68  58 -46` |
+| bright cyan    | `#4cd0c1` | `76 -40 -04` |
+| bright white   | `#c6c6c6` | `80   0   0` |
+
+
+
 Selenized light
 ---------------
 
