@@ -15,28 +15,28 @@ the colors are expected to change slightly.
 Selenized dark
 --------------
 
-![Selenized dark screenshot](http://i.imgur.com/dlKkhXM.png)
+![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
 
 | Color          | sRGB/hex  | CIELab       |
 | -------------- | --------- | ------------ |
-| background     | `#04293b` | `15 -07 -15` |
-| foreground     | `#8fa0ae` | `65 -04 -09` |
-| black          | `#2e3d49` | `25 -04 -09` |
-| red            | `#dc3840` | `51  64  36` |
-| green          | `#3fa000` | `58 -47  59` |
-| yellow         | `#be9600` | `64  07  68` |
-| blue           | `#0777da` | `49  01 -59` |
-| magenta        | `#db49da` | `57  69 -46` |
-| cyan           | `#00afa1` | `64 -42 -04` |
-| white          | `#8fa0ae` | `65 -04 -09` |
-| bright black   | `#2e3d49` | `25 -04 -09` |
-| bright red     | `#dc3840` | `51  64  36` |
-| bright green   | `#3fa000` | `58 -47  59` |
-| bright yellow  | `#be9600` | `64  07  68` |
-| bright blue    | `#0777da` | `49  01 -59` |
-| bright magenta | `#db49da` | `57  69 -46` |
-| bright cyan    | `#00afa1` | `64 -42 -04` |
-| bright white   | `#8fa0ae` | `65 -04 -09` |
+| background     | `#07293b` | `15 -07 -15` |
+| foreground     | `#90a0ae` | `65 -04 -09` |
+| black          | `#213f52` | `25 -07 -15` |
+| red            | `#dd3031` | `50  66  44` |
+| green          | `#559f1e` | `59 -40  54` |
+| yellow         | `#ba9610` | `64  06  65` |
+| blue           | `#2d7bdf` | `51  04 -59` |
+| magenta        | `#c455d5` | `55  58 -46` |
+| cyan           | `#12ab9e` | `63 -40 -04` |
+| white          | `#90a0ae` | `65 -04 -09` |
+| bright black   | `#5d7b90` | `50 -07 -15` |
+| bright red     | `#ed413d` | `55  66  44` |
+| bright green   | `#63ad2d` | `64 -40  54` |
+| bright yellow  | `#c9a323` | `69  06  65` |
+| bright blue    | `#4188ee` | `56  04 -59` |
+| bright magenta | `#d363e3` | `60  58 -46` |
+| bright cyan    | `#2db9ab` | `68 -40 -04` |
+| bright white   | `#aabbc9` | `75 -04 -09` |
 
 
 
@@ -48,28 +48,28 @@ other program that has black text on white background.  In these situations
 medium version comes handy (it has exactly the same hues and overall contrast,
 just the lightness is shifted).
 
-![Selenized medium screenshot](http://i.imgur.com/vjKW18k.png)
+![Selenized medium screenshot](http://i.imgur.com/5qpQRPe.png)
 
 | Color          | sRGB/hex  | CIELab       |
 | -------------- | --------- | ------------ |
-| background     | `#274559` | `28 -07 -16` |
-| foreground     | `#b2c3d1` | `78 -04 -09` |
-| black          | `#4c5c68` | `38 -04 -09` |
-| red            | `#ff5a5a` | `62  64  36` |
-| green          | `#67c315` | `71 -48  66` |
-| yellow         | `#e6b91d` | `78  07  75` |
-| blue           | `#4e97ff` | `62  03 -60` |
-| magenta        | `#ff6fff` | `69  69 -46` |
-| cyan           | `#2dd4c4` | `77 -45 -04` |
-| white          | `#b2c3d1` | `78 -04 -09` |
-| bright black   | `#4c5c68` | `38 -04 -09` |
-| bright red     | `#ff5a5a` | `62  64  36` |
-| bright green   | `#67c315` | `71 -48  66` |
-| bright yellow  | `#e6b91d` | `78  07  75` |
-| bright blue    | `#4e97ff` | `62  03 -60` |
-| bright magenta | `#ff6fff` | `69  69 -46` |
-| bright cyan    | `#2dd4c4` | `77 -45 -04` |
-| bright white   | `#b2c3d1` | `78 -04 -09` |
+| background     | `#27465a` | `28 -07 -16` |
+| foreground     | `#b2c4d1` | `78 -04 -09` |
+| black          | `#3f5e73` | `38 -07 -16` |
+| red            | `#ff594f` | `63  66  44` |
+| green          | `#79c344` | `72 -40  54` |
+| yellow         | `#e1b83c` | `77  06  65` |
+| blue           | `#5d9cff` | `64  04 -59` |
+| magenta        | `#ea79fb` | `68  58 -46` |
+| cyan           | `#4cd0c1` | `76 -40 -04` |
+| white          | `#b2c4d1` | `78 -04 -09` |
+| bright black   | `#7e9db5` | `63 -07 -16` |
+| bright red     | `#ff685b` | `68  66  44` |
+| bright green   | `#87d151` | `77 -40  54` |
+| bright yellow  | `#f0c64a` | `82  06  65` |
+| bright blue    | `#6daaff` | `69  04 -59` |
+| bright magenta | `#f987ff` | `73  58 -46` |
+| bright cyan    | `#5cdecf` | `81 -40 -04` |
+| bright white   | `#c0d1df` | `83 -04 -09` |
 
 
 

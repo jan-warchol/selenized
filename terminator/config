@@ -1,17 +1,17 @@
 [global_config]
   inactive_color_offset = 1.0
 [profiles]
-  [[default]]
-    palette = "#4C5C68:#ff5a5a:#67c315:#e6b91d:#4e97ff:#ff6fff:#2dd4c4:#B2C3D1:#4C5C68:#ff5a5a:#67c315:#e6b91d:#4e97ff:#ff6fff:#2dd4c4:#B2C3D1"
-    background_image = None
-    foreground_color = "#B2C3D1"
-    background_color = "#274559"
-    scrollback_infinite = True
   [[selenized-dark]]
-    palette = "#2E3D49:#DC3840:#3FA000:#BE9600:#0777DA:#DB49DA:#00AFA1:#8FA0AE:#2E3D49:#DC3840:#3FA000:#BE9600:#0777DA:#DB49DA:#00AFA1:#8FA0AE"
+    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#aabbc9"
     background_image = None
-    foreground_color = "#8FA0AE"
-    background_color = "#04293B"
+    foreground_color = "#90a0ae"
+    background_color = "#07293b"
+    scrollback_infinite = True
+  [[selenized-medium]]
+    palette = "#3f5e73:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#b2c4d1:#7e9db5:#ff685b:#87d151:#f0c64a:#6daaff:#f987ff:#5cdecf:#c0d1df"
+    background_image = None
+    foreground_color = "#b2c4d1"
+    background_color = "#27465a"
     scrollback_infinite = True
 [layouts]
   [[default]]
