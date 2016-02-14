@@ -10,7 +10,7 @@ echo "
                   Readability and comfort above all
 
                          author: Jan Warchoł
-                                v0.2
+                                v0.3
 "
 
 echo -en "\e[0m              "
