@@ -15,7 +15,7 @@ the colors are expected to change slightly.
 Selenized dark
 --------------
 
-![Selenized dark screenshot](http://i.imgur.com/dlKkhXM.png)
+![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
 
 | Color          | sRGB/hex  | CIELab       |
 | -------------- | --------- | ------------ |
@@ -48,7 +48,7 @@ other program that has black text on white background.  In these situations
 medium version comes handy (it has exactly the same hues and overall contrast,
 just the lightness is shifted).
 
-![Selenized medium screenshot](http://i.imgur.com/vjKW18k.png)
+![Selenized medium screenshot](http://i.imgur.com/5qpQRPe.png)
 
 | Color          | sRGB/hex  | CIELab       |
 | -------------- | --------- | ------------ |
