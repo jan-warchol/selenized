@@ -1,0 +1,25 @@
+! selenized medium color palette for urxvt.
+
+urxvt.background:  #27465a
+urxvt.foreground:  #b2c4d1
+
+! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
+urxvt.color0:      #3f5e73
+urxvt.color1:      #ff594f
+urxvt.color2:      #79c344
+urxvt.color3:      #e1b83c
+urxvt.color4:      #5d9cff
+urxvt.color5:      #ea79fb
+urxvt.color6:      #4cd0c1
+urxvt.color7:      #b2c4d1
+
+! bright/bold versions of colors (in the same order)
+urxvt.color8:      #7e9db5
+urxvt.color9:      #ff685b
+urxvt.color10:     #87d151
+urxvt.color11:     #f0c64a
+urxvt.color12:     #6daaff
+urxvt.color13:     #f987ff
+urxvt.color14:     #5cdecf
+urxvt.color15:     #c0d1df
+
