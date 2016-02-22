@@ -1,5 +1,14 @@
-Note that Terminator doesn't have any means of providing just the color scheme,
-separated from other configuration.  Therefore this folder contains a minimal
-Terminator configuration - feel free to copy the relevant lines into your own
-config rather than replacing it.
+Installation
+------------
+
+**Important note:** Terminator doesn't have any means of providing just the
+color scheme, separated from other configuration.  Therefore I provide a
+complete (but minimal) Terminator config file.
+
+To install Selenized and overwrite your existing Terminator configuration, copy
+[`config`](config) from this directory into `~/.config/terminator`.
+
+To add Selenized profiles to your existing conifguration, copy-and-paste
+appropriate sections from [`config`](config) file into your
+`~/.config/terminator/config`.
 

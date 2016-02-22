@@ -1,24 +1,28 @@
 [global_config]
   inactive_color_offset = 1.0
 [profiles]
+  # default profile is set to selenized dark. I know, code duplication is bad
+  # but there is no proper way to do this in Terminator.
+  [[default]]
+    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#aabbc9"
+    background_image = None
+    foreground_color = "#90a0ae"
+    background_color = "#07293b"
   [[selenized-dark]]
     palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#aabbc9"
     background_image = None
     foreground_color = "#90a0ae"
     background_color = "#07293b"
-    scrollback_infinite = True
   [[selenized-medium]]
     palette = "#3f5e73:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#b2c4d1:#7e9db5:#ff685b:#87d151:#f0c64a:#6daaff:#f987ff:#5cdecf:#c0d1df"
     background_image = None
     foreground_color = "#b2c4d1"
     background_color = "#27465a"
-    scrollback_infinite = True
   [[selenized-black]]
     palette = "#303030:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#ababab:#777777:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#c6c6c6"
     background_image = None
     foreground_color = "#ababab"
     background_color = "#1b1b1b"
-    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
