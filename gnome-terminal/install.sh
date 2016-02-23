@@ -6,7 +6,6 @@ schemes=($(cd $dir/colors && echo * && cd - > /dev/null))
 
 source $dir/src/tools.sh
 source $dir/src/profiles.sh
-source $dir/src/dircolors.sh
 
 show_help() {
   echo
@@ -181,4 +180,3 @@ else
 fi
 
 set_profile_colors $profile $scheme
-check_dircolors || warning_message_dircolors
