@@ -1,0 +1,28 @@
+Selenized Palette for Gnome Terminal
+====================================
+
+Scripts for making your Gnome Terminal _selenized!_ :-)
+
+Installation
+------------
+
+Clone this repository, run interactive installation script and follow the
+instructions:
+
+    git clone https://github.com/janek-warchol/selenized
+    ./selenized/gnome-terminal/install.sh
+
+You can also run one of the `set_XXXX.sh` scripts to directly set the desired
+theme to the active gnome-terminal profile.
+
+**Note:** You may need to install `dconf-cli` or `gconf2` package (depending on
+your Gnome version) to be able to run these scripts.  This should be as easy as
+running `sudo apt-get install <package>`. 
+
+Credits
+-------
+
+Adapted from
+[gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized)
+originally written by Anthony Ruhier and others.
+
