@@ -3,6 +3,8 @@ Selenized Palette for Gnome Terminal
 
 Scripts for making your Gnome Terminal _selenized!_ :-)
 
+
+
 Installation
 ------------
 
@@ -18,6 +20,12 @@ theme to the active gnome-terminal profile.
 **Note:** You may need to install `dconf-cli` or `gconf2` package (depending on
 your Gnome version) to be able to run these scripts.  This should be as easy as
 running `sudo apt-get install <package>`. 
+
+**Warning:** the colors in the target profile will be premanently overwritten -
+this operation cannot be undone.  Consider creating a new profile before
+installing Selenized.
+
+
 
 Credits
 -------
