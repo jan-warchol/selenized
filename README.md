@@ -1,15 +1,17 @@
 Selenized color palette
 =======================
 
-Selenized is a color palette for terminal emulators.  It is designed to be easy
-on eyes (by reducing foreground/background contrast) while retaining reasonably
-strong - yet balanced - accent colors.
+Selenized is a color palette for terminal emulators. I used
+[CIELAB](http://en.wikipedia.org/wiki/Lab_color_space) color space to ensure
+balanced contrast and lightness across the whole palette, for great readability
+without tiring the eyes. Also, I carefully adjusted accent colors to be both
+pleasing and clearly distinguishable (even on poor quality screens).  Selenized
+comes in 3 variants (medium, dark and black) so that you can pick the one that
+works best in your working environment.
 
-Note that currently Selenized defines 6 accent colors and 5 monotones, because
-that's the standard in terminal emulators.  I plan to add an expanded version
-with 8 or 9 accent colors later.  Keep in mind that this is work in progress -
-the colors are expected to change slightly.
+You can read more about the design [here](#features).
 
+_Note: this is work in progress - the colors are expected to change slightly._
 
 
 
@@ -68,32 +70,96 @@ I plan to add a dark-on-light variant when I finish adjusting current ones.
 
 
 
-Selenized? Did you mean "Solarized", maybe?
--------------------------------------------
+Features
+--------
 
-This color scheme is inspired by Solarized color scheme by Ethan Schoonover (yay,
-I've forked a color scheme!).  The name is derived from the greek word 'selene',
+### Comfortable contrast
+
+A couple years ago I noticed that my eyes quickly grew tired when I was working
+in a terminal.  It turned out that the problem was in the palette I was using
+at that time - it was white text on dark violet background (default Ubuntu
+terminal colors).  High contrast like that tires the eye - that's why
+professional graphic software often use gray in their interfaces.
+
+<screenshot of a manpage with ubuntu palette>
+
+Selenized has moderate-to-low contrast - the difference in LAB lightness
+between foreground and background is 50, which is exactly half the distance
+between pure black and white.  The result is easy on eyes but still very
+readable, even on poor displays.
+
+<screenshot of a manpage with selenized>
+
+
+### Balanced accent colors
+
+It's not just foreground and background colors that matter. Ligthtness of all
+accent colors need to be carefully adjusted, too: we want them to be equally
+readable against the background, but at the same time they cannot have exactly
+the same lightness because that would make them harder to tell apart (for
+example, our eyes expect yellow to be brighter than orange and orange brighter
+than red).
+
+Many color palettes do this wrong.  For example, rxvt default palette uses
+quite bright yellow any cyan, while blue is so dark that it's actually almost
+impossible to read against the background.
+
+<screenshot of rxvt palette>
+
+Selenized keeps the difference in LAB lightness between accent colors and
+background above 35, ensuring that all of them are nicely readable - even red
+and blue.
+
+<screenshot of selenized>
+
+
+### Variants for different conditions
+
+Reducing contrast inside terminal window is one thing, but what about the
+contrast of the whole desktop?  If you have your terminal side-by-side with a
+window that has black text on white background (e.g. a document viewer or a
+browser), the resulting contrast between the two windows will make Selenized
+dark less readable.  That's why Selenized includes a "medium" variant - it has
+exactly the same hues and overall contrast, just the lightness is shifted: this
+ensures better readability and prevents eye fatigue when used next to a
+bright/high-contrast window.
+
+<screenshot of selenized medium next to Wikipedia article about LAB space>
+
+There is also a "black" variant meant for people who need higher contrast -
+either due to especially bad display/lightness conditions, or because they are
+not yet used to low contrast palettes.
+
+
+
+What about _Solarized_?
+-----------------------
+
+Selenized is based on Solarized color scheme by Ethan Schoonover (yay, I've
+forked a color scheme!).  The name is derived from the greek word 'selene',
 which means the moon (as opposed to the sun in solarized).  I really liked the
 design principles behind Solarized, but there are a couple issues with it:
 
-- Some accent colors are suboptimal:
+- Some accent colors are suboptimal (TODO: add colorwheel image):
+  - magenta is easy to confuse with red (TODO: add picture with git log),
   - orange is very easy to confuse with red (note that there is no orange in
     6-color version of selenized - it will be added in 8-color version),
   - green is too close to yellow (I wouldn't actually call it green - in my
     opinion it's more like olive, and I don't like it at all)
   - blue is easy to confuse with violet,
-  - cyan is not very saturated, which makes it just slightly too similar to the
-    foreground color.
+  - cyan and green are not very saturated, which makes it just slightly too
+    similar to the foreground color.
 - The contrast is slightly wrong:
   - if you have a window with solarized colorscheme side-by-side with another
     window (e.g. browser) that uses black-on-white text (as most of the
     websites do), solarized becomes too hard to read in that context.
+    <screenshot with wikipedia page>
   - the dark version is too dark.
   - I know that Ethan says on Solarized website that he tested the scheme on a
     variety of monitors in different lighting conditions, but nevertheless I
     have encountered situations when solarized's legibility was poor due to bad
     display.
-- terminals weren't built for 8 colors - they were built for 6 colors.
+- terminals weren't built for 8 accent colors - they were built for 6 colors.
   Solarized tries to implement more colors using some very ugly hacks which
   cause all applications that are not solarized-aware to look weird.
 - I think that Ethan's decision to use exactly the same accent colors in both
@@ -102,26 +168,4 @@ design principles behind Solarized, but there are a couple issues with it:
   optimal lightness for dark and light versions separately - and the benefits
   of this solution are, in my opinion, negligible.
 
-
-
-Design principles
------------------
-
-- easy on eyes
-- even contrast
-- completely unambiguous accent colors 
-- as good looking as possible considering other constraints
-- straightforward to implement
-
-
-
-Notes
------
-
-The point is not to have accent colors with identically the same lightness,
-because that would look strange and some colors would be hard to distinguish
-(for example, our eyes expect yellow to be brighter than orange and orange
-brighter than red).  Ethan does make some leeway here, but he stops short of
-the goal of unambiguous colors (because he's limited by the design decision
-to use exactly the same accent colors in light and dark versions of the scheme).
 
