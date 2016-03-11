@@ -169,3 +169,37 @@ design principles behind Solarized, but there are a couple issues with it:
   of this solution are, in my opinion, negligible.
 
 
+
+Contributing
+------------
+
+I'm happy to add support for more terminal emulators and command-line
+applications - please open pull requests :-)
+
+Also, let me know if you'd like to help with developing extended version of
+Selenized (with 8 accent colors), or if you encountered a situation where some
+colors were difficult to read.  As long as Selenized is in beta phase I'll
+consider adjusting the colors.
+
+
+
+Forking
+-------
+
+You are welcome to adjust Selenized to your taste - I can imagine that some
+people may want to change the hue of the background/content colors or adjust
+the contrast slightly.  When doing so, please keep in mind the following
+(especially if you'd like to publish your fork and use "Selenized" in its
+name):
+- always use CIELAB color space to check lightness of the resulting colors.
+  You don't need Photoshop for this - there are online tools for CIELAB-sRGB
+  conversion (although they may produce slightly different results than
+  Photoshop).
+- keep overall contrast (i.e. difference in CIELAB lightness between foreground
+  and background colors) between 45 and 65 units.  Anything outside this range
+  is really not good.
+- keep accent color contrast (i.e. difference in CIELAB lightness between
+  accent color and background) above 30 units. This really is the minimum.
+- preferably don't change accent color hues and their relative lightness at
+  all.
+
