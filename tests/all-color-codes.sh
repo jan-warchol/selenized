@@ -1,35 +1,40 @@
 #!/bin/bash
 
-# This scripts prints a full set of color codes, normal and bright, used on
-# both foreground and background.
+# This scripts prints a full set of color codes, normal and bright/bold,
+# used on both foreground and background.
 
-text_block="■■■■"
-space_block="    "
-reset() { echo -en "\033[0m$1"; }
+TEXT_BLOCK="■■■■"
+SPACE_BLOCK="    "
+reset_colors() { echo -en "\033[0m${1}\033[0m"; }
+# needed for solarized which uses strange color mapping...
+COMMENT_COLOR=${1:-90}
 
 allcolors() {
-  # $1 - modifier (format), $2 - text to print
-  reset "  "
-  for color in 0 1 2 3 4 5 6 7 8 9; do
-      echo -en "\033[${1}${color}m${2} "
-      # echo -en "\033[49;3${color}m${color}""\033[${1}${color}m${2} "
-  done
-  reset " $1 \n"
+    # $1 - modifier (format), $2 - row header, $3 - row comment
+    reset_colors "$(printf '%4s' $1)x "
+    for color_code in 0 1 2 3 4 5 6 7 9; do
+        echo -en "\033[${1}${color_code}m${2} "; reset_colors
+    done
+    reset_colors " \033[${COMMENT_COLOR}m${3} \n"
 }
 
-reset "\n"
-echo -e "  Foreground: $text_block"
-echo -e "  $(tput bold)Bold foreground: $text_block"
-reset "\n"
+reset_colors "\n"
+echo -en "\033[${COMMENT_COLOR}m" 
+echo -e "            red      yellow   magenta    white "
+echo -e "      black     green      blue      cyan    default \033[0m"
+echo -e "        0    1    2    3    4    5    6    7    9"
 
-echo "    0    1    2    3    4    5    6    7    8    9"
-allcolors 3 "$text_block"
-allcolors 9 "$text_block"
-allcolors 4 "$space_block"
-allcolors 10 "$space_block"
-allcolors 3 "BBBB"
-allcolors "1;3" "BBBB"
+allcolors 3     "$TEXT_BLOCK" "text"
+allcolors "1;3" "$TEXT_BLOCK" "bold text"
+allcolors 4     "$SPACE_BLOCK" "background"
+allcolors 10    "$SPACE_BLOCK" "bright background"
+allcolors 3     "BBBB" "text"
+allcolors "1;3" "BBBB" "bold text"
 
-reset "\n"
-echo -e "\033[0mLorem ipsum dolor sit amet, consectetur adipiscing elit."
+echo "   |\\"
+echo "   | Color code (marked in column header)"
+echo "   Formatting attribute(s)"
+
+reset_colors "\n"
+echo -e "\033[0m Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
