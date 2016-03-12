@@ -38,28 +38,28 @@ supported terminals :-)
 Palette variants
 ----------------
 
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
-
-"Basic" version of the palette.  Note that it may not look good when used next
-to very bright content.
-
-
 ### Selenized medium
 
 ![Selenized medium screenshot](http://i.imgur.com/5qpQRPe.png)
 
-Sometimes the dark version is a bit too dark when used side-by-side with some
-other program that has black text on white background (e.g. pdf documents, many
-websites etc.).  In these situations medium version comes handy (it has exactly
-the same hues and overall contrast, just the lightness is shifted).
+Relatively high lightness of this version makes it well suited for using
+side-by-side with programs that have black text on white background (e.g. pdf
+documents, many websites etc.).
+
+
+### Selenized dark
+
+![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
+
+It has exactly the same hues and overall contrast as the medium version, just
+the lightness is shifted.  It will feel familiar to people used to Solarized
+palette.
 
 
 ### Selenized black
 
-Don't like colorful backgrounds and prefer oldschool look?  Or maybe you'd like
-some more contrast?  Try this variation.
+Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
+maybe you'd like some more contrast?  Try this variation.
 
 ![Selenized black screenshot](http://i.imgur.com/rec8DZu.png)
 
