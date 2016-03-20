@@ -1,6 +1,9 @@
-from colormath.color_objects import LabColor, sRGBColor, AppleRGBColor
+from colormath.color_objects import LabColor, sRGBColor, AppleRGBColor, BaseRGBColor
 from colormath.color_conversions import convert_color
 from copy import copy as copy
+
+# yeah, I know it's not the best code in the world, but it gets the job done.
+# TODO: change to be more OOP
 
 # LAB lightness of background (0-100)
 bg_l = 28
@@ -47,7 +50,23 @@ def print_lab_color(self):
         self.lab_b
     )
 
+def print_rgb_color(self):
+    return "{:>3.0f},{:>3.0f},{:>3.0f}".format(
+        self.rgb_r * 255,
+        self.rgb_g * 255,
+        self.rgb_b * 255
+    )
+
+def print_rgb_color_float(self):
+    return "{:<14} {:<14} {:<14}".format(
+        self.rgb_r,
+        self.rgb_g,
+        self.rgb_b
+    )
+
 LabColor.str = print_lab_color
+BaseRGBColor.str = print_rgb_color
+BaseRGBColor.floats = print_rgb_color_float
 
 # some of the bright versions of colors are slightly out of RGB gamut -
 # it's not a big deal, we just clamp them.
@@ -63,10 +82,12 @@ def add_rgb(color):
     result = [name, lab]
 
     srgb = clamp_rgb_color(convert_color(lab, sRGBColor))
+    result.append(srgb)
     srgb_hex = sRGBColor.get_rgb_hex(srgb)
     result.append(srgb_hex)
 
     applergb = clamp_rgb_color(convert_color(lab, AppleRGBColor))
+    result.append(applergb)
     applergb_hex = AppleRGBColor.get_rgb_hex(applergb)
     result.append(applergb_hex)
 
@@ -76,6 +97,27 @@ full_palete = [add_rgb(color) for color in palette]
 
 print "Color        CIE L*a*b*   sRGB      Apple RGB"
 print "----------   ----------   -------   ---------"
-for name, lab, srgb, apple in full_palete:
-    print '{:<10}   {}   {}   {}'.format(name, lab.str(), srgb, apple)
+for name, lab, srgb, srgb_hex, apple, apple_hex in full_palete:
+    print '{:<10}   {}   {}   {}'.format(name, lab.str(), srgb_hex, apple_hex)
 
+print ""
+print "Color        sRGB"
+print "----------   --------------------------------"
+for name, lab, srgb, srgb_hex, apple, apple_hex in full_palete:
+    print '{:<10}   {}   {}   {}'.format(
+        name,
+        srgb_hex,
+        srgb.str(),
+        srgb.floats()
+    )
+
+print ""
+print "Color        Apple RGB"
+print "----------   --------------------------------"
+for name, lab, srgb, srgb_hex, apple, apple_hex in full_palete:
+    print '{:<10}   {}   {}   {}'.format(
+        name,
+        apple_hex,
+        apple.str(),
+        apple.floats()
+    )
