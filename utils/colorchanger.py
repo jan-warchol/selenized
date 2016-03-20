@@ -1,21 +1,27 @@
 #!/usr/bin/python
 
-# usage example: ./colorchanger.py 211,212,213 111,112,113 example2
+# usage example:
+#     echo "#D3D4D5 #1f3649" > color_mapping
+#     ./colorchanger.py color_mapping example2
 
 import os
 import sys
 import re
+from pprint import pprint as pprint
 
-
-color_re = re.compile(r'(\d+),(\d+),(\d+)')
+color_re_dec = re.compile(r'(\d+),(\d+),(\d+)')
+color_re_hex = re.compile(r'#?' + r'([0-9,a-f,A-F]{2})'*3)
 
 def read_color(color):
-    return [int(i) for i in color_re.match(color).group(1, 2, 3)]
+    return [int(i,16) for i in color_re_hex.match(color).group(1, 2, 3)]
 
-assert len(sys.argv) == 4
-color_change_from = read_color(sys.argv[1])
-color_change_to = read_color(sys.argv[2])
-filepath = sys.argv[3]
+assert len(sys.argv) == 3
+filepath = sys.argv[2]
+
+with open(sys.argv[1]) as f:
+    raw_mapping = [l.split() for l in f.read().rstrip().split('\n')] 
+
+mapping = [(read_color(a), read_color(b)) for (a, b) in raw_mapping] 
 
 def gen_all_formats(color):
     # generacja roznych przestrzeni kolorow:
@@ -26,23 +32,31 @@ def gen_all_formats(color):
     result.append("{0:02x}{1:02x}{2:02x}".format(r, g, b))  # lowercase hex
     result.append("{0:02x}{0:02x}{1:02x}{1:02x}{2:02x}{2:02x}".format(r, g, b))  # gnome-terminal
     result.append("{0:02X}{1:02X}{2:02X}".format(r, g, b))  # uppercase hex
-    result.append("{0:d}, {1:d}, {2:d}".format(r, g, b))  # decimal (with commas)
-    result.append("{0:f}, {1:f}, {2:f}".format(r1, g1, b1))  # [0, 1] floats (with commas)
+    result.append("{0:d},{1:d},{2:d}".format(r, g, b))  # decimal (with commas)
+    result.append("{0}, {1}, {2}".format(r1, g1, b1))  # [0, 1] floats (with commas)
     return result
 
-repl_dict = dict(zip(gen_all_formats(color_change_from), gen_all_formats(color_change_to)))
+def replace_color(from_color, to_color, content):
+    repl_dict = dict(zip(gen_all_formats(from_color), gen_all_formats(to_color)))
 
-def repl(matcher):
-    return repl_dict[matcher.group(0)]
+    def repl(matcher):
+        return repl_dict[matcher.group(0)]
 
-print repl_dict
+    print 'Replacing color', from_color, 'with', to_color, '.',
+    print 'Full replacement dict:'
+    pprint(repl_dict)
 
-regex = re.compile('|'.join(repl_dict.keys()))
+    regex = re.compile('|'.join(repl_dict.keys()))
+    return re.sub(regex, repl, content)
 
 ifile = open(filepath, 'r')
 filecontent = ifile.read()
 ifile.close()
-filecontent = re.sub(regex, repl, filecontent)
+
+for color_pair in mapping:
+    from_color, to_color = color_pair
+    filecontent = replace_color(from_color, to_color, filecontent)
+
 ofile = open(filepath, 'w')
 ofile.write(filecontent)
 ofile.close()
