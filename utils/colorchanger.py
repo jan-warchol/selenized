@@ -19,7 +19,7 @@ assert len(sys.argv) == 3
 filepath = sys.argv[2]
 
 with open(sys.argv[1]) as f:
-    raw_mapping = [l.split() for l in f.read().rstrip().split('\n')] 
+    raw_mapping = [l.split() for l in f.read().rstrip().split('\n') if len(l)]
 
 mapping = [(read_color(a), read_color(b)) for (a, b) in raw_mapping] 
 
