@@ -4,22 +4,22 @@
   # default profile is set to selenized dark. I know, code duplication is bad
   # but there is no proper way to do this in Terminator.
   [[default]]
-    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#aabbc9"
+    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2eb9ab:#aabbc9"
     background_image = None
     foreground_color = "#90a0ae"
     background_color = "#07293b"
   [[selenized-dark]]
-    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#aabbc9"
+    palette = "#213f52:#dd3031:#559f1e:#ba9610:#2d7bdf:#c455d5:#12ab9e:#90a0ae:#5d7b90:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2eb9ab:#aabbc9"
     background_image = None
     foreground_color = "#90a0ae"
     background_color = "#07293b"
   [[selenized-medium]]
-    palette = "#3f5e73:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#b2c4d1:#7e9db5:#ff685b:#87d151:#f0c64a:#6daaff:#f987ff:#5cdecf:#c0d1df"
+    palette = "#3f5e73:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#b2c4d1:#7e9db5:#ff685b:#87d151:#f0c64a:#6daaff:#f987ff:#5cdecf:#cee0ee"
     background_image = None
     foreground_color = "#b2c4d1"
     background_color = "#27465a"
   [[selenized-black]]
-    palette = "#303030:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2db9ab:#ababab:#777777:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#c6c6c6"
+    palette = "#303030:#ed413d:#63ad2d:#c9a323:#4188ee:#d363e3:#2eb9ab:#ababab:#848484:#ff594f:#79c344:#e1b83c:#5d9cff:#ea79fb:#4cd0c1:#c6c6c6"
     background_image = None
     foreground_color = "#ababab"
     background_color = "#1b1b1b"
