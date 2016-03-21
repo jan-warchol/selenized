@@ -5,21 +5,21 @@ urxvt.foreground:  #ababab
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
 urxvt.color0:      #303030
-urxvt.color1:      #ed413d
-urxvt.color2:      #63ad2d
+urxvt.color1:      #ec4946
+urxvt.color2:      #6aac30
 urxvt.color3:      #c9a323
-urxvt.color4:      #4188ee
-urxvt.color5:      #d363e3
+urxvt.color4:      #3c8ae6
+urxvt.color5:      #e25fb8
 urxvt.color6:      #2eb9ab
 urxvt.color7:      #ababab
 
 ! bright/bold versions of colors (in the same order)
 urxvt.color8:      #848484
-urxvt.color9:      #ff594f
-urxvt.color10:     #79c344
+urxvt.color9:      #ff6158
+urxvt.color10:     #80c246
 urxvt.color11:     #e1b83c
-urxvt.color12:     #5d9cff
-urxvt.color13:     #ea79fb
+urxvt.color12:     #589efe
+urxvt.color13:     #fa76ce
 urxvt.color14:     #4cd0c1
 urxvt.color15:     #c6c6c6
 
