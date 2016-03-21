@@ -30,7 +30,7 @@ Ready-to-use config files are available for the following terminals:
 
 If your terminal is not listed here, you can always manually copy [hex
 values](the-values.md) into its preferences.  Please consider sending me a pull
-request with the resulting configuration so that I can add it to officialy
+request with the resulting configuration so that I can add it to officially
 supported terminals :-)
 
 
@@ -93,7 +93,7 @@ readable, even on poor displays.
 
 ### Balanced accent colors
 
-It's not just foreground and background colors that matter. Ligthtness of all
+It's not just foreground and background colors that matter. Lightness of all
 accent colors need to be carefully adjusted, too: we want them to be equally
 readable against the background, but at the same time they cannot have exactly
 the same lightness because that would make them harder to tell apart (for
