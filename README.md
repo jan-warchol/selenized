@@ -40,7 +40,7 @@ Palette variants
 
 ### Selenized medium
 
-![Selenized medium screenshot](http://i.imgur.com/5qpQRPe.png)
+![Selenized medium screenshot](http://i.imgur.com/NI8RQaT.png)
 
 Relatively high lightness of this version makes it well suited for using
 side-by-side with programs that have black text on white background (e.g. pdf
@@ -49,7 +49,7 @@ documents, many websites etc.).
 
 ### Selenized dark
 
-![Selenized dark screenshot](http://i.imgur.com/fhYxsbD.png)
+![Selenized dark screenshot](http://i.imgur.com/y2dMcsE.png)
 
 It has exactly the same hues and overall contrast as the medium version, just
 the lightness is shifted.  It will feel familiar to people used to Solarized
@@ -61,7 +61,7 @@ palette.
 Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
 maybe you'd like some more contrast?  Try this variation.
 
-![Selenized black screenshot](http://i.imgur.com/rec8DZu.png)
+![Selenized black screenshot](http://i.imgur.com/PVKtHEC.png)
 
 
 ### Selenized light
