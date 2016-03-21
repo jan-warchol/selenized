@@ -13,10 +13,10 @@ echo -e "$BRIGHT
                |___/\___|_|\___|_| |_|_/___\___|\__,_|
 $RESET
                   Readability and comfort above all
-
-                  $DIM       author: Jan Warchoł
-                                v0.3        $RESET
-"
+$DIM
+                         author: Jan Warchoł
+                               v0.3.1
+$RESET"
 
 echo -en "\e[0m          "
 for color in 40 100 47 46 44 45 41 43 42 47 100 40; do

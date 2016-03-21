@@ -10,11 +10,11 @@ urxvt.color2:      #63ad2d
 urxvt.color3:      #c9a323
 urxvt.color4:      #4188ee
 urxvt.color5:      #d363e3
-urxvt.color6:      #2db9ab
+urxvt.color6:      #2eb9ab
 urxvt.color7:      #ababab
 
 ! bright/bold versions of colors (in the same order)
-urxvt.color8:      #777777
+urxvt.color8:      #848484
 urxvt.color9:      #ff594f
 urxvt.color10:     #79c344
 urxvt.color11:     #e1b83c
