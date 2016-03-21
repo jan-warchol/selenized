@@ -6,7 +6,7 @@ from copy import copy as copy
 # TODO: change to be more OOP
 
 # LAB lightness of background (0-100)
-bg_l = 28
+bg_l = 25
 # difference in LAB lightness between foreground and background
 contrast = 50
 # difference in LAB lightness between regular and bright accent colors
@@ -15,21 +15,21 @@ bright_contrast = 5
 fg_l = bg_l + contrast
 
 monotones = [
-    ["bg",       LabColor(bg_l,    -7, -16, illuminant='d50')],
-    ["black",    LabColor(bg_l+10, -7, -16, illuminant='d50')],
-    ["br_black", LabColor(fg_l-15, -7, -16, illuminant='d50')],
-    ["fg",       LabColor(fg_l,    -4, -9,  illuminant='d50')],
-    ["white",    LabColor(fg_l,    -4, -9,  illuminant='d50')],
-    ["br_white", LabColor(fg_l+10, -4, -9,  illuminant='d50')]
+    ["bg",       LabColor(bg_l,    -10, -16, illuminant='d50')],
+    ["black",    LabColor(bg_l+10, -12, -19, illuminant='d50')],
+    ["br_black", LabColor(fg_l-15,  -7,  -9, illuminant='d50')],
+    ["fg",       LabColor(fg_l,     -6,  -6, illuminant='d50')],
+    ["white",    LabColor(fg_l,     -6,  -6, illuminant='d50')],
+    ["br_white", LabColor(fg_l+10,  -6,  -6, illuminant='d50')]
 ]
 
 accent_colors = [
-    ["red",     LabColor(fg_l-15,  66,  44, illuminant='d50')],
-    ["green",   LabColor(fg_l-6,  -40,  54, illuminant='d50')],
-    ["yellow",  LabColor(fg_l-1,    6,  65, illuminant='d50')],
-    ["blue",    LabColor(fg_l-14,   4, -59, illuminant='d50')],
-    ["magenta", LabColor(fg_l-10,  58, -46, illuminant='d50')],
-    ["cyan",    LabColor(fg_l-2,  -40,  -4, illuminant='d50')]
+    ["red",      LabColor(fg_l-14,  63,  40, illuminant='d50')],
+    ["green",    LabColor(fg_l-6,  -37,  53, illuminant='d50')],
+    ["yellow",   LabColor(fg_l-1,    6,  65, illuminant='d50')],
+    ["blue",     LabColor(fg_l-14,   0, -55, illuminant='d50')],
+    ["magenta",  LabColor(fg_l-10,  59, -21, illuminant='d50')],
+    ["cyan",     LabColor(fg_l-2,  -40,  -4, illuminant='d50')]
 ]
 
 # bright colors are derived from regular (+5 Lab lightness)
