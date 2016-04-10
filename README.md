@@ -188,6 +188,10 @@ Selenized is still work-in-progress.  Here are some of my plans for the future:
   using a web interface
 - maybe even create a library that would allow adjusting LAB lightness in
   arbitrary color palettes based on the experience I got creating Selenized
+- research perceptually uniform color spaces - maybe they could be used to
+  improve consistency of Selenized colors even further?  See
+  [here](www.brucelindbloom.com/UPLab.html) and
+  [here](https://en.wikipedia.org/wiki/Munsell_color_system).
 
 If you'd like to help with any of these, please get in touch - open a pull
 request or contact me at jan.warchol@gmail.com.
