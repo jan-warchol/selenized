@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="selenized.css" />
+  <title>Selenized color palette</title>
+</head>
+<body>
+<div style="border:solid 3px red;padding:20px;margin-bottom:100px;"><h1>This page is not ready.</h1><p>See README <a href="https://github.com/janek-warchol/selenized#readme">directly in the repository</a> instead.</p></div>
+<h1 id="selenized-color-palette">Selenized color palette</h1>
+<p>Selenized is a color palette for terminal emulators. I used <a href="http://en.wikipedia.org/wiki/Lab_color_space">CIELAB</a> color space to ensure balanced contrast and lightness across the whole palette, for great readability without tiring the eyes. Also, I carefully adjusted accent colors to be both pleasing and clearly distinguishable (even on poor quality screens). Selenized comes in 3 variants (medium, dark and black) so that you can pick the one that works best in your working environment.</p>
+<p>You can read more about the design <a href="#features">here</a>.</p>
+<p><em>Note: this is work in progress - the colors are expected to change slightly.</em></p>
+<h2 id="palette-variants">Palette variants</h2>
+<h3 id="selenized-medium">Selenized medium</h3>
+<div class="figure">
+<img src="http://i.imgur.com/NI8RQaT.png" alt="Selenized medium screenshot" /><p class="caption">Selenized medium screenshot</p>
+</div>
+<p>Relatively high lightness of this version makes it well suited for using side-by-side with programs that have black text on white background (e.g. pdf documents, many websites etc.).</p>
+<h3 id="selenized-dark">Selenized dark</h3>
+<div class="figure">
+<img src="http://i.imgur.com/y2dMcsE.png" alt="Selenized dark screenshot" /><p class="caption">Selenized dark screenshot</p>
+</div>
+<p>It has exactly the same hues and overall contrast as the medium version, just the lightness is shifted. It will feel familiar to people used to Solarized palette.</p>
+<h3 id="selenized-black">Selenized black</h3>
+<p>Don’t like colorful backgrounds and prefer oldschool black-and-white look? Or maybe you’d like some more contrast? Try this variation.</p>
+<div class="figure">
+<img src="http://i.imgur.com/PVKtHEC.png" alt="Selenized black screenshot" /><p class="caption">Selenized black screenshot</p>
+</div>
+<h3 id="selenized-light">Selenized light</h3>
+<p>I plan to add a dark-on-light variant when I finish adjusting current ones.</p>
+<h2 id="features">Features</h2>
+<h3 id="comfortable-contrast">Comfortable contrast</h3>
+<p>A couple years ago I noticed that my eyes quickly grew tired when I was working in a terminal. It turned out that the problem was the palette I was using at that time - it was white text on dark violet background (default Ubuntu terminal colors - see <a href="http://i.imgur.com/wICCS7x.png">example</a>). High contrast like that tires the eye - that’s why professional graphic software often use gray in their interfaces.</p>
+<div class="figure">
+<img src="http://i.imgur.com/SRL3n03.png" alt="Selenized contrast sample" /><p class="caption">Selenized contrast sample</p>
+</div>
+<p>Selenized has moderate-to-low contrast - the difference in LAB lightness between foreground and background is 50, which is exactly half the distance between pure black and white. The result is easy on eyes but still very readable, even on poor displays - see a <a href="http://i.imgur.com/Q5ECiYK.png">side-by-side comparison of Selenized and Ubuntu palettes</a>.</p>
+<!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
+
+
+
+<h3 id="balanced-accent-colors">Balanced accent colors</h3>
+<p>It’s not just foreground and background colors that matter. Lightness of all accent colors need to be carefully adjusted, too: we want them to be equally readable against the background, but at the same time they cannot have <em>exactly</em> the same lightness because that would make them harder to tell apart (for example, our eyes expect yellow to be brighter than orange and orange brighter than red).</p>
+<p>Selenized keeps the difference in LAB lightness between accent colors and background above 35, ensuring that all of them are nicely readable - even red and blue.</p>
+<div class="figure">
+<img src="http://i.imgur.com/kSFGE0R.png" alt="Selenized accent colors example" /><p class="caption">Selenized accent colors example</p>
+</div>
+<p>Many color palettes do this wrong. For example, rxvt default palette uses quite bright yellow any cyan, while blue is so dark that it’s actually almost impossible to read against the background.</p>
+<h3 id="variants-for-different-conditions">Variants for different conditions</h3>
+<p>Reducing contrast inside terminal window is one thing, but what about the contrast of the whole desktop? If you have your terminal side-by-side with a window that has black text on white background (e.g. a document viewer or a browser), the resulting contrast between the two windows will make Selenized dark less readable. That’s why Selenized includes a “medium” variant - it has exactly the same hues and overall contrast, just the lightness is shifted: this ensures better readability and prevents eye fatigue when used next to a bright/high-contrast window.</p>
+<div class="figure">
+<img src="http://i.imgur.com/HUvDnDy.png" alt="Selenized next to black&amp;white Wikipedia" /><p class="caption">Selenized next to black&amp;white Wikipedia</p>
+</div>
+<p>There is also a “black” variant meant for people who need higher contrast - either due to especially bad display/lightness conditions, or because they are not yet used to low contrast palettes.</p>
+<h2 id="what-about-solarized">What about <em>Solarized</em>?</h2>
+<p>Selenized is based on Solarized color scheme by Ethan Schoonover (yay, I’ve forked a color scheme!). The name is derived from the greek word ‘selene’, which means the moon (as opposed to the sun in solarized). I really liked the design principles behind Solarized, but there are a couple issues with it:</p>
+<ul>
+<li>Some accent colors are suboptimal (TODO: add colorwheel image):</li>
+<li>magenta is easy to confuse with red (TODO: add picture with git log),</li>
+<li>orange is very easy to confuse with red (note that there is no orange in 6-color version of selenized - it will be added in 8-color version),</li>
+<li>green is too close to yellow (I wouldn’t actually call it green - in my opinion it’s more like olive, and I don’t like it at all)</li>
+<li>blue is easy to confuse with violet,</li>
+<li>cyan and green are not very saturated, which makes it just slightly too similar to the foreground color.</li>
+<li>The contrast is slightly wrong:</li>
+<li>if you have a window with solarized colorscheme side-by-side with another window (e.g. browser) that uses black-on-white text (as most of the websites do), solarized becomes too hard to read in that context.
+<screenshot with wikipedia page></li>
+<li>the dark version is too dark.</li>
+<li>I know that Ethan says on Solarized website that he tested the scheme on a variety of monitors in different lighting conditions, but nevertheless I have encountered situations when solarized’s legibility was poor due to bad display.</li>
+<li>terminals weren’t built for 8 accent colors - they were built for 6 colors. Solarized tries to implement more colors using some very ugly hacks which cause all applications that are not solarized-aware to look weird.</li>
+<li>I think that Ethan’s decision to use exactly the same accent colors in both light and dark versions of the colorscheme was wrong. This constraint forces the lightness of the accent colors to be a compromise, rather than picking optimal lightness for dark and light versions separately - and the benefits of this solution are, in my opinion, negligible.</li>
+</ul>
+<h2 id="development-contributing">Development &amp; Contributing</h2>
+<p>Here are some things I would like to see: - supporting for more terminals (i.e. ready-to-use config files) - supporting more command-line programs (creating skins) - adding a dark-on-light variant of the palette - extending Selenized to 8 accent colors (by adding orange and violet) - adding color scheme files for popular IDEs - adding a script that would allow easy adjusting Selenized (see next section) - creating a “selenizer” script that would adjutst LAB lightness of colors in any palette based on the experience I got when creating Selenized</p>
+<p>I’m happy to add support for more terminal emulators and command-line applications - please open pull requests :-)</p>
+<p>Also, let me know if you’d like to help with developing extended version of Selenized (with 8 accent colors), or if you encountered a situation where some colors were difficult to read. As long as Selenized is in beta phase I’ll consider adjusting the colors.</p>
+<h2 id="forking">Forking</h2>
+<p>You are welcome to adjust Selenized to your taste - I can imagine that some people may want to change the hue of the background/content colors or adjust the contrast slightly. When doing so, please keep in mind the following (especially if you’d like to publish your fork and use “Selenized” in its name): - always use CIELAB color space to check lightness of the resulting colors. You don’t need Photoshop for this - there are online tools for CIELAB-sRGB conversion (although they may produce slightly different results than Photoshop). - keep overall contrast (i.e. difference in CIELAB lightness between foreground and background colors) between 45 and 65 units. Anything outside this range is really not good. - keep accent color contrast (i.e. difference in CIELAB lightness between accent color and background) above 30 units. This really is the minimum. - preferably don’t change accent color hues and their relative lightness at all.</p>
+</body>
+</html>
