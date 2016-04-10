@@ -76,41 +76,43 @@ Features
 ### Comfortable contrast
 
 A couple years ago I noticed that my eyes quickly grew tired when I was working
-in a terminal.  It turned out that the problem was in the palette I was using
-at that time - it was white text on dark violet background (default Ubuntu
-terminal colors).  High contrast like that tires the eye - that's why
-professional graphic software often use gray in their interfaces.
+in a terminal.  It turned out that the problem was the palette I was using at
+that time - it was white text on dark violet background (default Ubuntu
+terminal colors - see [example](http://i.imgur.com/wICCS7x.png)).  High
+contrast like that tires the eye - that's why professional graphic software
+often use gray in their interfaces.
 
-<screenshot of a manpage with ubuntu palette>
+![Selenized contrast sample](http://i.imgur.com/SRL3n03.png)
 
 Selenized has moderate-to-low contrast - the difference in LAB lightness
 between foreground and background is 50, which is exactly half the distance
 between pure black and white.  The result is easy on eyes but still very
-readable, even on poor displays.
+readable, even on poor displays - see a [side-by-side comparison of Selenized
+and Ubuntu palettes](http://i.imgur.com/Q5ECiYK.png).
 
-<screenshot of a manpage with selenized>
+<!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
+
 
 
 ### Balanced accent colors
 
 It's not just foreground and background colors that matter. Lightness of all
 accent colors need to be carefully adjusted, too: we want them to be equally
-readable against the background, but at the same time they cannot have exactly
+readable against the background, but at the same time they cannot have *exactly*
 the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
-
-Many color palettes do this wrong.  For example, rxvt default palette uses
-quite bright yellow any cyan, while blue is so dark that it's actually almost
-impossible to read against the background.
-
-<screenshot of rxvt palette>
 
 Selenized keeps the difference in LAB lightness between accent colors and
 background above 35, ensuring that all of them are nicely readable - even red
 and blue.
 
-<screenshot of selenized>
+![Selenized accent colors example](http://i.imgur.com/kSFGE0R.png)
+
+Many color palettes do this wrong.  For example, rxvt default palette uses
+quite bright yellow any cyan, while blue is so dark that it's actually almost
+impossible to read against the background.
+
 
 
 ### Variants for different conditions
@@ -124,7 +126,7 @@ exactly the same hues and overall contrast, just the lightness is shifted: this
 ensures better readability and prevents eye fatigue when used next to a
 bright/high-contrast window.
 
-<screenshot of selenized medium next to Wikipedia article about LAB space>
+![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)
 
 There is also a "black" variant meant for people who need higher contrast -
 either due to especially bad display/lightness conditions, or because they are
