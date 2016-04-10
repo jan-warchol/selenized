@@ -27,15 +27,15 @@
 [34m|[m [35m|[m
 [34m|[m [35m|[m     This is much more elegant than having aliases.
 [34m|[m [35m|[m
-[34m|[m [35m|[m     Cherry-picked from sensible-dotfiles: Default settings for less and grep
-[34m|[m [35m|[m     (9f785c03c820439d83928169590bb0f74a779d92)
+[34m|[m [35m|[m     Cherry-picked from sensible-dotfiles: Default settings for less and
+[34m|[m [35m|[m     grep (9f785c03c820439d83928169590bb0f74a779d92)
 [34m|[m [35m|[m
-[34m|[m [35m|[m     Concerning commit f902c14f0a0593 (which removed --RAW-CONTROL-CHARS from
-[34m|[m [35m|[m     default less' options due to security concern): I have read the manpage
-[34m|[m [35m|[m     of less more carefully and I realized that the issue concerns only
-[34m|[m [35m|[m     --raw-control-chars option, which processes all escape sequences.  In
-[34m|[m [35m|[m     contrast, --RAW-CONTROL-CHARS parses only color codes (no other control
-[34m|[m [35m|[m     characters), so there is no problem with it.
+[34m|[m [35m|[m     Concerning commit f902c14f0a0593 (which removed --RAW-CONTROL-CHARS
+[34m|[m [35m|[m     from default less' options due to security concern): I've read less'
+[34m|[m [35m|[m     manpage more carefully and I realized that the issue concerns only
+[34m|[m [35m|[m     --raw-control-chars option, which processes all escape sequences.
+[34m|[m [35m|[m     In contrast, --RAW-CONTROL-CHARS parses only color codes (no other
+[34m|[m [35m|[m     control characters), so there is no problem with it.
 [34m|[m [35m|[m
 [34m|[m [35m|[m  .config/bash/aliases.sh | 16 [32m++++++++++++[m[31m----[m
 [34m|[m [35m|[m  .config/git/config      |  3 [32m+[m[31m--[m
@@ -47,9 +47,9 @@
 [34m|[m [35m|[m
 [34m|[m [35m|[m     Aliases: don't postprocess grep output
 [34m|[m [35m|[m
-[34m|[m [35m|[m     I found a much better way than the hack introduced with 56c3af785978: I
-[34m|[m [35m|[m     can remove colon from word-characters in my terminal emulator settings.
-[34m|[m [35m|[m     (This setting is managed in my ansible system setup, not in dotfiles.)
+[34m|[m [35m|[m     I found a much better way than the hack introduced with 56c3af785978:
+[34m|[m [35m|[m     I can remove colon from word-characters in terminal emulator settings.
+[34m|[m [35m|[m     (This setting is managed in my ansible system setup, not dotfiles.)
 [34m|[m [35m|[m
 [34m|[m [35m|[m  .config/bash/aliases.sh | 6 [32m+[m[31m-----[m
 [34m|[m [35m|[m  1 file changed, 1 insertion(+), 5 deletions(-)
