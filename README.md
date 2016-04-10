@@ -172,16 +172,29 @@ design principles behind Solarized, but there are a couple issues with it:
 
 
 
-Contributing
-------------
+Development & Contributing
+--------------------------
 
-I'm happy to add support for more terminal emulators and command-line
-applications - please open pull requests :-)
+Selenized is still work-in-progress.  Here are some of my plans for the future:
+- add ready-to-use config files for more terminals
+- support more command-line programs (add selenized skins/configs for them - in
+  particular I'd like to fine-tune dircolors to look as good as possible with
+  Selenized)
+- add a dark-on-light variant of the palette
+- extend Selenized to 8 accent colors (add orange and violet, like in
+  Solarized)
+- add color schemes for popular IDEs
+- add a script that would allow [adjusting Selenized to your taste](#forking)
+  using a web interface
+- maybe even create a library that would allow adjusting LAB lightness in
+  arbitrary color palettes based on the experience I got creating Selenized
 
-Also, let me know if you'd like to help with developing extended version of
-Selenized (with 8 accent colors), or if you encountered a situation where some
-colors were difficult to read.  As long as Selenized is in beta phase I'll
-consider adjusting the colors.
+If you'd like to help with any of these, please get in touch - open a pull
+request or contact me at jan.warchol@gmail.com.
+
+Also, open an issue if you found a program that doesn't look good with
+Selenized terminal or encountered a situation where Selenized was not readable
+enough.  Until version 1.0 I'm open to suggestions on adjusting the colors.
 
 
 
@@ -204,4 +217,5 @@ name):
   accent color and background) above 30 units. This really is the minimum.
 - preferably don't change accent color hues and their relative lightness at
   all.
+
 
