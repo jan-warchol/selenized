@@ -101,15 +101,13 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-Selenized keeps the difference in LAB lightness between accent colors and
-background above 35, ensuring that all of them are nicely readable - even red
-and blue.
-
 ![Selenized accent colors example](http://i.imgur.com/kSFGE0R.png)
 
-Many color palettes do this wrong.  For example, rxvt default palette uses
-quite bright yellow any cyan, while blue is so dark that it's actually almost
-impossible to read against the background.
+I have fine-tuned the lightnesses to ensure that all colors present an even
+contrast, even red and blue (which are too dark in many palettes).  You can
+read more about accent color lightness and see a comparison between Selenized
+and other palettes [here](balancing-lightness-of-colors.md) (warning: extreme
+ugliness of some palette examples may scorch your eyes!).
 
 
 
@@ -135,38 +133,12 @@ not yet used to low contrast palettes.
 What about _Solarized_?
 -----------------------
 
-Selenized is based on Solarized color scheme by Ethan Schoonover (yay, I've
-forked a color scheme!).  The name is derived from the greek word 'selene',
-which means the moon (as opposed to the sun in solarized).  I really liked the
-design principles behind Solarized, but there are a couple issues with it:
-
-- Some accent colors are suboptimal (TODO: add colorwheel image):
-  - magenta is easy to confuse with red (TODO: add picture with git log),
-  - orange is very easy to confuse with red (note that there is no orange in
-    6-color version of selenized - it will be added in 8-color version),
-  - green is too close to yellow (I wouldn't actually call it green - in my
-    opinion it's more like olive, and I don't like it at all)
-  - blue is easy to confuse with violet,
-  - cyan and green are not very saturated, which makes it just slightly too
-    similar to the foreground color.
-- The contrast is slightly wrong:
-  - if you have a window with solarized colorscheme side-by-side with another
-    window (e.g. browser) that uses black-on-white text (as most of the
-    websites do), solarized becomes too hard to read in that context.
-    <screenshot with wikipedia page>
-  - the dark version is too dark.
-  - I know that Ethan says on Solarized website that he tested the scheme on a
-    variety of monitors in different lighting conditions, but nevertheless I
-    have encountered situations when solarized's legibility was poor due to bad
-    display.
-- terminals weren't built for 8 accent colors - they were built for 6 colors.
-  Solarized tries to implement more colors using some very ugly hacks which
-  cause all applications that are not solarized-aware to look weird.
-- I think that Ethan's decision to use exactly the same accent colors in both
-  light and dark versions of the colorscheme was wrong.  This constraint forces
-  the lightness of the accent colors to be a compromise, rather than picking
-  optimal lightness for dark and light versions separately - and the benefits
-  of this solution are, in my opinion, negligible.
+Selenized is based on color palette called _Solarized_ (yay, I have forked a
+color scheme!).  The name is derived from the greek word 'selene', which means
+the moon (as opposed to the sun in Solarized).  I really liked the design
+principles behind Solarized, but there are a couple issues with it (which
+Selenized aims to solve).  You can read more about the differences
+[here](whats-wrong-with-solarized.md).
 
 
 
