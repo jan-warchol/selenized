@@ -172,6 +172,21 @@ design principles behind Solarized, but there are a couple issues with it:
 
 
 
+FAQ
+---
+
+#### Program X doesn't looks good when I use Selenized in my terminal.
+
+Some command-line programs make assumptions about the colors set in the
+terminal - for example, they may assume that some color will work well as the
+background color.  Using them in a terminal that uses Selenized palette may
+require adjusting their color settings - for an example, see [this
+issue](https://github.com/janek-warchol/selenized/issues/7) about using
+Selenized with [Midnight
+Commander](https://github.com/janek-warchol/selenized/tree/master/mc).
+
+
+
 Development & Contributing
 --------------------------
 
