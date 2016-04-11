@@ -11,8 +11,6 @@ works best in your working environment.
 
 You can read more about the design [here](#features).
 
-_Note: this is work in progress - the colors are expected to change slightly._
-
 
 
 Installation
