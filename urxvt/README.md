@@ -1,8 +1,11 @@
 Selenized color palette for urxvt
----------------------------------
+=================================
 
-Usage: save the file with the palette somewhere and add to your `~/.Xdefaults`
-an include statement like this:
+Installation
+------------
+
+save the file with the palette somewhere and add an include statement like this
+to your `~/.Xdefaults`:
 
     #include "<path to palette file>"
 

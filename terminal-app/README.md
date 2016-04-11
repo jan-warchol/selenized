@@ -1,8 +1,8 @@
 Selenized palette for Terminal.app (OS X default terminal)
 ==========================================================
 
-OS X default terminal is broken
--------------------------------
+OS X default terminal is broken!
+--------------------------------
 
 Using Selenized with OS X default terminal is problematic. That's because
 Terminal.app has a misfeature: it will modify the colors you set in preferences
