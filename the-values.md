@@ -9,7 +9,7 @@ from LAB using `utils/convert-lab-palette-to-rgbs.py` script, which employs
 Selenized medium
 ----------------
 
-![Selenized medium screenshot](http://i.imgur.com/NI8RQaT.png)
+![Selenized medium screenshot](http://i.imgur.com/U4y7JTc.png)
 
 ```
 Color        CIE L*a*b*   sRGB      AppleRGB  HSB
@@ -41,7 +41,7 @@ br_cyan      78 -40  -4   #52d5c7   #50ceba   173  61  84
 Selenized dark
 --------------
 
-![Selenized dark screenshot](http://i.imgur.com/y2dMcsE.png)
+![Selenized dark screenshot](http://i.imgur.com/ZozQMRm.png)
 
 ```
 Color        CIE L*a*b*   sRGB      AppleRGB  HSB
@@ -73,7 +73,7 @@ br_cyan      68 -40  -4   #2eb9ab   #34ad9b   174  75  73
 Selenized black
 ---------------
 
-![Selenized black screenshot](http://i.imgur.com/PVKtHEC.png)
+![Selenized black screenshot](http://i.imgur.com/Yk9OfdL.png)
 
 ```
 Color        CIE L*a*b*   sRGB      AppleRGB  HSB
