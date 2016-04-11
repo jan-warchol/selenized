@@ -1,4 +1,4 @@
-val plotW = 600
+val plotW = 1200
 val plotH = 600
 val squareSize = 40
 val squareHalf = squareSize/2.0
@@ -13,8 +13,24 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
        width={plotW.toString}
        height={plotH.toString}
        version="1.1"
-       font-family="sans"
-       font-size={(2*squareBorder).toString+"px"}>{
+       font-family="Signika, sans"
+       font-size={(2*squareBorder).toString+"px"}>
+       <style>
+            @font-face {{
+            font-family: 'Signika';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Signika'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v6/q41y_9MUP_N8ipOH4ORRvw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+            }}
+            @font-face {{
+            font-family: 'Signika';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v6/7M5kxD4eGxuhgFaIk95pBfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+            }}
+       </style>{
             genBgColors(bgColors.sortBy(x => x.luminance))
         }{
             genFgColors(fgColors, bgColors.head)
@@ -55,6 +71,10 @@ def genFgColors(colors: List[Color], bgColor: Color) = {
                 </g>
                 <text x="0" y="0" fill={"#"+bgColor.hexString} text-anchor="middle" dominant-baseline="central">{
                     color.luminance.toString
+                }</text>
+                <text x={(-squareSize*0.8).toString} y="0" fill={"#"+color.hexString} text-anchor="end" dominant-baseline="central" font-weight="bold" font-size={(0.8*squareSize).toString}
+                    transform={"rotate(-90)"}>{
+                    color.name
                 }</text>
             </g>
         }
