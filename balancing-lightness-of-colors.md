@@ -77,6 +77,17 @@ violet is still not readable enough against dark violet background.
 
 
 
+### Ancient Selenized
+
+![Accent colors example - ancient selenized](http://i.imgur.com/FJ7vgQT.png)
+
+I also made some mistakes in palette design.  Here is a very old version of
+Selenized, not free from issues.  Overall contrast here is too low - in
+particular red is too dark.  Apart from that, some colors (notably red and
+magenta) are too saturated, and the effect is that the palette is a bit lurid.
+
+
+
 ### Terminator
 
 ![Accent colors example - terminator](http://i.imgur.com/ya6vZrn.png)
@@ -86,9 +97,9 @@ are still too dark.  If they were slightly lighter it would be quite decent.
 
 
 
-### Selenized
+### Current Selenized
 
-![Accent colors example - selenized](http://i.imgur.com/4b5Z1be.png)
+![Accent colors example - current selenized](http://i.imgur.com/4b5Z1be.png)
 
 And here comes selenized ("black" variant).  Notice how all accent colors, as
 well as foreground, are clearly readable against the background.

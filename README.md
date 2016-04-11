@@ -101,7 +101,7 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-![Selenized accent colors example](http://i.imgur.com/kSFGE0R.png)
+![Selenized accent colors diagram](http://i.imgur.com/SmahzVF.png)
 
 I have fine-tuned the lightnesses to ensure that all colors present an even
 contrast, even red and blue (which are too dark in many palettes).  You can
