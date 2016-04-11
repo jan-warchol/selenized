@@ -1,98 +1,92 @@
-val plotW = 100
-val plotH = 100
+val plotW = 600
+val plotH = 600
+val squareSize = 40
+val squareHalf = squareSize/2.0
+val squareBorder = 8
 
-class Color(val name: String, val value: Int)
+class Color(val name: String, val hexString: String, val luminance: Int)
 
-def genSvg(colors: List[Color]) = {
+def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
     <svg
-       xmlns:dc="http://purl.org/dc/elements/1.1/"
-       xmlns:cc="http://creativecommons.org/ns#"
-       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-       xmlns:svg="http://www.w3.org/2000/svg"
        xmlns="http://www.w3.org/2000/svg"
-       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-       width="100"
-       height="100"
-       id="svg2"
+       xmlns:svg="http://www.w3.org/2000/svg"
+       width={plotW.toString}
+       height={plotH.toString}
        version="1.1"
-       inkscape:version="0.48.4 r9939"
-       sodipodi:docname="lightness.svg">
-      <defs
-         id="defs4" />
-      <sodipodi:namedview
-         id="base"         pagecolor="#000000"
-         bordercolor="#666666"
-         borderopacity="1.0"
-         inkscape:pageopacity="1"
-         inkscape:pageshadow="2"
-         inkscape:zoom="5.6568543"
-         inkscape:cx="14.882487"
-         inkscape:cy="45.948131"
-         inkscape:document-units="px"
-         inkscape:current-layer="layer1"
-         showgrid="false"
-         showguides="true"
-         inkscape:guide-bbox="true"
-         inkscape:window-width="799"
-         inkscape:window-height="848"
-         inkscape:window-x="0"
-         inkscape:window-y="0"
-         inkscape:window-maximized="0"
-         inkscape:snap-object-midpoints="false" />
-      <metadata
-         id="metadata7">
-        <rdf:RDF>
-          <cc:Work
-             rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type
-               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <dc:title />
-          </cc:Work>
-        </rdf:RDF>
-      </metadata>
-      <g
-         inkscape:label="Layer 1"
-         inkscape:groupmode="layer"
-         id="layer1"
-         transform="translate(0,0)">
-        <rect
-           style="fill:#a8bcc3;fill-opacity:1;stroke:none"
-           id="fg-rect"
-           width="100"
-           height="25"
-           x="0"
-           y="0" />
-        <rect
-           style="fill:#154053;fill-opacity:1;stroke:none"
-           id="bg-rect"
-           width="100"
-           height="50"
-           x="0"
-           y="25" />
-        <rect
-           style="fill:#000000;fill-opacity:1;stroke:none"
-           id="black-rect"
-           width="100"
-           height="25"
-           x="0"
-           y="75" />
-      </g>
-        <g transform="translate(0,104) scale(1,-1)" >
-           { for { (color, i) <- colors.zipWithIndex } yield {
-           <rect
-              style="fill:#fc5851;fill-opacity:1;fill-rule:evenodd;stroke:#154053;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-              width="7.5"
-              height="7.5"
-              id={ color.name }
-              x={ (i*plotW/colors.length).toString }
-              y={ color.value.toString }
-              />
-           }}
-      </g>
-    </svg>
+       font-family="sans"
+       font-size={(2*squareBorder).toString+"px"}>{
+            genBgColors(bgColors.sortBy(x => x.luminance))
+        }{
+            genFgColors(fgColors, bgColors.head)
+    }</svg>
 }
 
-println("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>")
-println(genSvg(List(new Color("foo", 50), new Color("bar", 80))))
+def genBgColors(colors: List[Color]) = {
+    <g transform={"translate(0,"+plotH.toString+") scale(1,-1)"}>{
+        for {color <- new Color("#000000", "000000", 0)::colors} yield {
+            <rect
+            style={"fill:#"+color.hexString+";fill-opacity:1;stroke:none"}
+            width={ plotW.toString }
+            height={ plotH.toString }
+            x="0"
+            y={ (color.luminance*plotH/100.0).toString } />
+        }
+    }</g>
+}
+
+def genFgColors(colors: List[Color], bgColor: Color) = {
+    <g>{
+        for {(color, i) <- colors.zipWithIndex} yield {
+            val xcenter = (i+1)*plotW/(colors.length+1)
+            val ycenter = color.luminance*plotH/100.0
+            <g transform={"scale(1,-1) translate("+xcenter.toString+","+ycenter.toString+") scale(1,-1) translate(0, "+plotH.toString+")"}>
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke={"#"+bgColor.hexString} stroke-width={squareBorder.toString}>
+                    <rect
+                        fill={"#"+color.hexString}
+                        stroke={"#"+bgColor.hexString}
+                        stroke-width={squareBorder.toString}
+                        width={squareSize.toString}
+                        height={squareSize.toString}
+                        x={(-squareHalf).toString}
+                        y={(-squareHalf).toString}/>
+                    <line x1={(-squareHalf).toString} y1="0" x2={(squareBorder-squareHalf).toString} y2="0"/>
+                    <line x1={squareHalf.toString} y1="0" x2={(squareHalf-squareBorder).toString} y2="0"/>
+                </g>
+                <text x="0" y="0" fill={"#"+bgColor.hexString} text-anchor="middle" dominant-baseline="central">{
+                    color.luminance.toString
+                }</text>
+            </g>
+        }
+    }</g>
+}
+
+println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
+val bgColors = List(
+    new Color("bg", "154053", 25),
+    new Color("black", "245970", 35),
+    new Color("fg", "a8bcc3", 75),
+    new Color("white", "a8bcc3", 75),
+    new Color("br_white", "c4d8df", 85)
+)
+val fgColors = List(
+    new Color("bg", "154053", 25),
+    new Color("black", "245970", 35),
+    new Color("br_black", "7c95a0", 60),
+    new Color("fg", "a8bcc3", 75),
+    new Color("white", "a8bcc3", 75),
+    new Color("br_white", "c4d8df", 85),
+    new Color("red", "fc5851", 61),
+    new Color("green", "78b93e", 69),
+    new Color("yellow", "d8b033", 74),
+    new Color("blue", "4e97f5", 61),
+    new Color("magenta", "f16dc5", 65),
+    new Color("cyan", "41c7b9", 73),
+    new Color("br_red", "ff675d", 66),
+    new Color("br_green", "85c74c", 74),
+    new Color("br_yellow", "e7be42", 79),
+    new Color("br_blue", "5ea4ff", 66),
+    new Color("br_magenta", "ff7bd3", 70),
+    new Color("br_cyan", "52d5c7", 78)
+)
+println(genSvg(bgColors, fgColors))
