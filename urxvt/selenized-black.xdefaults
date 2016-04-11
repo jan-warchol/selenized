@@ -15,11 +15,11 @@ urxvt.color7:      #ababab
 
 ! bright/bold versions of colors (in the same order)
 urxvt.color8:      #848484
-urxvt.color9:      #ff6158
-urxvt.color10:     #80c246
-urxvt.color11:     #e1b83c
-urxvt.color12:     #589efe
-urxvt.color13:     #fa76ce
-urxvt.color14:     #4cd0c1
+urxvt.color9:      #fc5851
+urxvt.color10:     #78b93e
+urxvt.color11:     #d8b033
+urxvt.color12:     #4e97f5
+urxvt.color13:     #f16dc5
+urxvt.color14:     #41c7b9
 urxvt.color15:     #c6c6c6
 

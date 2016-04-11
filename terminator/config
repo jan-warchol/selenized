@@ -25,7 +25,7 @@
     foreground_color = "#a8bcc3"
     background_color = "#154053"
   [[selenized-black]]
-    palette = "#303030:#ec4946:#6aac30:#c9a323:#3c8ae6:#e25fb8:#2eb9ab:#ababab:#848484:#ff6158:#80c246:#e1b83c:#589efe:#fa76ce:#4cd0c1:#c6c6c6"
+    palette = "#303030:#ec4946:#6aac30:#c9a323:#3c8ae6:#e25fb8:#2eb9ab:#ababab:#848484:#fc5851:#78b93e:#d8b033:#4e97f5:#f16dc5:#41c7b9:#c6c6c6"
     background_image = None
     foreground_color = "#ababab"
     background_color = "#1b1b1b"
