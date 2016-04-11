@@ -80,25 +80,15 @@ set_profile_colors() {
 
 interactive_help() {
   echo
-  echo -en "This script will ask you which color scheme you want, and which "
-  echo -en "Gnome Terminal profile to overwrite.\n"
-  echo
-  echo -en "Please note that there is no uninstall option yet. If you do not "
-  echo -en "wish to overwrite any of your profiles, you should create a new "
-  echo -en "profile before you run this script. However, you can reset your "
-  echo -en "colors to the Gnome default, by running:\n"
-  echo
-  echo "    Gnome >= 3.8 dconf reset -f /org/gnome/terminal/legacy/profiles:/"
-  echo "    Gnome < 3.8 gconftool-2 --recursive-unset /apps/gnome-terminal"
-  echo
-  echo -en "By default, it runs in the interactive mode, but it also can be "
-  echo -en "run non-interactively, just feed it with the necessary options, "
-  echo -en "see 'install.sh --help' for details.\n"
+  echo -e "\e[1;39mWarning!\e[0m"
+  echo -e "This script will permanently overwrite colors in selected profile."
+  echo -e "This operation cannot be undone. Consider creating a new profile"
+  echo -e "before installing Selenized."
   echo
 }
 
 interactive_select_scheme() {
-  echo "Please select a color scheme:"
+  echo "Please select Selenized variant:"
   select scheme
   do
     if [[ -z $scheme ]]
@@ -115,7 +105,7 @@ interactive_confirm() {
 
   echo    "You have selected:"
   echo
-  echo    "  Scheme:  $scheme"
+  echo    "  Scheme:  Selenized $scheme"
   echo    "  Profile: $(get_profile_name $profile) ($profile)"
   echo
   echo    "Are you sure you want to overwrite the selected profile?"
