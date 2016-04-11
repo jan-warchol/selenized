@@ -92,11 +92,11 @@ blue         56   0 -55   #3c8ae6   #3276e3   213  74  90
 magenta      60  59 -21   #e25fb8   #d444ab   320  58  89
 cyan         68 -40  -4   #2eb9ab   #34ad9b   174  75  73
 
-br_red       64  63  40   #ff6158   #ff4646     3  66 100
-br_green     72 -37  53   #80c246   #74b72e    92  64  76
-br_yellow    77   6  65   #e1b83c   #d7aa25    45  73  88
-br_blue      64   0 -55   #589efe   #4a8cff   214  65  99
-br_magenta   68  59 -21   #fa76ce   #f15ac5   320  53  98
-br_cyan      76 -40  -4   #4cd0c1   #4bc8b4   173  64  81
+br_red       61  63  40   #fc5851   #f33e3f     2  68  99
+br_green     69 -37  53   #78b93e   #6bae27    92  66  73
+br_yellow    74   6  65   #d8b033   #cda11d    46  76  85
+br_blue      61   0 -55   #4e97f5   #4183f5   214  68  96
+br_magenta   65  59 -21   #f16dc5   #e652bb   320  55  95
+br_cyan      73 -40  -4   #41c7b9   #42beaa   174  67  78
 ```
 
