@@ -1,3 +1,6 @@
+Selenized palette for Konsole
+=============================
+
 Installation
 ------------
 
