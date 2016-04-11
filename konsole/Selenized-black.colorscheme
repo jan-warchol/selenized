@@ -14,37 +14,37 @@ Color=132,132,132
 Color=236,73,70
 
 [Color1Intense]
-Color=255,97,88
+Color=252,88,81
 
 [Color2]
 Color=106,172,48
 
 [Color2Intense]
-Color=128,194,70
+Color=120,185,62
 
 [Color3]
 Color=201,163,35
 
 [Color3Intense]
-Color=225,184,60
+Color=216,176,51
 
 [Color4]
 Color=60,138,230
 
 [Color4Intense]
-Color=88,158,254
+Color=78,151,245
 
 [Color5]
 Color=226,95,184
 
 [Color5Intense]
-Color=250,118,206
+Color=241,109,197
 
 [Color6]
 Color=46,185,171
 
 [Color6Intense]
-Color=76,208,193
+Color=65,199,185
 
 [Color7]
 Color=171,171,171
