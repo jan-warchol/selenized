@@ -25,7 +25,7 @@ done
 echo -e "\e[0m"
 
 echo -ne "
- ${BOLD}Selenized${RESET} is a color palette based on Ethan Shoonover's ${BOLD}Solarized.${RESET}
+ ${BOLD}Selenized${RESET} is a color palette  based on Ethan Shoonover's ${BOLD}Solarized.${RESET}
  I have adjusted hues and lightness to decrease ambiguity and ensure
  readability in all conditions.
 "
@@ -35,8 +35,8 @@ ${DIM} Note how using just slightly darker color can make this note appear
  less important than the rest of the text while still being legible.${RESET}
 "
 
-loremipsum="\n \e[0mLorem ipsum dolor sit amet, consectetur adipiscing elit."
-echo -en "$loremipsum\n   "
+loremipsum="\n \e[0m     Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+echo -en "$loremipsum\n        "
 for color in 90 37 36 34 35 31 33 32 37 90; do
     echo -en "\e[${color}m Text"
 done

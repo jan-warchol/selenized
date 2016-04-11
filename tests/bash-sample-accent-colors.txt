@@ -1,26 +1,27 @@
-[34m#!/bin/bash
-
-[34m# This scripts prints a full set of color codes, normal and bright/bold,
-[34m# used on both foreground and background.[m
-
-[36mTEXT_BLOCK[m=[33m"[m[31m■■■■[m[33m"[m
-[36mSPACE_BLOCK[m=[33m"[m[31m    [m[33m"[m
-[36mreset_colors() {[m [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[0m[m[32m${1}[35m\033[m[31m[0m[m[33m";[m [36m}[m
-[34m# needed for solarized[m
-[36mCOMMENT_COLOR[m=[32m${1[m[33m:-[m90[32m}[m
-
-[36mallcolors() {[m
-    [34m# $1 - modifier (format), $2 - row header, $3 - row comment[m
-    reset_colors [33m"[m[32m$([m[33mprintf[m[32m [m[33m'[m[31m%4s[m[33m'[m[32m $1)[m[31mx [m[33m"
-    [33mfor[m color_code [33min[m [31m0[m [31m1[m [31m2[m [31m3[m [31m4[m [31m5[m [31m6[m [31m7[m [31m9[m[33m;[m [33mdo
-        [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[[m[32m${1}${color_code}[m[31mm[m[32m${2}[m[31m [m[33m"[m; reset_colors
-    [33mdone[m
-    reset_colors [33m"[m[31m [m[35m\033[m[31m[[m[32m${COMMENT_COLOR}[m[31mm[m[32m${3}[m[31m [m[35m\n[m[33m"[m
-[36m}[m
-
-reset_colors [33m"[m[35m\n[m[33m"
-[33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[[m[32m${COMMENT_COLOR}[m[31mm[m[33m"[m[31m [m
-[33mecho[m[31m -e [m[33m"[m[31m            red      yellow   magenta    white [m[33m"
-[33mecho[m[31m -e [m[33m"[m[31m      black     green      blue      cyan    default [m[35m\033[m[31m[0m[m[33m"
-[33mecho[m[31m -e [m[33m"[m[31m        0    1    2    3    4    5    6    7    9[m[33m"[m
-
+ 
+ [34m#!/bin/bash
+ 
+ [34m# This scripts prints a full set of color codes, normal and bright/bold,
+ [34m# used on both foreground and background.[m
+ 
+ [36mTEXT_BLOCK[m=[33m"[m[31m■■■■[m[33m"[m
+ [36mSPACE_BLOCK[m=[33m"[m[31m    [m[33m"[m
+ [36mreset_colors() {[m [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[0m[m[32m${1}[35m\033[m[31m[0m[m[33m";[m [36m}[m
+ [34m# needed for solarized[m
+ [36mCOMMENT_COLOR[m=[32m${1[m[33m:-[m90[32m}[m
+ 
+ [36mallcolors() {[m
+     [34m# $1 - modifier (format), $2 - row header, $3 - row comment[m
+     reset_colors [33m"[m[32m$([m[33mprintf[m[32m [m[33m'[m[31m%4s[m[33m'[m[32m $1)[m[31mx [m[33m"
+     [33mfor[m color_code [33min[m [31m0[m [31m1[m [31m2[m [31m3[m [31m4[m [31m5[m [31m6[m [31m7[m [31m9[m[33m;[m [33mdo
+         [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[[m[32m${1}${color_code}[m[31mm[m[32m${2}[m[31m [m[33m"[m; reset_colors
+     [33mdone[m
+     reset_colors [33m"[m[31m [m[35m\033[m[31m[[m[32m${COMMENT_COLOR}[m[31mm[m[32m${3}[m[31m [m[35m\n[m[33m"[m
+ [36m}[m
+ 
+ reset_colors [33m"[m[35m\n[m[33m"
+ [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[[m[32m${COMMENT_COLOR}[m[31mm[m[33m"[m[31m [m
+ [33mecho[m[31m -e [m[33m"[m[31m            red      yellow   magenta    white [m[33m"
+ [33mecho[m[31m -e [m[33m"[m[31m      black     green      blue      cyan    default [m[35m\033[m[31m[0m[m[33m"
+ [33mecho[m[31m -e [m[33m"[m[31m        0    1    2    3    4    5    6    7    9[m[33m"[m
+ 
