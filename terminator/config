@@ -29,6 +29,8 @@
     background_image = None
     foreground_color = "#ababab"
     background_color = "#1b1b1b"
+  [[terminator-default]]
+    background_image = None
 [layouts]
   [[default]]
     [[[child1]]]
