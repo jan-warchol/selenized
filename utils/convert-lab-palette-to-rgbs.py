@@ -20,7 +20,7 @@ monotones = [
     ["br_black", LabColor(fg_l-15,  -7,  -9, illuminant='d50')],
     ["fg",       LabColor(fg_l,     -6,  -6, illuminant='d50')],
     ["white",    LabColor(fg_l,     -6,  -6, illuminant='d50')],
-    ["br_white", LabColor(fg_l+10,  -6,  -6, illuminant='d50')]
+    ["br_white", LabColor(fg_l+10,  -6,  -6, illuminant='d50')],
 ]
 
 accent_colors = [
@@ -29,7 +29,7 @@ accent_colors = [
     ["yellow",   LabColor(fg_l-1,    6,  65, illuminant='d50')],
     ["blue",     LabColor(fg_l-14,   0, -55, illuminant='d50')],
     ["magenta",  LabColor(fg_l-10,  59, -21, illuminant='d50')],
-    ["cyan",     LabColor(fg_l-2,  -40,  -4, illuminant='d50')]
+    ["cyan",     LabColor(fg_l-2,  -40,  -4, illuminant='d50')],
 ]
 
 # bright colors are derived from regular (+5 Lab lightness)
