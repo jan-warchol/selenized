@@ -81,9 +81,8 @@ set_profile_colors() {
 interactive_help() {
   echo
   echo -e "\e[1;39mWarning!\e[0m"
-  echo -e "This script will permanently overwrite colors in selected profile."
-  echo -e "This operation cannot be undone. Consider creating a new profile"
-  echo -e "before installing Selenized."
+  echo -e "This will permanently overwrite colors in selected profile - there is no undo."
+  echo -e "Consider creating a new profile before installing Selenized."
   echo
 }
 
