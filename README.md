@@ -145,7 +145,7 @@ Selenized aims to solve).  You can read more about the differences
 FAQ
 ---
 
-#### Program X doesn't looks good when I use Selenized in my terminal.
+#### Program X doesn't look good when I use Selenized in my terminal.
 
 Some command-line programs make assumptions about the colors set in the
 terminal - for example, they may assume that some color will work well as the
