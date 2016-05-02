@@ -1,0 +1,10 @@
+Solarized Colorscheme for Guake
+========================================
+
+Based on https://github.com/sigurdga/gnome-terminal-colors-solarized
+
+Credits:
+
+  - Solarized for Gnome Terminal: by Sigurd Gartmann <sigurdga@sigurdga.no>
+  - Solarized color theme: by Ethan Schoonover <es@ethanschoonover.com>
+
