@@ -11,7 +11,8 @@ lightness in Selenized).
 I recommend overriding the coloring of 777 directories to reversed bold blue.
 You can do this by appending to `LS_COLORS` env variable, like this:
 
-    export LS_COLORS="$LS_COLORS:ow=1;7;34:"
+    # fix dircolors for Selenized
+    export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
 
 To make this change permanent, simply add this line to your `.bashrc` (or
 similar file).
