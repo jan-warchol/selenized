@@ -155,6 +155,11 @@ issue](https://github.com/janek-warchol/selenized/issues/7) about using
 Selenized with [Midnight
 Commander](https://github.com/janek-warchol/selenized/tree/master/mc).
 
+Programs with dedicated Selenized skins/configs:
+
+- [`ls`](dircolors/)
+- [Midnight Commander](mc/)
+
 
 
 Development & Contributing
