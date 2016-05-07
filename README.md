@@ -21,6 +21,7 @@ Ready-to-use config files are available for the following terminals:
   other Linux distros using Gnome)
 - [Konsole](konsole) (KDE's terminal)
 - [Terminator](terminator)
+- [Guake](guake)
 - [urxvt](urxvt)
 - [iTerm](iterm)
 - if you use Terminal.app (default OS X terminal), I recommend switching to

@@ -15,7 +15,6 @@ $RESET
                        Readability and comfort above all
 $DIM
                               author: Jan Warchoł
-                                     v0.5
 $RESET"
 
 echo -en "\e[0m               "

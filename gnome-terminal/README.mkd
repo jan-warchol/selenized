@@ -22,8 +22,7 @@ your Gnome version) to be able to run these scripts.  This should be as easy as
 running `sudo apt-get install <package>`. 
 
 **Warning:** the colors in the target profile will be premanently overwritten -
-this operation cannot be undone.  Consider creating a new profile before
-installing Selenized.
+there is no undo.  Consider creating a new profile before installing Selenized.
 
 
 
