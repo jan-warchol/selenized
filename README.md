@@ -23,6 +23,7 @@ Ready-to-use config files are available for the following terminals:
 - [Terminator](terminator)
 - [Guake](guake)
 - [urxvt](urxvt)
+- [xterm](xterm)
 - [iTerm](iterm)
 - if you use Terminal.app (default OS X terminal), I recommend switching to
   [iTerm](iterm), for reasons listed [here](terminal-app).
