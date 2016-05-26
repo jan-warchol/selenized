@@ -1,6 +1,9 @@
+#!/usr/bin/python
+
 from __future__ import division
 from colormath.color_objects import LabColor, sRGBColor
 from colormath.color_conversions import convert_color
+from pprint import pprint as pp
 import re
 import sys
 
@@ -45,5 +48,5 @@ try:
 except IOError:
     colors = [parse_color(arg)]
 
-print [convert(c) for c in colors]
+pp([convert(c) for c in colors])
 
