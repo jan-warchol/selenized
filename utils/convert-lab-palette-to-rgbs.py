@@ -30,6 +30,8 @@ accent_colors = [
     ["blue",     LabColor(fg_l-14,   0, -55, illuminant='d50')],
     ["magenta",  LabColor(fg_l-10,  59, -21, illuminant='d50')],
     ["cyan",     LabColor(fg_l-2,  -40,  -4, illuminant='d50')],
+    ["orange",   LabColor(fg_l-8,   37,  50, illuminant='d50')],
+    ["violet",   LabColor(fg_l-11,  33, -48, illuminant='d50')],
 ]
 
 # bright colors are derived from regular (+5 Lab lightness)

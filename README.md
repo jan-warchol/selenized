@@ -102,7 +102,7 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-![Selenized accent colors diagram](http://i.imgur.com/SmahzVF.png)
+![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png)
 
 I have fine-tuned the lightnesses to ensure that all colors present an even
 contrast, even red and blue (which are too dark in many palettes).  You can
@@ -160,6 +160,17 @@ Programs with dedicated Selenized skins/configs:
 
 - [`ls`](dircolors/)
 - [Midnight Commander](mc/)
+
+
+#### Where are orange and violet?
+
+Selenized [defines](the-values.md) 8 accent colors: red, orange, yellow, green,
+cyan, blue, violet and magenta. However, terminal emulators traditionally have
+escape codes for 6 colors (red, yellow, green, cyan, blue and magenta), with
+two additional codes for black and white. Therefore, terminal configs included
+in this repository don't include orange and violet. However, configs for GUI
+programs will include the full palette (as GUI programs can define as many
+colors as they want).
 
 
 
