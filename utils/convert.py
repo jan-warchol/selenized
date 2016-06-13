@@ -19,7 +19,14 @@ if len(sys.argv) != 2:
 hex_num = r'([0-9a-fA-F]{2})'
 dec_num = r'(-?[0-9]{1,3})'
 hex_color_re = re.compile(r'#?' + hex_num*3)
-dec_color_re = re.compile(',\s*'.join([dec_num]*3))
+dec_color_re = re.compile(',?\s*'.join([dec_num]*3))
+
+def pprint_lab(color):
+    return "{:>3.0f} {:>3.0f} {:>3.0f}".format(
+        color.lab_l,
+        color.lab_a,
+        color.lab_b
+    )
 
 def parse_color(color):
     coords = hex_color_re.match(color)
@@ -37,9 +44,9 @@ def parse_color(color):
 
 def convert(color):
     if isinstance(color, sRGBColor):
-        return convert_color(color, LabColor, target_illuminant='d50')
+        return pprint_lab(convert_color(color, LabColor, target_illuminant='d50'))
     else:
-        return convert_color(color, sRGBColor)
+        return sRGBColor.get_rgb_hex(convert_color(color, sRGBColor))
 
 arg = sys.argv[1]
 try:
@@ -48,5 +55,6 @@ try:
 except IOError:
     colors = [parse_color(arg)]
 
-pp([convert(c) for c in colors])
+for c in colors:
+    print(convert(c))
 
