@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from __future__ import division
 from colormath.color_objects import LabColor, sRGBColor, AppleRGBColor, BaseRGBColor, HSVColor
 from colormath.color_conversions import convert_color
@@ -83,13 +85,13 @@ class Color(object):
         self.apple = Color.clamp(convert_color(spec, AppleRGBColor))
         self.hsv = convert_color(spec, HSVColor)
 
-    # def __str__(self):
-    #     return ", ".join(["{}"]*4).format(
-    #         self.lab,
-    #         self.hsv,
-    #         self.srgb,
-    #         self.apple,
-    #     )
+    def __str__(self):
+        return "   ".join(["{}"]*4).format(
+            self.lab,
+            self.hsv,
+            self.srgb,
+            self.apple,
+        )
 
     def __repr__(self):
         return "\n".join(["{}"]*4).format(
@@ -101,16 +103,29 @@ class Color(object):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) > 2:
         print USAGE
         sys.exit()
 
-    arg = sys.argv[1]
-    try:
-        with open(arg) as f:
-            colors = [Color(l) for l in f.read().rstrip().split('\n') if len(l)]
-    except IOError:
-        colors = [Color(arg)]
+    if len(sys.argv) == 2:
+        arg = sys.argv[1]
+        try:
+            with open(arg) as f:
+                colors = [Color(l) for l in f.read().rstrip().split('\n') if len(l)]
+        except IOError:
+            colors = [Color(arg)]
 
-    for c in colors:
-        print(c)
+        for c in colors:
+            print(c)
+
+    else:
+        import selenized_medium
+        palette = {
+            name: Color(color)
+            for name, color
+            in selenized_medium.palette.iteritems()
+        }
+
+        for name, color in palette.iteritems():
+            print "{:<12}{}".format(name, color)
+
