@@ -16,22 +16,26 @@ TMPL_EXT = '.template'
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
 palette = {
-    name: {0: convert.Color(color)}
+    name: convert.Color(color)
     for name, color
     in selenized_medium.palette.iteritems()
 }
 
+# Add more attributes that can be used in templates
 for name, color in palette.iteritems():
     # print "{:<12}{}".format(name, color)
-    color[0].r  = int(round(color[0].srgb.rgb_r*255))
-    color[0].g  = int(round(color[0].srgb.rgb_g*255))
-    color[0].b  = int(round(color[0].srgb.rgb_b*255))
-    color[0].r1 = color[0].srgb.rgb_r
-    color[0].g1 = color[0].srgb.rgb_g
-    color[0].b1 = color[0].srgb.rgb_b
-    color[0].rs = str(color[0].srgb.rgb_r)
-    color[0].gs = str(color[0].srgb.rgb_g)
-    color[0].bs = str(color[0].srgb.rgb_b)
+    color.r  = int(round(color.srgb.rgb_r*255))
+    color.g  = int(round(color.srgb.rgb_g*255))
+    color.b  = int(round(color.srgb.rgb_b*255))
+    color.r1 = color.srgb.rgb_r
+    color.g1 = color.srgb.rgb_g
+    color.b1 = color.srgb.rgb_b
+    color.rs = str(color.srgb.rgb_r)
+    color.gs = str(color.srgb.rgb_g)
+    color.bs = str(color.srgb.rgb_b)
+    color.apple.r = color.apple.rgb_r
+    color.apple.g = color.apple.rgb_g
+    color.apple.b = color.apple.rgb_b
 
 def repl(matcher):
     return matcher.group('format').format(**palette)

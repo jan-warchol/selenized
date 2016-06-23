@@ -1,14 +1,14 @@
 Przykładowy template colorfillera:
 
-[0, 255] w dużych hexach: !!COL!{bg[0].r:X}!
-[0, 255] w małych hexach: !!COL!{bg[0].g:x}!
-[0, 255] dziesiętnie:     !!COL!{fg[0].r:d}!
-[0, 1] we floatach:       !!COL!{fg[0].b1:f}!
+[0, 255] w dużych hexach: !!COL!{bg.r:X}!
+[0, 255] w małych hexach: !!COL!{bg.g:x}!
+[0, 255] dziesiętnie:     !!COL!{fg.r:d}!
+[0, 1] we floatach:       !!COL!{fg.b1:f}!
 
-można użyć inny delimiter zamiast !, np. %: !!COL%{br_black[0].r:X}%
-!!COL@{br_white[0].r:X} wewnątrz formatu można wpisać dowolny tekst, a po nim znowu kolor {fg[0].g:X}, i coś jeszcze.@
+można użyć inny delimiter zamiast !, np. %: !!COL%{br_black.r:X}%
+!!COL@{br_white.r:X} wewnątrz formatu można wpisać dowolny tekst, a po nim znowu kolor {fg.g:X}, i coś jeszcze.@
 
 W szczególności, można i należy pisać takie rzeczy jak:
-!!COL!{fg[0].r:x}{fg[0].r:x}{fg[0].g:x}{fg[0].g:x}{fg[0].b:x}{fg[0].b:x}! (gnome-terminal)
+!!COL!{fg.r:x}{fg.r:x}{fg.g:x}{fg.g:x}{fg.b:x}{fg.b:x}! (gnome-terminal)
 
-!!COL!{fg[0].r1:f} {fg[0].g1:f} {fg[0].b1:f}! (coś podobnego do iTerma)
+!!COL!{fg.r1:f} {fg.g1:f} {fg.b1:f}! (coś podobnego do iTerma)
