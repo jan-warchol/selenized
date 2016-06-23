@@ -1,0 +1,32 @@
+Selenized medium
+----------------
+
+```
+Color        CIE L*a*b*   HSV           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
+bg          !!COL!{bg}!
+black       !!COL!{black}!
+br_black    !!COL!{br_black}!
+fg          !!COL!{fg}!
+white       !!COL!{white}!
+br_white    !!COL!{br_white}!
+
+red         !!COL!{red}!
+green       !!COL!{green}!
+yellow      !!COL!{yellow}!
+blue        !!COL!{blue}!
+magenta     !!COL!{magenta}!
+cyan        !!COL!{cyan}!
+orange      !!COL!{orange}!
+violet      !!COL!{violet}!
+
+br_red      !!COL!{br_red}!
+br_green    !!COL!{br_green}!
+br_yellow   !!COL!{br_yellow}!
+br_blue     !!COL!{br_blue}!
+br_magenta  !!COL!{br_magenta}!
+br_cyan     !!COL!{br_cyan}!
+br_orange   !!COL!{br_orange}!
+br_violet   !!COL!{br_violet}!
+```
+
