@@ -63,9 +63,18 @@ class Color(object):
     # it's not a big deal, we just clamp them.
     @staticmethod
     def clamp(color):
-        color.rgb_r = color.clamped_rgb_r
-        color.rgb_g = color.clamped_rgb_g
-        color.rgb_b = color.clamped_rgb_b
+        WARN_THRESHOLD = 1.06
+        coord_names = []
+        if isinstance(color, BaseRGBColor):
+            coord_names = ['rgb_r', 'rgb_g', 'rgb_b']
+        elif isinstance(color, HSVColor):
+            coord_names = ['hsv_s', 'hsv_v']
+
+        for name in coord_names:
+            coord = getattr(color, name)
+            if coord > WARN_THRESHOLD:
+                print ("Warning: {} coordinate is significantly out of gamut".format(name))
+            setattr(color, name, min(coord, 1))
         return color
 
     def __init__(self, spec):
@@ -83,7 +92,7 @@ class Color(object):
         self.lab = convert_color(spec, LabColor, target_illuminant='d50')
         self.srgb = Color.clamp(convert_color(spec, sRGBColor))
         self.apple = Color.clamp(convert_color(spec, AppleRGBColor))
-        self.hsv = convert_color(spec, HSVColor)
+        self.hsv = Color.clamp(convert_color(spec, HSVColor))
 
     def __str__(self):
         return "   ".join(["{}"]*4).format(
