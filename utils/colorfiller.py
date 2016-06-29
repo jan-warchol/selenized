@@ -5,7 +5,6 @@ import sys
 import re
 import convert
 import importlib
-import selenized_medium
 
 USAGE = """Evaluate templates using specified palette.
 
