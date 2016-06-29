@@ -91,7 +91,7 @@ class Color(object):
         # convert to all needed spaces
         self.lab = convert_color(spec, LabColor, target_illuminant='d50')
         self.srgb = Color.clamp(convert_color(spec, sRGBColor))
-        self.apple = Color.clamp(convert_color(spec, AppleRGBColor))
+        self.apple = Color.clamp(convert_color(self.lab, AppleRGBColor))
         self.hsv = Color.clamp(convert_color(spec, HSVColor))
 
     def __str__(self):
