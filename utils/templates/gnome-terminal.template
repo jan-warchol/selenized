@@ -1,0 +1,26 @@
+# bold
+#!!COL!{br_white.r:x}{br_white.r:x}{br_white.g:x}{br_white.g:x}{br_white.b:x}{br_white.b:x}!
+
+# background
+#!!COL!{bg.r:x}{bg.r:x}{bg.g:x}{bg.g:x}{bg.b:x}{bg.b:x}!
+
+# foreground
+#!!COL!{fg.r:x}{fg.r:x}{fg.g:x}{fg.g:x}{fg.b:x}{fg.b:x}!
+
+# palette
+#!!COL!{black.r:x}{black.r:x}{black.g:x}{black.g:x}{black.b:x}{black.b:x}!
+#!!COL!{red.r:x}{red.r:x}{red.g:x}{red.g:x}{red.b:x}{red.b:x}!
+#!!COL!{green.r:x}{green.r:x}{green.g:x}{green.g:x}{green.b:x}{green.b:x}!
+#!!COL!{yellow.r:x}{yellow.r:x}{yellow.g:x}{yellow.g:x}{yellow.b:x}{yellow.b:x}!
+#!!COL!{blue.r:x}{blue.r:x}{blue.g:x}{blue.g:x}{blue.b:x}{blue.b:x}!
+#!!COL!{magenta.r:x}{magenta.r:x}{magenta.g:x}{magenta.g:x}{magenta.b:x}{magenta.b:x}!
+#!!COL!{cyan.r:x}{cyan.r:x}{cyan.g:x}{cyan.g:x}{cyan.b:x}{cyan.b:x}!
+#!!COL!{white.r:x}{white.r:x}{white.g:x}{white.g:x}{white.b:x}{white.b:x}!
+#!!COL!{br_black.r:x}{br_black.r:x}{br_black.g:x}{br_black.g:x}{br_black.b:x}{br_black.b:x}!
+#!!COL!{br_red.r:x}{br_red.r:x}{br_red.g:x}{br_red.g:x}{br_red.b:x}{br_red.b:x}!
+#!!COL!{br_green.r:x}{br_green.r:x}{br_green.g:x}{br_green.g:x}{br_green.b:x}{br_green.b:x}!
+#!!COL!{br_yellow.r:x}{br_yellow.r:x}{br_yellow.g:x}{br_yellow.g:x}{br_yellow.b:x}{br_yellow.b:x}!
+#!!COL!{br_blue.r:x}{br_blue.r:x}{br_blue.g:x}{br_blue.g:x}{br_blue.b:x}{br_blue.b:x}!
+#!!COL!{br_magenta.r:x}{br_magenta.r:x}{br_magenta.g:x}{br_magenta.g:x}{br_magenta.b:x}{br_magenta.b:x}!
+#!!COL!{br_cyan.r:x}{br_cyan.r:x}{br_cyan.g:x}{br_cyan.g:x}{br_cyan.b:x}{br_cyan.b:x}!
+#!!COL!{br_white.r:x}{br_white.r:x}{br_white.g:x}{br_white.g:x}{br_white.b:x}{br_white.b:x}!
