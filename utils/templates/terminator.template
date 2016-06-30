@@ -1,0 +1,6 @@
+  [[selenized-xxx]]
+    palette = "!!COL!{black.srgb}!:!!COL!{red.srgb}!:!!COL!{green.srgb}!:!!COL!{yellow.srgb}!:!!COL!{blue.srgb}!:!!COL!{magenta.srgb}!:!!COL!{cyan.srgb}!:!!COL!{white.srgb}!:!!COL!{br_black.srgb}!:!!COL!{br_red.srgb}!:!!COL!{br_green.srgb}!:!!COL!{br_yellow.srgb}!:!!COL!{br_blue.srgb}!:!!COL!{br_magenta.srgb}!:!!COL!{br_cyan.srgb}!:!!COL!{br_white.srgb}!"
+    background_image = None
+    foreground_color = "!!COL!{fg.srgb}!"
+    background_color = "!!COL!{bg.srgb}!"
+
