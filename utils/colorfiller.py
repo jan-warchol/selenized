@@ -24,12 +24,12 @@ def load_palette(module_name):
 
     m = importlib.import_module(module_name)
     palette = {
-        name: convert.Color(color) for name, color in m.palette.iteritems()
+        name: convert.Color(color, name) for name, color in m.palette.iteritems()
     }
 
     # Add more attributes that can be used in templates
     for name, color in palette.iteritems():
-        # print "{:<12}{}".format(name, color)
+        print "{:<12}{}".format(name, color)
         color.r  = int(round(color.srgb.rgb_r*255))
         color.g  = int(round(color.srgb.rgb_g*255))
         color.b  = int(round(color.srgb.rgb_b*255))
