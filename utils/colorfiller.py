@@ -43,7 +43,7 @@ def process_template(filepath, palette):
     def repl(matcher):
         return matcher.group('format').format(**palette)
 
-    print "Processing {}...".format(filepath)
+    print "Processing {}...".format(filepath),
     resultpath = filepath[:-(len(TMPL_EXT))]
     with open(filepath, 'r') as ifile, open(resultpath, 'w') as ofile :
         for line in ifile.readlines():
@@ -52,6 +52,7 @@ def process_template(filepath, palette):
             except TypeError:
                 print "ERROR: attribute not available in palette"
                 sys.exit(1)
+    print "result written to `{}`.".format(resultpath)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

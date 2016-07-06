@@ -124,6 +124,11 @@ if __name__ == "__main__":
         except IOError:
             colors = [Color(arg)]
 
+        header = (
+            "CIE L*a*b*    HSV           sRGB      AppleRGB\n"
+            "-----------   -----------   -------   --------"
+        )
+        print '\n', header
         for c in colors:
             print(c)
 
