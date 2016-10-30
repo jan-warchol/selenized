@@ -3,66 +3,72 @@
 import os
 import sys
 import re
+import convert
+import importlib
 
-tmpl_ext = '.template'
+USAGE = """Evaluate templates using specified palette.
 
-marker_re = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
+Takes two or more arguments:
+$1 - name of the palette module to use
+$2 [$3 ...] - path to a template file or to a folder that will be
+recursively searched for templates."""
 
-class Color:
-    def __init__(self, rgb):
-        r, g, b = rgb
-        self.r = r
-        self.g = g
-        self.b = b
-        self.r1 = float(r)/255
-        self.g1 = float(g)/255
-        self.b1 = float(b)/255
-        self.rs = str(self.r1)
-        self.gs = str(self.g1)
-        self.bs = str(self.b1)
+TMPL_EXT = '.template'
 
-scheme_source = {
-    'bg':         { 0: ( 31, 54, 73) },
-    'black':      { 0: ( 50, 75, 96) },
-    'br_black':   { 0: (109,140,166) },
-    'fg':         { 0: (164,183,199) },
-    'white':      { 0: (164,183,199) },
-    'br_white':   { 0: (196,216,234) },
+MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
-    'red':        { 0: (255, 62, 61) },
-    'green':      { 0: (110,185, 43) },
-    'yellow':     { 0: (215,170, 37) },
-    'blue':       { 0: ( 77,137,255) },
-    'magenta':    { 0: (222, 93,253) },
-    'cyan':       { 0: ( 75,200,180) },
+def load_palette(module_name):
+    m = importlib.import_module(module_name)
+    palette = {
+        name: convert.Color(color) for name, color in m.palette.iteritems()
+    }
 
-    'br_red':     { 0: (255, 76, 72) },
-    'br_green':   { 0: (124,202, 56) },
-    'br_yellow':  { 0: (234,186, 49) },
-    'br_blue':    { 0: ( 92,152,255) },
-    'br_magenta': { 0: (240,108,255) },
-    'br_cyan':    { 0: ( 89,217,196) },
-}
+    # Add more attributes that can be used in templates
+    for name, color in palette.iteritems():
+        # print "{:<12}{}".format(name, color)
+        color.r  = int(round(color.srgb.rgb_r*255))
+        color.g  = int(round(color.srgb.rgb_g*255))
+        color.b  = int(round(color.srgb.rgb_b*255))
+        color.r1 = color.srgb.rgb_r
+        color.g1 = color.srgb.rgb_g
+        color.b1 = color.srgb.rgb_b
+        color.rs = str(color.srgb.rgb_r)
+        color.gs = str(color.srgb.rgb_g)
+        color.bs = str(color.srgb.rgb_b)
+        color.apple.r = color.apple.rgb_r
+        color.apple.g = color.apple.rgb_g
+        color.apple.b = color.apple.rgb_b
 
-def compile_scheme(scheme):
-    if isinstance(scheme, dict):
-        return {k: compile_scheme(v) for k, v in scheme.iteritems()}
-    else:
-        return Color(scheme)
+    return palette
 
-scheme = compile_scheme(scheme_source)
+def process_template(filepath, palette):
+    def repl(matcher):
+        return matcher.group('format').format(**palette)
 
-def repl(matcher):
-    return matcher.group('format').format(**scheme)
+    print "Processing {}...".format(filepath),
+    resultpath = filepath[:-(len(TMPL_EXT))]
+    with open(filepath, 'r') as ifile, open(resultpath, 'w') as ofile :
+        for line in ifile.readlines():
+            try:
+                ofile.write(re.sub(MARKER_RE, repl, line))
+            except TypeError:
+                print "ERROR: attribute not available in palette"
+                sys.exit(1)
+    print "result written to `{}`.".format(resultpath)
 
-for dirpath, dirnames, filenames in os.walk('.'):
-    for filename in filenames:
-        filepath = os.path.join(dirpath, filename)
-        if filepath.endswith(tmpl_ext):
-            resultpath = filepath[:-(len(tmpl_ext))]
-            ifile = open(filepath, 'r')
-            ofile = open(resultpath, 'w')
-            for line in ifile.readlines():
-                ofile.write(re.sub(marker_re, repl, line))
-            ifile.close()
-            ofile.close()
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print USAGE
+        sys.exit()
+    palette = load_palette(sys.argv[1])
+
+    for path in sys.argv[2:]:
+        if os.path.isfile(path):
+            process_template(path, palette)
+        else:
+            for dirpath, dirnames, filenames in os.walk(path):
+                for filename in filenames:
+                    filepath = os.path.join(dirpath, filename)
+                    if filepath.endswith(TMPL_EXT):
+                        process_template(filepath, palette)
+
