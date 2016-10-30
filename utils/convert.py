@@ -104,7 +104,7 @@ class Color(object):
         )
 
     def __repr__(self):
-        return "\n".join(["{}"]*4).format(
+        return ("<Selenized Color Coords:" + "\n    {}"*4 + "\n>").format(
             repr(self.lab),
             repr(self.hsv),
             repr(self.srgb),
