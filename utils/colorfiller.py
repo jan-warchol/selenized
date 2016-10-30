@@ -18,6 +18,10 @@ TMPL_EXT = '.template'
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
 def load_palette(module_name):
+    # include modules from subfolder
+    if "./palettes" not in sys.path:
+        sys.path.insert(0, "./palettes")
+
     m = importlib.import_module(module_name)
     palette = {
         name: convert.Color(color) for name, color in m.palette.iteritems()
