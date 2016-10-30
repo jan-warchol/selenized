@@ -60,7 +60,8 @@ def parse_string(s):
 
 class Color(object):
     # some of the bright versions of colors are slightly out of RGB gamut -
-    # it's not a big deal, we just clamp them.
+    # it's not a big deal, we just clamp them. Note that we don't need to check
+    # for negative values because colormath does this for us.
     @staticmethod
     def clamp(color):
         WARN_THRESHOLD = 1.06
