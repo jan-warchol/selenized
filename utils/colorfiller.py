@@ -8,8 +8,10 @@ import importlib
 
 USAGE = """Evaluate templates using specified palette.
 
-Takes two arguments - path to a template file or to a folder that will be
-recursively searched for templates and name of the palette module to use."""
+Takes two or more arguments:
+$1 - name of the palette module to use
+$2 [$3 ...] - path to a template file or to a folder that will be
+recursively searched for templates."""
 
 TMPL_EXT = '.template'
 
@@ -55,18 +57,18 @@ def process_template(filepath, palette):
     print "result written to `{}`.".format(resultpath)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 3:
         print USAGE
         sys.exit()
-    path = sys.argv[1]
-    palette = load_palette(sys.argv[2])
+    palette = load_palette(sys.argv[1])
 
-    if os.path.isfile(path):
-        process_template(path, palette)
-    else:
-        for dirpath, dirnames, filenames in os.walk(path):
-            for filename in filenames:
-                filepath = os.path.join(dirpath, filename)
-                if filepath.endswith(TMPL_EXT):
-                    process_template(filepath, palette)
+    for path in sys.argv[2:]:
+        if os.path.isfile(path):
+            process_template(path, palette)
+        else:
+            for dirpath, dirnames, filenames in os.walk(path):
+                for filename in filenames:
+                    filepath = os.path.join(dirpath, filename)
+                    if filepath.endswith(TMPL_EXT):
+                        process_template(filepath, palette)
 
