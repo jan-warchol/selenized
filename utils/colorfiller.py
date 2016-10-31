@@ -45,34 +45,40 @@ def load_palette(module_name):
 
     return palette
 
-def process_template(filepath, palette):
+def process_template(palette, inpath, outpath=None):
+    if not outpath:
+        outpath = os.path.basename(inpath)[:-(len(TMPL_EXT))]
+
     def repl(matcher):
         return matcher.group('format').format(**palette)
 
-    print "Processing {}...".format(filepath),
-    resultpath = filepath[:-(len(TMPL_EXT))]
-    with open(filepath, 'r') as ifile, open(resultpath, 'w') as ofile :
+    print "Processing {}...".format(inpath),
+    with open(inpath, 'r') as ifile, open(outpath, 'w') as ofile :
         for line in ifile.readlines():
             try:
                 ofile.write(re.sub(MARKER_RE, repl, line))
             except TypeError:
                 print "ERROR: attribute not available in palette"
                 sys.exit(1)
-    print "result written to `{}`.".format(resultpath)
+    print "result written to `{}.".format(outpath)
+
+def process_directory(palette, directory):
+    for dirpath, dirnames, filenames in os.walk(directory):
+        for filename in filenames:
+            filepath = os.path.join(dirpath, filename)
+            if filepath.endswith(TMPL_EXT):
+                process_template(palette, filepath)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print USAGE
         sys.exit()
+
     palette = load_palette(sys.argv[1])
 
     for path in sys.argv[2:]:
         if os.path.isfile(path):
-            process_template(path, palette)
+            process_template(palette, path)
         else:
-            for dirpath, dirnames, filenames in os.walk(path):
-                for filename in filenames:
-                    filepath = os.path.join(dirpath, filename)
-                    if filepath.endswith(TMPL_EXT):
-                        process_template(filepath, palette)
+            process_directory(palette, path)
 
