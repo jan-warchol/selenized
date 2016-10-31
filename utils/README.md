@@ -38,6 +38,6 @@ From sRGB (must be given in hex format):
 
 ### Generating config files from templates
 
-    selenized/utils$ python colorfiller.py itermcolors.template selenized_medium
+    selenized/utils$ python evaluate_template.py selenized_medium itermcolors.template
     Processing itermcolors.template... result written to `itermcolors`.
 
