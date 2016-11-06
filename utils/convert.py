@@ -59,26 +59,24 @@ def parse_string(s):
 
 
 class Color(object):
-    # some of the bright versions of colors are slightly out of RGB gamut -
-    # it's not a big deal, we just clamp them. Note that we don't need to check
-    # for negative values because colormath does this for us.
-    @staticmethod
-    def clamp(color):
-        WARN_THRESHOLD = 1.06
+    # Note that we don't need to check for negative values because colormath
+    # does this for us.
+    def clamp(self, space):
+        WARN_THRESHOLD = 1.02
+        color = getattr(self, space)
         coord_names = []
         if isinstance(color, BaseRGBColor):
             coord_names = ['rgb_r', 'rgb_g', 'rgb_b']
-        elif isinstance(color, HSVColor):
-            coord_names = ['hsv_s', 'hsv_v']
 
         for name in coord_names:
             coord = getattr(color, name)
             if coord > WARN_THRESHOLD:
-                print ("Warning: {} coordinate is significantly out of gamut".format(name))
+                print ("Warning: {:.2}% out of gamut" .format((coord-1)*100))
             setattr(color, name, min(coord, 1))
         return color
 
-    def __init__(self, spec):
+    def __init__(self, spec, name=None):
+        self.name = name if name else spec
         # decide how to interpret it (rgb or lab?)
         if isinstance(spec, list):
             spec = LabColor(*spec, illuminant='d50')
@@ -89,11 +87,18 @@ class Color(object):
             else:
                 spec = LabColor(*parsed, illuminant='d50')
 
+        print "Converting {}...".format(self.name)
         # convert to all needed spaces
         self.lab = convert_color(spec, LabColor, target_illuminant='d50')
-        self.srgb = Color.clamp(convert_color(spec, sRGBColor))
-        self.apple = Color.clamp(convert_color(self.lab, AppleRGBColor))
-        self.hsv = Color.clamp(convert_color(spec, HSVColor))
+        self.srgb = convert_color(spec, sRGBColor)
+        self.apple = convert_color(self.lab, AppleRGBColor)
+        self.hsv = convert_color(spec, HSVColor)
+
+        # some of the bright versions of colors are slightly out of RGB gamut -
+        # it's not a big deal, we just clamp them.
+        self.clamp('srgb')
+        self.clamp('apple')
+        self.clamp('hsv')
 
     def __str__(self):
         return "   ".join(["{}"]*4).format(

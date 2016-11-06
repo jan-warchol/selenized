@@ -1,13 +1,10 @@
-# bold
-#!!COL!{br_white.r:x}{br_white.r:x}{br_white.g:x}{br_white.g:x}{br_white.b:x}{br_white.b:x}!
+BACKGROUND=#!!COL!{bg.r:x}{bg.r:x}{bg.g:x}{bg.g:x}{bg.b:x}{bg.b:x}!
 
-# background
-#!!COL!{bg.r:x}{bg.r:x}{bg.g:x}{bg.g:x}{bg.b:x}{bg.b:x}!
+FOREGROUND=#!!COL!{fg.r:x}{fg.r:x}{fg.g:x}{fg.g:x}{fg.b:x}{fg.b:x}!
 
-# foreground
-#!!COL!{fg.r:x}{fg.r:x}{fg.g:x}{fg.g:x}{fg.b:x}{fg.b:x}!
+BOLD=#!!COL!{br_white.r:x}{br_white.r:x}{br_white.g:x}{br_white.g:x}{br_white.b:x}{br_white.b:x}!
 
-# palette
+PALETTE="
 #!!COL!{black.r:x}{black.r:x}{black.g:x}{black.g:x}{black.b:x}{black.b:x}!
 #!!COL!{red.r:x}{red.r:x}{red.g:x}{red.g:x}{red.b:x}{red.b:x}!
 #!!COL!{green.r:x}{green.r:x}{green.g:x}{green.g:x}{green.b:x}{green.b:x}!
@@ -24,3 +21,4 @@
 #!!COL!{br_magenta.r:x}{br_magenta.r:x}{br_magenta.g:x}{br_magenta.g:x}{br_magenta.b:x}{br_magenta.b:x}!
 #!!COL!{br_cyan.r:x}{br_cyan.r:x}{br_cyan.g:x}{br_cyan.g:x}{br_cyan.b:x}{br_cyan.b:x}!
 #!!COL!{br_white.r:x}{br_white.r:x}{br_white.g:x}{br_white.g:x}{br_white.b:x}{br_white.b:x}!
+"
