@@ -19,6 +19,11 @@ DEFAULT_OUTPUT_PREFIX = 'configs'
 
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
+DEFAULT_COLOR_ORDER = [
+    'bg', 'black', 'br_black', 'fg', 'white', 'br_white',
+    'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange', 'violet',
+    'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet'
+]
 
 def load_palette_from_module(module_name):
     m = importlib.import_module(module_name)
@@ -28,7 +33,6 @@ def load_palette_from_module(module_name):
 
     # Add more attributes that can be used in templates
     for name, color in palette.iteritems():
-        print "{:<12}{}".format(name, color)
         color.r  = int(round(color.srgb.rgb_r*255))
         color.g  = int(round(color.srgb.rgb_g*255))
         color.b  = int(round(color.srgb.rgb_b*255))
@@ -49,6 +53,13 @@ def load_palette_from_module(module_name):
         palette['name'] = m.name
     except AttributeError:
         palette['name'] = module_name
+
+    print '\nPalette:', palette['name'], '\n'
+    for color in DEFAULT_COLOR_ORDER:
+        if color in ['red', 'br_red']:
+            print '' # section separator
+        if color in palette:
+            print "{:<12}{}".format(color, palette[color])
 
     return palette
 
