@@ -15,6 +15,8 @@ recursively searched for templates."""
 
 TMPL_EXT = '.template'
 
+DEFAULT_OUTPUT_PREFIX = 'configs'
+
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
 def load_palette_from_module(module_name):
@@ -52,7 +54,10 @@ def load_palette_from_path(path):
 
 def process_template(palette, inpath, outpath=None):
     if not outpath:
-        outpath = os.path.basename(inpath)[:-(len(TMPL_EXT))]
+        outpath = os.path.join(
+            DEFAULT_OUTPUT_PREFIX,
+            os.path.basename(inpath)[:-(len(TMPL_EXT))]
+        )
 
     def repl(matcher):
         return matcher.group('format').format(**palette)
