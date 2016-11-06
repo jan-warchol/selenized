@@ -24,9 +24,9 @@ in_array() {
 }
 
 to_gconf() {
-    tr '\n' \: | sed 's#:$#\n#'
+    tr ' ' ':' | sed 's|:$|\n|'
 }
 
 to_dconf() {
-    tr '\n' '~' | sed -e "s#~\$#']\n#" -e "s#~#', '#g" -e "s#^#['#"
+    tr ' ' '~' | sed -e "s|\$|']\n|" -e "s|~|', '|g" -e "s|^|['|"
 }

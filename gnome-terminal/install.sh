@@ -34,22 +34,20 @@ validate_scheme() {
 set_profile_colors() {
   local profile=$1
   local scheme=$2
-  local scheme_dir=$dir/colors/$scheme
+  local scheme_file=$dir/colors/$scheme
 
-  local bg_color_file=$scheme_dir/bg_color
-  local fg_color_file=$scheme_dir/fg_color
-  local bd_color_file=$scheme_dir/bd_color
+  . $scheme_file
 
   if [ "$newGnome" = "1" ]
     then local profile_path=$dconfdir/$profile
 
     # set color palette
-    dconf write $profile_path/palette "$(to_dconf < $scheme_dir/palette)"
+    dconf write $profile_path/palette "$(echo $PALETTE | to_dconf)"
 
     # set foreground, background and highlight color
-    dconf write $profile_path/bold-color "'$(cat $bd_color_file)'"
-    dconf write $profile_path/background-color "'$(cat $bg_color_file)'"
-    dconf write $profile_path/foreground-color "'$(cat $fg_color_file)'"
+    dconf write $profile_path/bold-color "'$BOLD'"
+    dconf write $profile_path/background-color "'$BACKGROUND'"
+    dconf write $profile_path/foreground-color "'$FOREGROUND'"
 
     # make sure the profile is set to not use theme colors
     dconf write $profile_path/use-theme-colors "false"
@@ -61,14 +59,12 @@ set_profile_colors() {
     local profile_path=$gconfdir/$profile
 
     # set color palette
-    gconftool-2 -s -t string $profile_path/palette "$(to_gconf < $scheme_dir/palette)"
+    gconftool-2 -s -t string $profile_path/palette "$(echo $PALETTE | to_gconf)"
 
     # set foreground, background and highlight color
-    gconftool-2 -s -t string $profile_path/bold_color $(cat $bd_color_file)
-    gconftool-2 -s -t string $profile_path/background_color \
-        $(cat $bg_color_file)
-    gconftool-2 -s -t string $profile_path/foreground_color \
-        $(cat $fg_color_file)
+    gconftool-2 -s -t string $profile_path/bold_color $BOLD
+    gconftool-2 -s -t string $profile_path/background_color $BACKGROUND
+    gconftool-2 -s -t string $profile_path/foreground_color $FOREGROUND
 
     # make sure the profile is set to not use theme colors
     gconftool-2 -s -t bool $profile_path/use_theme_colors false

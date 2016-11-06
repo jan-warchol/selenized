@@ -1,3 +1,10 @@
+BACKGROUND=#151540405353
+
+FOREGROUND=#a8a8bcbcc3c3
+
+BOLD=#c4c4d8d8dfdf
+
+PALETTE="
 #242459597070
 #fcfc58585151
 #7878b9b93e3e
@@ -14,3 +21,4 @@
 #ffff7b7bd3d3
 #5252d5d5c7c7
 #c4c4d8d8dfdf
+"
