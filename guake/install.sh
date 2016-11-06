@@ -20,8 +20,10 @@ echo "Confirmation received -- applying settings"
 
 # palette variant
 VARIANT=${1:-medium}
+scheme_file=$dir/colors/$VARIANT
+. $scheme_file
 
-gconftool-2 -s -t string /apps/guake/style/background/color `cat $dir/colors/$VARIANT/bg_color`
-gconftool-2 -s -t string /apps/guake/style/font/color `cat $dir/colors/$VARIANT/fg_color`
-gconftool-2 -s -t string /apps/guake/style/font/palette `cat $dir/colors/$VARIANT/palette`
+gconftool-2 -s -t string /apps/guake/style/background/color $BACKGROUND
+gconftool-2 -s -t string /apps/guake/style/font/color $FOREGROUND
+gconftool-2 -s -t string /apps/guake/style/font/palette "$(echo $PALETTE | tr ' ' ':' | sed 's|:$|\n|')"
 
