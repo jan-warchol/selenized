@@ -41,6 +41,14 @@ def load_palette_from_module(module_name):
         color.apple.g = color.apple.rgb_g
         color.apple.b = color.apple.rgb_b
 
+    # Storing palette name in the same dictionary as the colors doesn't look
+    # like the best data structure ever, but it will allow accessing the name
+    # inside templates easily.
+    try:
+        palette['name'] = m.name
+    except AttributeError:
+        palette['name'] = module_name
+
     return palette
 
 def load_palette_from_path(path):
@@ -56,7 +64,7 @@ def process_template(palette, inpath, outpath=None):
     if not outpath:
         outpath = os.path.join(
             DEFAULT_OUTPUT_PREFIX,
-            os.path.basename(inpath)[:-(len(TMPL_EXT))]
+            palette['name'] + '.' + os.path.basename(inpath)[:-(len(TMPL_EXT))]
         )
 
     def repl(matcher):

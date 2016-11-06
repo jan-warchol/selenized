@@ -1,4 +1,4 @@
-#!/usr/bin/python
+name = 'Default terminator palette'
 
 palette = {
     "bg":         "#000000",
