@@ -19,6 +19,7 @@ DEFAULT_OUTPUT_PREFIX = 'configs'
 
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
+
 def load_palette_from_module(module_name):
     m = importlib.import_module(module_name)
     palette = {
@@ -51,6 +52,7 @@ def load_palette_from_module(module_name):
 
     return palette
 
+
 def load_palette_from_path(path):
     module_dir = os.path.dirname(path)
     if module_dir not in sys.path:
@@ -59,6 +61,7 @@ def load_palette_from_path(path):
     file_name = os.path.basename(path)
     module_name = re.sub(re.compile(r'\.py$'), '', file_name)
     return load_palette_from_module(module_name)
+
 
 def process_template(palette, inpath, outpath=None):
     if not outpath:
@@ -70,7 +73,7 @@ def process_template(palette, inpath, outpath=None):
     def repl(matcher):
         return matcher.group('format').format(**palette)
 
-    print "Processing {}...".format(inpath),
+    print "\nProcessing {}...".format(inpath)
     with open(inpath, 'r') as ifile, open(outpath, 'w') as ofile :
         for line in ifile.readlines():
             try:
@@ -78,14 +81,16 @@ def process_template(palette, inpath, outpath=None):
             except TypeError:
                 print "ERROR: attribute not available in palette"
                 sys.exit(1)
-    print "result written to `{}.".format(outpath)
+    print "Result written to `{}.".format(outpath)
 
-def process_directory(palette, directory):
+
+def process_directory_recursively(palette, directory):
     for dirpath, dirnames, filenames in os.walk(directory):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
             if filepath.endswith(TMPL_EXT):
                 process_template(palette, filepath)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -98,5 +103,5 @@ if __name__ == "__main__":
         if os.path.isfile(path):
             process_template(palette, path)
         else:
-            process_directory(palette, path)
+            process_directory_recursively(palette, path)
 
