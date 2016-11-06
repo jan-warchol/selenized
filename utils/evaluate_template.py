@@ -17,11 +17,7 @@ TMPL_EXT = '.template'
 
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
-def load_palette(module_name):
-    # include modules from subfolder
-    if "./palettes" not in sys.path:
-        sys.path.insert(0, "./palettes")
-
+def load_palette_from_module(module_name):
     m = importlib.import_module(module_name)
     palette = {
         name: convert.Color(color, name) for name, color in m.palette.iteritems()
@@ -44,6 +40,15 @@ def load_palette(module_name):
         color.apple.b = color.apple.rgb_b
 
     return palette
+
+def load_palette_from_path(path):
+    module_dir = os.path.dirname(path)
+    if module_dir not in sys.path:
+        sys.path.insert(0, module_dir)
+
+    file_name = os.path.basename(path)
+    module_name = re.sub(re.compile(r'\.py$'), '', file_name)
+    return load_palette_from_module(module_name)
 
 def process_template(palette, inpath, outpath=None):
     if not outpath:
@@ -74,7 +79,7 @@ if __name__ == "__main__":
         print USAGE
         sys.exit()
 
-    palette = load_palette(sys.argv[1])
+    palette = load_palette_from_path(sys.argv[1])
 
     for path in sys.argv[2:]:
         if os.path.isfile(path):
