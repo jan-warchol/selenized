@@ -1,8 +1,8 @@
-name = 'Default terminator palette'
+name = 'Default Ubuntu palette'
 
 palette = {
-    "bg":         "#000000",
-    "fg":         "#aaaaaa",
+    "bg":         "#300a24",
+    "fg":         "#ffffff",
 
     "black":      "#2e3436",
     "red":        "#cc0000",

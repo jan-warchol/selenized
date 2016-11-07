@@ -1,8 +1,8 @@
-name = 'Default terminator palette'
+name = 'Default Linux Mint palette'
 
 palette = {
-    "bg":         "#000000",
-    "fg":         "#aaaaaa",
+    "bg":         "#3f3f3f",
+    "fg":         "#ffffff",
 
     "black":      "#2e3436",
     "red":        "#cc0000",
