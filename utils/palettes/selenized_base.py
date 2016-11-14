@@ -1,6 +1,6 @@
 from __future__ import division
 
-def generate_palette(background, foreground):
+def generate_palette(background, foreground, saturation=1):
     bg_l, bg_a, bg_b = background
     fg_l, fg_a, fg_b = foreground
 
@@ -29,14 +29,14 @@ def generate_palette(background, foreground):
     accent_l_spread = contrast/3
     accent_base_l = fg_l if direction == 1 else fg_l + accent_l_spread
     accents = {
-        "red":      [accent_base_l - 0.84*accent_l_spread,  63,  40],
-        "orange":   [accent_base_l - 0.48*accent_l_spread,  37,  50],
-        "yellow":   [accent_base_l - 0.06*accent_l_spread,   6,  65],
-        "green":    [accent_base_l - 0.36*accent_l_spread, -37,  53],
-        "cyan":     [accent_base_l - 0.12*accent_l_spread, -40,  -4],
-        "blue":     [accent_base_l - 0.84*accent_l_spread,   0, -55],
-        "violet":   [accent_base_l - 0.66*accent_l_spread,  33, -48],
-        "magenta":  [accent_base_l - 0.60*accent_l_spread,  59, -21],
+        "red":      [accent_base_l - 0.84*accent_l_spread,  63*saturation,  40*saturation],
+        "orange":   [accent_base_l - 0.48*accent_l_spread,  37*saturation,  50*saturation],
+        "yellow":   [accent_base_l - 0.06*accent_l_spread,   6*saturation,  65*saturation],
+        "green":    [accent_base_l - 0.36*accent_l_spread, -37*saturation,  53*saturation],
+        "cyan":     [accent_base_l - 0.12*accent_l_spread, -40*saturation,  -4*saturation],
+        "blue":     [accent_base_l - 0.84*accent_l_spread,   0*saturation, -55*saturation],
+        "violet":   [accent_base_l - 0.66*accent_l_spread,  33*saturation, -48*saturation],
+        "magenta":  [accent_base_l - 0.60*accent_l_spread,  59*saturation, -21*saturation],
     }
 
     # bright accents have the same a* b* coords as regular accents
