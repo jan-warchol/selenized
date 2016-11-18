@@ -19,6 +19,6 @@ palette = {
     "br_yellow":  "#fce94f",
     "br_blue":    "#729fcf",
     "br_magenta": "#ad7fa8",
-    "br_cyan":    "#8ae234",
+    "br_cyan":    "#34e2e2",
     "br_white":   "#eeeeec",
 }
