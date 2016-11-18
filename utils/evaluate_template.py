@@ -92,7 +92,7 @@ def process_template(palette, inpath, outpath=None):
             except TypeError:
                 print "ERROR: attribute not available in palette"
                 sys.exit(1)
-    print "Result written to `{}.".format(outpath)
+    print "Result written to {}".format(outpath)
 
 
 def process_directory_recursively(palette, directory):

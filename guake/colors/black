@@ -2,23 +2,23 @@ BACKGROUND=#1b1b1b1b1b1b
 
 FOREGROUND=#abababababab
 
-BOLD=#c6c6c6c6c6c6
+BOLD=#cccccccccccc
 
 PALETTE="
-#303030303030
-#ecec49494646
-#6a6aacac3030
-#c9c9a3a32323
-#3c3c8a8ae6e6
-#e2e25f5fb8b8
-#2e2eb9b9abab
+#353535353535
+#e3e341413f3f
+#6767a8a82d2d
+#c9c9a2a22323
+#31318282dede
+#dddd5a5ab2b2
+#2c2cb8b8aaaa
 #abababababab
-#848484848484
-#fcfc58585151
-#7878b9b93e3e
-#d8d8b0b03333
-#4e4e9797f5f5
-#f1f16d6dc5c5
-#4141c7c7b9b9
-#c6c6c6c6c6c6
+#777777777777
+#f6f653534d4d
+#7777b9b93e3e
+#dadab2b23535
+#48489292f0f0
+#eeee6a6ac3c3
+#4343c9c9bbbb
+#cccccccccccc
 "

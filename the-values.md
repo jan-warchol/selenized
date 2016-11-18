@@ -20,8 +20,8 @@ Selenized medium
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
 ----------   ----------   -----------   -------   --------
 bg           25 -10 -16   198  74  33   #154053   #143242
-black        35 -12 -19   199  68  44   #245970   #1f475e
-br_black     60  -7  -9   199  22  63   #7c95a0   #6b838f
+black        35 -12 -19   199  68  44   #245971   #1f475e
+br_black     58  -7  -9   199  23  61   #78919c   #667e8a
 fg           75  -6  -6   196  14  77   #a8bcc3   #99afb7
 white        75  -6  -6   196  14  77   #a8bcc3   #99afb7
 br_white     85  -6  -6   196  12  88   #c4d8df   #b9cfd8
@@ -56,8 +56,8 @@ Selenized dark
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
 ----------   ----------   -----------   -------   --------
 bg           15  -8 -13   198  87  22   #072938   #0b1f2b
-black        25 -10 -16   198  74  33   #154053   #143242
-br_black     50  -7  -9   199  26  53   #637b86   #526873
+black        25 -10 -16   199  71  32   #184053   #153142
+br_black     48  -7  -9   198  27  51   #5f7782   #4e646f
 fg           65  -6  -6   196  16  66   #8ea1a8   #7d9098
 white        65  -6  -6   196  16  66   #8ea1a8   #7d9098
 br_white     75  -6  -6   196  14  77   #a8bcc3   #99afb7
@@ -92,28 +92,28 @@ Selenized black
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
 ----------   ----------   -----------   -------   --------
 bg           10   0   0    35   0  11   #1b1b1b   #151515
-black        20   0   0    35   0  19   #303030   #242424
-br_black     55   0   0    35   0  52   #848484   #717171
+black        22   0   0    35   0  21   #353535   #282828
+br_black     50   0   0    35   0  47   #777777   #646464
 fg           70   0   0    35   0  67   #ababab   #9b9b9b
 white        70   0   0    35   0  67   #ababab   #9b9b9b
-br_white     80   0   0    35   0  78   #c6c6c6   #bababa
+br_white     82   0   0    35   0  80   #cccccc   #c1c1c1
 
-red          56  63  40     1  71  93   #ec4946   #e03035
-green        64 -37  53    92  72  67   #6aac30   #5e9e1b
-yellow       69   6  65    46  82  79   #c9a323   #bb920e
-blue         56   0 -55   213  74  90   #3c8ae6   #3276e3
-magenta      60  59 -21   320  58  89   #e25fb8   #d444ab
-cyan         68 -40  -4   174  75  73   #2eb9ab   #34ad9b
-orange       62  37  50    22  73  87   #df793d   #d1632b
-violet       59  33 -48   264  46  89   #a57ae3   #9063e0
+red          53  63  40     1  72  89   #e3413f   #d52830
+green        63 -37  53    92  73  66   #67a82d   #5b9a18
+yellow       69   6  65    46  83  79   #c9a223   #bb910d
+blue         53   0 -55   212  78  87   #3182de   #296ed9
+magenta      58  59 -21   319  59  86   #dd5ab2   #cd3fa5
+cyan         68 -40  -4   174  76  72   #2cb8aa   #33ac9a
+orange       60  37  50    22  74  85   #da7539   #cb5f28
+violet       57  33 -48   264  47  87   #9e75dd   #895dd8
 
-br_red       61  63  40     2  68  99   #fc5851   #f33e3f
-br_green     69 -37  53    92  66  73   #78b93e   #6bae27
-br_yellow    74   6  65    46  76  85   #d8b033   #cda11d
-br_blue      61   0 -55   214  68  96   #4e97f5   #4183f5
-br_magenta   65  59 -21   320  55  95   #f16dc5   #e652bb
-br_cyan      73 -40  -4   174  67  78   #41c7b9   #42beaa
-br_orange    67  37  50    22  69  93   #ee8649   #e47036
-br_violet    64  33 -48   264  44  95   #b387f2   #9f70f2
+br_red       59  63  40     2  69  97   #f6534d   #ec393c
+br_green     69 -37  53    92  67  72   #77b93e   #6bad27
+br_yellow    75   6  65    46  75  86   #dab235   #d0a31f
+br_blue      59   0 -55   214  70  94   #4892f0   #3b7eef
+br_magenta   64  59 -21   320  55  94   #ee6ac3   #e24fb8
+br_cyan      74 -40  -4   174  67  79   #43c9bb   #44c0ac
+br_orange    66  37  50    22  70  93   #ec8548   #e16f35
+br_violet    63  33 -48   264  45  93   #af84ee   #9b6ded
 ```
 
