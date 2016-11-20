@@ -1,6 +1,6 @@
 from __future__ import division
 
-def generate_palette(background, foreground, saturation=1):
+def generate_palette(background, foreground, saturation=1, accent_offset=0, br_accent_shift=None):
     bg_l, bg_a, bg_b = background
     fg_l, fg_a, fg_b = foreground
 
@@ -27,7 +27,14 @@ def generate_palette(background, foreground, saturation=1):
     # accent colors shouldn't have exactly uniform lightness, but on the other
     # hand they shouldn't be too far away from each other.
     accent_l_spread = contrast/3
+
+    # in dark palettes, brightest accents should have lightness close to
+    # foreground. In light palettes it should be the darkest accents.
     accent_base_l = fg_l if direction == 1 else fg_l + accent_l_spread
+
+    # optionally move accent colors lightness away from foreground lightness
+    accent_base_l -= direction*accent_offset
+
     accents = {
         "red":      [accent_base_l - 0.84*accent_l_spread,  63*saturation,  40*saturation],
         "orange":   [accent_base_l - 0.48*accent_l_spread,  37*saturation,  50*saturation],
@@ -39,12 +46,24 @@ def generate_palette(background, foreground, saturation=1):
         "magenta":  [accent_base_l - 0.60*accent_l_spread,  59*saturation, -21*saturation],
     }
 
-    # bright accents have the same a* b* coords as regular accents
+    # bright accents have the same a* b* coords as regular accents and
+    # uniformly shifted lightness
+    if not br_accent_shift:
+        br_accent_shift = contrast/10
+
     br_accents = {
-        'br_'+name: [l + direction*contrast/10, a, b]
+        'br_'+name: [l + direction*br_accent_shift, a, b]
         for name, [l, a, b]
         in accents.iteritems()
     }
+
+    # some debug
+    print "Foreground:", fg_l
+    print "Background:", bg_l
+    print "Contrast:", contrast
+    print "Accents max lightness:", accent_base_l
+    print "Accents min lightness: {:.3}".format(accent_base_l - accent_l_spread)
+    print ""
 
     palette = {}
     palette.update(background_tones)
