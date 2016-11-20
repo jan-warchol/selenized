@@ -1,5 +1,7 @@
 from __future__ import division
 
+ACCENTS_MAX_REASONABLE_L = 75
+
 def generate_palette(background, foreground, saturation=1, accent_offset=0, br_accent_shift=None):
     bg_l, bg_a, bg_b = background
     fg_l, fg_a, fg_b = foreground
@@ -24,16 +26,23 @@ def generate_palette(background, foreground, saturation=1, accent_offset=0, br_a
         "br_white": [fg_l + direction*contrast/5, fg_a,     fg_b    ],
     }
 
-    # accent colors shouldn't have exactly uniform lightness, but on the other
-    # hand they shouldn't be too far away from each other.
-    accent_l_spread = contrast/3
-
-    # in dark palettes, brightest accents should have lightness close to
-    # foreground. In light palettes it should be the darkest accents.
-    accent_base_l = fg_l if direction == 1 else fg_l + accent_l_spread
-
-    # optionally move accent colors lightness away from foreground lightness
+    # accents should have lightness close to foreground, except when foreground
+    # is very bright (very bright accents look washed out)
+    accent_base_l = min(
+        fg_l,
+        ACCENTS_MAX_REASONABLE_L + 0.5 * (fg_l-ACCENTS_MAX_REASONABLE_L)
+    )
+    # optionally move accent colors further away from foreground
     accent_base_l -= direction*accent_offset
+
+    # accent colors lightness shouldn't be exactly uniform, but on the other
+    # hand they shouldn't be too far away from each other.
+    accent_l_spread = abs(accent_base_l - bg_l)/3
+
+    # in dark-on-light palettes it's the darkest accents that should have
+    # lightness close to foreground
+    if direction == -1:
+        accent_base_l += accent_l_spread
 
     accents = {
         "red":      [accent_base_l - 0.84*accent_l_spread,  63*saturation,  40*saturation],
