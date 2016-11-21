@@ -42,9 +42,9 @@ def load_palette_from_module(module_name):
         color.rs = str(color.srgb.rgb_r)
         color.gs = str(color.srgb.rgb_g)
         color.bs = str(color.srgb.rgb_b)
-        color.apple.r = color.apple.rgb_r
-        color.apple.g = color.apple.rgb_g
-        color.apple.b = color.apple.rgb_b
+        color.apple.r = float(color.apple.rgb_r)
+        color.apple.g = float(color.apple.rgb_g)
+        color.apple.b = float(color.apple.rgb_b)
 
     # Storing palette name in the same dictionary as the colors doesn't look
     # like the best data structure ever, but it will allow accessing the name
