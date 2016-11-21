@@ -4,17 +4,17 @@ xterm*background:  rgb:1b/1b/1b
 xterm*foreground:  rgb:ab/ab/ab
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-xterm*color0:      rgb:35/35/35
+xterm*color0:      rgb:2d/2d/2d
 xterm*color1:      rgb:e3/41/3f
 xterm*color2:      rgb:67/a8/2d
 xterm*color3:      rgb:c9/a2/23
 xterm*color4:      rgb:31/82/de
 xterm*color5:      rgb:dd/5a/b2
 xterm*color6:      rgb:2c/b8/aa
-xterm*color7:      rgb:ab/ab/ab
+xterm*color7:      rgb:77/77/77
 
 ! bright/bold versions of colors (in the same order)
-xterm*color8:      rgb:77/77/77
+xterm*color8:      rgb:47/47/47
 xterm*color9:      rgb:f6/53/4d
 xterm*color10:     rgb:77/b9/3e
 xterm*color11:     rgb:da/b2/35

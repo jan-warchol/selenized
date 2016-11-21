@@ -4,17 +4,17 @@ urxvt.background:  #1b1b1b
 urxvt.foreground:  #ababab
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-urxvt.color0:      #353535
+urxvt.color0:      #2d2d2d
 urxvt.color1:      #e3413f
 urxvt.color2:      #67a82d
 urxvt.color3:      #c9a223
 urxvt.color4:      #3182de
 urxvt.color5:      #dd5ab2
 urxvt.color6:      #2cb8aa
-urxvt.color7:      #ababab
+urxvt.color7:      #777777
 
 ! bright/bold versions of colors (in the same order)
-urxvt.color8:      #777777
+urxvt.color8:      #474747
 urxvt.color9:      #f6534d
 urxvt.color10:     #77b93e
 urxvt.color11:     #dab235
