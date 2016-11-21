@@ -27,8 +27,10 @@ def generate_palette(
 
     # bright bg and fg are calculated using contrast. For some reason bright
     # background looks washed out without increased saturation
-    br_bg_l = bg_l + direction*contrast/5
+    br_bg_l = bg_l + direction*contrast/7
     br_bg_a, br_bg_b = bg_a*br_bg_extra_saturation, bg_b*br_bg_extra_saturation
+
+    hi_bg_l = bg_l + direction*contrast/3
 
     br_fg_l = fg_l + direction*contrast/5
 
@@ -41,9 +43,9 @@ def generate_palette(
     monotones = {
         "bg":       [bg_l,     bg_a,     bg_b    ],
         "black":    [br_bg_l,  br_bg_a,  br_bg_b ],
-        "br_black": [dim_fg_l, dim_fg_a, dim_fg_b],
+        "br_black": [hi_bg_l,  br_bg_a,  br_bg_b ],
         "fg":       [fg_l,     fg_a,     fg_b    ],
-        "white":    [fg_l,     fg_a,     fg_b    ],
+        "white":    [dim_fg_l, dim_fg_a, dim_fg_b],
         "br_white": [br_fg_l,  fg_a,     fg_b    ],
     }
 

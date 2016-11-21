@@ -7,7 +7,7 @@ TEXT_BLOCK="■■■■"
 SPACE_BLOCK="    "
 reset_colors() { echo -en "\033[0m${1}\033[0m"; }
 # for testing solarized which uses strange color mapping...
-COMMENT_COLOR=${1:-90}
+COMMENT_COLOR=${1:-37}
 
 allcolors() {
     # $1 - modifier (format), $2 - row header, $3 - row comment
