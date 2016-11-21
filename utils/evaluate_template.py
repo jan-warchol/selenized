@@ -20,7 +20,7 @@ DEFAULT_OUTPUT_PREFIX = 'configs'
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
 DEFAULT_COLOR_ORDER = [
-    'bg', 'black', 'br_black', 'fg', 'white', 'br_white',
+    'bg', 'black', 'br_black', 'white', 'fg', 'br_white',
     'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange', 'violet',
     'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet'
 ]

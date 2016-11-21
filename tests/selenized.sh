@@ -2,7 +2,7 @@
 
 BRIGHT="\e[97m"
 BOLD="\e[1;37m"
-DIM="\e[90m"
+DIM="\e[37m"
 RESET="\e[0m"
 
 echo -e "$BRIGHT
