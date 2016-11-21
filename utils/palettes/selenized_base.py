@@ -19,8 +19,14 @@ def generate_palette(background, foreground, saturation=1, accent_offset=0, br_a
         "black":    [bg_l + direction*contrast/5, bg_a*1.2, bg_b*1.2],
     }
 
+    # color used for comments and other secondary content; it's a weighted
+    # average of fg and bg
+    dim_fg_l = 1/3 * bg_l + 2/3 * fg_l
+    dim_fg_a = 1/3 * bg_a + 2/3 * fg_a
+    dim_fg_b = 1/3 * bg_b + 2/3 * fg_b
+
     content_tones = {
-        "br_black": [fg_l - direction*contrast/3, fg_a*1.2, fg_b*1.5],
+        "br_black": [dim_fg_l,                    dim_fg_a, dim_fg_b],
         "fg":       [fg_l,                        fg_a,     fg_b    ],
         "white":    [fg_l,                        fg_a,     fg_b    ],
         "br_white": [fg_l + direction*contrast/5, fg_a,     fg_b    ],
