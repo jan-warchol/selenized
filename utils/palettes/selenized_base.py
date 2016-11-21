@@ -21,6 +21,8 @@ def generate_palette(
     # changes (i.e. "bright" colors are darker)
     direction = -1 if bg_l > fg_l else 1
 
+
+
     ### MONOTONES
 
     # bright bg and fg are calculated using contrast. For some reason bright
@@ -45,6 +47,8 @@ def generate_palette(
         "br_white": [br_fg_l,  fg_a,     fg_b    ],
     }
 
+
+
     ### ACCENTS
 
     # accents should have lightness close to foreground, except when foreground
@@ -66,14 +70,14 @@ def generate_palette(
         accent_base_l += accent_l_spread
 
     accents = {
-        "red":      [accent_base_l - 0.84*accent_l_spread,  63*saturation,  40*saturation],
-        "orange":   [accent_base_l - 0.48*accent_l_spread,  37*saturation,  50*saturation],
-        "yellow":   [accent_base_l - 0.06*accent_l_spread,   6*saturation,  65*saturation],
-        "green":    [accent_base_l - 0.36*accent_l_spread, -37*saturation,  53*saturation],
-        "cyan":     [accent_base_l - 0.12*accent_l_spread, -40*saturation,  -4*saturation],
-        "blue":     [accent_base_l - 0.84*accent_l_spread,   0*saturation, -55*saturation],
-        "violet":   [accent_base_l - 0.66*accent_l_spread,  33*saturation, -48*saturation],
-        "magenta":  [accent_base_l - 0.60*accent_l_spread,  59*saturation, -21*saturation],
+        "red":      [accent_base_l - 0.84*accent_l_spread,  63,  40],
+        "orange":   [accent_base_l - 0.48*accent_l_spread,  37,  50],
+        "yellow":   [accent_base_l - 0.06*accent_l_spread,   6,  65],
+        "green":    [accent_base_l - 0.36*accent_l_spread, -37,  53],
+        "cyan":     [accent_base_l - 0.12*accent_l_spread, -40,  -4],
+        "blue":     [accent_base_l - 0.84*accent_l_spread,   0, -55],
+        "violet":   [accent_base_l - 0.66*accent_l_spread,  33, -48],
+        "magenta":  [accent_base_l - 0.60*accent_l_spread,  59, -21],
     }
 
     # bright accents have the same a* b* coords as regular accents and
@@ -86,6 +90,8 @@ def generate_palette(
         for name, [l, a, b]
         in accents.iteritems()
     }
+
+
 
     ### FINAL ASSEMBLY
 
@@ -100,6 +106,9 @@ def generate_palette(
     palette.update(monotones)
     palette.update(accents)
     palette.update(br_accents)
+
+    for name, (l,a,b) in palette.iteritems():
+        palette[name] = [l, a*saturation, b*saturation]
 
     return palette
 
