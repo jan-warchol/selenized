@@ -2,7 +2,14 @@ from __future__ import division
 
 ACCENTS_MAX_REASONABLE_L = 75
 
-def generate_palette(background, foreground, saturation=1, accent_offset=0, br_accent_shift=None):
+def generate_palette(
+    background,
+    foreground,
+    saturation=1,
+    accent_offset=0,
+    br_accent_shift=None,
+    br_bg_extra_saturation=1.2
+):
     bg_l, bg_a, bg_b = background
     fg_l, fg_a, fg_b = foreground
 
@@ -14,10 +21,14 @@ def generate_palette(background, foreground, saturation=1, accent_offset=0, br_a
     # changes (i.e. "bright" colors are darker)
     direction = -1 if bg_l > fg_l else 1
 
-    background_tones = {
-        "bg":       [bg_l,                        bg_a,     bg_b    ],
-        "black":    [bg_l + direction*contrast/5, bg_a*1.2, bg_b*1.2],
-    }
+    ### MONOTONES
+
+    # bright bg and fg are calculated using contrast. For some reason bright
+    # background looks washed out without increased saturation
+    br_bg_l = bg_l + direction*contrast/5
+    br_bg_a, br_bg_b = bg_a*br_bg_extra_saturation, bg_b*br_bg_extra_saturation
+
+    br_fg_l = fg_l + direction*contrast/5
 
     # color used for comments and other secondary content; it's a weighted
     # average of fg and bg
@@ -25,12 +36,16 @@ def generate_palette(background, foreground, saturation=1, accent_offset=0, br_a
     dim_fg_a = 1/3 * bg_a + 2/3 * fg_a
     dim_fg_b = 1/3 * bg_b + 2/3 * fg_b
 
-    content_tones = {
-        "br_black": [dim_fg_l,                    dim_fg_a, dim_fg_b],
-        "fg":       [fg_l,                        fg_a,     fg_b    ],
-        "white":    [fg_l,                        fg_a,     fg_b    ],
-        "br_white": [fg_l + direction*contrast/5, fg_a,     fg_b    ],
+    monotones = {
+        "bg":       [bg_l,     bg_a,     bg_b    ],
+        "black":    [br_bg_l,  br_bg_a,  br_bg_b ],
+        "br_black": [dim_fg_l, dim_fg_a, dim_fg_b],
+        "fg":       [fg_l,     fg_a,     fg_b    ],
+        "white":    [fg_l,     fg_a,     fg_b    ],
+        "br_white": [br_fg_l,  fg_a,     fg_b    ],
     }
+
+    ### ACCENTS
 
     # accents should have lightness close to foreground, except when foreground
     # is very bright (very bright accents look washed out)
@@ -72,17 +87,17 @@ def generate_palette(background, foreground, saturation=1, accent_offset=0, br_a
         in accents.iteritems()
     }
 
+    ### FINAL ASSEMBLY
+
     # some debug
     print "Foreground:", fg_l
     print "Background:", bg_l
     print "Contrast:", contrast
     print "Accents max lightness:", accent_base_l
     print "Accents min lightness: {:.3}".format(accent_base_l - accent_l_spread)
-    print ""
 
     palette = {}
-    palette.update(background_tones)
-    palette.update(content_tones)
+    palette.update(monotones)
     palette.update(accents)
     palette.update(br_accents)
 
