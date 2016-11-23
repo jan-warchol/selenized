@@ -3,7 +3,7 @@
 import os
 import sys
 import re
-import convert
+import convert_color
 import importlib
 
 USAGE = """Evaluate templates using specified palette.
@@ -15,7 +15,7 @@ recursively searched for templates."""
 
 TMPL_EXT = '.template'
 
-DEFAULT_OUTPUT_PREFIX = 'configs'
+DEFAULT_OUTPUT_PREFIX = ''
 
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
@@ -26,9 +26,11 @@ DEFAULT_COLOR_ORDER = [
 ]
 
 def load_palette_from_module(module_name):
+    base_module_dir = os.path.join(os.path.dirname(sys.argv[0]), 'palettes')
+    sys.path.insert(0, base_module_dir)
     m = importlib.import_module(module_name)
     palette = {
-        name: convert.Color(color, name) for name, color in m.palette.iteritems()
+        name: convert_color.Color(color, name) for name, color in m.palette.iteritems()
     }
 
     # Add more attributes that can be used in templates
