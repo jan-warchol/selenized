@@ -31,6 +31,7 @@ exe "hi Visual       cterm=NONE    ctermfg=NONE ctermbg=8                       
 exe "hi Cursor                                                           guifg=bg           guibg=fg"
 exe "hi CursorLine   cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi CursorColumn cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
+exe "hi ColorColumn  cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi MatchParen   cterm=reverse ctermfg=6    ctermbg=NONE"
 
 " diffing
