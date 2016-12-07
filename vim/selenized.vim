@@ -23,7 +23,7 @@ let s:guicyan    = "#41c7b9"
 exe "hi Normal       cterm=NONE    ctermfg=NONE ctermbg=NONE             guifg=".s:guifg2." guibg=".s:guibg1
 
 " interface elements
-exe "hi IncSearch    cterm=reverse                           gui=reverse"
+exe "hi IncSearch    cterm=reverse ctermfg=red  ctermbg=NONE gui=reverse"
 exe "hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE         guibg=NONE"
 exe "hi LineNr                     ctermfg=7    ctermbg=0                guifg=".s:guifg1." guibg=".s:guibg2
 exe "hi CursorLineNr               ctermfg=NONE ctermbg=NONE             guifg=NONE         guibg=NONE"
