@@ -51,5 +51,5 @@ exe "hi PreProc                    ctermfg=5                             guifg="
 exe "hi Type                       ctermfg=2                             guifg=".s:guigreen
 exe "hi Ignore       cterm=bold    ctermfg=7                 gui=bold    guifg=".s:guifg2
 exe "hi Error        cterm=bold    ctermfg=7    ctermbg=1    gui=bold    guifg=".s:guifg1." guibg=".s:guired
-exe "hi Todo                       ctermfg=0    ctermbg=3                guifg=".s:guibg1." guibg=".s:guiyellow
+exe "hi Todo         cterm=reverse ctermfg=3    ctermbg=0                guifg=".s:guibg1." guibg=".s:guiyellow
 
