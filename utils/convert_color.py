@@ -72,8 +72,8 @@ class Color(object):
 
         for name in coord_names:
             coord = getattr(color, name)
-            if coord > WARN_THRESHOLD:
-                print ("Warning: {:.2}% out of gamut" .format((coord-1)*100))
+            # if coord > WARN_THRESHOLD:
+            #     print ("Warning: {:.2}% out of gamut" .format((coord-1)*100))
             setattr(color, name, min(coord, 1))
         return color
 
@@ -89,7 +89,7 @@ class Color(object):
             else:
                 spec = LabColor(*parsed, illuminant='d50')
 
-        print "Converting {}...".format(self.name)
+        # print "Converting {}...".format(self.name)
         # convert to all needed spaces
         self.lab = convert_color(spec, LabColor, target_illuminant='d50')
         self.srgb = convert_color(spec, sRGBColor)
