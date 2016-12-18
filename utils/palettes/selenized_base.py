@@ -7,6 +7,7 @@ def generate_palette(
     foreground,
     saturation=1,
     accent_offset=0,
+    accent_l_spread=None,
     br_accent_shift=None,
     br_bg_extra_saturation=1.2
 ):
@@ -64,7 +65,8 @@ def generate_palette(
 
     # accent colors lightness shouldn't be exactly uniform, but on the other
     # hand they shouldn't be too far away from each other.
-    accent_l_spread = abs(accent_base_l - bg_l)/3
+    if not accent_l_spread:
+        accent_l_spread = abs(accent_base_l - bg_l)/3
 
     # in dark-on-light palettes it's the darkest accents that should have
     # lightness close to foreground
