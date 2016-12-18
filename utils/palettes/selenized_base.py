@@ -101,8 +101,14 @@ def generate_palette(
     print "Foreground:", fg_l
     print "Background:", bg_l
     print "Contrast:", contrast
-    print "Accents max lightness:", accent_base_l
-    print "Accents min lightness: {:.3}".format(accent_base_l - accent_l_spread)
+    print "Accents max lightness: {:.3}".format(float(accent_base_l))
+    print "Accents min lightness: {:.3}".format(float(accent_base_l - accent_l_spread))
+    print ""
+    print "Highlight contrast: {:.3}".format(float(abs(hi_bg_l-bg_l)))
+    print "Highlight-comment distance: {:.3}".format(float(abs(hi_bg_l-dim_fg_l)))
+    print "Highlight-blue distance: {:.3}".format(float(abs(hi_bg_l-accents['blue'][0])))
+    print "Highlight-yellow distance: {:.3}".format(float(abs(hi_bg_l-accents['yellow'][0])))
+    print "Foreground-comment distance: {:.3}".format(float(abs(fg_l-dim_fg_l)))
 
     palette = {}
     palette.update(monotones)
