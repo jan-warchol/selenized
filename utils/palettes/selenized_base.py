@@ -100,17 +100,35 @@ def generate_palette(
     ### FINAL ASSEMBLY
 
     # some debug
-    print "Foreground:", fg_l
-    print "Background:", bg_l
-    print "Contrast:", contrast
-    print "Accents max lightness: {:.3}".format(float(accent_base_l))
-    print "Accents min lightness: {:.3}".format(float(accent_base_l - accent_l_spread))
-    print ""
-    print "Highlight contrast: {:.3}".format(float(abs(hi_bg_l-bg_l)))
-    print "Highlight-comment distance: {:.3}".format(float(abs(hi_bg_l-dim_fg_l)))
-    print "Highlight-blue distance: {:.3}".format(float(abs(hi_bg_l-accents['blue'][0])))
-    print "Highlight-yellow distance: {:.3}".format(float(abs(hi_bg_l-accents['yellow'][0])))
-    print "Foreground-comment distance: {:.3}".format(float(abs(fg_l-dim_fg_l)))
+    acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
+    acc_hi_dists = [float(abs(accents[color][0]-hi_bg_l)) for color in accents]
+
+    print """Foreground: {}
+Background: {}
+Contrast: {}
+Accents max lightness: {:.3}
+Accents min lightness: {:.3}
+
+Foreground-comment distance:     {:.3}
+Highlight contrast:              {:.3}
+Highlight-comment distance:      {:.3}
+Highlight-accent distance:   min {:.3}, max {:.3}
+Background-accent distance:  min {:.3}, max {:.3}
+    """.format(
+        fg_l,
+        bg_l,
+        contrast,
+        float(accent_base_l),
+        float(accent_base_l - accent_l_spread),
+
+        float(abs(fg_l-dim_fg_l)),
+        float(abs(hi_bg_l-bg_l)),
+        float(abs(hi_bg_l-dim_fg_l)),
+        min(acc_hi_dists),
+        max(acc_hi_dists),
+        min(acc_bg_dists),
+        max(acc_bg_dists),
+    )
 
     palette = {}
     palette.update(monotones)
