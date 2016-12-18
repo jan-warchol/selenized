@@ -9,7 +9,7 @@ def generate_palette(
     accent_offset=0,
     accent_l_spread=None,
     br_accent_shift=None,
-    br_bg_extra_saturation=1.2
+    br_bg_extra_saturation=1.1
 ):
     bg_l, bg_a, bg_b = background
     fg_l, fg_a, fg_b = foreground
@@ -28,18 +28,18 @@ def generate_palette(
 
     # bright bg and fg are calculated using contrast. For some reason bright
     # background looks washed out without increased saturation
-    br_bg_l = bg_l + direction*contrast/7
+    br_bg_l = bg_l + direction*contrast/10
     br_bg_a, br_bg_b = bg_a*br_bg_extra_saturation, bg_b*br_bg_extra_saturation
 
-    hi_bg_l = bg_l + direction*contrast/3
+    hi_bg_l = bg_l + direction*contrast/4
 
     br_fg_l = fg_l + direction*contrast/5
 
     # color used for comments and other secondary content; it's a weighted
     # average of fg and bg
-    dim_fg_l = 1/3 * bg_l + 2/3 * fg_l
-    dim_fg_a = 1/3 * bg_a + 2/3 * fg_a
-    dim_fg_b = 1/3 * bg_b + 2/3 * fg_b
+    dim_fg_l = 3/8 * bg_l + 5/8 * fg_l
+    dim_fg_a = 3/8 * bg_a + 5/8 * fg_a
+    dim_fg_b = 3/8 * bg_b + 5/8 * fg_b
 
     monotones = {
         "bg":       [bg_l,     bg_a,     bg_b    ],
