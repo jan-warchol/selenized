@@ -1,24 +1,24 @@
 highlight clear
-let g:colors_name = "Selenized black"
+let g:colors_name = "Selenized"
 
 if exists("syntax_on")
     syntax reset
 endif
 
-" GUI color definitions
-let s:guibg1     = "#1b1b1b"
-let s:guibg2     = "#2d2d2d"
-let s:guibg3     = "#474747"
-let s:guifg1     = "#777777"
-let s:guifg2     = "#ababab"
-let s:guifg3     = "#cccccc"
+" GUI color definitions for selenized medium
+let s:guibg1     = "#154053"
+let s:guibg2     = "#1b5269"
+let s:guibg3     = "#366981"
+let s:guifg1     = "#77919c"
+let s:guifg2     = "#a8bcc3"
+let s:guifg3     = "#c4d8df"
 
-let s:guired     = "#e3413f"
-let s:guigreen   = "#67a82d"
-let s:guiyellow  = "#c9a223"
-let s:guiblue    = "#3182de"
-let s:guimagenta = "#dd5ab2"
-let s:guicyan    = "#2cb8aa"
+let s:guired     = "#fc5851"
+let s:guigreen   = "#78b93e"
+let s:guiyellow  = "#d8b033"
+let s:guiblue    = "#4e97f5"
+let s:guimagenta = "#f16dc5"
+let s:guicyan    = "#41c7b9"
 
 exe "hi Normal       cterm=NONE    ctermfg=NONE ctermbg=NONE             guifg=".s:guifg2." guibg=".s:guibg1
 
