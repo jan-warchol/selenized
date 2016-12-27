@@ -76,7 +76,7 @@ def generate_palette(
     accents = {
         "red":      [accent_base_l - 0.84*accent_l_spread,  63,  40],
         "orange":   [accent_base_l - 0.48*accent_l_spread,  37,  50],
-        "yellow":   [accent_base_l - 0.06*accent_l_spread,   6,  65],
+        "yellow":   [accent_base_l - 0.00*accent_l_spread,   6,  68],
         "green":    [accent_base_l - 0.36*accent_l_spread, -38,  55],
         "cyan":     [accent_base_l - 0.12*accent_l_spread, -40,  -4],
         "blue":     [accent_base_l - 0.84*accent_l_spread,   0, -57],
