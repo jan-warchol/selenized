@@ -81,7 +81,7 @@ def generate_palette(
         "cyan":     [accent_base_l - 0.12*accent_l_spread, -40,  -4],
         "blue":     [accent_base_l - 0.84*accent_l_spread,   0, -55],
         "violet":   [accent_base_l - 0.66*accent_l_spread,  33, -48],
-        "magenta":  [accent_base_l - 0.60*accent_l_spread,  59, -21],
+        "magenta":  [accent_base_l - 0.50*accent_l_spread,  55, -15],
     }
 
     # bright accents have the same a* b* coords as regular accents and
