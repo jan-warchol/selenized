@@ -1,29 +1,29 @@
 highlight clear
-let g:colors_name = "Selenized black"
+let g:colors_name = "Selenized"
 
 if exists("syntax_on")
     syntax reset
 endif
 
-" GUI color definitions
-let s:guibg1     = "#1b1b1b"
-let s:guibg2     = "#2d2d2d"
-let s:guibg3     = "#474747"
-let s:guifg1     = "#777777"
-let s:guifg2     = "#ababab"
-let s:guifg3     = "#cccccc"
+" GUI color definitions for selenized medium
+let s:guibg1     = "#154053"
+let s:guibg2     = "#1b5269"
+let s:guibg3     = "#366981"
+let s:guifg1     = "#77919c"
+let s:guifg2     = "#a8bcc3"
+let s:guifg3     = "#c4d8df"
 
-let s:guired     = "#e3413f"
-let s:guigreen   = "#67a82d"
-let s:guiyellow  = "#c9a223"
-let s:guiblue    = "#3182de"
-let s:guimagenta = "#dd5ab2"
-let s:guicyan    = "#2cb8aa"
+let s:guired     = "#fc5851"
+let s:guigreen   = "#78b93e"
+let s:guiyellow  = "#d8b033"
+let s:guiblue    = "#4e97f5"
+let s:guimagenta = "#f16dc5"
+let s:guicyan    = "#41c7b9"
 
 exe "hi Normal       cterm=NONE    ctermfg=NONE ctermbg=NONE             guifg=".s:guifg2." guibg=".s:guibg1
 
 " interface elements
-exe "hi IncSearch    cterm=reverse                           gui=reverse"
+exe "hi IncSearch    cterm=reverse ctermfg=red  ctermbg=NONE gui=reverse"
 exe "hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE         guibg=NONE"
 exe "hi LineNr                     ctermfg=7    ctermbg=0                guifg=".s:guifg1." guibg=".s:guibg2
 exe "hi CursorLineNr               ctermfg=NONE ctermbg=NONE             guifg=NONE         guibg=NONE"
@@ -31,6 +31,7 @@ exe "hi Visual       cterm=NONE    ctermfg=NONE ctermbg=8                       
 exe "hi Cursor                                                           guifg=bg           guibg=fg"
 exe "hi CursorLine   cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi CursorColumn cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
+exe "hi ColorColumn  cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi MatchParen   cterm=reverse ctermfg=6    ctermbg=NONE"
 
 " diffing
@@ -50,5 +51,5 @@ exe "hi PreProc                    ctermfg=5                             guifg="
 exe "hi Type                       ctermfg=2                             guifg=".s:guigreen
 exe "hi Ignore       cterm=bold    ctermfg=7                 gui=bold    guifg=".s:guifg2
 exe "hi Error        cterm=bold    ctermfg=7    ctermbg=1    gui=bold    guifg=".s:guifg1." guibg=".s:guired
-exe "hi Todo                       ctermfg=0    ctermbg=3                guifg=".s:guibg1." guibg=".s:guiyellow
+exe "hi Todo         cterm=reverse ctermfg=3    ctermbg=0                guifg=".s:guibg1." guibg=".s:guiyellow
 
