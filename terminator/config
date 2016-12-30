@@ -10,25 +10,25 @@
   # default profile is set to selenized medium. I know, code duplication is bad
   # but there is no proper way to do this in Terminator.
   [[default]]
-    palette = "#1b5269:#fc5851:#78b93e:#d8b033:#4e97f5:#f16dc5:#41c7b9:#77919c:#366981:#ff675d:#85c74c:#e7be42:#5ea4ff:#ff7bd3:#52d5c7:#c4d8df"
+    palette = "#1a4b60:#fc5951:#77bb3a:#ddb42f:#4897f9:#f477c0:#43c8ba:#728c98:#2f5d73:#ff685e:#85c948:#ecc33e:#5aa5ff:#ff85ce:#54d7c8:#c8dce3"
     background_image = None
-    foreground_color = "#a8bcc3"
-    background_color = "#154053"
+    foreground_color = "#abbfc6"
+    background_color = "#123e51"
   [[selenized-dark]]
-    palette = "#0f3a4c:#dc3a3a:#5c9e21:#ba9610:#267dd8:#d451aa:#12ab9e:#607781:#295063:#ec4946:#6aac30:#c9a323:#3c8ae6:#e25fb8:#2eb9ab:#a8bcc3"
+    palette = "#0d3343:#de3b3b:#5da01d:#c19b07:#1e7edd:#d85ca6:#18aea0:#5b727c:#224455:#ee4b47:#6baf2d:#d0a920:#378bec:#e76bb4:#32bcae:#acc0c7"
     background_image = None
-    foreground_color = "#8ea1a8"
-    background_color = "#072938"
+    foreground_color = "#90a4ab"
+    background_color = "#052736"
   [[selenized-medium]]
-    palette = "#1b5269:#fc5851:#78b93e:#d8b033:#4e97f5:#f16dc5:#41c7b9:#77919c:#366981:#ff675d:#85c74c:#e7be42:#5ea4ff:#ff7bd3:#52d5c7:#c4d8df"
+    palette = "#1a4b60:#fc5951:#77bb3a:#ddb42f:#4897f9:#f477c0:#43c8ba:#728c98:#2f5d73:#ff685e:#85c948:#ecc33e:#5aa5ff:#ff85ce:#54d7c8:#c8dce3"
     background_image = None
-    foreground_color = "#a8bcc3"
-    background_color = "#154053"
+    foreground_color = "#abbfc6"
+    background_color = "#123e51"
   [[selenized-black]]
-    palette = "#2d2d2d:#e3413f:#67a82d:#c9a223:#3182de:#dd5ab2:#2cb8aa:#777777:#474747:#f6534d:#77b93e:#dab235:#4892f0:#ee6ac3:#43c9bb:#cccccc"
+    palette = "#252525:#ed4a46:#70b433:#dbb32d:#368aeb:#eb6eb7:#3fc5b7:#777777:#3b3b3b:#ff5e56:#83c746:#efc541:#4f9cfe:#ff81ca:#56d8c9:#dedede"
     background_image = None
-    foreground_color = "#ababab"
-    background_color = "#1b1b1b"
+    foreground_color = "#b9b9b9"
+    background_color = "#181818"
   [[terminator-default]]
     background_image = None
 [layouts]

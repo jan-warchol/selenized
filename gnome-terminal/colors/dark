@@ -1,24 +1,24 @@
-BACKGROUND=#7729293838
+BACKGROUND=#050527273636
 
-FOREGROUND=#8e8ea1a1a8a8
+FOREGROUND=#9090a4a4abab
 
-BOLD=#a8a8bcbcc3c3
+BOLD=#acacc0c0c7c7
 
 PALETTE="
-#ff3a3a4c4c
-#dcdc3a3a3a3a
-#5c5c9e9e2121
-#baba96961010
-#26267d7dd8d8
-#d4d45151aaaa
-#1212abab9e9e
-#606077778181
-#292950506363
-#ecec49494646
-#6a6aacac3030
-#c9c9a3a32323
-#3c3c8a8ae6e6
-#e2e25f5fb8b8
-#2e2eb9b9abab
-#a8a8bcbcc3c3
+#0d0d33334343
+#dede3b3b3b3b
+#5d5da0a01d1d
+#c1c19b9b0707
+#1e1e7e7edddd
+#d8d85c5ca6a6
+#1818aeaea0a0
+#5b5b72727c7c
+#222244445555
+#eeee4b4b4747
+#6b6bafaf2d2d
+#d0d0a9a92020
+#37378b8becec
+#e7e76b6bb4b4
+#3232bcbcaeae
+#acacc0c0c7c7
 "

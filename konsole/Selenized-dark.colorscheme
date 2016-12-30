@@ -1,62 +1,62 @@
 [Background]
-Color=7,41,56
+Color=5,39,54
 
 [BackgroundIntense]
-Color=15,58,76
+Color=13,51,67
 
 [Color0]
-Color=15,58,76
+Color=13,51,67
 
 [Color0Intense]
-Color=41,80,99
+Color=34,68,85
 
 [Color1]
-Color=220,58,58
+Color=222,59,59
 
 [Color1Intense]
-Color=236,73,70
+Color=238,75,71
 
 [Color2]
-Color=92,158,33
+Color=93,160,29
 
 [Color2Intense]
-Color=106,172,48
+Color=107,175,45
 
 [Color3]
-Color=186,150,16
+Color=193,155,7
 
 [Color3Intense]
-Color=201,163,35
+Color=208,169,32
 
 [Color4]
-Color=38,125,216
+Color=30,126,221
 
 [Color4Intense]
-Color=60,138,230
+Color=55,139,236
 
 [Color5]
-Color=212,81,170
+Color=216,92,166
 
 [Color5Intense]
-Color=226,95,184
+Color=231,107,180
 
 [Color6]
-Color=18,171,158
+Color=24,174,160
 
 [Color6Intense]
-Color=46,185,171
+Color=50,188,174
 
 [Color7]
-Color=96,119,129
+Color=91,114,124
 
 [Color7Intense]
-Color=168,188,195
+Color=172,192,199
 
 [Foreground]
-Color=142,161,168
+Color=144,164,171
 
 [ForegroundIntense]
-Color=168,188,195
+Color=172,192,199
 
 [General]
 Description=Selenized dark
