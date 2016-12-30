@@ -1,62 +1,62 @@
 [Background]
-Color=21,64,83
+Color=18,62,81
 
 [BackgroundIntense]
-Color=27,82,105
+Color=26,75,96
 
 [Color0]
-Color=27,82,105
+Color=26,75,96
 
 [Color0Intense]
-Color=54,105,129
+Color=47,93,115
 
 [Color1]
-Color=252,88,81
+Color=252,89,81
 
 [Color1Intense]
-Color=255,103,93
+Color=255,104,94
 
 [Color2]
-Color=120,185,62
+Color=119,187,58
 
 [Color2Intense]
-Color=133,199,76
+Color=133,201,72
 
 [Color3]
-Color=216,176,51
+Color=221,180,47
 
 [Color3Intense]
-Color=231,190,66
+Color=236,195,62
 
 [Color4]
-Color=78,151,245
+Color=72,151,249
 
 [Color4Intense]
-Color=94,164,255
+Color=90,165,255
 
 [Color5]
-Color=241,109,197
+Color=244,119,192
 
 [Color5Intense]
-Color=255,123,211
+Color=255,133,206
 
 [Color6]
-Color=65,199,185
+Color=67,200,186
 
 [Color6Intense]
-Color=82,213,199
+Color=84,215,200
 
 [Color7]
-Color=119,145,156
+Color=114,140,152
 
 [Color7Intense]
-Color=196,216,223
+Color=200,220,227
 
 [Foreground]
-Color=168,188,195
+Color=171,191,198
 
 [ForegroundIntense]
-Color=196,216,223
+Color=200,220,227
 
 [General]
 Description=Selenized medium

@@ -1,25 +1,25 @@
 ! Selenized dark color palette for xterm.
 
-xterm*background:  rgb:7/29/38
-xterm*foreground:  rgb:8e/a1/a8
+xterm*background:  rgb:05/27/36
+xterm*foreground:  rgb:90/a4/ab
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-xterm*color0:      rgb:f/3a/4c
-xterm*color1:      rgb:dc/3a/3a
-xterm*color2:      rgb:5c/9e/21
-xterm*color3:      rgb:ba/96/10
-xterm*color4:      rgb:26/7d/d8
-xterm*color5:      rgb:d4/51/aa
-xterm*color6:      rgb:12/ab/9e
-xterm*color7:      rgb:60/77/81
+xterm*color0:      rgb:0d/33/43
+xterm*color1:      rgb:de/3b/3b
+xterm*color2:      rgb:5d/a0/1d
+xterm*color3:      rgb:c1/9b/07
+xterm*color4:      rgb:1e/7e/dd
+xterm*color5:      rgb:d8/5c/a6
+xterm*color6:      rgb:18/ae/a0
+xterm*color7:      rgb:5b/72/7c
 
 ! bright/bold versions of colors (in the same order)
-xterm*color8:      rgb:29/50/63
-xterm*color9:      rgb:ec/49/46
-xterm*color10:     rgb:6a/ac/30
-xterm*color11:     rgb:c9/a3/23
-xterm*color12:     rgb:3c/8a/e6
-xterm*color13:     rgb:e2/5f/b8
-xterm*color14:     rgb:2e/b9/ab
-xterm*color15:     rgb:a8/bc/c3
+xterm*color8:      rgb:22/44/55
+xterm*color9:      rgb:ee/4b/47
+xterm*color10:     rgb:6b/af/2d
+xterm*color11:     rgb:d0/a9/20
+xterm*color12:     rgb:37/8b/ec
+xterm*color13:     rgb:e7/6b/b4
+xterm*color14:     rgb:32/bc/ae
+xterm*color15:     rgb:ac/c0/c7
 
