@@ -1,3 +1,5 @@
+# Solarized dark with monotones and accents mapped to ANSI codes according to
+# selenized convention
 name = 'Selenized solarized light'
 
 palette = {
