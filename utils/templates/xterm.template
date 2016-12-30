@@ -1,25 +1,25 @@
 ! !!COL!{name}! color palette for xterm.
 
-xterm*background:  rgb:!!COL!{bg.r:x}/{bg.g:x}/{bg.b:x}!
-xterm*foreground:  rgb:!!COL!{fg.r:x}/{fg.g:x}/{fg.b:x}!
+xterm*background:  rgb:!!COL!{bg.r:02x}/{bg.g:02x}/{bg.b:02x}!
+xterm*foreground:  rgb:!!COL!{fg.r:02x}/{fg.g:02x}/{fg.b:02x}!
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-xterm*color0:      rgb:!!COL!{black.r:x}/{black.g:x}/{black.b:x}!
-xterm*color1:      rgb:!!COL!{red.r:x}/{red.g:x}/{red.b:x}!
-xterm*color2:      rgb:!!COL!{green.r:x}/{green.g:x}/{green.b:x}!
-xterm*color3:      rgb:!!COL!{yellow.r:x}/{yellow.g:x}/{yellow.b:x}!
-xterm*color4:      rgb:!!COL!{blue.r:x}/{blue.g:x}/{blue.b:x}!
-xterm*color5:      rgb:!!COL!{magenta.r:x}/{magenta.g:x}/{magenta.b:x}!
-xterm*color6:      rgb:!!COL!{cyan.r:x}/{cyan.g:x}/{cyan.b:x}!
-xterm*color7:      rgb:!!COL!{white.r:x}/{white.g:x}/{white.b:x}!
+xterm*color0:      rgb:!!COL!{black.r:02x}/{black.g:02x}/{black.b:02x}!
+xterm*color1:      rgb:!!COL!{red.r:02x}/{red.g:02x}/{red.b:02x}!
+xterm*color2:      rgb:!!COL!{green.r:02x}/{green.g:02x}/{green.b:02x}!
+xterm*color3:      rgb:!!COL!{yellow.r:02x}/{yellow.g:02x}/{yellow.b:02x}!
+xterm*color4:      rgb:!!COL!{blue.r:02x}/{blue.g:02x}/{blue.b:02x}!
+xterm*color5:      rgb:!!COL!{magenta.r:02x}/{magenta.g:02x}/{magenta.b:02x}!
+xterm*color6:      rgb:!!COL!{cyan.r:02x}/{cyan.g:02x}/{cyan.b:02x}!
+xterm*color7:      rgb:!!COL!{white.r:02x}/{white.g:02x}/{white.b:02x}!
 
 ! bright/bold versions of colors (in the same order)
-xterm*color8:      rgb:!!COL!{br_black.r:x}/{br_black.g:x}/{br_black.b:x}!
-xterm*color9:      rgb:!!COL!{br_red.r:x}/{br_red.g:x}/{br_red.b:x}!
-xterm*color10:     rgb:!!COL!{br_green.r:x}/{br_green.g:x}/{br_green.b:x}!
-xterm*color11:     rgb:!!COL!{br_yellow.r:x}/{br_yellow.g:x}/{br_yellow.b:x}!
-xterm*color12:     rgb:!!COL!{br_blue.r:x}/{br_blue.g:x}/{br_blue.b:x}!
-xterm*color13:     rgb:!!COL!{br_magenta.r:x}/{br_magenta.g:x}/{br_magenta.b:x}!
-xterm*color14:     rgb:!!COL!{br_cyan.r:x}/{br_cyan.g:x}/{br_cyan.b:x}!
-xterm*color15:     rgb:!!COL!{br_white.r:x}/{br_white.g:x}/{br_white.b:x}!
+xterm*color8:      rgb:!!COL!{br_black.r:02x}/{br_black.g:02x}/{br_black.b:02x}!
+xterm*color9:      rgb:!!COL!{br_red.r:02x}/{br_red.g:02x}/{br_red.b:02x}!
+xterm*color10:     rgb:!!COL!{br_green.r:02x}/{br_green.g:02x}/{br_green.b:02x}!
+xterm*color11:     rgb:!!COL!{br_yellow.r:02x}/{br_yellow.g:02x}/{br_yellow.b:02x}!
+xterm*color12:     rgb:!!COL!{br_blue.r:02x}/{br_blue.g:02x}/{br_blue.b:02x}!
+xterm*color13:     rgb:!!COL!{br_magenta.r:02x}/{br_magenta.g:02x}/{br_magenta.b:02x}!
+xterm*color14:     rgb:!!COL!{br_cyan.r:02x}/{br_cyan.g:02x}/{br_cyan.b:02x}!
+xterm*color15:     rgb:!!COL!{br_white.r:02x}/{br_white.g:02x}/{br_white.b:02x}!
 
