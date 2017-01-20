@@ -33,6 +33,7 @@ exe "hi CursorLine   cterm=NONE                 ctermbg=0                       
 exe "hi CursorColumn cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi ColorColumn  cterm=NONE                 ctermbg=0                                   guibg=".s:guibg2
 exe "hi MatchParen   cterm=reverse ctermfg=6    ctermbg=NONE"
+exe "hi Folded       cterm=NONE    ctermfg=NONE ctermbg=0"
 
 " diffing
 exe "hi DiffAdd      cterm=NONE    ctermfg=2    ctermbg=0"
