@@ -3,7 +3,7 @@ import selenized_base
 name = 'Selenized light'
 
 palette = selenized_base.generate_palette(
-    background=(96, -2, 14),
+    background=(96, -1, 13),
     foreground=(42, -6, -6),
     saturation=1.05,
     accent_offset=2,
