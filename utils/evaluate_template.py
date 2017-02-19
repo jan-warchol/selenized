@@ -51,6 +51,8 @@ def load_palette_from_module(module_name):
         color.apple.g = float(color.apple.rgb_g)
         color.apple.b = float(color.apple.rgb_b)
         color.srgb_no_hash = re.sub(re.compile(r'^#'), '', color.srgb.__str__())
+        # for Notepad++
+        color.npp = re.sub(re.compile(r'#'), '', color.srgb.__str__()).upper()
 
     # Storing palette name in the same dictionary as the colors doesn't look
     # like the best data structure ever, but it will allow accessing the name

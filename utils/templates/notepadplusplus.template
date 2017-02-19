@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--//
+
+Selenized
+Copyright (c) Jan Warchoł
+
+Requirements:
+    * This style is based on DejaVu fonts <http://dejavu.sourceforge.net/wiki/index.php/Main_Page>.
+    * Notepad++, of course.
+
+Installation:
+    Copy this file to C:\Documents and Settings\%%USERNAME%%\Application Data\Notepad++\themes
+        or
+    <Your Notepad++ Installation Folder>\themes
+
+Credits:
+    Based on Solarized colorscheme for Notepad++ created by Xavier Ho (https://github.com/Spaxe/notepadpp-colors-solarized)
+//-->
+
+<NotepadPlus>
+    <LexerStyles>
+        <LexerType name="javascript" desc="Javascript" ext="">
+            <WordsStyle name="DEFAULT"                   styleID="41" fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="NUMBER"                    styleID="45" fgColor="!!COL!{yellow.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="WORD"                      styleID="46" fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="KEYWORD"                   styleID="47" fgColor="!!COL!{green.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" keywordClass="instre1">alert appendChild        arguments       array            blur        checked childNodes className confirm dialogArguments event focus getElementById getElementsByTagName innerHTML keyCode length location null number parentNode push RegExp replace selectNodes selectSingleNode setAttribute split src srcElement test undefined value window</WordsStyle>
+            <WordsStyle name="USER-DEFINED"              styleID="16" fgColor="!!COL!{violet.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" keywordClass="type1">XmlUtil loadXmlString      TopologyXmlTree NotificationArea loadXmlFile debug   newTmplItem</WordsStyle>
+            <WordsStyle name="STRINGRAW"                 styleID="20" fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="DOUBLESTRING"              styleID="48" fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="SINGLESTRING"              styleID="49" fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="STRINGEOL"                 styleID="51" fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="SYMBOLS"                   styleID="50" fgColor="!!COL!{cyan.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="REGEX"                     styleID="52" fgColor="!!COL!{magenta.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="COMMENT"                   styleID="42" fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="COMMENTLINE"               styleID="43" fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="COMMENTDOC"                styleID="44" fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="COMMENT DOC KEYWORD"       styleID="17" fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="1">param @projectDescription          projectDescription @param</WordsStyle>
+            <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="!!COL!{orange.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+        </LexerType>
+        <LexerType name="xml" desc="XML" ext="">
+            <WordsStyle name="XMLSTART"         styleID="12" fgColor="!!COL!{orange.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="XMLEND"           styleID="13" fgColor="!!COL!{orange.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="DEFAULT"          styleID="0"  fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="COMMENT"          styleID="9"  fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="NUMBER"           styleID="5"  fgColor="!!COL!{magenta.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="DOUBLESTRING"     styleID="6"  fgColor="!!COL!{br_white.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="SINGLESTRING"     styleID="7"  fgColor="!!COL!{br_white.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="TAG"              styleID="1"  fgColor="!!COL!{cyan.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="TAGEND"           styleID="11" fgColor="!!COL!{cyan.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="TAGUNKNOWN"       styleID="2"  fgColor="!!COL!{red.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="ATTRIBUTE"        styleID="3"  fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="ATTRIBUTEUNKNOWN" styleID="4"  fgColor="!!COL!{red.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="SGMLDEFAULT"      styleID="21" fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="CDATA"            styleID="17" fgColor="!!COL!{violet.npp}!" bgColor="!!COL!{bg.npp}!" />
+            <WordsStyle name="ENTITY"           styleID="10" fgColor="!!COL!{violet.npp}!" bgColor="!!COL!{bg.npp}!" />
+        </LexerType>
+        <LexerType name="python" desc="Python" ext="">
+            <WordsStyle name="DEFAULT"      styleID="0"  fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="COMMENTLINE"  styleID="1"  fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="NUMBER"       styleID="2"  fgColor="!!COL!{yellow.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="STRING"       styleID="3"  fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="CHARACTER"    styleID="4"  fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="KEYWORDS"     styleID="5"  fgColor="!!COL!{green.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" keywordClass="instre1" />
+            <WordsStyle name="TRIPLE"       styleID="6"  fgColor="!!COL!{violet.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="TRIPLEDOUBLE" styleID="7"  fgColor="!!COL!{violet.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="CLASSNAME"    styleID="8"  fgColor="!!COL!{br_white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="1" />
+            <WordsStyle name="DEFNAME"      styleID="9"  fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="OPERATOR"     styleID="10" fgColor="!!COL!{cyan.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="IDENTIFIER"   styleID="11" fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+            <WordsStyle name="COMMENTBLOCK" styleID="12" fgColor="!!COL!{white.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="2" />
+            <WordsStyle name="STRINGEOL"    styleID="12" fgColor="!!COL!{blue.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="0" />
+        </LexerType>
+    </LexerStyles>
+    <GlobalStyles>
+        <!-- Attention: don't modify the name of styleID="0" -->
+        <WidgetStyle name="Global override"                styleID="0"    fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontName="DejaVu Sans Mono" fontStyle="0" fontSize="10" />
+        <WidgetStyle name="Default Style"                  styleID="32"   fgColor="!!COL!{fg.npp}!" bgColor="!!COL!{bg.npp}!" fontName="DejaVu Sans Mono" fontStyle="0" fontSize="10" />
+        <WidgetStyle name="Indent guideline style"         styleID="37"   fgColor="!!COL!{black.npp}!" bgColor="!!COL!{black.npp}!" />
+        <WidgetStyle name="Brace highlight style"          styleID="34"   fgColor="!!COL!{yellow.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="1" />
+        <WidgetStyle name="Bad brace colour"               styleID="35"   fgColor="!!COL!{red.npp}!" bgColor="!!COL!{bg.npp}!" fontStyle="1" />
+        <WidgetStyle name="Current line background colour" styleID="0"    bgColor="!!COL!{black.npp}!" />
+        <WidgetStyle name="Caret colour"                   styleID="2069" fgColor="!!COL!{br_white.npp}!" />
+        <WidgetStyle name="Edge colour"                    styleID="0"    fgColor="!!COL!{white.npp}!" />
+        <WidgetStyle name="Line number margin"             styleID="33"   fgColor="!!COL!{white.npp}!" bgColor="!!COL!{black.npp}!" />
+        <WidgetStyle name="Fold"                           styleID="0"    fgColor="!!COL!{white.npp}!" bgColor="!!COL!{black.npp}!" />
+        <WidgetStyle name="Fold active"                    styleID="0"    fgColor="!!COL!{br_white.npp}!" />
+        <WidgetStyle name="Fold margin"                    styleID="0"    fgColor="!!COL!{bg.npp}!" bgColor="!!COL!{black.npp}!" />
+        <WidgetStyle name="White space symbol"             styleID="0"    fgColor="!!COL!{orange.npp}!" />
+        <WidgetStyle name="Find Mark Style"                styleID="31"   bgColor="!!COL!{magenta.npp}!" />
+        <WidgetStyle name="Mark Style 1"                   styleID="25"   bgColor="!!COL!{violet.npp}!" />
+        <WidgetStyle name="Mark Style 2"                   styleID="24"   bgColor="!!COL!{orange.npp}!" />
+        <WidgetStyle name="Mark Style 3"                   styleID="23"   bgColor="!!COL!{yellow.npp}!" />
+        <WidgetStyle name="Mark Style 4"                   styleID="22"   bgColor="!!COL!{cyan.npp}!" />
+        <WidgetStyle name="Mark Style 5"                   styleID="21"   bgColor="!!COL!{green.npp}!" />
+        <WidgetStyle name="Incremental highlight all"      styleID="28"   bgColor="!!COL!{blue.npp}!" />
+        <WidgetStyle name="Selected text colour"           styleID="0"    bgColor="!!COL!{br_black.npp}!" />
+        <WidgetStyle name="Smart HighLighting"             styleID="29"   bgColor="!!COL!{green.npp}!" />
+        <WidgetStyle name="Tags match highlighting"        styleID="27"   bgColor="!!COL!{cyan.npp}!" />
+        <WidgetStyle name="Tags attribute"                 styleID="26"   bgColor="!!COL!{blue.npp}!" />
+        <WidgetStyle name="Active tab focused indicator"   styleID="0"    fgColor="9E9E9E" />
+        <WidgetStyle name="Active tab unfocused indicator" styleID="0"    fgColor="B9B9B9" />
+        <WidgetStyle name="Active tab text"                styleID="0"    fgColor="111111" />
+        <WidgetStyle name="Inactive tabs"                  styleID="0"    fgColor="303030" bgColor="ABABAB" />
+    </GlobalStyles>
+</NotepadPlus>
