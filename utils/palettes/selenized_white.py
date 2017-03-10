@@ -1,6 +1,6 @@
 import selenized_base
 
-# inspired by http://jinja.pocoo.org/docs/dev/templates/
+name = 'Selenized white'
 
 palette = selenized_base.generate_palette(
     background=(100, 0, 0),
