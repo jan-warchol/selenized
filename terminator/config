@@ -19,11 +19,21 @@
     background_image = None
     foreground_color = "#adbcbc"
     background_color = "#103c48"
+  [[Selenized light]]
+    palette = "#ece3cc:#d2212d:#489100:#ad8900:#0072d4:#ca4898:#009c8f:#909995:#d5cdb6:#cc1729:#428b00:#a78300:#006dce:#c44392:#00978a:#3a4d53"
+    background_image = None
+    foreground_color = "#53676d"
+    background_color = "#fbf3db"
   [[Selenized black]]
     palette = "#252525:#ed4a46:#70b433:#dbb32d:#368aeb:#eb6eb7:#3fc5b7:#777777:#3b3b3b:#ff5e56:#83c746:#efc541:#4f9cfe:#ff81ca:#56d8c9:#dedede"
     background_image = None
     foreground_color = "#b9b9b9"
     background_color = "#181818"
+  [[Selenized white]]
+    palette = "#ebebeb:#d6000c:#1d9700:#c49700:#0064e4:#dd0f9d:#00ad9c:#878787:#cdcdcd:#bf0000:#008400:#af8500:#0054cf:#c7008b:#009a8a:#282828"
+    background_image = None
+    foreground_color = "#474747"
+    background_color = "#ffffff"
   [[terminator-default]]
     background_image = None
 [layouts]
