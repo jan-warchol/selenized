@@ -7,6 +7,6 @@ palette = selenized_base.generate_palette(
     foreground=(30, 0, 0),
     saturation=1.4,
     accent_offset=5,
-    accent_l_spread=33,
+    accent_l_spread=30,
 )
 
