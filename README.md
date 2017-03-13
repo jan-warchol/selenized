@@ -40,7 +40,7 @@ Palette variants
 
 ### Selenized dark
 
-![Selenized dark screenshot](http://i.imgur.com/U4y7JTc.png)
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
 Relatively high lightness of this version makes it well suited for using
 side-by-side with programs that have black text on white background (e.g. pdf
@@ -52,7 +52,7 @@ documents, many websites etc.).
 Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
 maybe you'd like some more contrast?  Try this variation.
 
-![Selenized black screenshot](http://i.imgur.com/Yk9OfdL.png)
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
 
 
 ### Selenized light
@@ -73,13 +73,13 @@ terminal colors - see [example](http://i.imgur.com/wICCS7x.png)).  High
 contrast like that tires the eye - that's why professional graphic software
 often use gray in their interfaces.
 
-![Selenized contrast sample](http://i.imgur.com/SRL3n03.png)
+![Selenized contrast sample](http://i.imgur.com/Y11xuwv.png)
 
 Selenized has moderate-to-low contrast - the difference in LAB lightness
 between foreground and background is 50, which is exactly half the distance
 between pure black and white.  The result is easy on eyes but still very
 readable, even on poor displays - see a [side-by-side comparison of Selenized
-and Ubuntu palettes](http://i.imgur.com/Q5ECiYK.png).
+and Ubuntu palettes](http://i.imgur.com/MtpKFFf.png).
 
 <!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
 
@@ -94,7 +94,7 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png)
+<!-- ![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png) -->
 
 I have fine-tuned the lightnesses to ensure that all colors present an even
 contrast, even red and blue (which are too dark in many palettes).  You can
@@ -114,7 +114,7 @@ less readable.  That's why Selenized dark is has relatively light background:
 this ensures better readability and prevents eye fatigue when used next to a
 bright/high-contrast window.
 
-![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)
+![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
 There is also a "black" variant meant for people who need higher contrast -
 either due to especially bad display/lightness conditions, or because they are
