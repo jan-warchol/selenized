@@ -11,7 +11,7 @@ COMMENT_COLOR=${1:-37}
 
 allcolors() {
     # $1 - modifier (format), $2 - row header, $3 - row comment
-    reset_colors "$(printf '%4s' $1)_ "
+    reset_colors "$(printf '%6s' $1)_ "
     for color_code in 0 1 2 3 4 5 6 7 9; do
         echo -en "\033[${1}${color_code}m${2} "; reset_colors
     done
@@ -20,18 +20,15 @@ allcolors() {
 
 reset_colors "\n"
 echo -en "\033[${COMMENT_COLOR}m" 
-echo -e "            red      yellow   magenta    white "
-echo -e "      black     green      blue      cyan    default \033[0m"
-echo -e "        0    1    2    3    4    5    6    7    9"
+echo -e "              red      yellow   magenta    white "
+echo -e "        black     green      blue      cyan    default \033[0m"
+echo -e "          0    1    2    3    4    5    6    7    9"
 
-allcolors 3     "BBBB" "text"
-allcolors 9     "BBBB" "bright text"
-allcolors "1;3" "BBBB" "bold text"
-allcolors 3     "$TEXT_BLOCK" "text"
-allcolors 9     "$TEXT_BLOCK" "bright text"
-allcolors "1;3" "$TEXT_BLOCK" "bold text"
-allcolors 4     "$SPACE_BLOCK" "background"
-allcolors 10    "$SPACE_BLOCK" "bright background"
+allcolors 3       "text"         "text"
+allcolors 9       "text"         "bright text"
+allcolors "1;3"   "text"         "bold text"
+allcolors "7;3"   "$SPACE_BLOCK" "reverse"
+allcolors "7;1;3" "$SPACE_BLOCK" "bold reverse"
 
 echo "   |\\"
 echo "   | Color code (listed in column header)"

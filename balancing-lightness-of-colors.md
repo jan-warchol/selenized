@@ -99,7 +99,7 @@ are still too dark.  If they were slightly lighter it would be quite decent.
 
 ### Current Selenized
 
-![Accent colors example - current selenized](http://i.imgur.com/4b5Z1be.png)
+![Accent colors example - current selenized](http://i.imgur.com/R5rlUAs.png)
 
 And here comes selenized ("black" variant).  Notice how all accent colors, as
 well as foreground, are clearly readable against the background.

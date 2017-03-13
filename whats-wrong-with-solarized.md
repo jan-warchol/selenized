@@ -50,12 +50,12 @@ code on a high-contrast website, like this:
 
 ![short code sample with Solarized](http://i.imgur.com/vStjfca.png)
 
-Selenized solves this problem by including "medium" variant, which has the same
-design as Selenized dark but is lighter:
+Selenized solves this problem by increasing contrast and making the whole dark
+variant lighter:
 
-![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)
+![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
-![short code sample with Selenized](http://i.imgur.com/iQHeRmi.png)
+![short code sample with Selenized](http://i.imgur.com/fm8Orae.png)
 
 
 
@@ -67,7 +67,7 @@ constructed from the same set of 16 colors.  This is a nice property, but
 implementing it in case of terminal emulators requires using a weird mapping of
 color codes to actual color values.
 
-![color code assignment - solarized](http://i.imgur.com/yYQ13OP.png)
+![color code assignment - solarized](http://i.imgur.com/Rn3yhw1.png)
 
 For example, you can see that color code traditionally used for bright/bold
 green is used by Solarized for "secondary content" (i.e. color used for
@@ -81,7 +81,7 @@ for an example.
 
 Selenized adheres to standard meanings of terminal color codes:
 
-![color code assignment - selenized](http://i.imgur.com/mzEReAh.png)
+![color code assignment - selenized](http://i.imgur.com/h6Rog02.png)
 
 Some programs may need adjustments to work well with Selenized, but such issues
 happen less frequently.

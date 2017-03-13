@@ -6,7 +6,7 @@ Selenized is a color palette for terminal emulators. I used
 balanced contrast and lightness across the whole palette, for great readability
 without tiring the eyes. Also, I carefully adjusted accent colors to be both
 pleasing and clearly distinguishable (even on poor quality screens).  Selenized
-comes in 3 variants (medium, dark and black) so that you can pick the one that
+comes in 2 variants (dark and black) so that you can pick the one that
 works best in your working environment.
 
 You can read more about the design [here](#features).
@@ -38,22 +38,14 @@ supported terminals :-)
 Palette variants
 ----------------
 
-### Selenized medium
+### Selenized dark
 
-![Selenized medium screenshot](http://i.imgur.com/U4y7JTc.png)
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
 Relatively high lightness of this version makes it well suited for using
 side-by-side with programs that have black text on white background (e.g. pdf
 documents, many websites etc.).
 
-
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/ZozQMRm.png)
-
-It has exactly the same hues and overall contrast as the medium version, just
-the lightness is shifted.  It will feel familiar to people used to Solarized
-palette.
 
 
 ### Selenized black
@@ -61,12 +53,25 @@ palette.
 Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
 maybe you'd like some more contrast?  Try this variation.
 
-![Selenized black screenshot](http://i.imgur.com/Yk9OfdL.png)
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
+
 
 
 ### Selenized light
 
-I plan to add a dark-on-light variant when I finish adjusting current ones.
+A warm sepia variant. This one works wery well especially when you have a lot
+of other bright windows opened.
+
+![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+
+
+### Selenized white
+
+Finally, a white version for completeness. Unlike many white-backgrounded
+palettes, all accent colors are well readable here.
+
+![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
 
 
 
@@ -82,13 +87,13 @@ terminal colors - see [example](http://i.imgur.com/wICCS7x.png)).  High
 contrast like that tires the eye - that's why professional graphic software
 often use gray in their interfaces.
 
-![Selenized contrast sample](http://i.imgur.com/SRL3n03.png)
+![Selenized contrast sample](http://i.imgur.com/Y11xuwv.png)
 
 Selenized has moderate-to-low contrast - the difference in LAB lightness
 between foreground and background is 50, which is exactly half the distance
 between pure black and white.  The result is easy on eyes but still very
 readable, even on poor displays - see a [side-by-side comparison of Selenized
-and Ubuntu palettes](http://i.imgur.com/Q5ECiYK.png).
+and Ubuntu palettes](http://i.imgur.com/MtpKFFf.png).
 
 <!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
 
@@ -103,7 +108,7 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png)
+<!-- ![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png) -->
 
 I have fine-tuned the lightnesses to ensure that all colors present an even
 contrast, even red and blue (which are too dark in many palettes).  You can
@@ -118,13 +123,12 @@ ugliness of some palette examples may scorch your eyes!).
 Reducing contrast inside terminal window is one thing, but what about the
 contrast of the whole desktop?  If you have your terminal side-by-side with a
 window that has black text on white background (e.g. a document viewer or a
-browser), the resulting contrast between the two windows will make Selenized
-dark less readable.  That's why Selenized includes a "medium" variant - it has
-exactly the same hues and overall contrast, just the lightness is shifted: this
-ensures better readability and prevents eye fatigue when used next to a
+browser), the resulting contrast between the two windows may make the terminal
+less readable.  That's why Selenized dark is has relatively light background:
+this ensures better readability and prevents eye fatigue when used next to a
 bright/high-contrast window.
 
-![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)
+![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
 There is also a "black" variant meant for people who need higher contrast -
 either due to especially bad display/lightness conditions, or because they are
