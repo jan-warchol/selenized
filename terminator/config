@@ -15,11 +15,6 @@
     foreground_color = "#abbfc6"
     background_color = "#123e51"
   [[selenized-dark]]
-    palette = "#0d3343:#de3b3b:#5da01d:#c19b07:#1e7edd:#d85ca6:#18aea0:#5b727c:#224455:#ee4b47:#6baf2d:#d0a920:#378bec:#e76bb4:#32bcae:#acc0c7"
-    background_image = None
-    foreground_color = "#90a4ab"
-    background_color = "#052736"
-  [[selenized-medium]]
     palette = "#1a4b60:#fc5951:#77bb3a:#ddb42f:#4897f9:#f477c0:#43c8ba:#728c98:#2f5d73:#ff685e:#85c948:#ecc33e:#5aa5ff:#ff85ce:#54d7c8:#c8dce3"
     background_image = None
     foreground_color = "#abbfc6"

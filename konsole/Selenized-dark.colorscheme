@@ -1,64 +1,64 @@
 [Background]
-Color=5,39,54
+Color=18,62,81
 
 [BackgroundIntense]
-Color=13,51,67
+Color=26,75,96
 
 [Color0]
-Color=13,51,67
+Color=26,75,96
 
 [Color0Intense]
-Color=34,68,85
+Color=47,93,115
 
 [Color1]
-Color=222,59,59
+Color=252,89,81
 
 [Color1Intense]
-Color=238,75,71
+Color=255,104,94
 
 [Color2]
-Color=93,160,29
+Color=119,187,58
 
 [Color2Intense]
-Color=107,175,45
+Color=133,201,72
 
 [Color3]
-Color=193,155,7
+Color=221,180,47
 
 [Color3Intense]
-Color=208,169,32
+Color=236,195,62
 
 [Color4]
-Color=30,126,221
+Color=72,151,249
 
 [Color4Intense]
-Color=55,139,236
+Color=90,165,255
 
 [Color5]
-Color=216,92,166
+Color=244,119,192
 
 [Color5Intense]
-Color=231,107,180
+Color=255,133,206
 
 [Color6]
-Color=24,174,160
+Color=67,200,186
 
 [Color6Intense]
-Color=50,188,174
+Color=84,215,200
 
 [Color7]
-Color=91,114,124
+Color=114,140,152
 
 [Color7Intense]
-Color=172,192,199
+Color=200,220,227
 
 [Foreground]
-Color=144,164,171
+Color=171,191,198
 
 [ForegroundIntense]
-Color=172,192,199
+Color=200,220,227
 
 [General]
-Description=Selenized dark
+Description=Selenized medium
 Opacity=1
 Wallpaper=

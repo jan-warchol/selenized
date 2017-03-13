@@ -6,7 +6,7 @@ Selenized is a color palette for terminal emulators. I used
 balanced contrast and lightness across the whole palette, for great readability
 without tiring the eyes. Also, I carefully adjusted accent colors to be both
 pleasing and clearly distinguishable (even on poor quality screens).  Selenized
-comes in 3 variants (medium, dark and black) so that you can pick the one that
+comes in 2 variants (dark and black) so that you can pick the one that
 works best in your working environment.
 
 You can read more about the design [here](#features).
@@ -38,22 +38,13 @@ supported terminals :-)
 Palette variants
 ----------------
 
-### Selenized medium
+### Selenized dark
 
-![Selenized medium screenshot](http://i.imgur.com/U4y7JTc.png)
+![Selenized dark screenshot](http://i.imgur.com/U4y7JTc.png)
 
 Relatively high lightness of this version makes it well suited for using
 side-by-side with programs that have black text on white background (e.g. pdf
 documents, many websites etc.).
-
-
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/ZozQMRm.png)
-
-It has exactly the same hues and overall contrast as the medium version, just
-the lightness is shifted.  It will feel familiar to people used to Solarized
-palette.
 
 
 ### Selenized black
@@ -118,10 +109,9 @@ ugliness of some palette examples may scorch your eyes!).
 Reducing contrast inside terminal window is one thing, but what about the
 contrast of the whole desktop?  If you have your terminal side-by-side with a
 window that has black text on white background (e.g. a document viewer or a
-browser), the resulting contrast between the two windows will make Selenized
-dark less readable.  That's why Selenized includes a "medium" variant - it has
-exactly the same hues and overall contrast, just the lightness is shifted: this
-ensures better readability and prevents eye fatigue when used next to a
+browser), the resulting contrast between the two windows may make the terminal
+less readable.  That's why Selenized dark is has relatively light background:
+this ensures better readability and prevents eye fatigue when used next to a
 bright/high-contrast window.
 
 ![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)

@@ -11,10 +11,10 @@ emulators - they are intended for use with GUI applications (see
 
 
 
-Selenized medium
-----------------
+Selenized dark
+--------------
 
-![Selenized medium screenshot](http://i.imgur.com/U4y7JTc.png)
+![Selenized dark screenshot](http://i.imgur.com/U4y7JTc.png)
 
 ```
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
@@ -43,42 +43,6 @@ br_magenta   72  55 -15   325  49 100   #ff85ce   #fd6bc6
 br_cyan      79 -40  -4   173  61  84   #54d7c8   #52d1bc
 br_orange    72  37  50    22  66 100   #ff9557   #f88042
 br_violet    69  30 -45   263  40  99   #bf98fc   #ad82fe
-```
-
-
-
-Selenized dark
---------------
-
-![Selenized dark screenshot](http://i.imgur.com/ZozQMRm.png)
-
-```
-Color        CIE L*a*b*   HSB           sRGB      AppleRGB
-----------   ----------   -----------   -------   --------
-bg           14  -8 -13   198  91  21   #052736   #091e29
-black        19  -9 -14   198  80  26   #0d3343   #0e2634
-br_black     27  -9 -14   200  61  33   #224455   #1b3544
-white        46  -7  -9   199  27  49   #5b727c   #4a5f69
-fg           66  -6  -6   196  15  67   #90a4ab   #7f939b
-br_white     76  -6  -6   196  14  78   #acc0c7   #9eb3bb
-
-red          51  63  40     0  73  87   #de3b3b   #cf232d
-green        60 -38  55    91  82  63   #5da01d   #529206
-yellow       66   6  68    48  96  76   #c19b07   #b28900
-blue         51   0 -57   210  87  87   #1e7edd   #1d6ad8
-magenta      57  55 -15   324  57  85   #d85ca6   #c74397
-cyan         64 -40  -4   175  86  68   #18aea0   #29a08f
-orange       58  37  50    23  76  82   #d16e32   #c25823
-violet       55  30 -45   263  46  82   #9671d1   #805aca
-
-br_red       57  63  40     2  70  93   #ee4b47   #e23236
-br_green     65 -38  55    91  74  68   #6baf2d   #5fa217
-br_yellow    71   6  68    47  85  82   #d0a920   #c39808
-br_blue      57   0 -57   212  77  93   #378bec   #2f77ea
-br_magenta   63  55 -15   325  54  91   #e76bb4   #da51a7
-br_cyan      69 -40  -4   174  73  74   #32bcae   #38b19e
-br_orange    63  37  50    22  72  88   #e17c3f   #d4652d
-br_violet    60  30 -45   263  44  88   #a47ee0   #8f68dc
 ```
 
 
