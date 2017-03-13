@@ -7,19 +7,19 @@
   title_transmit_bg_color = "#3c8ae6"
   title_transmit_fg_color = "#072938"
 [profiles]
-  # default profile is set to selenized medium. I know, code duplication is bad
+  # default profile is set to selenized dark. I know, code duplication is bad
   # but there is no proper way to do this in Terminator.
   [[default]]
     palette = "#1a4b60:#fc5951:#77bb3a:#ddb42f:#4897f9:#f477c0:#43c8ba:#728c98:#2f5d73:#ff685e:#85c948:#ecc33e:#5aa5ff:#ff85ce:#54d7c8:#c8dce3"
     background_image = None
     foreground_color = "#abbfc6"
     background_color = "#123e51"
-  [[selenized-dark]]
-    palette = "#1a4b60:#fc5951:#77bb3a:#ddb42f:#4897f9:#f477c0:#43c8ba:#728c98:#2f5d73:#ff685e:#85c948:#ecc33e:#5aa5ff:#ff85ce:#54d7c8:#c8dce3"
+  [[Selenized dark]]
+    palette = "#184956:#fa5750:#75b938:#dbb32d:#4695f7:#f275be:#41c7b9:#72898f:#2d5b69:#ff665c:#84c747:#ebc13d:#58a3ff:#ff84cd:#53d6c7:#cad8d9"
     background_image = None
-    foreground_color = "#abbfc6"
-    background_color = "#123e51"
-  [[selenized-black]]
+    foreground_color = "#adbcbc"
+    background_color = "#103c48"
+  [[Selenized black]]
     palette = "#252525:#ed4a46:#70b433:#dbb32d:#368aeb:#eb6eb7:#3fc5b7:#777777:#3b3b3b:#ff5e56:#83c746:#efc541:#4f9cfe:#ff81ca:#56d8c9:#dedede"
     background_image = None
     foreground_color = "#b9b9b9"

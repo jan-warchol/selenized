@@ -14,35 +14,35 @@ emulators - they are intended for use with GUI applications (see
 Selenized dark
 --------------
 
-![Selenized dark screenshot](http://i.imgur.com/U4y7JTc.png)
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
 ```
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
 ----------   ----------   -----------   -------   --------
-bg           24 -10 -16   198  77  32   #123e51   #123040
-black        29 -11 -18   198  73  38   #1a4b60   #183a4e
-br_black     37 -11 -18   199  59  45   #2f5d73   #274b60
-white        56  -8 -10   199  25  60   #728c98   #607a87
-fg           76  -6  -6   196  14  78   #abbfc6   #9cb2ba
-br_white     86  -6  -6   196  12  89   #c8dce3   #bdd4dd
+bg           23 -12 -12   193  77  28   #103c48   #112e38
+black        28 -13 -13   193  72  34   #184956   #163945
+br_black     36 -13 -13   194  57  41   #2d5b69   #254a57
+white        56  -8  -6   191  20  56   #72898f   #61777c
+fg           75  -5  -2   182   8  74   #adbcbc   #9faeae
+br_white     85  -5  -2   182   7  85   #cad8d9   #bfd0d0
 
-red          61  63  40     2  68  99   #fc5951   #f33e40
-green        69 -38  55    92  69  73   #77bb3a   #6baf23
-yellow       76   6  68    46  79  87   #ddb42f   #d3a617
-blue         61   0 -57   213  71  98   #4897f9   #3c84fa
-magenta      67  55 -15   325  51  96   #f477c0   #ea5db5
-cyan         73 -40  -4   174  67  79   #43c8ba   #43bfab
-orange       67  37  50    22  69  94   #ef874a   #e57136
-violet       64  30 -45   263  42  93   #b08aed   #9d73eb
+red          60  63  40     2  68  98   #fa5750   #f13c3e
+green        69 -38  55    92  70  73   #75b938   #69ad21
+yellow       75   6  68    46  79  86   #dbb32d   #d1a416
+blue         60   0 -57   213  72  97   #4695f7   #3a82f8
+magenta      66  55 -15   325  52  95   #f275be   #e75bb3
+cyan         73 -40  -4   174  67  78   #41c7b9   #42bdaa
+orange       67  37  50    22  69  93   #ed8649   #e26f35
+violet       64  30 -45   263  42  92   #af88eb   #9b72e9
 
-br_red       66  63  40     3  65 100   #ff685e   #ff4d4b
-br_green     75 -38  55    92  64  79   #85c948   #7ac02f
-br_yellow    81   6  68    46  74  93   #ecc33e   #e6b626
-br_blue      66   0 -57   214  66 100   #5aa5ff   #4c92ff
-br_magenta   72  55 -15   325  49 100   #ff85ce   #fd6bc6
-br_cyan      79 -40  -4   173  61  84   #54d7c8   #52d1bc
-br_orange    72  37  50    22  66 100   #ff9557   #f88042
-br_violet    69  30 -45   263  40  99   #bf98fc   #ad82fe
+br_red       66  63  40     3  65 100   #ff665c   #ff4b49
+br_green     74 -38  55    92  65  78   #84c747   #78be2e
+br_yellow    80   6  68    46  74  92   #ebc13d   #e4b424
+br_blue      66   0 -57   214  66 100   #58a3ff   #4a91ff
+br_magenta   72  55 -15   325  49 100   #ff84cd   #fb69c4
+br_cyan      78 -40  -4   173  61  84   #53d6c7   #50cfba
+br_orange    72  37  50    22  66  99   #fd9456   #f67e41
+br_violet    69  30 -45   263  40  98   #bd96fa   #ab80fc
 ```
 
 
@@ -50,7 +50,7 @@ br_violet    69  30 -45   263  40  99   #bf98fc   #ad82fe
 Selenized black
 ---------------
 
-![Selenized black screenshot](http://i.imgur.com/Yk9OfdL.png)
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
 
 ```
 Color        CIE L*a*b*   HSB           sRGB      AppleRGB
