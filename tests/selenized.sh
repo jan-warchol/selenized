@@ -11,8 +11,6 @@ echo -e "$BRIGHT
                     / __|/ _ \ |/ _ \ '_ \| |_  / _ \/ _' |
                     \__ \  __/ |  __/ | \ | |/ /  __/ (_| |
                     |___/\___|_|\___|_| |_|_/___\___|\__,_|
-$RESET
-                       Readability and comfort above all
 $DIM
                               author: Jan Warchoł
 $RESET"
@@ -30,13 +28,13 @@ echo -ne "
 "
 
 echo -en "
-      ${DIM}Note how using just slightly darker color can make this note appear
+      ${DIM}Note how using just slightly softer color can make this note appear
       less important than the rest of the text while still being legible.${RESET}
 "
 
 loremipsum="\n      \e[0mLorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor"
-echo -en "$loremipsum\n             "
-for color in 90 37 36 34 35 31 33 32 37 90; do
+echo -en "$loremipsum\n         "
+for color in 90 37 39 36 34 35 31 33 32 39 37 90; do
     echo -en "\e[${color}m Text"
 done
 echo -e "$loremipsum\n"
