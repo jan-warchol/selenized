@@ -47,6 +47,7 @@ side-by-side with programs that have black text on white background (e.g. pdf
 documents, many websites etc.).
 
 
+
 ### Selenized black
 
 Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
@@ -55,9 +56,22 @@ maybe you'd like some more contrast?  Try this variation.
 ![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
 
 
+
 ### Selenized light
 
-I plan to add a dark-on-light variant when I finish adjusting current ones.
+A warm sepia variant. This one works wery well especially when you have a lot
+of other bright windows opened.
+
+![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+
+
+### Selenized white
+
+Finally, a white version for completeness. Unlike many white-backgrounded
+palettes, all accent colors are well readable here.
+
+![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
 
 
 
