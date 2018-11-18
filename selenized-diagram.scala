@@ -1,8 +1,8 @@
-val plotW = 1200
+val plotW = 800
 val plotH = 600
-val squareSize = 40
+val squareSize = 44
 val squareHalf = squareSize/2.0
-val squareBorder = 8
+val squareBorder = 3
 
 class Color(val name: String, val hexString: String, val luminance: Int)
 
@@ -14,7 +14,7 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
        height={plotH.toString}
        version="1.1"
        font-family="Signika, sans"
-       font-size={(2*squareBorder).toString+"px"}>
+       font-size={(squareHalf).toString+"px"}>
        <style>
             @font-face {{
             font-family: 'Signika';
