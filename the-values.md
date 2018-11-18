@@ -5,67 +5,44 @@ LAB values are canonical.  RGB values (both sRGB and Apple RGB) are calculated
 from LAB using `utils/convert-lab-palette-to-rgbs.py` script, which employs
 `python-colormath` library for color space transformations.
 
-
-Selenized medium
-----------------
-
-![Selenized medium screenshot](http://i.imgur.com/NI8RQaT.png)
-
-```
-Color        CIE L*a*b*   sRGB      AppleRGB  HSB
-----------   ----------   -------   --------  -----------
-bg           25 -10 -16   #154053   #143242   198  74  33
-black        35 -12 -19   #245970   #1f475e   199  68  44
-br_black     60  -7  -9   #7c95a0   #6b838f   199  22  63
-fg           75  -6  -6   #a8bcc3   #99afb7   196  14  77
-white        75  -6  -6   #a8bcc3   #99afb7   196  14  77
-br_white     85  -6  -6   #c4d8df   #b9cfd8   196  12  88
-
-red          61  63  40   #fc5851   #f33e3f     2  68  99
-green        69 -37  53   #78b93e   #6bae27    92  66  73
-yellow       74   6  65   #d8b033   #cda11d    46  76  85
-blue         61   0 -55   #4e97f5   #4183f5   214  68  96
-magenta      65  59 -21   #f16dc5   #e652bb   320  55  95
-cyan         73 -40  -4   #41c7b9   #42beaa   174  67  78
-
-br_red       66  63  40   #ff675d   #ff4c4a     3  65 100
-br_green     74 -37  53   #85c74c   #79be33    92  62  78
-br_yellow    79   6  65   #e7be42   #dfb02a    45  72  90
-br_blue      66   0 -55   #5ea4ff   #4f92ff   215  64 100
-br_magenta   70  59 -21   #ff7bd3   #f960cc   320  52 100
-br_cyan      78 -40  -4   #52d5c7   #50ceba   173  61  84
-```
+Please note that orange and violet are not used in configs of terminal
+emulators - they are intended for use with GUI applications (see
+[FAQ](README.md#where-are-orange-and-violet)).
 
 
 
 Selenized dark
 --------------
 
-![Selenized dark screenshot](http://i.imgur.com/y2dMcsE.png)
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
 ```
-Color        CIE L*a*b*   sRGB      AppleRGB  HSB
-----------   ----------   -------   --------  -----------
-bg           15  -8 -13   #072938   #0b1f2b   198  87  22
-black        25 -10 -16   #154053   #143242   198  74  33
-br_black     50  -7  -9   #637b86   #526873   199  26  53
-fg           65  -6  -6   #8ea1a8   #7d9098   196  16  66
-white        65  -6  -6   #8ea1a8   #7d9098   196  16  66
-br_white     75  -6  -6   #a8bcc3   #99afb7   196  14  77
+Color        CIE L*a*b*   HSB           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
+bg           23 -12 -12   193  77  28   #103c48   #112e38
+black        28 -13 -13   193  72  34   #184956   #163945
+br_black     36 -13 -13   194  57  41   #2d5b69   #254a57
+white        56  -8  -6   191  20  56   #72898f   #61777c
+fg           75  -5  -2   182   8  74   #adbcbc   #9faeae
+br_white     85  -5  -2   182   7  85   #cad8d9   #bfd0d0
 
-red          51  63  40   #dc3a3a   #cd222c   360  74  86
-green        59 -37  53   #5c9e21   #518f0d    92  79  62
-yellow       64   6  65   #ba9610   #aa8400    47  92  73
-blue         51   0 -55   #267dd8   #2268d2   211  82  85
-magenta      55  59 -21   #d451aa   #c3379c   319  62  83
-cyan         63 -40  -4   #12ab9e   #269e8c   175  90  67
+red          60  63  40     2  68  98   #fa5750   #f13c3e
+green        69 -38  55    92  70  73   #75b938   #69ad21
+yellow       75   6  68    46  79  86   #dbb32d   #d1a416
+blue         60   0 -57   213  72  97   #4695f7   #3a82f8
+magenta      66  55 -15   325  52  95   #f275be   #e75bb3
+cyan         73 -40  -4   174  67  78   #41c7b9   #42bdaa
+orange       67  37  50    22  69  93   #ed8649   #e26f35
+violet       64  30 -45   263  42  92   #af88eb   #9b72e9
 
-br_red       56  63  40   #ec4946   #e03035     1  71  93
-br_green     64 -37  53   #6aac30   #5e9e1b    92  72  67
-br_yellow    69   6  65   #c9a323   #bb920e    46  82  79
-br_blue      56   0 -55   #3c8ae6   #3276e3   213  74  90
-br_magenta   60  59 -21   #e25fb8   #d444ab   320  58  89
-br_cyan      68 -40  -4   #2eb9ab   #34ad9b   174  75  73
+br_red       66  63  40     3  65 100   #ff665c   #ff4b49
+br_green     74 -38  55    92  65  78   #84c747   #78be2e
+br_yellow    80   6  68    46  74  92   #ebc13d   #e4b424
+br_blue      66   0 -57   214  66 100   #58a3ff   #4a91ff
+br_magenta   72  55 -15   325  49 100   #ff84cd   #fb69c4
+br_cyan      78 -40  -4   173  61  84   #53d6c7   #50cfba
+br_orange    72  37  50    22  66  99   #fd9456   #f67e41
+br_violet    69  30 -45   263  40  98   #bd96fa   #ab80fc
 ```
 
 
@@ -73,30 +50,107 @@ br_cyan      68 -40  -4   #2eb9ab   #34ad9b   174  75  73
 Selenized black
 ---------------
 
-![Selenized black screenshot](http://i.imgur.com/PVKtHEC.png)
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
 
 ```
-Color        CIE L*a*b*   sRGB      AppleRGB  HSB
-----------   ----------   -------   --------  -----------
-bg           10   0   0   #1b1b1b   #151515    35   0  11
-black        20   0   0   #303030   #242424    35   0  19
-br_black     55   0   0   #848484   #717171    35   0  52
-fg           70   0   0   #ababab   #9b9b9b    35   0  67
-white        70   0   0   #ababab   #9b9b9b    35   0  67
-br_white     80   0   0   #c6c6c6   #bababa    35   0  78
+Color        CIE L*a*b*   HSB           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
+bg            8   0   0    35   0   9   #181818   #121212
+black        15   0   0    35   0  15   #252525   #1c1c1c
+br_black     25   0   0    35   0  23   #3b3b3b   #2d2d2d
+white        50   0   0    35   0  47   #777777   #636363
+fg           75   0   0    35   0  72   #b9b9b9   #aaaaaa
+br_white     88   0   0    35   0  87   #dedede   #d6d6d6
 
-red          56  63  40   #ec4946   #e03035     1  71  93
-green        64 -37  53   #6aac30   #5e9e1b    92  72  67
-yellow       69   6  65   #c9a323   #bb920e    46  82  79
-blue         56   0 -55   #3c8ae6   #3276e3   213  74  90
-magenta      60  59 -21   #e25fb8   #d444ab   320  58  89
-cyan         68 -40  -4   #2eb9ab   #34ad9b   174  75  73
+red          56  63  40     1  70  93   #ed4a46   #e13136
+green        67 -38  55    92  72  71   #70b433   #64a81d
+yellow       75   6  68    46  79  86   #dbb32d   #d1a416
+blue         56   0 -57   212  77  92   #368aeb   #2d76e9
+magenta      64  55 -15   325  53  92   #eb6eb7   #de54ab
+cyan         72 -40  -4   174  68  77   #3fc5b7   #40bba8
+orange       64  37  50    22  71  90   #e67f43   #da6930
+violet       60  30 -45   263  43  88   #a580e2   #9169dd
 
-br_red       64  63  40   #ff6158   #ff4646     3  66 100
-br_green     72 -37  53   #80c246   #74b72e    92  64  76
-br_yellow    77   6  65   #e1b83c   #d7aa25    45  73  88
-br_blue      64   0 -55   #589efe   #4a8cff   214  65  99
-br_magenta   68  59 -21   #fa76ce   #f15ac5   320  53  98
-br_cyan      76 -40  -4   #4cd0c1   #4bc8b4   173  64  81
+br_red       63  63  40     3  67 100   #ff5e56   #fb4343
+br_green     74 -38  55    92  65  78   #83c746   #77bd2d
+br_yellow    82   6  68    45  73  94   #efc541   #e9b928
+br_blue      63   0 -57   214  69 100   #4f9cfe   #4289ff
+br_magenta   71  55 -15   325  49 100   #ff81ca   #f767c0
+br_cyan      79 -40  -4   173  60  85   #56d8c9   #53d2bd
+br_orange    71  37  50    22  67  98   #fa9153   #f37b3f
+br_violet    67  30 -45   263  41  96   #b891f5   #a67bf5
 ```
 
+
+
+
+Selenized light
+---------------
+
+![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+```
+Color        CIE L*a*b*   HSB           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
+bg           96   0  13    44  13  99   #fbf3db   #faf0d2
+black        91   0  13    45  13  92   #ece3cc   #e7ddc0
+br_black     82   0  13    45  15  83   #d5cdb6   #cbc2a6
+white        62  -4   1   155   6  60   #909995   #7e8783
+fg           42  -6  -6   195  24  43   #53676d   #43545a
+br_white     31  -6  -6   195  30  33   #3a4d53   #2d3c42
+
+red          46  66  42   356  84  82   #d2212d   #c00221
+green        54 -40  58    90 100  57   #489100   #3f8100
+yellow       59   6  71    47 100  68   #ad8900   #9b7600
+blue         46   0 -60   208 100  83   #0072d4   #005dcc
+magenta      52  58 -16   323  64  79   #ca4898   #b73088
+cyan         57 -42  -4   175 100  61   #009c8f   #038d7c
+orange       52  39  52    23  84  76   #c25d1e   #b04713
+violet       49  32 -47   262  50  78   #8762c6   #714cbc
+
+br_red       44  66  42   354  89  80   #cc1729   #b9001e
+br_green     52 -40  58    92 100  55   #428b00   #3a7b00
+br_yellow    57   6  71    47 100  66   #a78300   #957000
+br_blue      44   0 -60   208 100  81   #006dce   #0059c6
+br_magenta   50  58 -16   323  66  77   #c44392   #b12b82
+br_cyan      55 -42  -4   175 100  59   #00978a   #008777
+br_orange    50  39  52    23  87  74   #bc5819   #a9430f
+br_violet    47  32 -47   262  51  75   #825dc0   #6b47b6
+```
+
+
+
+
+Selenized white
+---------------
+
+![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
+
+```
+Color        CIE L*a*b*   HSB           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
+bg          100   0   0    35   0 100   #ffffff   #ffffff
+black        93   0   0    35   0  92   #ebebeb   #e6e6e6
+br_black     82   0   0    35   0  80   #cdcdcd   #c2c2c2
+white        56   0   0    35   0  53   #878787   #747474
+fg           30   0   0    35   0  28   #474747   #373737
+br_white     16   0   0    35   0  16   #282828   #1e1e1e
+
+red          40  88  56   357 100  84   #d6000c   #c5000d
+green        54 -53  77   108 100  59   #1d9700   #288800
+yellow       65   8  95    46 100  77   #c49700   #b58400
+blue         40   0 -80   214 100  89   #0064e4   #004fe0
+magenta      50  77 -21   318  93  87   #dd0f9d   #cc008e
+cyan         61 -56  -6   174 100  68   #00ad9c   #00a08a
+orange       51  52  70    21 100  82   #d04a00   #bf3400
+violet       45  42 -63   261  62  84   #7f51d6   #673ad0
+
+br_red       33  88  56     0 100  75   #bf0000   #aa0000
+br_green     47 -53  77   120 100  52   #008400   #147300
+br_yellow    58   8  95    46 100  69   #af8500   #9d7100
+br_blue      33   0 -80   216 100  81   #0054cf   #0040c8
+br_magenta   43  77 -21   318 100  78   #c7008b   #b3007a
+br_cyan      54 -56  -6   174 100  60   #009a8a   #008a77
+br_orange    44  52  70    18 100  73   #ba3700   #a62300
+br_violet    38  42 -63   260  67  76   #6b40c3   #542bb9
+```

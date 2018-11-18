@@ -1,7 +1,8 @@
 Selenized palette for iTerm
 ===========================
 
-_**Note:** the default terminal emulator on OS X is Terminal.app, not iTerm!_
+_**Note:** the default terminal emulator on OS X is
+[Terminal.app](/terminal-app), not iTerm!_
 
 I recommend all Mac users to use iTerm rather than the default terminal -
 firstly because iTerm has some very nice features (like split panes and

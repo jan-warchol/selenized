@@ -1,2 +1,5 @@
 build
+screenshot*
+*.pyc
+*.private-terminator
 

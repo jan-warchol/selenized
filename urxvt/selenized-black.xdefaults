@@ -1,25 +1,25 @@
-! selenized black color palette for urxvt.
+! Selenized black color palette for urxvt.
 
-urxvt.background:  #1b1b1b
-urxvt.foreground:  #ababab
+urxvt.background:  #181818
+urxvt.foreground:  #b9b9b9
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-urxvt.color0:      #303030
-urxvt.color1:      #ec4946
-urxvt.color2:      #6aac30
-urxvt.color3:      #c9a323
-urxvt.color4:      #3c8ae6
-urxvt.color5:      #e25fb8
-urxvt.color6:      #2eb9ab
-urxvt.color7:      #ababab
+urxvt.color0:      #252525
+urxvt.color1:      #ed4a46
+urxvt.color2:      #70b433
+urxvt.color3:      #dbb32d
+urxvt.color4:      #368aeb
+urxvt.color5:      #eb6eb7
+urxvt.color6:      #3fc5b7
+urxvt.color7:      #777777
 
 ! bright/bold versions of colors (in the same order)
-urxvt.color8:      #848484
-urxvt.color9:      #ff6158
-urxvt.color10:     #80c246
-urxvt.color11:     #e1b83c
-urxvt.color12:     #589efe
-urxvt.color13:     #fa76ce
-urxvt.color14:     #4cd0c1
-urxvt.color15:     #c6c6c6
+urxvt.color8:      #3b3b3b
+urxvt.color9:      #ff5e56
+urxvt.color10:     #83c746
+urxvt.color11:     #efc541
+urxvt.color12:     #4f9cfe
+urxvt.color13:     #ff81ca
+urxvt.color14:     #56d8c9
+urxvt.color15:     #dedede
 

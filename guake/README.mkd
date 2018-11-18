@@ -1,0 +1,28 @@
+Selenized Palette for Guake
+===========================
+
+
+Installation
+------------
+
+Clone this repository and run installation script. You can supply selenized
+variant as the argument:
+
+    git clone https://github.com/janek-warchol/selenized
+    ./selenized/guake/install.sh black
+
+**Note:** You may need to install `gconf2` package to be able to run this
+script.  This should be as easy as running `sudo apt-get install <package>`.
+
+**Warning:** the colors in the default profile will be premanently overwritten -
+there is no undo.  Consider creating a new profile before installing Selenized.
+
+
+
+Credits
+-------
+
+Based on
+[guake-colors-solarized](https://github.com/coolwanglu/guake-colors-solarized.git)
+originally written by Lu Wang and others.
+

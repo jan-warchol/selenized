@@ -7,7 +7,7 @@
 import sys
 import re
 
-r = re.compile(r'(\w+)\s+([0-9]+)\s+(?:[-0-9]+\s+){2}#(\w+)\s+#\w+')
+r = re.compile(r'(\w+)\s+([0-9]+)\s+(?:[-0-9]+\s+){2}[0-9\s]+#(\w+)\s+#\w+')
 
 for line in sys.stdin.readlines():
     m = r.match(line)

@@ -7,7 +7,7 @@
  [36mTEXT_BLOCK[m=[33m"[m[31m■■■■[m[33m"[m
  [36mSPACE_BLOCK[m=[33m"[m[31m    [m[33m"[m
  [36mreset_colors() {[m [33mecho[m[31m -en [m[33m"[m[35m\033[m[31m[0m[m[32m${1}[35m\033[m[31m[0m[m[33m";[m [36m}[m
- [34m# needed for solarized[m
+ [34m# for testing solarized[m
  [36mCOMMENT_COLOR[m=[32m${1[m[33m:-[m90[32m}[m
  
  [36mallcolors() {[m

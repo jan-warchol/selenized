@@ -6,12 +6,10 @@ Selenized is a color palette for terminal emulators. I used
 balanced contrast and lightness across the whole palette, for great readability
 without tiring the eyes. Also, I carefully adjusted accent colors to be both
 pleasing and clearly distinguishable (even on poor quality screens).  Selenized
-comes in 3 variants (medium, dark and black) so that you can pick the one that
+comes in 2 variants (dark and black) so that you can pick the one that
 works best in your working environment.
 
 You can read more about the design [here](#features).
-
-_Note: this is work in progress - the colors are expected to change slightly._
 
 
 
@@ -23,7 +21,9 @@ Ready-to-use config files are available for the following terminals:
   other Linux distros using Gnome)
 - [Konsole](konsole) (KDE's terminal)
 - [Terminator](terminator)
+- [Guake](guake)
 - [urxvt](urxvt)
+- [xterm](xterm)
 - [iTerm](iterm)
 - if you use Terminal.app (default OS X terminal), I recommend switching to
   [iTerm](iterm), for reasons listed [here](terminal-app).
@@ -38,22 +38,14 @@ supported terminals :-)
 Palette variants
 ----------------
 
-### Selenized medium
+### Selenized dark
 
-![Selenized medium screenshot](http://i.imgur.com/NI8RQaT.png)
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
 Relatively high lightness of this version makes it well suited for using
 side-by-side with programs that have black text on white background (e.g. pdf
 documents, many websites etc.).
 
-
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/y2dMcsE.png)
-
-It has exactly the same hues and overall contrast as the medium version, just
-the lightness is shifted.  It will feel familiar to people used to Solarized
-palette.
 
 
 ### Selenized black
@@ -61,12 +53,25 @@ palette.
 Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
 maybe you'd like some more contrast?  Try this variation.
 
-![Selenized black screenshot](http://i.imgur.com/PVKtHEC.png)
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
+
 
 
 ### Selenized light
 
-I plan to add a dark-on-light variant when I finish adjusting current ones.
+A warm sepia variant. This one works wery well especially when you have a lot
+of other bright windows opened.
+
+![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+
+
+### Selenized white
+
+Finally, a white version for completeness. Unlike many white-backgrounded
+palettes, all accent colors are well readable here.
+
+![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
 
 
 
@@ -82,13 +87,13 @@ terminal colors - see [example](http://i.imgur.com/wICCS7x.png)).  High
 contrast like that tires the eye - that's why professional graphic software
 often use gray in their interfaces.
 
-![Selenized contrast sample](http://i.imgur.com/SRL3n03.png)
+![Selenized contrast sample](http://i.imgur.com/Y11xuwv.png)
 
 Selenized has moderate-to-low contrast - the difference in LAB lightness
 between foreground and background is 50, which is exactly half the distance
 between pure black and white.  The result is easy on eyes but still very
 readable, even on poor displays - see a [side-by-side comparison of Selenized
-and Ubuntu palettes](http://i.imgur.com/Q5ECiYK.png).
+and Ubuntu palettes](http://i.imgur.com/MtpKFFf.png).
 
 <!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
 
@@ -103,15 +108,13 @@ the same lightness because that would make them harder to tell apart (for
 example, our eyes expect yellow to be brighter than orange and orange brighter
 than red).
 
-Selenized keeps the difference in LAB lightness between accent colors and
-background above 35, ensuring that all of them are nicely readable - even red
-and blue.
+<!-- ![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png) -->
 
-![Selenized accent colors example](http://i.imgur.com/kSFGE0R.png)
-
-Many color palettes do this wrong.  For example, rxvt default palette uses
-quite bright yellow any cyan, while blue is so dark that it's actually almost
-impossible to read against the background.
+I have fine-tuned the lightnesses to ensure that all colors present an even
+contrast, even red and blue (which are too dark in many palettes).  You can
+read more about accent color lightness and see a comparison between Selenized
+and other palettes [here](balancing-lightness-of-colors.md) (warning: extreme
+ugliness of some palette examples may scorch your eyes!).
 
 
 
@@ -120,13 +123,12 @@ impossible to read against the background.
 Reducing contrast inside terminal window is one thing, but what about the
 contrast of the whole desktop?  If you have your terminal side-by-side with a
 window that has black text on white background (e.g. a document viewer or a
-browser), the resulting contrast between the two windows will make Selenized
-dark less readable.  That's why Selenized includes a "medium" variant - it has
-exactly the same hues and overall contrast, just the lightness is shifted: this
-ensures better readability and prevents eye fatigue when used next to a
+browser), the resulting contrast between the two windows may make the terminal
+less readable.  That's why Selenized dark is has relatively light background:
+this ensures better readability and prevents eye fatigue when used next to a
 bright/high-contrast window.
 
-![Selenized next to black&white Wikipedia](http://i.imgur.com/HUvDnDy.png)
+![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
 There is also a "black" variant meant for people who need higher contrast -
 either due to especially bad display/lightness conditions, or because they are
@@ -137,38 +139,43 @@ not yet used to low contrast palettes.
 What about _Solarized_?
 -----------------------
 
-Selenized is based on Solarized color scheme by Ethan Schoonover (yay, I've
-forked a color scheme!).  The name is derived from the greek word 'selene',
-which means the moon (as opposed to the sun in solarized).  I really liked the
-design principles behind Solarized, but there are a couple issues with it:
+Selenized is based on color palette called _Solarized_ (yay, I have forked a
+color scheme!).  The name is derived from the greek word 'selene', which means
+the moon (as opposed to the sun in Solarized).  I really liked the design
+principles behind Solarized, but there are a couple issues with it (which
+Selenized aims to solve).  You can read more about the differences
+[here](whats-wrong-with-solarized.md).
 
-- Some accent colors are suboptimal (TODO: add colorwheel image):
-  - magenta is easy to confuse with red (TODO: add picture with git log),
-  - orange is very easy to confuse with red (note that there is no orange in
-    6-color version of selenized - it will be added in 8-color version),
-  - green is too close to yellow (I wouldn't actually call it green - in my
-    opinion it's more like olive, and I don't like it at all)
-  - blue is easy to confuse with violet,
-  - cyan and green are not very saturated, which makes it just slightly too
-    similar to the foreground color.
-- The contrast is slightly wrong:
-  - if you have a window with solarized colorscheme side-by-side with another
-    window (e.g. browser) that uses black-on-white text (as most of the
-    websites do), solarized becomes too hard to read in that context.
-    <screenshot with wikipedia page>
-  - the dark version is too dark.
-  - I know that Ethan says on Solarized website that he tested the scheme on a
-    variety of monitors in different lighting conditions, but nevertheless I
-    have encountered situations when solarized's legibility was poor due to bad
-    display.
-- terminals weren't built for 8 accent colors - they were built for 6 colors.
-  Solarized tries to implement more colors using some very ugly hacks which
-  cause all applications that are not solarized-aware to look weird.
-- I think that Ethan's decision to use exactly the same accent colors in both
-  light and dark versions of the colorscheme was wrong.  This constraint forces
-  the lightness of the accent colors to be a compromise, rather than picking
-  optimal lightness for dark and light versions separately - and the benefits
-  of this solution are, in my opinion, negligible.
+
+
+FAQ
+---
+
+#### Program X doesn't look good when I use Selenized in my terminal.
+
+Some command-line programs make assumptions about the colors set in the
+terminal - for example, they may assume that some color will work well as the
+background color.  Using them in a terminal that uses Selenized palette may
+require adjusting their color settings - for an example, see [this
+issue](https://github.com/janek-warchol/selenized/issues/7) about using
+Selenized with [Midnight
+Commander](https://github.com/janek-warchol/selenized/tree/master/mc).
+
+Programs with dedicated Selenized skins/configs:
+
+- [`ls`](dircolors/)
+- [Midnight Commander](mc/)
+
+
+#### Where are orange and violet?
+
+Selenized [defines](the-values.md) 8 accent colors: red, orange, yellow, green,
+cyan, blue, violet and magenta. However, terminal emulators traditionally have
+escape codes for 6 colors (red, yellow, green, cyan, blue and magenta), with
+two additional codes for black and white. Therefore, terminal configs included
+in this repository don't include orange and violet. However, configs for GUI
+programs will include the full palette (as GUI programs can define as many
+colors as they want).
 
 
 

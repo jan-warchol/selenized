@@ -1,0 +1,27 @@
+This is an example template. Run 
+
+    python evaluate_template.py <palette file> <path to this file>
+
+to evaluate this template.
+
+To access a color, use a format directive with the color name (which is a key in palette dict):
+!!COL!{yellow}!   # this is the full string representation of color 'yellow' from the palette
+
+You can access attributes of a color just as you would with ordinary object:
+!!COL!{yellow.srgb}!   # this is srgb attribute of yellow
+!!COL!{yellow.r}!   # this is srgb red attribute of yellow
+!!COL!{yellow.apple.r}!   # this is apple red attribute of yellow
+
+You can also use python's formats e.g. to cast an attribute to hex etc.:
+!!COL!{yellow.r:X}!    # uppercase hex
+!!COL!{yellow.r:02x}!  # lowercase hex, with at least 2 digits
+!!COL!{yellow.r:d}!    # decimal
+!!COL!{yellow.r1:f}!   # float
+
+The default delimiter (!) can be changed, e.g. to %: !!COL%{yellow.srgb}%
+!!COL@{yellow.srgb} you can also add some text inside format specification. {yellow.apple}@
+
+In particular, it's possible to acces multiple colors/attributes/formats in one format:
+!!COL!{bg.r:02x}{bg.r:02x}{bg.g:02x}{bg.g:02x}{bg.b:02x}{bg.b:02x}!   # gnome-terminal
+!!COL!{yellow.r1:f} {yellow.g1:f} {yellow.b1:f}!   # something like iTerm
+

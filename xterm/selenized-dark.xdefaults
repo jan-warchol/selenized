@@ -1,0 +1,25 @@
+! Selenized dark color palette for xterm.
+
+xterm*background:  rgb:10/3c/48
+xterm*foreground:  rgb:ad/bc/bc
+
+! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
+xterm*color0:      rgb:18/49/56
+xterm*color1:      rgb:fa/57/50
+xterm*color2:      rgb:75/b9/38
+xterm*color3:      rgb:db/b3/2d
+xterm*color4:      rgb:46/95/f7
+xterm*color5:      rgb:f2/75/be
+xterm*color6:      rgb:41/c7/b9
+xterm*color7:      rgb:72/89/8f
+
+! bright/bold versions of colors (in the same order)
+xterm*color8:      rgb:2d/5b/69
+xterm*color9:      rgb:ff/66/5c
+xterm*color10:     rgb:84/c7/47
+xterm*color11:     rgb:eb/c1/3d
+xterm*color12:     rgb:58/a3/ff
+xterm*color13:     rgb:ff/84/cd
+xterm*color14:     rgb:53/d6/c7
+xterm*color15:     rgb:ca/d8/d9
+
