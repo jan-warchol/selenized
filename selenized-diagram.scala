@@ -84,29 +84,18 @@ def genFgColors(colors: List[Color], bgColor: Color) = {
 println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
 val bgColors = List(
     new Color("bg", "154053", 25),
-    new Color("black", "245970", 35),
-    new Color("fg", "a8bcc3", 75),
-    new Color("white", "a8bcc3", 75),
-    new Color("br_white", "c4d8df", 85)
+    new Color("fg", "a8bcc3", 75)
 )
 val fgColors = List(
-    new Color("bg", "154053", 25),
     new Color("black", "245970", 35),
     new Color("br_black", "7c95a0", 60),
-    new Color("fg", "a8bcc3", 75),
-    new Color("white", "a8bcc3", 75),
-    new Color("br_white", "c4d8df", 85),
     new Color("red", "fc5851", 61),
-    new Color("green", "78b93e", 69),
     new Color("yellow", "d8b033", 74),
+    new Color("green", "78b93e", 69),
+    new Color("cyan", "41c7b9", 73),
     new Color("blue", "4e97f5", 61),
     new Color("magenta", "f16dc5", 65),
-    new Color("cyan", "41c7b9", 73),
-    new Color("br_red", "ff675d", 66),
-    new Color("br_green", "85c74c", 74),
-    new Color("br_yellow", "e7be42", 79),
-    new Color("br_blue", "5ea4ff", 66),
-    new Color("br_magenta", "ff7bd3", 70),
-    new Color("br_cyan", "52d5c7", 78)
+    new Color("fg", "a8bcc3", 75),
+    new Color("br_white", "c4d8df", 85)
 )
 println(genSvg(bgColors, fgColors))
