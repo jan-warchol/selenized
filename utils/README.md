@@ -12,7 +12,7 @@ templates.
     sudo apt-get install git python2.7 python-dev python-pip
 
     # install colormath with AppleRGB color space support
-    sudo pip install git+git://github.com/gtaylor/python-colormath@fa1aa638c421e
+    sudo pip install --upgrade colormath
 
 
 
