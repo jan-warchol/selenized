@@ -121,7 +121,7 @@ class Color(object):
 
 if __name__ == "__main__":
     if len(sys.argv) > 2:
-        print USAGE
+        print(USAGE)
         sys.exit()
 
     if len(sys.argv) == 2:
@@ -136,7 +136,7 @@ if __name__ == "__main__":
             "CIE L*a*b*    HSV           sRGB      AppleRGB\n"
             "-----------   -----------   -------   --------"
         )
-        print '\n', header
+        print('\n', header)
         for c in colors:
             print(c)
 
@@ -145,9 +145,9 @@ if __name__ == "__main__":
         palette = {
             name: Color(color)
             for name, color
-            in selenized_medium.palette.iteritems()
+            in selenized_medium.palette.items()
         }
 
-        for name, color in palette.iteritems():
-            print "{:<12}{}".format(name, color)
+        for name, color in palette.items():
+            print("{:<12}{}").format(name, color)
 

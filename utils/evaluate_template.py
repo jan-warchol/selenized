@@ -30,11 +30,11 @@ def load_palette_from_module(module_name):
     sys.path.insert(0, base_module_dir)
     m = importlib.import_module(module_name)
     palette = {
-        name: convert_color.Color(color, name) for name, color in m.palette.iteritems()
+        name: convert_color.Color(color, name) for name, color in m.palette.items()
     }
 
     # Add more attributes that can be used in templates
-    for name, color in palette.iteritems():
+    for name, color in palette.items():
         color.r  = int(round(color.srgb.rgb_r*255))
         color.g  = int(round(color.srgb.rgb_g*255))
         color.b  = int(round(color.srgb.rgb_b*255))
@@ -56,12 +56,12 @@ def load_palette_from_module(module_name):
     except AttributeError:
         palette['name'] = module_name
 
-    print '\nPalette:', palette['name'], '\n'
+    print('\nPalette:', palette['name'], '\n')
     for color in DEFAULT_COLOR_ORDER:
         if color in ['red', 'br_red']:
-            print '' # section separator
+            print ('') # section separator
         if color in palette:
-            print "{:<12}{}".format(color, palette[color])
+            print("{:<12}{}".format(color, palette[color]))
 
     return palette
 
@@ -89,15 +89,15 @@ def process_template(palette, inpath, outpath=None):
     def repl(matcher):
         return matcher.group('format').format(**palette)
 
-    print "\nProcessing {}...".format(inpath)
+    print("\nProcessing {}...").format(inpath)
     with open(inpath, 'r') as ifile, open(outpath, 'w') as ofile :
         for line in ifile.readlines():
             try:
                 ofile.write(re.sub(MARKER_RE, repl, line))
             except TypeError:
-                print "ERROR: attribute not available in palette"
+                print("ERROR: attribute not available in palette")
                 sys.exit(1)
-    print "Result written to {}".format(outpath)
+    print("Result written to {}").format(outpath)
 
 
 def process_directory_recursively(palette, directory):
@@ -110,7 +110,7 @@ def process_directory_recursively(palette, directory):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print USAGE
+        print(USAGE)
         sys.exit()
 
     palette = load_palette_from_path(sys.argv[1])

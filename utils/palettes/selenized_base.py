@@ -92,7 +92,7 @@ def generate_palette(
     br_accents = {
         'br_'+name: [l + direction*br_accent_shift, a, b]
         for name, [l, a, b]
-        in accents.iteritems()
+        in accents.items()
     }
 
 
@@ -103,7 +103,7 @@ def generate_palette(
     acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
     acc_hi_dists = [float(abs(accents[color][0]-hi_bg_l)) for color in accents]
 
-    print """Foreground: {}
+    print("""Foreground: {}
 Background: {}
 Contrast: {}
 Accents max lightness: {:.3}
@@ -128,14 +128,14 @@ Background-accent distance:  min {:.3}, max {:.3}
         max(acc_hi_dists),
         min(acc_bg_dists),
         max(acc_bg_dists),
-    )
+    ))
 
     palette = {}
     palette.update(monotones)
     palette.update(accents)
     palette.update(br_accents)
 
-    for name, (l,a,b) in palette.iteritems():
+    for name, (l,a,b) in palette.items():
         palette[name] = [l, a*saturation, b*saturation]
 
     return palette
