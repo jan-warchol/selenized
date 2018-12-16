@@ -12,7 +12,22 @@
     "contributes": {
         "themes": [
             {
-                "label": "Selenized",
+                "label": "Selenized (other)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-other.json"
+            },
+            {
+                "label": "Selenized (markup)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-markup.json"
+            },
+            {
+                "label": "Selenized (detailed)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-detailed.json"
+            },
+            {
+                "label": "Selenized (base)",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Selenized-color-theme.json"
             }
