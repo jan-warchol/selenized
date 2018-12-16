@@ -16,6 +16,131 @@
 	},
 	"tokenColors": [
 		{
+			"scope": "invalid",
+			"settings": {
+				"foreground": "#f3504b"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"scope": "constant.language",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": [
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "constant.regexp",
+			"settings": {
+				"foreground": "#aa84e7"
+			}
+		},
+		{
+			"scope": "constant.character",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "string.tag",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "string.value",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#f3504b"
+			}
+		},
+		{
+			"name": "String interpolation",
+			"scope": [
+				"punctuation.definition.template-expression.begin",
+				"punctuation.definition.template-expression.end",
+				"punctuation.section.embedded"
+			],
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"scope": "keyword.control.import",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"scope": "keyword.control",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#e6e6e6"
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.cast",
+				"keyword.operator.sizeof",
+				"keyword.operator.instanceof",
+				"keyword.operator.logical.python"
+			],
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"scope": "keyword.other.unit",
+			"settings": {
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"name": "Reset JavaScript string interpolation expression",
+			"scope": [
+				"meta.template.expression"
+			],
+			"settings": {
+				"foreground": "#c1c1c1"
+			}
+		},
+		{
 			"name": "Variable and parameter name",
 			"scope": [
 				"variable",
@@ -62,56 +187,6 @@
 			}
 		},
 		{
-			"scope": "emphasis",
-			"settings": {
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": "strong",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "header",
-			"settings": {
-				"foreground": "#3d8ff0"
-			}
-		},
-		{
-			"scope": "comment",
-			"settings": {
-				"foreground": "#75b938"
-			}
-		},
-		{
-			"scope": "constant.language",
-			"settings": {
-				"foreground": "#44cabb"
-			}
-		},
-		{
-			"scope": [
-				"constant.numeric"
-			],
-			"settings": {
-				"foreground": "#44cabb"
-			}
-		},
-		{
-			"scope": "constant.regexp",
-			"settings": {
-				"foreground": "#aa84e7"
-			}
-		},
-		{
-			"scope": "constant.character",
-			"settings": {
-				"foreground": "#44cabb"
-			}
-		},
-		{
 			"scope": "entity.name.tag",
 			"settings": {
 				"foreground": "#44cabb"
@@ -146,9 +221,21 @@
 			}
 		},
 		{
-			"scope": "invalid",
+			"scope": "emphasis",
 			"settings": {
-				"foreground": "#f3504b"
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "strong",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "header",
+			"settings": {
+				"foreground": "#3d8ff0"
 			}
 		},
 		{
@@ -175,6 +262,12 @@
 			"scope": "markup.italic",
 			"settings": {
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "markup.inline.raw",
+			"settings": {
+				"foreground": "#ce9178"
 			}
 		},
 		{
@@ -205,12 +298,6 @@
 			"scope": "punctuation.definition.list.begin.markdown",
 			"settings": {
 				"foreground": "#3d8ff0"
-			}
-		},
-		{
-			"scope": "markup.inline.raw",
-			"settings": {
-				"foreground": "#ce9178"
 			}
 		},
 		{
@@ -269,50 +356,6 @@
 			}
 		},
 		{
-			"scope": "string",
-			"settings": {
-				"foreground": "#eb8447"
-			}
-		},
-		{
-			"scope": "string.tag",
-			"settings": {
-				"foreground": "#eb8447"
-			}
-		},
-		{
-			"scope": "string.value",
-			"settings": {
-				"foreground": "#eb8447"
-			}
-		},
-		{
-			"scope": "string.regexp",
-			"settings": {
-				"foreground": "#f3504b"
-			}
-		},
-		{
-			"name": "String interpolation",
-			"scope": [
-				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end",
-				"punctuation.section.embedded"
-			],
-			"settings": {
-				"foreground": "#3d8ff0"
-			}
-		},
-		{
-			"name": "Reset JavaScript string interpolation expression",
-			"scope": [
-				"meta.template.expression"
-			],
-			"settings": {
-				"foreground": "#c1c1c1"
-			}
-		},
-		{
 			"scope": [
 				"support.type.vendored.property-name",
 				"support.type.property-name",
@@ -323,49 +366,6 @@
 			],
 			"settings": {
 				"foreground": "#9cdcfe"
-			}
-		},
-		{
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#3d8ff0"
-			}
-		},
-		{
-			"scope": "keyword.control.import",
-			"settings": {
-				"foreground": "#f073bc"
-			}
-		},
-		{
-			"scope": "keyword.control",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "keyword.operator",
-			"settings": {
-				"foreground": "#e6e6e6"
-			}
-		},
-		{
-			"scope": [
-				"keyword.operator.new",
-				"keyword.operator.expression",
-				"keyword.operator.cast",
-				"keyword.operator.sizeof",
-				"keyword.operator.instanceof",
-				"keyword.operator.logical.python"
-			],
-			"settings": {
-				"foreground": "#3d8ff0"
-			}
-		},
-		{
-			"scope": "keyword.other.unit",
-			"settings": {
-				"foreground": "#75b938"
 			}
 		},
 		{
