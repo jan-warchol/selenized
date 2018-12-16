@@ -24,11 +24,17 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#75b938"
+				"foreground": "#7e7e7e"
 			}
 		},
 		{
-			"scope": "constant",
+			"scope": "constant.numeric, constant.language",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "constant.character",
 			"settings": {
 				"foreground": "#44cabb"
 			}
@@ -36,20 +42,57 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#eb8447"
+				"foreground": "#75b938"
 			}
 		},
 		{
-			"scope": "keyword",
+			"name": "keywords + def, class etc",
+			"scope": "keyword, storage.type",
 			"settings": {
-				"foreground": "#3d8ff0"
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
 			}
 		},
 		{
-			"name": "this.self",
+			"name": "operators",
+			"scope": "keyword.operator",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
+			}
+		},
+		{
+			"name": "things like const, final, abstract",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "keyword.control.import",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"name": "identifiers for fun/var declarations",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "support.type",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "#3d8ff0"
+				"fontStyle": "italic"
 			}
 		}
 	]

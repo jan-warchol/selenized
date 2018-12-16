@@ -1,0 +1,56 @@
+{
+	"name": "Selenized (0-previous)",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#1e1e1e",
+		"editor.foreground": "#c1c1c1",
+		"editorCursor.foreground": "#c1c1c1",
+		"editorLineNumber.foreground": "#7e7e7e",
+		"editorLineNumber.activeForeground": "#c1c1c1",
+		"editorIndentGuide.background": "#414141",
+		"editorIndentGuide.activeBackground": "#7e7e7e",
+		"editor.selectionBackground": "#414141",
+		"editor.inactiveSelectionBackground": "#2b2b2b",
+		"editor.selectionHighlightBackground": "#1d1d1d",
+		"editor.selectionHighlightBorder": "#414141"
+	},
+	"tokenColors": [
+		{
+			"scope": "invalid",
+			"settings": {
+				"foreground": "#f3504b"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "this.self",
+			"scope": "variable.language",
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		}
+	]
+}
