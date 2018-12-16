@@ -4,9 +4,15 @@
 	"colors": {
 		"editor.background": "#1e1e1e",
 		"editor.foreground": "#c1c1c1",
+		"editorCursor.foreground": "#c1c1c1",
+		"editorLineNumber.foreground": "#7e7e7e",
+		"editorLineNumber.activeForeground": "#c1c1c1",
 		"editorIndentGuide.background": "#414141",
 		"editorIndentGuide.activeBackground": "#7e7e7e",
-		"editor.selectionHighlightBackground": "#414141"
+		"editor.selectionBackground": "#414141",
+		"editor.inactiveSelectionBackground": "#2b2b2b",
+		"editor.selectionHighlightBackground": "#1d1d1d",
+		"editor.selectionHighlightBorder": "#414141"
 	},
 	"tokenColors": [
 		{
