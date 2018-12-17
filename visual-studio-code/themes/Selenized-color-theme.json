@@ -28,7 +28,13 @@
 			}
 		},
 		{
-			"scope": "constant.numeric, constant.language",
+			"scope": "string",
+			"settings": {
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"scope": "constant.numeric",
 			"settings": {
 				"foreground": "#eb8447"
 			}
@@ -40,21 +46,13 @@
 			}
 		},
 		{
-			"scope": "string",
+			"name": "special constants like true, false, null",
+			"scope": "constant.language",
 			"settings": {
-				"foreground": "#75b938"
+				"foreground": "#eb8447"
 			}
 		},
 		{
-			"name": "keywords + def, class etc",
-			"scope": "keyword, storage.type",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#e0b732"
-			}
-		},
-		{
-			"name": "operators",
 			"scope": "keyword.operator",
 			"settings": {
 				"fontStyle": "bold",
@@ -62,10 +60,11 @@
 			}
 		},
 		{
-			"name": "things like const, final, abstract",
-			"scope": "storage.modifier",
+			"name": "if, else, return",
+			"scope": "keyword.control",
 			"settings": {
-				"foreground": "#44cabb"
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
 			}
 		},
 		{
@@ -76,6 +75,14 @@
 			}
 		},
 		{
+			"name": "def, class etc",
+			"scope": "storage.type",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
+			}
+		},
+		{
 			"name": "identifiers for fun/var declarations",
 			"scope": "entity.name",
 			"settings": {
@@ -83,6 +90,14 @@
 			}
 		},
 		{
+			"name": "things like const, final, abstract",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"name": "types, casts etc.",
 			"scope": "support.type",
 			"settings": {
 				"foreground": "#44cabb"
@@ -97,3 +112,4 @@
 		}
 	]
 }
+
