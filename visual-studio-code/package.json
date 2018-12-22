@@ -2,7 +2,7 @@
     "name": "selenized-color-theme",
     "displayName": "Selenized color theme",
     "description": "Color theme using selenized palette, with emphasis on readability and balanced lightness.",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -12,9 +12,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "Selenized",
+                "label": "Selenized (minimal)",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Selenized-color-theme.json"
+                "path": "./themes/Selenized.json"
+            },
+            {
+                "label": "Selenized (alternative)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-alternative.json"
             }
         ]
     }
