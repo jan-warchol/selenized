@@ -3,6 +3,13 @@
 	"include": "./Selenized.json",
 	"tokenColors": [
 		{
+			"scope": "keyword.operator",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
+			}
+		},
+		{
 			"scope": "constant",
 			"settings": {
 				"foreground": "#f073bc"
@@ -12,6 +19,12 @@
 			"scope": "storage",
 			"settings": {
 				"foreground": "#eb8447"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#44cabb"
 			}
 		}
 	]

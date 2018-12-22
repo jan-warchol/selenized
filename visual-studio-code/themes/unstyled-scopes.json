@@ -20,11 +20,6 @@
 			}
 		},
 		{
-			"scope": "keyword.operator",
-			"settings": {
-			}
-		},
-		{
 			"name": "some specific operators",
 			"scope": [
 				"keyword.operator.new",
@@ -34,11 +29,6 @@
 				"keyword.operator.instanceof",
 				"keyword.operator.logical.python"
 			],
-			"settings": {
-			}
-		},
-		{
-			"scope": "keyword.control.import",
 			"settings": {
 			}
 		},
@@ -84,12 +74,6 @@
 			}
 		},
 		{
-			"name": "const, final, abstract etc.",
-			"scope": "storage.modifier",
-			"settings": {
-			}
-		},
-		{
 			"name": "Name of the defined class",
 			"scope": "entity.name.class",
 			"settings": {
@@ -105,13 +89,6 @@
 			"name": "superclass",
 			"scope": "entity.other.inherited-class",
 			"settings": {
-			}
-		},
-		{
-			"name": "reserved language variables like this, super, self",
-			"scope": "variable.language",
-			"settings": {
-				"fontStyle": "italic"
 			}
 		},
 		{

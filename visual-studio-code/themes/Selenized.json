@@ -1,5 +1,5 @@
 {
-	"name": "Selenized (minimal)",
+	"name": "Selenized (base)",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1e1e1e",
@@ -34,9 +34,32 @@
 			}
 		},
 		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#e0b732"
+			}
+		},
+		{
+			"scope": "keyword.control.import",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
 			"scope": "string",
 			"settings": {
 				"foreground": "#75b938"
+			}
+		},
+		{
+			"name": "docstrings and other multiline strings",
+			"scope": [
+				"string.unquoted",
+				"string.quoted.multi",
+				"string.quoted.docstring.multi"
+                        ],
+			"settings": {
+				"foreground": "#7e7e7e"
 			}
 		},
 		{
@@ -49,6 +72,49 @@
 			"scope": "storage",
 			"settings": {
 				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "const, final, abstract etc.",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#aa84e7"
+			}
+		},
+		{
+			"name": "Name of the defined entity",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e6e6e6"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"name": "Almost every variable in JS is in this scope",
+			"scope": "variable.other",
+			"settings": {
+				"foreground": "#c1c1c1"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "stuff from library/framework",
+			"scope": "support",
+			"settings": {
+				"foreground": "#aa84e7"
 			}
 		},
 		{
