@@ -12,19 +12,55 @@
 		{
 			"scope": "constant",
 			"settings": {
-				"foreground": "#f073bc"
+				"foreground": "#44cabb"
 			}
 		},
 		{
 			"scope": "storage",
 			"settings": {
-				"foreground": "#eb8447"
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "Name of the defined entity",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#44cabb"
 			}
 		},
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#44cabb"
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"name": "dots, parens etc. (token separators)",
+			"scope": [
+				"punctuation.definition.block",
+				"punctuation.definition.parameters",
+				"punctuation.definition.arguments",
+				"punctuation.definition.list",
+				"punctuation.definition.dict",
+				"punctuation.definition.binding-pattern",
+				"punctuation.section.block",
+				"punctuation.section.function",
+				"punctuation.section.method",
+				"punctuation.section.class",
+				"punctuation.section.array",
+				"punctuation.separator",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#f5f5f5"
 			}
 		}
 	]

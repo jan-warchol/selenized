@@ -1,5 +1,5 @@
 {
-	"name": "Selenized (0.2)",
+	"name": "Selenized (0.1)",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1e1e1e",
@@ -27,7 +27,7 @@
 				"keyword.control",
 				"storage.type.function",
 				"storage.type.class"
-			],
+                        ],
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#e0b732"
@@ -40,11 +40,7 @@
 			}
 		},
 		{
-			"name": "imports",
-			"scope": [
-				"keyword.control.import",
-				"keyword.other.import"
-			],
+			"scope": "keyword.control.import",
 			"settings": {
 				"foreground": "#f073bc"
 			}
@@ -59,8 +55,9 @@
 			"name": "docstrings and other multiline strings",
 			"scope": [
 				"string.unquoted",
+				"string.quoted.multi",
 				"string.quoted.docstring.multi"
-			],
+                        ],
 			"settings": {
 				"foreground": "#7e7e7e"
 			}
@@ -72,31 +69,9 @@
 			}
 		},
 		{
-			"scope": "constant.numeric",
-			"settings": {
-				"foreground": "#eb8447"
-			}
-		},
-		{
-			"name": "string interpolation",
-			"scope": [
-				"string.constant.character.escape",
-				"constant.character.format",
-				"constant.character.escape",
-				"punctuation.section.embedded",
-				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end",
-				"storage.type.string"
-			],
-			"settings": {
-				"foreground": "#f073bc"
-			}
-		},
-		{
 			"scope": "storage",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#9e9e9e"
+				"foreground": "#3d8ff0"
 			}
 		},
 		{
@@ -111,20 +86,13 @@
 			"scope": "entity.name",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#dfdfdf"
-			}
-		},
-		{
-			"scope": "entity.name.function.decorator",
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#3d8ff0"
+				"foreground": "#e6e6e6"
 			}
 		},
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#44cabb"
+				"foreground": "#f073bc"
 			}
 		},
 		{
@@ -150,34 +118,6 @@
 			}
 		},
 		{
-			"scope": "support.type.exception",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#eb8447"
-			}
-		},
-		{
-			"name": "dots, parens etc. (token separators)",
-			"scope": [
-				"punctuation.definition.block",
-				"punctuation.definition.parameters",
-				"punctuation.definition.arguments",
-				"punctuation.definition.list",
-				"punctuation.definition.dict",
-				"punctuation.definition.binding-pattern",
-				"punctuation.section.block",
-				"punctuation.section.function",
-				"punctuation.section.method",
-				"punctuation.section.class",
-				"punctuation.section.array",
-				"punctuation.separator",
-				"punctuation.accessor"
-			],
-			"settings": {
-				"foreground": "#dfdfdf"
-			}
-		},
-		{
 			"scope": "invalid",
 			"settings": {
 				"fontStyle": "bold",
@@ -186,4 +126,3 @@
 		}
 	]
 }
-
