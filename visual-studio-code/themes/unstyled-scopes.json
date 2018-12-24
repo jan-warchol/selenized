@@ -1,0 +1,157 @@
+{
+	"colors": {
+        	"dim_fg": "#7e7e7e",
+        	"foreground": "#c1c1c1",
+        	"bright_fg": "#e6e6e6",
+        	"red": "#f3504b",
+        	"green": "#75b938",
+        	"yellow": "#e0b732",
+        	"blue": "#3d8ff0",
+        	"magenta": "#f073bc",
+        	"cyan": "#44cabb",
+        	"orange": "#eb8447",
+        	"violet": "#aa84e7"
+        },
+	"tokenColors": [
+		{
+			"name": "generic scope, I think not really used directly",
+			"scope": "keyword",
+			"settings": {
+			}
+		},
+		{
+			"name": "some specific operators",
+			"scope": [
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.cast",
+				"keyword.operator.sizeof",
+				"keyword.operator.instanceof",
+				"keyword.operator.logical.python"
+			],
+			"settings": {
+			}
+		},
+		{
+			"scope": "string.regexp",
+			"settings": {
+			}
+		},
+		{
+			"scope": "constant.character",
+			"settings": {
+			}
+		},
+		{
+			"name": "special constants like true, false, null",
+			"scope": "constant.language",
+			"settings": {
+			}
+		},
+		{
+			"scope": "constant.regexp",
+			"settings": {
+			}
+		},
+		{
+			"name": "superclass",
+			"scope": "entity.other.inherited-class",
+			"settings": {
+			}
+		},
+		{
+			"name": "I think this is only used in sublime",
+			"scope": "variable.function",
+			"settings": {
+			}
+		},
+		{
+			"name": "Framework/library variables, e.g. __future__, __name__",
+			"scope": "support.variable",
+			"settings": {
+			}
+		},
+		{
+			"name": "Framework/library functions, builtins",
+			"scope": "support.function",
+			"settings": {
+			}
+		},
+		{
+			"name": "types, casts etc. (not primitives)",
+			"scope": "support.type",
+			"settings": {
+			}
+		},
+		{
+			"name": "function invocation",
+			"scope": "meta.function-call",
+			"settings": {
+			}
+		},
+
+
+
+
+		{
+			"name": "XML and HTML",
+			"scope": "entity.name.tag",
+			"settings": {
+			}
+		},
+		{
+			"name": "brackets of XML/HTML tags",
+			"scope": "punctuation.definition.tag",
+			"settings": {
+			}
+		},
+		{
+			"name": "HTML, CSS and XML attribute names",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+			}
+		},
+		{
+			"scope": "markup.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": "markup.bold",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "???",
+			"scope": "markup.heading",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Heading names in markup languages",
+			"scope": "entity.name.section",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "markup.italic",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "markup.inline.raw",
+			"settings": {
+			}
+		},
+		{
+			"scope": "punctuation.definition.list",
+			"settings": {
+			}
+		}
+	]
+}

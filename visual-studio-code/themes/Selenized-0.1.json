@@ -1,0 +1,128 @@
+{
+	"name": "Selenized (0.1)",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#1e1e1e",
+		"editor.foreground": "#c1c1c1",
+		"editorCursor.foreground": "#c1c1c1",
+		"editorLineNumber.foreground": "#7e7e7e",
+		"editorLineNumber.activeForeground": "#c1c1c1",
+		"editorIndentGuide.background": "#414141",
+		"editorIndentGuide.activeBackground": "#7e7e7e",
+		"editor.selectionBackground": "#414141",
+		"editor.inactiveSelectionBackground": "#2b2b2b",
+		"editor.selectionHighlightBackground": "#1d1d1d",
+		"editor.selectionHighlightBorder": "#414141"
+	},
+	"tokenColors": [
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#7e7e7e"
+			}
+		},
+		{
+			"name": "keywords (including function and class defs)",
+			"scope": [
+				"keyword.control",
+				"storage.type.function",
+				"storage.type.class"
+                        ],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#e0b732"
+			}
+		},
+		{
+			"scope": "keyword.control.import",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"name": "docstrings and other multiline strings",
+			"scope": [
+				"string.unquoted",
+				"string.quoted.multi",
+				"string.quoted.docstring.multi"
+                        ],
+			"settings": {
+				"foreground": "#7e7e7e"
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "const, final, abstract etc.",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#aa84e7"
+			}
+		},
+		{
+			"name": "Name of the defined entity",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e6e6e6"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"name": "Almost every variable in JS is in this scope",
+			"scope": "variable.other",
+			"settings": {
+				"foreground": "#c1c1c1"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "stuff from library/framework",
+			"scope": "support",
+			"settings": {
+				"foreground": "#aa84e7"
+			}
+		},
+		{
+			"scope": "invalid",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#f3504b"
+			}
+		}
+	]
+}
