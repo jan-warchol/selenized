@@ -139,29 +139,21 @@ not yet used to low contrast palettes.
 What about _Solarized_?
 -----------------------
 
-Selenized is based on color palette called _Solarized_ (yay, I have forked a
-color scheme!).  The name is derived from the greek word 'selene', which means
-the moon (as opposed to the sun in Solarized).  I really liked the design
-principles behind Solarized, but there are a couple issues with it (which
-Selenized aims to solve).  You can read more about the differences
-[here](whats-wrong-with-solarized.md).
+There is a popular color palette named _Solarized_. I really liked the design
+principles behind Solarized, but it has a couple issues, which [Selenized
+solves](whats-wrong-with-solarized.md).
+
+By the way, the name is derived from the greek word "selene", which means
+the moon (as opposed to the sun in Solarized).
 
 
 
-FAQ
----
+Known issues
+------------
 
-#### Program X doesn't look good when I use Selenized in my terminal.
-
-Some command-line programs make assumptions about the colors set in the
-terminal - for example, they may assume that some color will work well as the
-background color.  Using them in a terminal that uses Selenized palette may
-require adjusting their color settings - for an example, see [this
-issue](https://github.com/janek-warchol/selenized/issues/7) about using
-Selenized with [Midnight
-Commander](https://github.com/janek-warchol/selenized/tree/master/mc).
-
-Programs with dedicated Selenized skins/configs:
+Some command-line programs need reconfiguration to look good with Selenized,
+because they make assumptions about the colors configured in terminal (see
+[this issue](https://github.com/janek-warchol/selenized/issues/7) for details):
 
 - [`ls`](dircolors/)
 - [Midnight Commander](mc/)
