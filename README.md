@@ -42,36 +42,31 @@ Palette variants
 
 ![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
-Relatively high lightness of this version makes it well suited for using
-side-by-side with programs that have black text on white background (e.g. pdf
-documents, many websites etc.).
+Like _Solarized dark_, but better.
 
 
 
 ### Selenized black
 
-Don't like colorful backgrounds and prefer oldschool black-and-white look?  Or
-maybe you'd like some more contrast?  Try this variation.
-
 ![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
+
+Oldschool black-and-white look with a littel more contrast.
 
 
 
 ### Selenized light
 
-A warm sepia variant. This one works wery well especially when you have a lot
-of other bright windows opened.
-
 ![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+A warm sepia variant, corresponding to _Solarized light_.
 
 
 
 ### Selenized white
 
-Finally, a white version for completeness. Unlike many white-backgrounded
-palettes, all accent colors are well readable here.
-
 ![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
+
+Unlike many dark-on-white palettes, yellow color is readable here.
 
 
 
