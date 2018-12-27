@@ -1,17 +1,19 @@
 Selenized color palette
 =======================
 
-Selenized is a color palette for terminal emulators. I used
-[CIELAB](http://en.wikipedia.org/wiki/Lab_color_space) color space to ensure
-balanced contrast and lightness across the whole palette, for great readability
-without tiring the eyes. Also, I carefully adjusted accent colors to be both
-pleasing and clearly distinguishable (even on poor quality screens).  Selenized
-comes in 2 variants (dark and black) so that you can pick the one that
-works best in your working environment.
+Selenized is a color theme for terminals and text editors, carefully designed
+using professional-grade [CIE
+L*a*b*](http://en.wikipedia.org/wiki/Lab_color_space) color space for maximum
+readability and great eye comfort.
 
 
 Design principles
 -----------------
+
+- make the contrast just right: strong but not tiring to the eyes
+- adjust lightness of all colors for uniform readability
+- select colors in a way that boosts code comprehension
+- make it as beautiful and visually pleasing as possible
 
 Read more about the design [here](features-and-design.md).
 
