@@ -40,7 +40,6 @@ def generate_palette(
     br_bg_a, br_bg_b = bg_a*br_bg_extra_saturation, bg_b*br_bg_extra_saturation
 
     hi_bg_l = bg_l + direction*contrast/4
-
     br_fg_l = fg_l + direction*contrast/5
 
     # color used for comments and other secondary content; it's a weighted
@@ -103,6 +102,14 @@ def generate_palette(
         in accents.items()
     }
 
+    # optionally scale all colors
+    scaling = 1
+
+    for key, value in monotones.items():
+        monotones[key][0] = fg_l - (fg_l - value[0])*scaling
+
+    for key, value in accents.items():
+        accents[key][0] = fg_l - (fg_l - value[0])*scaling
 
 
     ### FINAL ASSEMBLY
@@ -124,7 +131,7 @@ Highlight-accent distance:   min {:.3}, max {:.3}
 Background-accent distance:  min {:.3}, max {:.3}
     """.format(
         fg_l,
-        bg_l,
+        monotones["bg"][0],
         contrast,
         float(accent_base_l),
         float(accent_base_l - accent_l_spread),
