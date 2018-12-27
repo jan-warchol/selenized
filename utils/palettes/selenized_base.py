@@ -4,7 +4,7 @@ ACCENTS_MAX_REASONABLE_L = 75
 
 def generate_palette(
     background,
-    foreground,
+    foreground="undefined",
     saturation=1,
     accent_offset=0,
     accent_l_spread=None,
@@ -12,7 +12,15 @@ def generate_palette(
     br_bg_extra_saturation=1.1
 ):
     bg_l, bg_a, bg_b = background
+
+    if foreground == "undefined":
+        if bg_l <= 50:
+            foreground = (bg_l+60, 0, 0)
+        if bg_l > 50:
+            foreground = (bg_l-60, 0, 0)
+
     fg_l, fg_a, fg_b = foreground
+
 
     # lightness relationships of many colors are expressed in terms of overall
     # palette contrast
