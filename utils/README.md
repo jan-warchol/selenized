@@ -54,3 +54,17 @@ From sRGB (must be given in hex format):
     -----------   -----------   -------   --------
      75  -6  -6   196  14  76   #a8bcc3   #99aeb6
 
+
+
+### Generating lightness diagrams
+
+Requirements: scala language. `apt install scala` _should_ be enough.
+
+    python gen-scala-colors.py
+    <paste multi-line block from the-values.md>
+    <ctrl-D>
+
+    <copy "new Color" statements to selenized-diagram.scala>
+
+    scala selenized-diagram.scala > output.svg
+

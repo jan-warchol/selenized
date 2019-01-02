@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" font-family="Signika, sans" font-size="22.0px" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+       <style>
+            @font-face {
+            font-family: 'Signika';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Signika'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v6/q41y_9MUP_N8ipOH4ORRvw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+            }
+            @font-face {
+            font-family: 'Signika';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v6/7M5kxD4eGxuhgFaIk95pBfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+            }
+       </style><g transform="translate(0,600) scale(1,-1)"><rect style="fill:#000000;fill-opacity:1;stroke:none" width="800" height="600" x="0" y="0.0"/><rect style="fill:#103c48;fill-opacity:1;stroke:none" width="800" height="600" x="0" y="138.0"/><rect style="fill:#adbcbc;fill-opacity:1;stroke:none" width="800" height="600" x="0" y="450.0"/></g><g><g transform="scale(1,-1) translate(66,168.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#184956" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">28</text>
+                <text x="-35.2" y="0" fill="#184956" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">black</text>
+            </g><g transform="scale(1,-1) translate(133,216.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#2d5b69" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">36</text>
+                <text x="-35.2" y="0" fill="#2d5b69" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">br_black</text>
+            </g><g transform="scale(1,-1) translate(200,336.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#72898f" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">56</text>
+                <text x="-35.2" y="0" fill="#72898f" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">white</text>
+            </g><g transform="scale(1,-1) translate(266,450.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#adbcbc" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">75</text>
+                <text x="-35.2" y="0" fill="#adbcbc" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">fg</text>
+            </g><g transform="scale(1,-1) translate(333,510.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#cad8d9" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">85</text>
+                <text x="-35.2" y="0" fill="#cad8d9" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">br_white</text>
+            </g><g transform="scale(1,-1) translate(400,360.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#fa5750" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">60</text>
+                <text x="-35.2" y="0" fill="#fa5750" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">red</text>
+            </g><g transform="scale(1,-1) translate(466,414.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#75b938" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">69</text>
+                <text x="-35.2" y="0" fill="#75b938" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">green</text>
+            </g><g transform="scale(1,-1) translate(533,450.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#dbb32d" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">75</text>
+                <text x="-35.2" y="0" fill="#dbb32d" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">yellow</text>
+            </g><g transform="scale(1,-1) translate(600,360.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#4695f7" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">60</text>
+                <text x="-35.2" y="0" fill="#4695f7" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">blue</text>
+            </g><g transform="scale(1,-1) translate(666,396.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#f275be" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">66</text>
+                <text x="-35.2" y="0" fill="#f275be" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">magenta</text>
+            </g><g transform="scale(1,-1) translate(733,438.0) scale(1,-1) translate(0, 600)">
+                <!-- group is translated to the center of square with some flipping for easier translation -->
+                <g stroke="#103c48" stroke-width="3">
+                    <rect fill="#41c7b9" stroke="#103c48" stroke-width="3" width="44" height="44" x="-22.0" y="-22.0"/>
+                    <line x1="-22.0" y1="0" x2="-19.0" y2="0"/>
+                    <line x1="22.0" y1="0" x2="19.0" y2="0"/>
+                </g>
+                <text x="0" y="0" fill="#103c48" text-anchor="middle" dominant-baseline="central">73</text>
+                <text x="-35.2" y="0" fill="#41c7b9" text-anchor="end" dominant-baseline="central" font-weight="bold" font-size="35.2" transform="rotate(-90)">cyan</text>
+            </g></g></svg>
