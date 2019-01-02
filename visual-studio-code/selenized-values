@@ -1,0 +1,40 @@
+Foreground: 78
+Background: 11
+Contrast: 67
+Accents max lightness: 76.5
+Accents min lightness: 54.7
+
+Foreground-comment distance:     25.1
+Highlight contrast:              16.8
+Highlight-comment distance:      25.1
+Highlight-accent distance:   min 30.4, max 48.8
+Background-accent distance:  min 47.2, max 65.5
+    
+
+Palette: Variant based on fg and bg of default VS Code palette 
+
+bg           11   0   0    35   0  12   #1d1d1d   #161616
+black        18   0   0    35   0  17   #2b2b2b   #202020
+br_black     28   0   0    35   0  26   #414141   #323232
+white        53   0   0    35   0  49   #7e7e7e   #6b6b6b
+fg           78   0   0    35   0  76   #c1c1c1   #b4b4b4
+br_white     91   0   0    35   0  90   #e6e6e6   #e0e0e0
+
+red          58  63  40     2  69  95   #f3504b   #e83639
+green        69 -38  55    92  70  72   #75b938   #69ad21
+yellow       76   6  68    46  78  88   #e0b732   #d6a91a
+blue         58   0 -57   213  74  94   #3d8ff0   #337cf0
+magenta      66  55 -15   325  52  94   #f073bc   #e559b0
+cyan         74 -40  -4   174  66  79   #44cabb   #45c0ad
+orange       66  37  50    22  70  92   #eb8447   #e06e34
+violet       62  30 -45   263  43  91   #aa84e7   #966ee4
+
+br_red       65  63  40     3  66 100   #ff645b   #ff4948
+br_green     75 -38  55    92  63  80   #87cb4a   #7cc331
+br_yellow    83   6  68    45  71  96   #f4c946   #efbe2c
+br_blue      65   0 -57   214  67 100   #56a1ff   #488eff
+br_magenta   72  55 -15   325  49 100   #ff86cf   #fe6cc6
+br_cyan      81 -40  -4   173  59  87   #5bddce   #57d7c2
+br_orange    73  37  50    22  66 100   #ff9658   #f98043
+br_violet    69  30 -45   263  40  98   #bd96fa   #ab80fc
+

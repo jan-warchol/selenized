@@ -1,0 +1,67 @@
+{
+	"name": "Selenized (alternative)",
+	"include": "./Selenized.json",
+	"tokenColors": [
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#e0b732"
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#3d8ff0"
+			}
+		},
+		{
+			"name": "Name of the defined entity",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#75b938"
+			}
+		},
+		{
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#44cabb"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#f073bc"
+			}
+		},
+		{
+			"name": "dots, parens etc. (token separators)",
+			"scope": [
+				"punctuation.definition.block",
+				"punctuation.definition.parameters",
+				"punctuation.definition.arguments",
+				"punctuation.definition.list",
+				"punctuation.definition.dict",
+				"punctuation.definition.binding-pattern",
+				"punctuation.section.block",
+				"punctuation.section.function",
+				"punctuation.section.method",
+				"punctuation.section.class",
+				"punctuation.section.array",
+				"punctuation.separator",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#f5f5f5"
+			}
+		}
+	]
+}
