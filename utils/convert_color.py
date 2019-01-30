@@ -136,7 +136,7 @@ if __name__ == "__main__":
             "CIE L*a*b*    HSV           sRGB      AppleRGB\n"
             "-----------   -----------   -------   --------"
         )
-        print('\n', header)
+        print(header)
         for c in colors:
             print(c)
 

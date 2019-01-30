@@ -56,7 +56,7 @@ def load_palette_from_module(module_name):
     except AttributeError:
         palette['name'] = module_name
 
-    print('\nPalette:', palette['name'], '\n')
+    print('Palette: ' + palette['name'] + '\n')
     for color in DEFAULT_COLOR_ORDER:
         if color in ['red', 'br_red']:
             print ('') # section separator
