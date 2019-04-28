@@ -1,0 +1,24 @@
+# Colors (Selenized white)
+colors:
+  primary:
+    background: '0xffffff'
+    foreground: '0x474747'
+  normal:
+    black:   '0xebebeb'
+    red:     '0xd6000c'
+    green:   '0x1d9700'
+    yellow:  '0xc49700'
+    blue:    '0x0064e4'
+    magenta: '0xdd0f9d'
+    cyan:    '0x00ad9c'
+    white:   '0x878787'
+  bright:
+    black:   '0xcdcdcd'
+    red:     '0xbf0000'
+    green:   '0x008400'
+    yellow:  '0xaf8500'
+    blue:    '0x0054cf'
+    magenta: '0xc7008b'
+    cyan:    '0x009a8a'
+    white:   '0x282828'
+
