@@ -33,6 +33,7 @@ Ready-to-use config files are available for the following terminals:
 - [iTerm](iterm)
 - if you use Terminal.app (default OS X terminal), I recommend switching to
   [iTerm](iterm), for reasons listed [here](terminal-app).
+- [Tilix](tilix)
 - [Alacritty](alacritty)
 
 If your terminal is not listed here, you can always manually copy [hex
