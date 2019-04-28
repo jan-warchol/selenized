@@ -141,13 +141,13 @@ if __name__ == "__main__":
             print(c)
 
     else:
-        import selenized_medium
+        import selenized_dark
         palette = {
             name: Color(color)
             for name, color
-            in selenized_medium.palette.items()
+            in selenized_dark.palette.items()
         }
 
         for name, color in palette.items():
-            print("{:<12}{}").format(name, color)
+            print("{:<12}{}".format(name, color))
 
