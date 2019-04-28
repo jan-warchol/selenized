@@ -35,6 +35,7 @@ Ready-to-use config files are available for the following terminals:
   [iTerm](iterm), for reasons listed [here](terminal-app).
 - [Tilix](tilix)
 - [Alacritty](alacritty)
+- [mintty](mintty)
 
 If your terminal is not listed here, you can always manually copy [hex
 values](the-values.md) into its preferences.  Please consider sending me a pull
