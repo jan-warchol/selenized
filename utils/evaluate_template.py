@@ -89,7 +89,7 @@ def process_template(palette, inpath, outpath=None):
     def repl(matcher):
         return matcher.group('format').format(**palette)
 
-    print("\nProcessing {}...").format(inpath)
+    print("\nProcessing {}...".format(inpath))
     with open(inpath, 'r') as ifile, open(outpath, 'w') as ofile :
         for line in ifile.readlines():
             try:
@@ -97,7 +97,7 @@ def process_template(palette, inpath, outpath=None):
             except TypeError:
                 print("ERROR: attribute not available in palette")
                 sys.exit(1)
-    print("Result written to {}").format(outpath)
+    print("Result written to {}".format(outpath))
 
 
 def process_directory_recursively(palette, directory):
