@@ -1,0 +1,20 @@
+# Selenized white
+BackgroundColour=255,255,255
+ForegroundColour=71,71,71
+CursorColour=127,81,214
+Black=235,235,235
+BoldBlack=205,205,205
+Red=214,0,12
+BoldRed=191,0,0
+Green=29,151,0
+BoldGreen=0,132,0
+Yellow=196,151,0
+BoldYellow=175,133,0
+Blue=0,100,228
+BoldBlue=0,84,207
+Magenta=221,15,157
+BoldMagenta=199,0,139
+Cyan=0,173,156
+BoldCyan=0,154,138
+White=135,135,135
+BoldWhite=40,40,40

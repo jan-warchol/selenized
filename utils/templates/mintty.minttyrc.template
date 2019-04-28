@@ -1,0 +1,20 @@
+# !!COL!{name}!
+BackgroundColour=!!COL!{bg.r},{bg.g},{bg.b}!
+ForegroundColour=!!COL!{fg.r},{fg.g},{fg.b}!
+CursorColour=!!COL!{violet.r},{violet.g},{violet.b}!
+Black=!!COL!{black.r},{black.g},{black.b}!
+BoldBlack=!!COL!{br_black.r},{br_black.g},{br_black.b}!
+Red=!!COL!{red.r},{red.g},{red.b}!
+BoldRed=!!COL!{br_red.r},{br_red.g},{br_red.b}!
+Green=!!COL!{green.r},{green.g},{green.b}!
+BoldGreen=!!COL!{br_green.r},{br_green.g},{br_green.b}!
+Yellow=!!COL!{yellow.r},{yellow.g},{yellow.b}!
+BoldYellow=!!COL!{br_yellow.r},{br_yellow.g},{br_yellow.b}!
+Blue=!!COL!{blue.r},{blue.g},{blue.b}!
+BoldBlue=!!COL!{br_blue.r},{br_blue.g},{br_blue.b}!
+Magenta=!!COL!{magenta.r},{magenta.g},{magenta.b}!
+BoldMagenta=!!COL!{br_magenta.r},{br_magenta.g},{br_magenta.b}!
+Cyan=!!COL!{cyan.r},{cyan.g},{cyan.b}!
+BoldCyan=!!COL!{br_cyan.r},{br_cyan.g},{br_cyan.b}!
+White=!!COL!{white.r},{white.g},{white.b}!
+BoldWhite=!!COL!{br_white.r},{br_white.g},{br_white.b}!

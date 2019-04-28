@@ -1,0 +1,20 @@
+# Selenized dark
+BackgroundColour=16,60,72
+ForegroundColour=173,188,188
+CursorColour=175,136,235
+Black=24,73,86
+BoldBlack=45,91,105
+Red=250,87,80
+BoldRed=255,102,92
+Green=117,185,56
+BoldGreen=132,199,71
+Yellow=219,179,45
+BoldYellow=235,193,61
+Blue=70,149,247
+BoldBlue=88,163,255
+Magenta=242,117,190
+BoldMagenta=255,132,205
+Cyan=65,199,185
+BoldCyan=83,214,199
+White=114,137,143
+BoldWhite=202,216,217
