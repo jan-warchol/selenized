@@ -8,6 +8,12 @@ templates.
 
 ### Requirements
 
+- [Python](https://www.python.org/) with development files. Python 3.7
+  and 2.7 is known works; 3.5 and 3.6 might work, but nobody tried yet,
+- [Colormath](https://github.com/gtaylor/python-colormath) Python library.
+
+Example requirements installation for Debian/Ubuntu Linux and Python 2.7:
+
     # ensure your environment has all necessary tools
     sudo apt-get install git python2.7 python-dev python-pip
 
@@ -53,4 +59,3 @@ From sRGB (must be given in hex format):
     CIE L*a*b*    HSV           sRGB      AppleRGB
     -----------   -----------   -------   --------
      75  -6  -6   196  14  76   #a8bcc3   #99aeb6
-

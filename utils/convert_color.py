@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from __future__ import division
 from colormath.color_objects import LabColor, sRGBColor, AppleRGBColor, BaseRGBColor, HSVColor
