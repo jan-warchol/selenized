@@ -30,8 +30,8 @@ allcolors "1;3"   "text"         "bold text"
 allcolors "7;3"   "$SPACE_BLOCK" "reverse"
 allcolors "7;1;3" "$SPACE_BLOCK" "bold reverse"
 
-echo "   |\\"
-echo "   | Color code (listed in column header)"
+echo "   |  \\"
+echo "   |   Color code (listed in column header)"
 echo "   Formatting attribute(s)"
 
 reset_colors "\n"
