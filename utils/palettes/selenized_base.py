@@ -88,14 +88,14 @@ def generate_palette(
         accent_base_l += accent_l_spread
 
     accents = {
-        "red":      [accent_base_l - 0.84*accent_l_spread,  63,  40],
-        "orange":   [accent_base_l - 0.48*accent_l_spread,  37,  50],
-        "yellow":   [accent_base_l - 0.00*accent_l_spread,   6,  68],
-        "green":    [accent_base_l - 0.36*accent_l_spread, -38,  55],
-        "cyan":     [accent_base_l - 0.12*accent_l_spread, -40,  -4],
-        "blue":     [accent_base_l - 0.84*accent_l_spread,   0, -57],
-        "violet":   [accent_base_l - 0.66*accent_l_spread,  30, -45],
-        "magenta":  [accent_base_l - 0.50*accent_l_spread,  55, -15],
+        "red":      [accent_base_l - 0.54*accent_l_spread,  61,  36],
+        "orange":   [accent_base_l - 0.13*accent_l_spread,  35,  56],
+        "yellow":   [accent_base_l + 0.24*accent_l_spread,   4,  75],
+        "green":    [accent_base_l - 0.34*accent_l_spread, -50,  54],
+        "cyan":     [accent_base_l - 0.13*accent_l_spread, -48,  -8],
+        "blue":     [accent_base_l - 0.58*accent_l_spread, -13, -51],
+        "violet":   [accent_base_l - 0.40*accent_l_spread,  29, -40],
+        "magenta":  [accent_base_l - 0.27*accent_l_spread,  45,  -5],
     }
 
     # bright accents have the same a* b* coords as regular accents and
