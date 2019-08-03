@@ -88,9 +88,9 @@ def generate_palette(
         accent_base_l += accent_l_spread
 
     accents = {
-        "red":      [accent_base_l - 0.84*accent_l_spread,  61,  36],
+        "red":      [accent_base_l - 0.84*accent_l_spread,  65,  40],
         "orange":   [accent_base_l - 0.48*accent_l_spread,  35,  56],
-        "yellow":   [accent_base_l + 0.00*accent_l_spread,   4,  75],
+        "yellow":   [accent_base_l + 0.00*accent_l_spread,   7,  77],
         "green":    [accent_base_l - 0.36*accent_l_spread, -50,  54],
         "cyan":     [accent_base_l - 0.12*accent_l_spread, -48,  -8],
         "blue":     [accent_base_l - 0.84*accent_l_spread, -13, -51],
