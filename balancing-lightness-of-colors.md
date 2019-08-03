@@ -1,7 +1,7 @@
 Balancing lightness of accent colors
 ------------------------------------
 
-Desiginig a readable and good-looking color palette requires carefully
+Designing a readable and good-looking color palette requires carefully
 adjusting the lightness of all colors so that they present an even contrast
 against the background.  This is quite tricky and many palettes do it wrong -
 below you can see some examples that will help you understand the problem.
