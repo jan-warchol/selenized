@@ -91,7 +91,7 @@ def generate_palette(
         "red":      [accent_base_l - 0.84*accent_l_spread,  65,  40],
         "orange":   [accent_base_l - 0.40*accent_l_spread,  40,  70],
         "yellow":   [accent_base_l + 0.00*accent_l_spread,   7,  77],
-        "green":    [accent_base_l - 0.36*accent_l_spread, -50,  54],
+        "green":    [accent_base_l - 0.36*accent_l_spread, -45,  55],
         "cyan":     [accent_base_l - 0.12*accent_l_spread, -48,  -8],
         "blue":     [accent_base_l - 0.84*accent_l_spread, -13, -51],
         "violet":   [accent_base_l - 0.66*accent_l_spread,  29, -40],
