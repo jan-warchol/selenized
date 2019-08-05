@@ -94,7 +94,7 @@ def generate_palette(
         "green":    [accent_base_l - 0.36*accent_l_spread, -45,  55],
         "cyan":     [accent_base_l - 0.12*accent_l_spread, -60,   3],
         "blue":     [accent_base_l - 0.84*accent_l_spread, -13, -51],
-        "violet":   [accent_base_l - 0.66*accent_l_spread,  29, -40],
+        "violet":   [accent_base_l - 0.66*accent_l_spread,  33, -44],
         "magenta":  [accent_base_l - 0.50*accent_l_spread,  45,  -5],
     }
 
