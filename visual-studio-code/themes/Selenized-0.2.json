@@ -111,7 +111,7 @@
 			"scope": "entity.name",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#e6e6e6"
+				"foreground": "#dfdfdf"
 			}
 		},
 		{
@@ -124,7 +124,7 @@
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#f073bc"
+				"foreground": "#44cabb"
 			}
 		},
 		{
@@ -174,7 +174,7 @@
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#e6e6e6"
+				"foreground": "#dfdfdf"
 			}
 		},
 		{
