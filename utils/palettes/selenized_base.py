@@ -92,7 +92,7 @@ def generate_palette(
         "orange":   [accent_base_l - 0.40*accent_l_spread,  40,  70],
         "yellow":   [accent_base_l + 0.00*accent_l_spread,   7,  77],
         "green":    [accent_base_l - 0.36*accent_l_spread, -45,  55],
-        "cyan":     [accent_base_l - 0.12*accent_l_spread, -48,  -8],
+        "cyan":     [accent_base_l - 0.12*accent_l_spread, -60,   3],
         "blue":     [accent_base_l - 0.84*accent_l_spread, -13, -51],
         "violet":   [accent_base_l - 0.66*accent_l_spread,  29, -40],
         "magenta":  [accent_base_l - 0.50*accent_l_spread,  45,  -5],
