@@ -1,0 +1,93 @@
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+#: Color scheme {{{
+!!COL!{name}! color scheme for Kitty
+foreground !!COL!{fg.srgb}!
+background !!COL!{bg.srgb}!
+
+#: The foreground and background colors
+
+background_opacity 1.0
+
+#: The opacity of the background. A number between 0 and 1, where 1 is
+#: opaque and 0 is fully transparent.  This will only work if
+#: supported by the OS (for instance, when using a compositor under
+#: X11). Note that it only sets the default background color's
+#: opacity. This is so that things like the status bar in vim,
+#: powerline prompts, etc. still look good.  But it means that if you
+#: use a color theme with a background color in your editor, it will
+#: not be rendered as transparent.  Instead you should change the
+#: default background color in your kitty config and not use a
+#: background color in the editor color scheme. Or use the escape
+#: codes to set the terminals default colors in a shell script to
+#: launch your editor.  Be aware that using a value less than 1.0 is a
+#: (possibly significant) performance hit.  If you want to dynamically
+#: change transparency of windows set dynamic_background_opacity to
+#: yes (this is off by default as it has a performance cost)
+
+dynamic_background_opacity no
+
+#: Allow changing of the background_opacity dynamically, using either
+#: keyboard shortcuts (increase_background_opacity and
+#: decrease_background_opacity) or the remote control facility.
+
+dim_opacity 0.75
+
+#: How much to dim text that has the DIM/FAINT attribute set. One
+#: means no dimming and zero means fully dimmed (i.e. invisible).
+
+selection_foreground !!COL!{bg.srgb}!
+
+#: The foreground for text selected with the mouse. A value of none
+#: means to leave the color unchanged.
+
+selection_background !!COL!{fg.srgb}!
+
+#: The background for text selected with the mouse.
+
+
+#: The 16 terminal colors. There are 8 basic colors, each color has a
+#: dull and bright version. You can also set the remaining colors from
+#: the 256 color table as color16 to color255.
+
+color0 !!COL!{black.srgb}!
+color8 !!COL!{br_black.srgb}!
+
+#: black
+
+color1 !!COL!{red.srgb}!
+color9 !!COL!{br_red.srgb}!
+
+#: red
+
+color2  !!COL!{green.srgb}!
+color10 !!COL!{br_green.srgb}!
+
+#: green
+
+color3  !!COL!{yellow.srgb}!
+color11 !!COL!{br_yellow.srgb}!
+
+#: yellow
+
+color4  !!COL!{blue.srgb}!
+color12 !!COL!{br_blue.srgb}!
+
+#: blue
+
+color5  !!COL!{magenta.srgb}!
+color13 !!COL!{br_magenta.srgb}!
+
+#: magenta
+
+color6  !!COL!{cyan.srgb}!
+color14 !!COL!{br_cyan.srgb}!
+
+#: cyan
+
+color7  !!COL!{white.srgb}!
+color15 !!COL!{br_white.srgb}!
+
+#: white
+
+#: }}}
