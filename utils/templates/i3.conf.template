@@ -1,0 +1,51 @@
+# !!COL!{name}! colorscheme for i3
+# This must go in your i3 config
+
+set $bg !!COL!{bg.srgb}!
+set $black !!COL!{black.srgb}!
+set $br_black !!COL!{br_black.srgb}!
+set $white !!COL!{white.srgb}!
+set $fg !!COL!{fg.srgb}!
+set $br_white !!COL!{br_white.srgb}!
+
+set $red !!COL!{red.srgb}!
+set $green !!COL!{green.srgb}!
+set $yellow !!COL!{yellow.srgb}!
+set $blue !!COL!{blue.srgb}!
+set $magenta !!COL!{magenta.srgb}!
+set $cyan !!COL!{cyan.srgb}!
+set $orange !!COL!{orange.srgb}!
+set $violet !!COL!{violet.srgb}!
+
+set $br_red !!COL!{br_red.srgb}!
+set $br_green !!COL!{br_green.srgb}!
+set $br_yellow !!COL!{br_yellow.srgb}!
+set $br_blue !!COL!{br_blue.srgb}!
+set $br_magenta !!COL!{br_magenta.srgb}!
+set $br_cyan !!COL!{br_cyan.srgb}!
+set $br_orange !!COL!{br_orange.srgb}!
+set $br_violet !!COL!{br_violet.srgb}!
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        font pango:DejaVu Sans Mono 10
+        #mode hide
+        status_command i3status --config ~/.config/i3/i3status.conf
+
+        colors {
+            separator $blue
+            background $bg
+            statusline $br_white
+            focused_workspace $green $green $bg
+            active_workspace $cyan $blue $black
+            inactive_workspace $black $black $fg
+            urgent_workspace $yellow $yellow $black
+        }
+}
+
+# clientclass border backgr. text indicator
+client.focused $green $green $black $blue
+client.focused_inactive $cyan $cyan $black $violet
+client.unfocused $black $black $fg $white
+client.urgent $yellow $yellow $black $orange
