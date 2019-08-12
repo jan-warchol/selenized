@@ -31,14 +31,14 @@ dynamic_background_opacity no
 
 #: How much to dim text that has the DIM/FAINT attribute set. One
 #: means no dimming and zero means fully dimmed (i.e. invisible).
-dim_opacity 0.75
+dim_opacity 0.625
 
 #: The foreground for text selected with the mouse. A value of none
 #: means to leave the color unchanged.
-selection_foreground !!COL!{bg.srgb}!
+selection_foreground none
 
 #: The background for text selected with the mouse.
-selection_background !!COL!{fg.srgb}!
+selection_background !!COL!{br_black.srgb}!
 
 
 #: The 16 terminal colors. There are 8 basic colors, each color has a
