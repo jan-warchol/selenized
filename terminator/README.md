@@ -11,7 +11,7 @@ complete (but minimal) Terminator config file.
 To install Selenized and overwrite your existing Terminator configuration, copy
 [`config`](config) from this directory into `~/.config/terminator`.
 
-To add Selenized profiles to your existing conifguration, copy-and-paste
+To add Selenized profiles to your existing configuration, copy-and-paste
 appropriate sections from [`config`](config) file into your
 `~/.config/terminator/config`.
 
