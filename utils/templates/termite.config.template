@@ -11,7 +11,7 @@ background = !!COL!{bg.srgb}!
 cursor = !!COL!{fg.srgb}!
 
 # if unset, will reverse foreground and background
-#highlight = #839496
+highlight = !!COL!{br_black.srgb}!
 
 # colors from color0 to color254 can be set
 color0 = !!COL!{black.srgb}!
