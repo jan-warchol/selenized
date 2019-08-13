@@ -33,7 +33,7 @@ than red).
 
 <!-- ![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png) -->
 
-I have fine-tuned the lightnesses to ensure that all colors present an even
+I have fine-tuned the lightness to ensure that all colors present an even
 contrast, even red and blue (which are too dark in many palettes).  You can
 read more about accent color lightness and see a comparison between Selenized
 and other palettes [here](balancing-lightness-of-colors.md) (warning: extreme
