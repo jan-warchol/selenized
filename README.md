@@ -59,7 +59,7 @@ Like _Solarized dark_, but better.
 
 ![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
 
-Oldschool black-and-white look with a littel more contrast.
+Oldschool black-and-white look with a little more contrast.
 
 
 
