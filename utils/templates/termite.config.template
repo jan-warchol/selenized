@@ -1,0 +1,32 @@
+[colors]
+# !!COL!{name}! colorscheme for Termite
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+foreground = !!COL!{fg.srgb}!
+foreground_bold = !!COL!{br_white.srgb}!
+#foreground_dim = #888888
+background = !!COL!{bg.srgb}!
+cursor = !!COL!{fg.srgb}!
+
+# if unset, will reverse foreground and background
+highlight = !!COL!{br_black.srgb}!
+
+# colors from color0 to color254 can be set
+color0 = !!COL!{black.srgb}!
+color1 = !!COL!{red.srgb}!
+color2 = !!COL!{green.srgb}!
+color3 = !!COL!{yellow.srgb}!
+color4 = !!COL!{blue.srgb}!
+color5 = !!COL!{magenta.srgb}!
+color6 = !!COL!{cyan.srgb}!
+color7 = !!COL!{white.srgb}!
+color8 = !!COL!{br_black.srgb}!
+color9 = !!COL!{br_red.srgb}!
+color10 = !!COL!{br_green.srgb}!
+color11 = !!COL!{br_yellow.srgb}!
+color12 = !!COL!{br_blue.srgb}!
+color13 = !!COL!{br_magenta.srgb}!
+color14 = !!COL!{br_cyan.srgb}!
+color15 = !!COL!{br_white.srgb}!
