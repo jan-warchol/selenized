@@ -1,4 +1,4 @@
-This is an example template. Run 
+This is an example template. Run
 
     python evaluate_template.py <palette file> <path to this file>
 
@@ -21,7 +21,7 @@ You can also use python's formats e.g. to cast an attribute to hex etc.:
 The default delimiter (!) can be changed, e.g. to %: !!COL%{yellow.srgb}%
 !!COL@{yellow.srgb} you can also add some text inside format specification. {yellow.apple}@
 
-In particular, it's possible to acces multiple colors/attributes/formats in one format:
+In particular, it's possible to access multiple colors/attributes/formats in one format:
 !!COL!{bg.r:02x}{bg.r:02x}{bg.g:02x}{bg.g:02x}{bg.b:02x}{bg.b:02x}!   # gnome-terminal
 !!COL!{yellow.r1:f} {yellow.g1:f} {yellow.b1:f}!   # something like iTerm
 
