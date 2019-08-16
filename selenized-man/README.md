@@ -16,3 +16,5 @@ ZSH_CUSTOM=$HOME/.config/ohmyzsh/custom
 ```
 plugins=(selenized-man)
 ```
+
+4. Or just copy paste the portion into your shell rc (.bashrc .zshrc etc)
