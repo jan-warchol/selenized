@@ -50,29 +50,31 @@ lCursor              -> Cursor
 # }}}
 
 Background: dark
+Color: bgcol                #103c48                ~
+Color: fgcol                #adbcbc                ~
 
 # Color palette for dark variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
-Color: black                #184956               ~         Black
-Color: red                  #fa5750               ~         DarkRed
-Color: green                #75b938               ~         DarkGreen
-Color: yellow               #dbb32d               ~         DarkYellow
-Color: blue                 #4695f7               ~         DarkBlue
-Color: magenta              #f275be               ~         DarkMagenta
-Color: cyan                 #41c7b9               ~         DarkCyan
-Color: orange               #ed8649               ~
-Color: violet               #af88eb               ~
-Color: white                #72898f               ~         LightGrey
-Color: brightblack          #2d5b69               ~         DarkGrey
-Color: brightred            #ff665c               ~         LightRed
-Color: brightgreen          #84c747               ~         LightGreen
-Color: brightyellow         #ebc13d               ~         LightYellow
-Color: brightblue           #58a3ff               ~         LightBlue
-Color: brightmagenta        #ff84cd               ~         LightMagenta
-Color: brightcyan           #53d6c7               ~         LightCyan
-Color: brightorange         #fd9456               ~
-Color: brightviolet         #bd96fa               ~
-Color: brightwhite          #cad8d9               ~         White
+Color: black                #184956                ~        Black
+Color: red                  #fa5750                ~        DarkRed
+Color: green                #75b938                ~        DarkGreen
+Color: yellow               #dbb32d                ~        DarkYellow
+Color: blue                 #4695f7                ~        DarkBlue
+Color: magenta              #f275be                ~        DarkMagenta
+Color: cyan                 #41c7b9                ~        DarkCyan
+Color: orange               #ed8649                ~
+Color: violet               #af88eb                ~
+Color: white                #72898f                ~        LightGrey
+Color: brightblack          #2d5b69                ~        DarkGrey
+Color: brightred            #ff665c                ~        LightRed
+Color: brightgreen          #84c747                ~        LightGreen
+Color: brightyellow         #ebc13d                ~        LightYellow
+Color: brightblue           #58a3ff                ~        LightBlue
+Color: brightmagenta        #ff84cd                ~        LightMagenta
+Color: brightcyan           #53d6c7                ~        LightCyan
+Color: brightorange         #fd9456                ~
+Color: brightviolet         #bd96fa                ~
+Color: brightwhite          #cad8d9                ~        White
 # }}}
 
 # Terminal colors for dark variant {{{
@@ -164,6 +166,8 @@ ToolbarButton        white             black             bold
 # }}}
 
 Background: light
+Color: bgcol                #fbf3db                ~
+Color: fgcol                #53676d                ~
 
 # Color palette for light variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
