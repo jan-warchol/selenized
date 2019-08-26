@@ -50,12 +50,12 @@ lCursor              -> Cursor
 # }}}
 
 Background: dark
-Color: bgcol                #103c48                ~
-Color: fgcol                #adbcbc                ~
 
 # Color palette for dark variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
-Color: black                #184956                ~        Black
+Color: bgcol                #103c48                ~        Black
+Color: fgcol                #adbcbc                ~        LightGrey
+Color: black                #184956                ~        DarkGrey
 Color: red                  #fa5750                ~        DarkRed
 Color: green                #75b938                ~        DarkGreen
 Color: yellow               #dbb32d                ~        DarkYellow
@@ -89,11 +89,11 @@ Variant: gui
 Variant: 256 8
 #if get(g:, '@optionprefix_transp_bg', 0)
 Variant: gui 256 8
-    Normal           white             none
-    Terminal         white             none
+    Normal           fgcol             none
+    Terminal         bgcol             none
 #else
-    Normal           white             black
-    Terminal         white             black
+    Normal           fgcol             none
+    Terminal         black             none
 #endif
 
 # Group              Foreground        Background        Attributes
@@ -130,8 +130,8 @@ SpellBad             white             black             s=red
 SpellCap             white             black             s=blue
 SpellLocal           white             black             s=magenta
 SpellRare            white             black             s=cyan reverse
-StatusLine           white             black
-StatusLineNC         white             black
+StatusLine           white             brightwhite       bold
+StatusLineNC         yellow            black
 TabLine              white             black
 TabLineFill          white             black
 TabLineSel           white             black
@@ -144,12 +144,12 @@ WildMenu             white             black
 # Other conventional group names (see `:help group-name`)
 Comment              white             none              italic
 Constant             brightred         none
-String               green             none
+String               blue              none
 Error                red               black             reverse
-Identifier           magenta           none              bold
+Identifier           cyan              none              bold
 Ignore               none              none              bold
 PreProc              brightblue        none
-Special              blue              none
+Special              magenta           none
 Statement            yellow            none              bold
 Todo                 yellow            black             reverse
 Type                 green             none
@@ -166,12 +166,12 @@ ToolbarButton        white             black             bold
 # }}}
 
 Background: light
-Color: bgcol                #fbf3db                ~
-Color: fgcol                #53676d                ~
 
 # Color palette for light variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
-Color: black                #ece3cc                ~        Black
+Color: bgcol                #fbf3db                ~        White
+Color: fgcol                #53676d                ~
+Color: black                #909995                ~        Black
 Color: red                  #d2212d                ~        DarkRed
 Color: green                #489100                ~        DarkGreen
 Color: yellow               #ad8900                ~        DarkYellow
@@ -180,7 +180,7 @@ Color: magenta              #ca4898                ~        DarkMagenta
 Color: cyan                 #009c8f                ~        DarkCyan
 Color: orange               #c25d1e                ~
 Color: violet               #8762c6                ~
-Color: white                #909995                ~        LightGrey
+Color: white                #ece3cc                ~        LightGrey
 Color: brightblack          #d5cdb6                ~        DarkGrey
 Color: brightred            #cc1729                ~        LightRed
 Color: brightgreen          #428b00                ~        LightGreen
