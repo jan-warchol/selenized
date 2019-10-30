@@ -18,6 +18,8 @@ hi CursorColumn ctermfg=NONE ctermbg=0    cterm=NONE
 hi ColorColumn  ctermfg=NONE ctermbg=0    cterm=NONE
 hi MatchParen   ctermfg=3    ctermbg=8    cterm=bold
 hi Folded       ctermfg=NONE ctermbg=0    cterm=NONE
+hi Pmenu        ctermfg=7    ctermbg=0
+hi PmenuSel     ctermfg=NONE ctermbg=8
 
 " diffing
 hi DiffAdd      ctermfg=2    ctermbg=0    cterm=NONE
