@@ -1,16 +1,16 @@
 {
 	"colors": {
-        	"dim_fg": "#7e7e7e",
-        	"foreground": "#c1c1c1",
-        	"bright_fg": "#e6e6e6",
-        	"red": "#f3504b",
-        	"green": "#75b938",
-        	"yellow": "#e0b732",
-        	"blue": "#3d8ff0",
-        	"magenta": "#f073bc",
-        	"cyan": "#44cabb",
-        	"orange": "#eb8447",
-        	"violet": "#aa84e7"
+		"dim_fg":     "#7e7e7e",
+		"foreground": "#c1c1c1",
+		"bright_fg":  "#e6e6e6",
+		"red":        "#f3504b",
+		"green":      "#75b938",
+		"yellow":     "#e0b732",
+		"blue":       "#3d8ff0",
+		"magenta":    "#f073bc",
+		"cyan":       "#44cabb",
+		"orange":     "#eb8447",
+		"violet":     "#aa84e7"
         },
 	"tokenColors": [
 		{

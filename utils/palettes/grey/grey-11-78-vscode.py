@@ -1,6 +1,7 @@
 import selenized_base
 
-name = "Variant based on fg and bg of default VS Code palette"
+# Variant based on fg and bg of default VS Code palette
+name = "VS Code"
 
 palette = selenized_base.generate_palette(
     background=(11, 0, 0),
