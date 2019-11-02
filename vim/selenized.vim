@@ -1,5 +1,5 @@
 highlight clear
-let g:colors_name = "Selenized"
+let g:colors_name = "selenized"
 
 if exists("syntax_on")
     syntax reset
