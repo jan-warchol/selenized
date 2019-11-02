@@ -87,11 +87,11 @@ val bgColors = List(
     new Color("fg", "adbcbc", 75)
 )
 val fgColors = List(
-    new Color("black", "184956", 28),
-    new Color("br_black", "2d5b69", 36),
-    new Color("white", "72898f", 56),
+    new Color("bg_bright_1", "184956", 28),
+    new Color("bg_bright_2", "2d5b69", 36),
+    new Color("fg_dim", "72898f", 56),
     new Color("fg", "adbcbc", 75),
-    new Color("br_white", "cad8d9", 85),
+    new Color("fg_bright", "cad8d9", 85),
     new Color("red", "fa5750", 60),
     new Color("green", "75b938", 69),
     new Color("yellow", "dbb32d", 75),

@@ -2,11 +2,11 @@
 # This must go in your i3 config
 
 set $bg !!COL!{bg.srgb}!
-set $black !!COL!{black.srgb}!
-set $br_black !!COL!{br_black.srgb}!
-set $white !!COL!{white.srgb}!
+set $black !!COL!{bg_bright_1.srgb}!
+set $br_black !!COL!{bg_bright_2.srgb}!
+set $white !!COL!{fg_dim.srgb}!
 set $fg !!COL!{fg.srgb}!
-set $br_white !!COL!{br_white.srgb}!
+set $br_white !!COL!{fg_bright.srgb}!
 
 set $red !!COL!{red.srgb}!
 set $green !!COL!{green.srgb}!

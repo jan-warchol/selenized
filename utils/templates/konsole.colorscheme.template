@@ -2,13 +2,13 @@
 Color=!!COL!{bg.r},{bg.g},{bg.b}!
 
 [BackgroundIntense]
-Color=!!COL!{black.r},{black.g},{black.b}!
+Color=!!COL!{bg_bright_1.r},{bg_bright_1.g},{bg_bright_1.b}!
 
 [Color0]
-Color=!!COL!{black.r},{black.g},{black.b}!
+Color=!!COL!{bg_bright_1.r},{bg_bright_1.g},{bg_bright_1.b}!
 
 [Color0Intense]
-Color=!!COL!{br_black.r},{br_black.g},{br_black.b}!
+Color=!!COL!{bg_bright_2.r},{bg_bright_2.g},{bg_bright_2.b}!
 
 [Color1]
 Color=!!COL!{red.r},{red.g},{red.b}!
@@ -47,16 +47,16 @@ Color=!!COL!{cyan.r},{cyan.g},{cyan.b}!
 Color=!!COL!{br_cyan.r},{br_cyan.g},{br_cyan.b}!
 
 [Color7]
-Color=!!COL!{white.r},{white.g},{white.b}!
+Color=!!COL!{fg_dim.r},{fg_dim.g},{fg_dim.b}!
 
 [Color7Intense]
-Color=!!COL!{br_white.r},{br_white.g},{br_white.b}!
+Color=!!COL!{fg_bright.r},{fg_bright.g},{fg_bright.b}!
 
 [Foreground]
 Color=!!COL!{fg.r},{fg.g},{fg.b}!
 
 [ForegroundIntense]
-Color=!!COL!{br_white.r},{br_white.g},{br_white.b}!
+Color=!!COL!{fg_bright.r},{fg_bright.g},{fg_bright.b}!
 
 [General]
 Description=!!COL!{name}!

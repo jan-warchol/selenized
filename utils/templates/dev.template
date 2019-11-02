@@ -1,10 +1,10 @@
   [[!!COL!{name}!]]
     background_color = "!!COL!{bg.srgb}!"
     background_image = None
-    cursor_color = "!!COL!{white.srgb}!"
+    cursor_color = "!!COL!{fg_dim.srgb}!"
     font = Ubuntu Mono 12
     foreground_color = "!!COL!{fg.srgb}!"
-    palette = "!!COL!{black.srgb}!:!!COL!{red.srgb}!:!!COL!{green.srgb}!:!!COL!{yellow.srgb}!:!!COL!{blue.srgb}!:!!COL!{magenta.srgb}!:!!COL!{cyan.srgb}!:!!COL!{white.srgb}!:!!COL!{br_black.srgb}!:!!COL!{orange.srgb}!:!!COL!{br_green.srgb}!:!!COL!{br_yellow.srgb}!:!!COL!{violet.srgb}!:!!COL!{br_magenta.srgb}!:!!COL!{br_cyan.srgb}!:!!COL!{br_white.srgb}!"
+    palette = "!!COL!{bg_bright_1.srgb}!:!!COL!{red.srgb}!:!!COL!{green.srgb}!:!!COL!{yellow.srgb}!:!!COL!{blue.srgb}!:!!COL!{magenta.srgb}!:!!COL!{cyan.srgb}!:!!COL!{fg_dim.srgb}!:!!COL!{bg_bright_2.srgb}!:!!COL!{orange.srgb}!:!!COL!{br_green.srgb}!:!!COL!{br_yellow.srgb}!:!!COL!{violet.srgb}!:!!COL!{br_magenta.srgb}!:!!COL!{br_cyan.srgb}!:!!COL!{fg_bright.srgb}!"
     scroll_on_output = False
     scrollback_infinite = True
     scrollbar_position = hidden

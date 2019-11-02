@@ -43,10 +43,10 @@ def generate_palette(
     # (0 - lightness like in bg, 1 - like in fg)
     # For some reason bright background looks washed out without increased saturation
     monotone_spec = {
-        "black":    [1/10,  br_bg_extra_saturation],
-        "br_black": [1/4,   br_bg_extra_saturation],
-        "white":    [5/8,   1],
-        "br_white": [1+1/5, 1],
+        "bg_bright_1": [1/10,  br_bg_extra_saturation],
+        "bg_bright_2": [1/4,   br_bg_extra_saturation],
+        "fg_dim":      [5/8,   1],
+        "fg_bright":   [1+1/5, 1],
     }
 
     # use weighted average.
@@ -121,7 +121,7 @@ def generate_palette(
 
     # some debug
     acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
-    acc_hi_dists = [float(abs(accents[color][0]-monotones["br_black"][0])) for color in accents]
+    acc_hi_dists = [float(abs(accents[color][0]-monotones["bg_bright_2"][0])) for color in accents]
 
     print("""Foreground: {}
 Background: {}
@@ -141,9 +141,9 @@ Background-accent distance:  min {:.3}, max {:.3}
         float(accent_base_l),
         float(accent_base_l - accent_l_spread),
 
-        float(abs(fg_l-monotones["white"][0])),
-        float(abs(monotones["br_black"][0]-bg_l)),
-        float(abs(monotones["br_black"][0]-monotones["white"][0])),
+        float(abs(fg_l-monotones["fg_dim"][0])),
+        float(abs(monotones["bg_bright_2"][0]-bg_l)),
+        float(abs(monotones["bg_bright_2"][0]-monotones["fg_dim"][0])),
         min(acc_hi_dists),
         max(acc_hi_dists),
         min(acc_bg_dists),
