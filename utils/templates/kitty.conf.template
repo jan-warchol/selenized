@@ -38,7 +38,7 @@ dim_opacity 0.625
 selection_foreground none
 
 #: The background for text selected with the mouse.
-selection_background !!COL!{br_black.srgb}!
+selection_background !!COL!{bg_bright_2.srgb}!
 
 
 #: The 16 terminal colors. There are 8 basic colors, each color has a
@@ -46,8 +46,8 @@ selection_background !!COL!{br_black.srgb}!
 #: the 256 color table as color16 to color255.
 
 #: black
-color0 !!COL!{black.srgb}!
-color8 !!COL!{br_black.srgb}!
+color0 !!COL!{bg_bright_1.srgb}!
+color8 !!COL!{bg_bright_2.srgb}!
 
 #: red
 color1 !!COL!{red.srgb}!
@@ -74,7 +74,7 @@ color6  !!COL!{cyan.srgb}!
 color14 !!COL!{br_cyan.srgb}!
 
 #: white
-color7  !!COL!{white.srgb}!
-color15 !!COL!{br_white.srgb}!
+color7  !!COL!{fg_dim.srgb}!
+color15 !!COL!{fg_bright.srgb}!
 
 #: }}}

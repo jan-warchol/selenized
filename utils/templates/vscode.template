@@ -1,24 +1,24 @@
 {
-	"name": "Selenized (0.2)",
+	"name": "Selenized",
 	"type": "dark",
 	"colors": {
-		"editor.background":                   "#1e1e1e",
-		"editor.foreground":                   "#c1c1c1",
-		"editorCursor.foreground":             "#c1c1c1",
-		"editorLineNumber.foreground":         "#7e7e7e",
-		"editorLineNumber.activeForeground":   "#c1c1c1",
-		"editorIndentGuide.background":        "#414141",
-		"editorIndentGuide.activeBackground":  "#7e7e7e",
-		"editor.selectionBackground":          "#414141",
-		"editor.inactiveSelectionBackground":  "#2b2b2b",
-		"editor.selectionHighlightBackground": "#1d1d1d",
-		"editor.selectionHighlightBorder":     "#414141"
+		"editor.background":                   "!!COL!{bg.srgb}!",
+		"editor.foreground":                   "!!COL!{fg.srgb}!",
+		"editorCursor.foreground":             "!!COL!{fg.srgb}!",
+		"editorLineNumber.foreground":         "!!COL!{fg_dim.srgb}!",
+		"editorLineNumber.activeForeground":   "!!COL!{fg.srgb}!",
+		"editorIndentGuide.background":        "!!COL!{bg_bright_2.srgb}!",
+		"editorIndentGuide.activeBackground":  "!!COL!{fg_dim.srgb}!",
+		"editor.selectionBackground":          "!!COL!{bg_bright_2.srgb}!",
+		"editor.inactiveSelectionBackground":  "!!COL!{bg_bright_1.srgb}!",
+		"editor.selectionHighlightBackground": "!!COL!{bg.srgb}!",
+		"editor.selectionHighlightBorder":     "!!COL!{bg_bright_2.srgb}!"
 	},
 	"tokenColors": [
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#7e7e7e"
+				"foreground": "!!COL!{fg_dim.srgb}!"
 			}
 		},
 		{
@@ -30,13 +30,13 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#e0b732"
+				"foreground": "!!COL!{yellow.srgb}!"
 			}
 		},
 		{
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#e0b732"
+				"foreground": "!!COL!{yellow.srgb}!"
 			}
 		},
 		{
@@ -46,13 +46,13 @@
 				"keyword.other.import"
 			],
 			"settings": {
-				"foreground": "#f073bc"
+				"foreground": "!!COL!{magenta.srgb}!"
 			}
 		},
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#75b938"
+				"foreground": "!!COL!{green.srgb}!"
 			}
 		},
 		{
@@ -62,19 +62,19 @@
 				"string.quoted.docstring.multi"
 			],
 			"settings": {
-				"foreground": "#7e7e7e"
+				"foreground": "!!COL!{fg_dim.srgb}!"
 			}
 		},
 		{
 			"scope": "constant",
 			"settings": {
-				"foreground": "#44cabb"
+				"foreground": "!!COL!{cyan.srgb}!"
 			}
 		},
 		{
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#eb8447"
+				"foreground": "!!COL!{orange.srgb}!"
 			}
 		},
 		{
@@ -89,21 +89,21 @@
 				"storage.type.string"
 			],
 			"settings": {
-				"foreground": "#f073bc"
+				"foreground": "!!COL!{magenta.srgb}!"
 			}
 		},
 		{
 			"scope": "storage",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#9e9e9e"
+				"foreground": "!!COL!{fg_dim.srgb}!"
 			}
 		},
 		{
 			"name": "const, final, abstract etc.",
 			"scope": "storage.modifier",
 			"settings": {
-				"foreground": "#aa84e7"
+				"foreground": "!!COL!{violet.srgb}!"
 			}
 		},
 		{
@@ -111,27 +111,27 @@
 			"scope": "entity.name",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#dfdfdf"
+				"foreground": "!!COL!{fg_bright.srgb}!"
 			}
 		},
 		{
 			"scope": "entity.name.function.decorator",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#3d8ff0"
+				"foreground": "!!COL!{blue.srgb}!"
 			}
 		},
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#44cabb"
+				"foreground": "!!COL!{magenta.srgb}!"
 			}
 		},
 		{
 			"name": "Almost every variable in JS is in this scope",
 			"scope": "variable.other",
 			"settings": {
-				"foreground": "#c1c1c1"
+				"foreground": "!!COL!{fg.srgb}!"
 			}
 		},
 		{
@@ -139,21 +139,21 @@
 			"scope": "variable.language",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#3d8ff0"
+				"foreground": "!!COL!{blue.srgb}!"
 			}
 		},
 		{
 			"name": "stuff from library/framework",
 			"scope": "support",
 			"settings": {
-				"foreground": "#aa84e7"
+				"foreground": "!!COL!{violet.srgb}!"
 			}
 		},
 		{
 			"scope": "support.type.exception",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#eb8447"
+				"foreground": "!!COL!{orange.srgb}!"
 			}
 		},
 		{
@@ -174,14 +174,14 @@
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#dfdfdf"
+				"foreground": "!!COL!{fg_bright.srgb}!"
 			}
 		},
 		{
 			"scope": "invalid",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#f3504b"
+				"foreground": "!!COL!{red.srgb}!"
 			}
 		}
 	]

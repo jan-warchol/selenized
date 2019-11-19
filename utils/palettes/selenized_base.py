@@ -9,7 +9,7 @@ def generate_palette(
     accent_offset=0,
     accent_l_spread=None,
     br_accent_shift=None,
-    br_bg_extra_saturation=1.1
+    br_bg_extra_saturation=1.2
 ):
     bg_l, bg_a, bg_b = background
 
@@ -34,28 +34,33 @@ def generate_palette(
 
     ### MONOTONES
 
-    # bright bg and fg are calculated using contrast. For some reason bright
-    # background looks washed out without increased saturation
-    br_bg_l = bg_l + direction*contrast/10
-    br_bg_a, br_bg_b = bg_a*br_bg_extra_saturation, bg_b*br_bg_extra_saturation
-
-    hi_bg_l = bg_l + direction*contrast/4
-    br_fg_l = fg_l + direction*contrast/5
-
-    # color used for comments and other secondary content; it's a weighted
-    # average of fg and bg
-    dim_fg_l = 3/8 * bg_l + 5/8 * fg_l
-    dim_fg_a = 3/8 * bg_a + 5/8 * fg_a
-    dim_fg_b = 3/8 * bg_b + 5/8 * fg_b
-
     monotones = {
-        "bg":       [bg_l,     bg_a,     bg_b    ],
-        "black":    [br_bg_l,  br_bg_a,  br_bg_b ],
-        "br_black": [hi_bg_l,  br_bg_a,  br_bg_b ],
-        "fg":       [fg_l,     fg_a,     fg_b    ],
-        "white":    [dim_fg_l, dim_fg_a, dim_fg_b],
-        "br_white": [br_fg_l,  fg_a,     fg_b    ],
+        "bg": [bg_l, bg_a, bg_b],
+        "fg": [fg_l, fg_a, fg_b],
     }
+
+    # define additional monotones using contrast
+    # (0 - lightness like in bg, 1 - like in fg)
+    # For some reason bright background looks washed out without increased saturation
+    monotone_spec = {
+        "bg_bright_1": [1/10,  br_bg_extra_saturation],
+        "bg_bright_2": [1/4,   br_bg_extra_saturation],
+        "fg_dim":      [5/8,   1],
+        "fg_bright":   [1+1/5, 1],
+    }
+
+    # use weighted average.
+    def expand_monotone(spec):
+        relative_lightness, extra_saturation = spec
+        l = bg_l + relative_lightness * (fg_l - bg_l)
+        fg_weight = min(relative_lightness, 1)
+        bg_weight = max(1 - relative_lightness, 0)
+        a = (fg_weight*fg_a + bg_weight*bg_a) * extra_saturation
+        b = (fg_weight*fg_b + bg_weight*bg_b) * extra_saturation
+        return [l, a, b]
+
+    for name in monotone_spec:
+        monotones[name] = expand_monotone(monotone_spec[name])
 
 
 
@@ -116,7 +121,7 @@ def generate_palette(
 
     # some debug
     acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
-    acc_hi_dists = [float(abs(accents[color][0]-hi_bg_l)) for color in accents]
+    acc_hi_dists = [float(abs(accents[color][0]-monotones["bg_bright_2"][0])) for color in accents]
 
     print("""Foreground: {}
 Background: {}
@@ -136,9 +141,9 @@ Background-accent distance:  min {:.3}, max {:.3}
         float(accent_base_l),
         float(accent_base_l - accent_l_spread),
 
-        float(abs(fg_l-dim_fg_l)),
-        float(abs(hi_bg_l-bg_l)),
-        float(abs(hi_bg_l-dim_fg_l)),
+        float(abs(fg_l-monotones["fg_dim"][0])),
+        float(abs(monotones["bg_bright_2"][0]-bg_l)),
+        float(abs(monotones["bg_bright_2"][0]-monotones["fg_dim"][0])),
         min(acc_hi_dists),
         max(acc_hi_dists),
         min(acc_bg_dists),

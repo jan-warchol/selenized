@@ -5,11 +5,11 @@
 	<key>Ansi 0 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{black.apple.b:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{black.apple.g:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{black.apple.r:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.r:.3}!</real>
 	</dict>
 	<key>Ansi 1 Color</key>
 	<dict>
@@ -68,11 +68,11 @@
 	<key>Ansi 15 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{br_white.apple.b:.3}!</real>
+		<real>!!COL!{fg_bright.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{br_white.apple.g:.3}!</real>
+		<real>!!COL!{fg_bright.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{br_white.apple.r:.3}!</real>
+		<real>!!COL!{fg_bright.apple.r:.3}!</real>
 	</dict>
 	<key>Ansi 2 Color</key>
 	<dict>
@@ -122,20 +122,20 @@
 	<key>Ansi 7 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{white.apple.b:.3}!</real>
+		<real>!!COL!{fg_dim.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{white.apple.g:.3}!</real>
+		<real>!!COL!{fg_dim.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{white.apple.r:.3}!</real>
+		<real>!!COL!{fg_dim.apple.r:.3}!</real>
 	</dict>
 	<key>Ansi 8 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{br_black.apple.b:.3}!</real>
+		<real>!!COL!{bg_bright_2.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{br_black.apple.g:.3}!</real>
+		<real>!!COL!{bg_bright_2.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{br_black.apple.r:.3}!</real>
+		<real>!!COL!{bg_bright_2.apple.r:.3}!</real>
 	</dict>
 	<key>Ansi 9 Color</key>
 	<dict>
@@ -158,11 +158,11 @@
 	<key>Bold Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{br_white.apple.b:.3}!</real>
+		<real>!!COL!{fg_bright.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{br_white.apple.g:.3}!</real>
+		<real>!!COL!{fg_bright.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{br_white.apple.r:.3}!</real>
+		<real>!!COL!{fg_bright.apple.r:.3}!</real>
 	</dict>
 	<key>Cursor Color</key>
 	<dict>
@@ -194,20 +194,20 @@
 	<key>Selected Text Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{br_white.apple.b:.3}!</real>
+		<real>!!COL!{fg_bright.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{br_white.apple.g:.3}!</real>
+		<real>!!COL!{fg_bright.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{br_white.apple.r:.3}!</real>
+		<real>!!COL!{fg_bright.apple.r:.3}!</real>
 	</dict>
 	<key>Selection Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>!!COL!{black.apple.b:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.b:.3}!</real>
 		<key>Green Component</key>
-		<real>!!COL!{black.apple.g:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.g:.3}!</real>
 		<key>Red Component</key>
-		<real>!!COL!{black.apple.r:.3}!</real>
+		<real>!!COL!{bg_bright_1.apple.r:.3}!</real>
 	</dict>
 </dict>
 </plist>
