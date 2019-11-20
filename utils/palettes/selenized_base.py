@@ -5,6 +5,7 @@ ACCENTS_MAX_REASONABLE_L = 75
 def generate_palette(
     background,
     foreground="undefined",
+    monotone_spec=None,
     saturation=1,
     accent_offset=0,
     accent_l_spread=None,
@@ -39,15 +40,16 @@ def generate_palette(
         "fg": [fg_l, fg_a, fg_b],
     }
 
-    # define additional monotones using contrast
-    # (0 - lightness like in bg, 1 - like in fg)
-    # For some reason bright background looks washed out without increased saturation
-    monotone_spec = {
-        "bg_bright_1": [1/10,  br_bg_extra_saturation],
-        "bg_bright_2": [1/4,   br_bg_extra_saturation],
-        "fg_dim":      [5/8,   1],
-        "fg_bright":   [1+1/5, 1],
-    }
+    if not monotone_spec:
+        # define additional monotones using contrast
+        # (0 - lightness like in bg, 1 - like in fg)
+        # For some reason bright background looks washed out without increased saturation
+        monotone_spec = {
+            "bg_bright_1": [1/10,  br_bg_extra_saturation],
+            "bg_bright_2": [1/4,   br_bg_extra_saturation],
+            "fg_dim":      [5/8,   1],
+            "fg_bright":   [1+1/5, 1],
+        }
 
     # use weighted average.
     def expand_monotone(spec):
