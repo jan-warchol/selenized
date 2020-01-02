@@ -36,6 +36,7 @@ Ready-to-use config files are available for the following terminals:
 - [Tilix](tilix)
 - [Alacritty](alacritty)
 - [mintty](mintty)
+- [blink](blinksh)
 
 If your terminal is not listed here, you can always manually copy [hex
 values](the-values.md) into its preferences.  Please consider sending me a pull
