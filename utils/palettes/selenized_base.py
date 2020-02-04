@@ -3,8 +3,9 @@ from __future__ import division
 ACCENTS_MAX_REASONABLE_L = 75
 
 def generate_palette(
-    background,
+    background=None,
     foreground="undefined",
+    transparency=None,
     monotone_spec=None,
     saturation=1,
     accent_offset=0,
@@ -12,7 +13,13 @@ def generate_palette(
     br_accent_shift=None,
     br_bg_extra_saturation=1.2
 ):
-    bg_l, bg_a, bg_b = background
+    if not transparency:
+        bg_l, bg_a, bg_b = background
+        bg_base = bg_l
+    else:
+        bg_base, bg_a, bg_b = 0, 0, 0
+        bg_l = transparency
+
 
     if foreground == "undefined":
         if bg_l <= 50:
@@ -36,7 +43,7 @@ def generate_palette(
     ### MONOTONES
 
     monotones = {
-        "bg": [bg_l, bg_a, bg_b],
+        "bg": [bg_base, bg_a, bg_b],
         "fg": [fg_l, fg_a, fg_b],
     }
 
