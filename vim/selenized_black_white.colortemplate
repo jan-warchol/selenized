@@ -19,18 +19,18 @@ Color: fg_0          #b9b9b9        ~        none
 Color: fg_1          #dedede        ~        White
 
 # "accent" colors
-Color: red           #ed4a46        ~        DarkRed
+Color: red           #ed4a46      203        DarkRed
 Color: green         #70b433        ~        DarkGreen
 Color: yellow        #dbb32d        ~        DarkYellow
-Color: blue          #368aeb        ~        DarkBlue
+Color: blue          #368aeb       33        DarkBlue
 Color: magenta       #eb6eb7        ~        DarkMagenta
 Color: cyan          #3fc5b7        ~        DarkCyan
 
 # bright accents
 Color: br_red        #ff5e56        ~        LightRed
 Color: br_green      #83c746        ~        LightGreen
-Color: br_yellow     #efc541        ~        LightYellow
-Color: br_blue       #4f9cfe        ~        LightBlue
+Color: br_yellow     #efc541      178        LightYellow
+Color: br_blue       #4f9cfe       39        LightBlue
 Color: br_magenta    #ff81ca        ~        LightMagenta
 Color: br_cyan       #56d8c9        ~        LightCyan
 # }}}

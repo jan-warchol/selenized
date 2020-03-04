@@ -22,7 +22,7 @@ Color: fg_1          #cad8d9      252        White
 Color: red           #fa5750        ~        DarkRed
 Color: green         #75b938        ~        DarkGreen
 Color: yellow        #dbb32d        ~        DarkYellow
-Color: blue          #4695f7        ~        DarkBlue
+Color: blue          #4695f7       33        DarkBlue
 Color: magenta       #f275be        ~        DarkMagenta
 Color: cyan          #41c7b9        ~        DarkCyan
 
@@ -30,7 +30,7 @@ Color: cyan          #41c7b9        ~        DarkCyan
 Color: br_red        #ff665c        ~        LightRed
 Color: br_green      #84c747        ~        LightGreen
 Color: br_yellow     #ebc13d        ~        LightYellow
-Color: br_blue       #58a3ff        ~        LightBlue
+Color: br_blue       #58a3ff       39        LightBlue
 Color: br_magenta    #ff84cd        ~        LightMagenta
 Color: br_cyan       #53d6c7        ~        LightCyan
 # }}}
