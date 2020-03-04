@@ -25,6 +25,12 @@ VertSplit            dim_0         dim_0
 MatchParen           br_yellow     bg_2          bold
 Folded               none          bg_1
 
+# completion popup menu
+Pmenu                dim_0         bg_1
+PmenuSel             none          bg_2
+PmenuThumb           none          dim_0
+PmenuSbar            none          bg_2
+
 # diffing
 DiffAdd              green         bg_1
 DiffChange           none          bg_1
@@ -94,10 +100,6 @@ FoldColumn           none          none
 ModeMsg              none          none
 MoreMsg              none          none
 NonText              none          none
-Pmenu                none          none
-PmenuSbar            none          none
-PmenuSel             none          none
-PmenuThumb           none          none
 Question             none          none
 SignColumn           none          none
 SpecialKey           none          none
