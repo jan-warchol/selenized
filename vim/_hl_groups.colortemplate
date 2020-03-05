@@ -59,6 +59,7 @@ Special              blue          none
 Type                 green         none
 Error                red           none          bold
 Todo                 br_yellow     bg_1          reverse
+Underlined           blue          none          underline
 
 # commonly linked groups
 Function          -> Identifier
@@ -118,6 +119,5 @@ WarningMsg           none          none
 WildMenu             none          none
 
 Ignore               none          none
-Underlined           none          none
 
 # }}}
