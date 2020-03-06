@@ -1,0 +1,123 @@
+# Terminal colors {{{
+Term colors: bg_1 red    green    yellow    blue    magenta    cyan    dim_0
+Term colors: bg_2 br_red br_green br_yellow br_blue br_magenta br_cyan fg_1
+# }}}
+
+Variant: gui 256 16
+
+# default syntax group
+Normal               fg_0          bg_0
+
+# Interface elements {{{
+
+# Group              Foreground    Background    Attributes
+IncSearch            red           none          reverse
+Search               none          none          reverse
+Visual               none          bg_2
+LineNr               dim_0         bg_1
+CursorLineNr         fg_1          none
+CursorLine           none          bg_1
+CursorColumn         none          bg_1
+ColorColumn          none          bg_1
+ToolbarLine          none          bg_2
+ToolbarButton        fg_1          none          reverse
+VertSplit            dim_0         dim_0
+MatchParen           br_yellow     bg_2          bold
+Folded               none          bg_1
+
+# completion popup menu
+Pmenu                dim_0         bg_1
+PmenuSel             none          bg_2
+PmenuThumb           none          dim_0
+PmenuSbar            none          bg_2
+
+# diffing
+DiffAdd              green         bg_1
+DiffChange           none          bg_1
+DiffDelete           red           bg_1
+DiffText             bg_1          yellow
+
+# commonly linked groups
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+# See `:help lCursor`
+lCursor           -> Cursor
+
+# }}}
+
+# Syntax elements {{{
+
+# Group              Foreground    Background    Attributes
+Comment              dim_0         none          italic
+Constant             red           none
+String               green         none
+Statement            br_yellow     none          bold
+Identifier           magenta       none
+PreProc              blue          none          bold
+Special              blue          none
+Type                 green         none
+Error                red           none          bold
+Todo                 br_yellow     bg_1          reverse
+Underlined           blue          none          underline
+
+# commonly linked groups
+Function          -> Identifier
+Number            -> Constant
+Boolean           -> Constant
+Character         -> Constant
+Float             -> Constant
+Conditional       -> Statement
+Exception         -> Statement
+Keyword           -> Statement
+Label             -> Statement
+Operator          -> Statement
+Repeat            -> Statement
+Define            -> PreProc
+Include           -> PreProc
+Macro             -> PreProc
+PreCondit         -> PreProc
+SpecialChar       -> Special
+SpecialComment    -> Special
+Debug             -> Special
+Delimiter         -> Special
+Tag               -> Special
+StorageClass      -> Type
+Structure         -> Type
+Typedef           -> Type
+# }}}
+
+
+# Remaining unstyled highlight groups {{{
+
+# Group              Foreground    Background    Attributes
+Terminal             none          none
+Conceal              none          none
+Cursor               none          none
+Directory            none          none
+EndOfBuffer          none          none
+ErrorMsg             none          none
+FoldColumn           none          none
+ModeMsg              none          none
+MoreMsg              none          none
+NonText              none          none
+Question             none          none
+SignColumn           none          none
+SpecialKey           none          none
+SpellBad             none          none
+SpellCap             none          none
+SpellLocal           none          none
+SpellRare            none          none
+StatusLine           none          none
+StatusLineNC         none          none
+TabLine              none          none
+TabLineFill          none          none
+TabLineSel           none          none
+Title                none          none
+VisualNOS            none          none
+WarningMsg           none          none
+WildMenu             none          none
+
+Ignore               none          none
+
+# }}}

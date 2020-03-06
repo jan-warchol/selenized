@@ -3,4 +3,4 @@ screenshot*
 *.pyc
 *.private-terminator
 .idea/
-
+.vagrant/

@@ -1,0 +1,72 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+
+# Information {{{
+Full name:     Selenized dark/light, beta version
+Short name:    selenized
+Author:        Jan Warchoł <jan.warchol@gmail.com>
+Neovim:        yes
+# }}}
+
+Background: dark
+# Color palette for selenized dark {{{
+# Color name         GUI            Base256  Base16
+
+# "base" colors (foreground/background)
+Color: bg_0          #103c48      237        none
+Color: bg_1          #184956      238        Black
+Color: bg_2          #2d5b69      240        DarkGrey
+Color: dim_0         #72898f      245        LightGrey
+Color: fg_0          #adbcbc      250        none
+Color: fg_1          #cad8d9      252        White
+
+# "accent" colors
+Color: red           #fa5750        ~        DarkRed
+Color: green         #75b938        ~        DarkGreen
+Color: yellow        #dbb32d        ~        DarkYellow
+Color: blue          #4695f7       33        DarkBlue
+Color: magenta       #f275be        ~        DarkMagenta
+Color: cyan          #41c7b9        ~        DarkCyan
+
+# bright accents
+Color: br_red        #ff665c        ~        LightRed
+Color: br_green      #84c747        ~        LightGreen
+Color: br_yellow     #ebc13d        ~        LightYellow
+Color: br_blue       #58a3ff       39        LightBlue
+Color: br_magenta    #ff84cd        ~        LightMagenta
+Color: br_cyan       #53d6c7        ~        LightCyan
+# }}}
+
+Include: _hl_groups.colortemplate
+
+
+Background: light
+# Color palette for selenized light {{{
+# Color name         GUI            Base256  Base16
+
+# "base" colors (foreground/background)
+Color: bg_0          #fbf3db        ~        none
+Color: bg_1          #e9e4d0        ~        Black
+Color: bg_2          #cfcebe        ~        DarkGrey
+Color: dim_0         #909995        ~        LightGrey
+Color: fg_0          #53676d        ~        none
+Color: fg_1          #3a4d53        ~        White
+
+# "accent" colors
+Color: red           #d2212d        ~        DarkRed
+Color: green         #489100        ~        DarkGreen
+Color: yellow        #ad8900        ~        DarkYellow
+Color: blue          #0072d4        ~        DarkBlue
+Color: magenta       #ca4898        ~        DarkMagenta
+Color: cyan          #009c8f        ~        DarkCyan
+
+# bright accents
+Color: br_red        #cc1729        ~        LightRed
+Color: br_green      #428b00        ~        LightGreen
+Color: br_yellow     #a78300        ~        LightYellow
+Color: br_blue       #006dce        ~        LightBlue
+Color: br_magenta    #c44392        ~        LightMagenta
+Color: br_cyan       #00978a        ~        LightCyan
+# }}}
+
+
+Include: _hl_groups.colortemplate
