@@ -65,7 +65,7 @@ Type                 green         none
 Special              red           none
 Error                red           none          bold
 Todo                 magenta       bg_1          bold reverse
-Underlined           blue          none          underline
+Underlined           br_blue       none          underline
 
 #if get(g:, '@optionprefix_green_keywords', 0)
   Statement            green         none
