@@ -1,0 +1,40 @@
+
+Foreground: 82
+Background: 16
+Contrast: 66
+Accents max lightness: 78.5
+Accents min lightness: 57.7
+
+Foreground-comment distance:     24.8
+Highlight contrast:              16.5
+Highlight-comment distance:      24.8
+Highlight-accent distance:   min 28.5, max 46.0
+Background-accent distance:  min 45.0, max 62.5
+    
+
+Palette: Selenized based on Monokai fg and bg 
+
+bg           16  -1   4    60  15  16   #282822   #1e1e1a
+black        23  -1   4    59  13  21   #36362f   #292923
+br_black     32  -1   4    59  10  30   #4d4d45   #3c3c35
+white        57  -1   3    62   5  54   #8a8a83   #777770
+fg           82  -1   3    65   3  80   #ccccc6   #c1c1ba
+br_white     95  -1   3    65   3  95   #f1f2eb   #eeeee6
+
+red          61  63  40     2  68  99   #fc5851   #f33e3f
+green        71 -38  55    92  67  75   #7bbf3e   #70b527
+yellow       78   6  68    46  76  90   #e6bc38   #ddaf20
+blue         61   0 -57   213  71  97   #4897f9   #3c83fa
+magenta      68  55 -15   325  51  97   #f87ac3   #ee60b8
+cyan         76 -40  -4   173  64  81   #4cd0c1   #4bc8b4
+orange       68  37  50    22  68  95   #f38a4d   #e97539
+violet       65  30 -45   263  42  94   #b28bee   #9f75ed
+
+br_red       68  63  40     3  64 100   #ff6b61   #ff504e
+br_green     78 -38  55    92  62  82   #8ed251   #83cb37
+br_yellow    85   6  68    45  70  98   #facf4b   #f6c431
+br_blue      68   0 -57   215  65 100   #5fa8ff   #5096ff
+br_magenta   75  55 -15   325  48 100   #ff8cd6   #ff73ce
+br_cyan      83 -40  -4   173  57  89   #61e2d3   #5ddec9
+br_orange    75  37  50    22  64 100   #ff9c5e   #ff8748
+br_violet    71  30 -45   264  39 100   #c49dff   #b487ff
