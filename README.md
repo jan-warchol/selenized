@@ -26,39 +26,39 @@ Ready-to-use config files are available for the following:
 
 ### Terminal Emulators
 
-- [Alacritty](alacritty)
-- [Blink](blinksh) mobile shell for iOS
-- [Gnome terminal](gnome-terminal) (default terminal on Ubuntu, Mint and other Gnome-based distros)
-- [Guake](guake)
-- [iTerm](iterm)
-- [Kitty](kitty)
-- [Konsole](konsole) (default KDE terminal)
-- [Mintty](mintty)
-- [Terminal.app](terminal-app) (default OS X terminal)
-- [Terminator](terminator)
-- [Termite](termite)
-- [Tilda](tilda)
-- [Tilix](tilix)
-- [urxvt](urxvt)
-- [xterm](xterm)
+- [Alacritty](terminals/alacritty)
+- [Blink](terminals/blinksh) mobile shell for iOS
+- [Gnome terminal](terminals/gnome-terminal) (default terminal on Ubuntu, Mint and other Gnome-based distros)
+- [Guake](terminals/guake)
+- [iTerm](terminals/iterm)
+- [Kitty](terminals/kitty)
+- [Konsole](terminals/konsole) (default KDE terminal)
+- [Mintty](terminals/mintty)
+- [Terminal.app](terminals/terminal-app) (default OS X terminal)
+- [Terminator](terminals/terminator)
+- [Termite](terminals/termite)
+- [Tilda](terminals/tilda)
+- [Tilix](terminals/tilix)
+- [urxvt](terminals/urxvt)
+- [xterm](terminals/xterm)
 
 ### Editors & IDEs
 
-- [Vim](vim)
-- [VS Code](visual-studio-code)
+- [Vim](editors/vim)
+- [VS Code](editors/visual-studio-code)
 
 Support for more editors is planned as soon as highlighting rules settle down
 (see issues #67, #68, #69).
 
 ### Other applications
 
-- [Dircolors](dircolors) (file coloring rules for CLI utilities like `ls`)
-- [i3](i3) window manager and status line
-- [Manpage coloring](selenized-man)
-- [Midnight Commander](mc) skin
-- [Rofi](rofi) window switcher
-- [Slack](slack) sidebar theme
-- [Wofi](wofi) (wayland replacement for Rofi)
+- [Dircolors](other-apps/dircolors) (file coloring rules for CLI utilities like `ls`)
+- [i3](other-apps/i3) window manager and status line
+- [Manpage coloring](other-apps/selenized-man)
+- [Midnight Commander](other-apps/mc) skin
+- [Rofi](other-apps/rofi) window switcher
+- [Slack](other-apps/slack) sidebar theme
+- [Wofi](other-apps/wofi) (wayland replacement for Rofi)
 
 ### Manual installation
 
