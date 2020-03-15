@@ -12,7 +12,7 @@ Normal               fg_0          bg_0
 
 # Group              Foreground    Background    Attributes
 IncSearch            red           none          reverse
-Search               none          none          reverse
+Search               yellow        none          reverse
 Visual               none          bg_2
 LineNr               dim_0         bg_1
 CursorLineNr         fg_1          none
@@ -50,19 +50,24 @@ lCursor           -> Cursor
 
 # Group              Foreground    Background    Attributes
 Comment              dim_0         none          italic
-Constant             red           none
-String               green         none
-Statement            br_yellow     none          bold
-Identifier           magenta       none
-PreProc              blue          none          bold
-Special              blue          none
+Constant             cyan          none
+Identifier           br_blue       none
+Statement            br_yellow     none
+PreProc              magenta       none
 Type                 green         none
+Special              red           none
 Error                red           none          bold
-Todo                 br_yellow     bg_1          reverse
+Todo                 magenta       bg_1          bold reverse
 Underlined           blue          none          underline
+
+#if get(g:, '@optionprefix_green_keywords', 0)
+  Statement            green         none
+  Type                 yellow        none
+#endif
 
 # commonly linked groups
 Function          -> Identifier
+String            -> Constant
 Number            -> Constant
 Boolean           -> Constant
 Character         -> Constant
