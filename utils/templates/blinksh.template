@@ -1,0 +1,4 @@
+t.prefs_.set('color-palette-overrides',["!!COL!{bg_bright_1.srgb}!", "!!COL!{red.srgb}!", "!!COL!{green.srgb}!", "!!COL!{yellow.srgb}!", "!!COL!{blue.srgb}!", "!!COL!{magenta.srgb}!", "!!COL!{cyan.srgb}!", "!!COL!{fg_dim.srgb}!", "!!COL!{bg_bright_2.srgb}!", "!!COL!{br_red.srgb}!", "!!COL!{br_green.srgb}!", "!!COL!{br_yellow.srgb}!", "!!COL!{br_blue.srgb}!", "!!COL!{br_magenta.srgb}!", "!!COL!{br_cyan.srgb}!", "!!COL!{fg_bright.srgb}!"]);
+t.prefs_.set('foreground-color', "!!COL!{fg.srgb}!");
+t.prefs_.set('background-color', "!!COL!{bg.srgb}!");
+t.prefs_.set('cursor-color', 'rgba(255,255,255,0.5)');
