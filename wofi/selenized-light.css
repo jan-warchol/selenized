@@ -1,0 +1,60 @@
+/**
+ * Selenized light variant Wofi Color theme
+ **/
+
+
+window {
+    margin: 1px;
+    border: 1px solid #53676d;
+    background-color: #fbf3db;
+}
+
+#input {
+    margin: 1px;
+    border: 2px dashed #428b00;
+    border-top-color: #fbf3db;
+    border-left-color: #fbf3db;
+    border-right-color: #fbf3db;
+    border-bottom-color: #428b00;
+    background-color: #fbf3db;
+    color: #53676d;
+    font: 14px DejaVu Sans Mono;
+}
+
+#inner-box {
+    margin: 1px;
+    border: 2px none #fbf3db;
+    background-color: #fbf3db;
+}
+
+#outer-box {
+    margin: 1px;
+    border: 2px none #fbf3db;
+    background-color: #fbf3db;
+}
+
+#scroll {
+    margin: 1px;
+    border: 2px solid #fbf3db;
+    background-color: #fbf3db;
+    color: #53676d;
+}
+
+#text {
+    margin: 1px;
+    border: 1px none #fbf3db;
+    font: 14px DejaVu Sans Mono;
+}
+
+#selected {
+    margin: 0px;
+    border: 2px none #cfcebe;
+    background-color: #cfcebe;
+    color: #53676d;
+}
+
+#entry {
+    margin: 1px;
+    border: 1px none #fbf3db;
+    background-color: #fbf3db;
+}

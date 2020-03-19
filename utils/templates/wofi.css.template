@@ -1,0 +1,60 @@
+/**
+ * !!COL!{name}! variant Wofi Color theme
+ **/
+
+
+window {
+    margin: 1px;
+    border: 1px solid !!COL!{fg.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+}
+
+#input {
+    margin: 1px;
+    border: 2px dashed !!COL!{br_green.srgb}!;
+    border-top-color: !!COL!{bg.srgb}!;
+    border-left-color: !!COL!{bg.srgb}!;
+    border-right-color: !!COL!{bg.srgb}!;
+    border-bottom-color: !!COL!{br_green.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+    color: !!COL!{fg.srgb}!;
+    font: 14px DejaVu Sans Mono;
+}
+
+#inner-box {
+    margin: 1px;
+    border: 2px none !!COL!{bg.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+}
+
+#outer-box {
+    margin: 1px;
+    border: 2px none !!COL!{bg.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+}
+
+#scroll {
+    margin: 1px;
+    border: 2px solid !!COL!{bg.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+    color: !!COL!{fg.srgb}!;
+}
+
+#text {
+    margin: 1px;
+    border: 1px none !!COL!{bg.srgb}!;
+    font: 14px DejaVu Sans Mono;
+}
+
+#selected {
+    margin: 0px;
+    border: 2px none !!COL!{bg_bright_2.srgb}!;
+    background-color: !!COL!{bg_bright_2.srgb}!;
+    color: !!COL!{fg.srgb}!;
+}
+
+#entry {
+    margin: 1px;
+    border: 1px none !!COL!{bg.srgb}!;
+    background-color: !!COL!{bg.srgb}!;
+}

@@ -1,0 +1,15 @@
+# A list of modes can be found in wofi(7)
+show=drun
+
+# If true allows image escape sequences to be processed and rendered,
+allow_images=true
+
+# Specifies  the  CSS  file  to use as the stylesheet
+stylesheet=selenized-dark.css
+
+# Specifies the term to use when running a program in a terminal.
+term=alacritty
+
+# See wofi(7) for more information, default is center.
+location=top_left
+
