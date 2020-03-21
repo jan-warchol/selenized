@@ -87,6 +87,8 @@ Structure         -> Type
 Typedef           -> Type
 # }}}
 
+# Vim
+VimCommand        -> Statement
 
 # Remaining unstyled highlight groups {{{
 
