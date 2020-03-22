@@ -5,6 +5,7 @@ Full name:     Selenized dark/light, beta version
 Short name:    selenized
 Author:        Jan Warchoł <jan.warchol@gmail.com>
 Neovim:        yes
+Option Prefix: selenized
 # }}}
 
 Background: dark

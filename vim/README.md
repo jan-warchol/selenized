@@ -27,6 +27,23 @@ color](https://gist.github.com/XVilka/8346728#now-supporting-true-color), add
    issue](https://github.com/jan-warchol/selenized/issues/65) for more details)
 
 
+Syntax coloring choices
+-----------------------
+
+Selenized aims to have a similar feel to Solarized, but it doesn't follow all
+Solarized coloring choices. In particular, I believe that using green for
+keywords doesn't look good, so I've made them yellow (swapping with types,
+which are yellow in Solarized). If you don't like this choice, add this to your
+`.vimrc`:
+
+    let g:selenized_green_keywords=1
+
+Also note that selenized doesn't use orange and violet because they are not
+available in ANSI color palette (Solarized worked around this with an [ugly
+hack](https://github.com/jan-warchol/selenized/blob/master/whats-wrong-with-solarized.md#problems-with-implementation)).
+However, I plan to use orange and violet in the GUI version of the theme.
+
+
 Contributing
 ------------
 
