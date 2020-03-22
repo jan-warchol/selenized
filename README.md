@@ -22,23 +22,47 @@ Read more about the design [here](features-and-design.md).
 Installation
 ------------
 
-Ready-to-use config files are available for the following terminals:
-- [GNOME terminal](gnome-terminal) (default terminal on Ubuntu, Linux Mint and
-  other Linux distros using Gnome)
-- [Konsole](konsole) (KDE's terminal)
-- [Terminator](terminator)
+Ready-to-use config files are available for the following:
+
+### Terminal Emulators
+
+- [Alacritty](alacritty)
+- [Blink](blinksh) mobile shell for iOS
+- [Gnome terminal](gnome-terminal) (default terminal on Ubuntu, Mint and other Gnome-based distros)
 - [Guake](guake)
+- [iTerm](iterm)
+- [Kitty](kitty)
+- [Konsole](konsole) (default KDE terminal)
+- [Mintty](mintty)
+- [Terminal.app](terminal-app) (default OS X terminal)
+- [Terminator](terminator)
+- [Termite](termite)
+- [Tilda](tilda)
+- [Tilix](tilix)
 - [urxvt](urxvt)
 - [xterm](xterm)
-- [iTerm](iterm)
-- if you use Terminal.app (default OS X terminal), I recommend switching to
-  [iTerm](iterm), for reasons listed [here](terminal-app).
-- [Tilix](tilix)
-- [Alacritty](alacritty)
-- [mintty](mintty)
-- [blink](blinksh)
 
-If your terminal is not listed here, you can always manually copy [hex
+### Editors & IDEs
+
+- [Vim](vim)
+- [VS Code](visual-studio-code)
+
+Support for more editors is planned as soon as highlighting rules settle down
+(see issues #67, #68, #69).
+
+### Other applications
+
+- [Dircolors](dircolors) (file coloring rules for CLI utilities like `ls`)
+- [i3](i3) window manager and status line
+- [Manpage coloring](selenized-man)
+- [Midnight Commander](mc) skin
+- [Rofi](rofi) window switcher
+- [Slack](slack) sidebar theme
+- [Wofi](wofi) (wayland replacement for Rofi)
+
+### Manual installation
+
+If your application is not listed above, you can manually copy [hex
 values](the-values.md) into its preferences.  Please consider sending me a pull
 request with the resulting configuration so that I can add it to officially
 supported terminals :-)
