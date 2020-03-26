@@ -19,11 +19,20 @@ CursorLineNr         fg_1          none
 CursorLine           none          bg_1
 CursorColumn         none          bg_1
 ColorColumn          none          bg_1
-ToolbarLine          none          bg_2
-ToolbarButton        fg_1          none          reverse
-VertSplit            dim_0         dim_0
 MatchParen           br_yellow     bg_2          bold
 Folded               none          bg_1
+
+# window (pane) borders etc.
+VertSplit            dim_0         dim_0
+StatusLine           none          none          reverse
+StatusLineNC         none          bg_2
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+TabLineSel           fg_1          bg_1          reverse bold
+TabLine              dim_0         none          reverse
+TabLineFill          dim_0         none          reverse
+ToolbarButton        none          none          reverse
+ToolbarLine          none          bg_2
 
 # completion popup menu
 Pmenu                dim_0         bg_1
@@ -39,8 +48,6 @@ DiffText             bg_1          yellow
 
 # commonly linked groups
 QuickFixLine      -> Search
-StatusLineTerm    -> StatusLine
-StatusLineTermNC  -> StatusLineNC
 # See `:help lCursor`
 lCursor           -> Cursor
 
@@ -115,11 +122,6 @@ SpellBad             none          none
 SpellCap             none          none
 SpellLocal           none          none
 SpellRare            none          none
-StatusLine           none          none
-StatusLineNC         none          none
-TabLine              none          none
-TabLineFill          none          none
-TabLineSel           none          none
 Title                none          none
 VisualNOS            none          none
 WarningMsg           none          none
