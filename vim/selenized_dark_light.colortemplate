@@ -38,6 +38,16 @@ Color: br_yellow     #ebc13d        ~        LightYellow
 Color: br_blue       #58a3ff       39        LightBlue
 Color: br_magenta    #ff84cd        ~        LightMagenta
 Color: br_cyan       #53d6c7        ~        LightCyan
+
+# Additional colors available only in GUI/truecolor version of the theme.
+# I'm using magenta as a replacement for orange in 16-color theme because it's
+# almost unused in original solarized, and it has a similar live, vibrant feel.
+# Similarly blue makes a good replacement for violet.
+Color: orange        #ed8649        ~        DarkMagenta
+Color: violet        #af88eb        ~        DarkBlue
+Color: br_orange     #fd9456        ~        LightMagenta
+Color: br_violet     #bd96fa        ~        LightBlue
+
 # }}}
 
 Include: _hl_groups.colortemplate
@@ -72,6 +82,16 @@ Color: br_yellow     #a78300        ~        LightYellow
 Color: br_blue       #006dce        ~        LightBlue
 Color: br_magenta    #c44392        ~        LightMagenta
 Color: br_cyan       #00978a        ~        LightCyan
+
+# Additional colors available only in GUI/truecolor version of the theme.
+# I'm using magenta as a replacement for orange in 16-color theme because it's
+# almost unused in original solarized, and it has a similar live, vibrant feel.
+# Similarly blue makes a good replacement for violet.
+Color: orange        #c25d1e        ~        DarkMagenta
+Color: violet        #8762c6        ~        DarkBlue
+Color: br_orange     #bc5819        ~        LightMagenta
+Color: br_violet     #825dc0        ~        LightBlue
+
 # }}}
 
 Include: _hl_groups.colortemplate

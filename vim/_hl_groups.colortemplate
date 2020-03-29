@@ -14,7 +14,7 @@ Normal               fg_0          bg_0
 # Group              Foreground    Background    Attributes
 
 # selections and highlights
-IncSearch            red           none          reverse
+IncSearch            orange        none          reverse
 Search               yellow        none          reverse
 QuickFixLine      -> Search
 Visual               none          bg_2
@@ -84,7 +84,7 @@ Label             -> Statement
 Exception         -> Statement
 Operator          -> Statement
 
-PreProc              magenta       none
+PreProc              orange        none
 Define            -> PreProc
 PreCondit         -> PreProc
 Include           -> PreProc
@@ -103,8 +103,8 @@ Debug             -> Special
 Tag               -> Special
 
 Error                red           none          bold
-Todo                 magenta       bg_1          bold reverse
-Underlined           blue          none          underline
+Todo                 magenta       none          bold
+Underlined           violet        none          underline
 Ignore               bg_2          none
 
 # Language-specific coloring (use sparingly)
