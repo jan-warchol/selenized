@@ -8,8 +8,11 @@ Neovim:        yes
 Option Prefix: selenized
 # }}}
 
-Background: dark
+
+
 # Color palette for selenized dark {{{
+Background: dark
+
 # Color name         GUI            Base256  Base16
 
 # "base" colors (foreground/background)
@@ -40,8 +43,10 @@ Color: br_cyan       #53d6c7        ~        LightCyan
 Include: _hl_groups.colortemplate
 
 
-Background: light
+
 # Color palette for selenized light {{{
+Background: light
+
 # Color name         GUI            Base256  Base16
 
 # "base" colors (foreground/background)
@@ -68,6 +73,5 @@ Color: br_blue       #006dce        ~        LightBlue
 Color: br_magenta    #c44392        ~        LightMagenta
 Color: br_cyan       #00978a        ~        LightCyan
 # }}}
-
 
 Include: _hl_groups.colortemplate
