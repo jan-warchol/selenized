@@ -22,23 +22,47 @@ Read more about the design [here](features-and-design.md).
 Installation
 ------------
 
-Ready-to-use config files are available for the following terminals:
-- [GNOME terminal](gnome-terminal) (default terminal on Ubuntu, Linux Mint and
-  other Linux distros using Gnome)
-- [Konsole](konsole) (KDE's terminal)
-- [Terminator](terminator)
-- [Guake](guake)
-- [urxvt](urxvt)
-- [xterm](xterm)
-- [iTerm](iterm)
-- if you use Terminal.app (default OS X terminal), I recommend switching to
-  [iTerm](iterm), for reasons listed [here](terminal-app).
-- [Tilix](tilix)
-- [Alacritty](alacritty)
-- [mintty](mintty)
-- [blink](blinksh)
+Ready-to-use config files are available for the following:
 
-If your terminal is not listed here, you can always manually copy [hex
+### Terminal Emulators
+
+- [Alacritty](terminals/alacritty)
+- [Blink](terminals/blinksh) mobile shell for iOS
+- [Gnome terminal](terminals/gnome-terminal) (default terminal on Ubuntu, Mint and other Gnome-based distros)
+- [Guake](terminals/guake)
+- [iTerm](terminals/iterm)
+- [Kitty](terminals/kitty)
+- [Konsole](terminals/konsole) (default KDE terminal)
+- [Mintty](terminals/mintty)
+- [Terminal.app](terminals/terminal-app) (default OS X terminal)
+- [Terminator](terminals/terminator)
+- [Termite](terminals/termite)
+- [Tilda](terminals/tilda)
+- [Tilix](terminals/tilix)
+- [urxvt](terminals/urxvt)
+- [xterm](terminals/xterm)
+
+### Editors & IDEs
+
+- [Vim](editors/vim)
+- [VS Code](editors/visual-studio-code)
+
+Support for more editors is planned as soon as highlighting rules settle down
+(see issues #67, #68, #69).
+
+### Other applications
+
+- [Dircolors](other-apps/dircolors) (file coloring rules for CLI utilities like `ls`)
+- [i3](other-apps/i3) window manager and status line
+- [Manpage coloring](other-apps/selenized-man)
+- [Midnight Commander](other-apps/mc) skin
+- [Rofi](other-apps/rofi) window switcher
+- [Slack](other-apps/slack) sidebar theme
+- [Wofi](other-apps/wofi) (wayland replacement for Rofi)
+
+### Manual installation
+
+If your application is not listed above, you can manually copy [hex
 values](the-values.md) into its preferences.  Please consider sending me a pull
 request with the resulting configuration so that I can add it to officially
 supported terminals :-)

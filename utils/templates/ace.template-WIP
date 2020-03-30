@@ -1,0 +1,100 @@
+.ace-selenized-dark .ace_gutter {
+  background: #01313f;
+  color: #d0edf7
+}
+
+.ace-selenized-dark .ace_print-margin {
+  width: 1px;
+  background: #33555E
+}
+
+.ace-selenized-dark {
+  background-color: !!COL!{bg.srgb}!;
+  color: !!COL!{fg.srgb}!
+}
+
+.ace-selenized-dark .ace_entity.ace_other.ace_attribute-name,
+.ace-selenized-dark .ace_storage {
+  color: !!COL!{fg.srgb}!
+}
+
+.ace-selenized-dark .ace_cursor,
+.ace-selenized-dark .ace_string.ace_regexp {
+  color: !!COL!{red.srgb}!
+}
+
+.ace-selenized-dark .ace_marker-layer .ace_active-line,
+.ace-selenized-dark .ace_marker-layer .ace_selection {
+  background: rgba(255, 255, 255, 0.1)
+}
+
+.ace-selenized-dark.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px 0px !!COL!{bg.srgb}!;
+}
+
+.ace-selenized-dark .ace_marker-layer .ace_step {
+  background: !!COL!{green.srgb}!
+}
+
+.ace-selenized-dark .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgba(147, 161, 161, 0.50)
+}
+
+.ace-selenized-dark .ace_gutter-active-line {
+  background-color: !!COL!{br_black.srgb}!
+}
+
+.ace-selenized-dark .ace_marker-layer .ace_selected-word {
+  border: 1px solid !!COL!{black.srgb}!
+}
+
+.ace-selenized-dark .ace_invisible {
+  color: rgba(147, 161, 161, 0.50)
+}
+
+.ace-selenized-dark .ace_keyword,
+.ace-selenized-dark .ace_meta,
+.ace-selenized-dark .ace_support.ace_class,
+.ace-selenized-dark .ace_support.ace_type {
+  color: !!COL!{green.srgb}!
+}
+
+.ace-selenized-dark .ace_constant.ace_character,
+.ace-selenized-dark .ace_constant.ace_other {
+  color: !!COL!{orange.srgb}!
+}
+
+.ace-selenized-dark .ace_constant.ace_language {
+  color: !!COL!{yellow.srgb}!
+}
+
+.ace-selenized-dark .ace_constant.ace_numeric {
+  color: !!COL!{magenta.srgb}!
+}
+
+.ace-selenized-dark .ace_fold {
+  background-color: !!COL!{blue.srgb}!
+  border-color: !!COL!{fg.srgb}!
+}
+
+.ace-selenized-dark .ace_entity.ace_name.ace_function,
+.ace-selenized-dark .ace_entity.ace_name.ace_tag,
+.ace-selenized-dark .ace_support.ace_function,
+.ace-selenized-dark .ace_variable,
+.ace-selenized-dark .ace_variable.ace_language {
+  color: !!COL!{blue.srgb}!
+}
+
+.ace-selenized-dark .ace_string {
+  color: !!COL!{cyan.srgb}!
+}
+
+.ace-selenized-dark .ace_comment {
+  font-style: italic;
+  color: !!COL!{white.srgb}!
+}
+
+.ace-selenized-dark .ace_indent-guide {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNg0Db1ZVCxc/sPAAd4AlUHlLenAAAAAElFTkSuQmCC) right repeat-y
+}
