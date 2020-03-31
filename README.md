@@ -42,13 +42,17 @@ Ready-to-use config files are available for the following:
 - [urxvt](terminals/urxvt)
 - [xterm](terminals/xterm)
 
-### Editors & IDEs
+### Editors & IDEs (help wanted!)
 
 - [Vim](editors/vim)
 - [VS Code](editors/visual-studio-code)
 
-Support for more editors is planned as soon as highlighting rules settle down
-(see issues #67, #68, #69).
+🔥 **I need your opinion!** 🔥 There are some design decisions that need to be made
+before adding support for more editors. Your feedback would be very helpful -
+please comment on
+[issue 68](https://github.com/jan-warchol/selenized/issues/68) and
+[issue 74](https://github.com/jan-warchol/selenized/issues/74).
+
 
 ### Other applications
 
