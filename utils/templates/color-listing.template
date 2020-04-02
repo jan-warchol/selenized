@@ -1,0 +1,26 @@
+Palette: !!COL!{name}!
+
+bg           !!COL!{bg}!
+bg_bright_1  !!COL!{bg_bright_1}!
+bg_bright_2  !!COL!{bg_bright_2}!
+fg_dim       !!COL!{fg_dim}!
+fg           !!COL!{fg}!
+fg_bright    !!COL!{fg_bright}!
+
+red          !!COL!{red}!
+green        !!COL!{green}!
+yellow       !!COL!{yellow}!
+blue         !!COL!{blue}!
+magenta      !!COL!{magenta}!
+cyan         !!COL!{cyan}!
+orange       !!COL!{orange}!
+violet       !!COL!{violet}!
+
+br_red       !!COL!{br_red}!
+br_green     !!COL!{br_green}!
+br_yellow    !!COL!{br_yellow}!
+br_blue      !!COL!{br_blue}!
+br_magenta   !!COL!{br_magenta}!
+br_cyan      !!COL!{br_cyan}!
+br_orange    !!COL!{br_orange}!
+br_violet    !!COL!{br_violet}!

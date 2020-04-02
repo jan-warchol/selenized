@@ -121,37 +121,6 @@ def generate_palette(
 
     ### FINAL ASSEMBLY
 
-    # some debug
-    acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
-    acc_hi_dists = [float(abs(accents[color][0]-monotones["bg_bright_2"][0])) for color in accents]
-
-    print("""Foreground: {}
-Background: {}
-Contrast: {}
-Accents max lightness: {:.3}
-Accents min lightness: {:.3}
-
-Foreground-comment distance:     {:.3}
-Highlight contrast:              {:.3}
-Highlight-comment distance:      {:.3}
-Highlight-accent distance:   min {:.3}, max {:.3}
-Background-accent distance:  min {:.3}, max {:.3}
-    """.format(
-        fg_l,
-        monotones["bg"][0],
-        contrast,
-        float(accent_base_l),
-        float(accent_base_l - accent_l_spread),
-
-        float(abs(fg_l-monotones["fg_dim"][0])),
-        float(abs(monotones["bg_bright_2"][0]-bg_l)),
-        float(abs(monotones["bg_bright_2"][0]-monotones["fg_dim"][0])),
-        min(acc_hi_dists),
-        max(acc_hi_dists),
-        min(acc_bg_dists),
-        max(acc_bg_dists),
-    ))
-
     palette = {}
     palette.update(monotones)
     palette.update(accents)

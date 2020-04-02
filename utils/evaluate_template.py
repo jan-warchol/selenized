@@ -19,12 +19,6 @@ DEFAULT_OUTPUT_DIR = ''
 
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
-DEFAULT_COLOR_ORDER = [
-    'bg', 'bg_bright_1', 'bg_bright_2', 'fg_dim', 'fg', 'fg_bright',
-    'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange', 'violet',
-    'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet'
-]
-
 def load_palette_from_module(module_name):
     base_module_dir = os.path.join(os.path.dirname(sys.argv[0]), 'palettes')
     sys.path.insert(0, base_module_dir)
@@ -61,13 +55,6 @@ def load_palette_from_module(module_name):
         palette['name'] = m.name
     except AttributeError:
         palette['name'] = module_name
-
-    print('Palette: ' + palette['name'] + '\n')
-    for color in DEFAULT_COLOR_ORDER:
-        if color in ['red', 'br_red']:
-            print ('') # section separator
-        if color in palette:
-            print("{:<12}{}".format(color, palette[color]))
 
     return palette
 
