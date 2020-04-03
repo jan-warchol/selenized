@@ -1,15 +1,3 @@
-Where are orange and violet?
-----------------------------
-
-Selenized [defines](the-values.md) 8 accent colors: red, orange, yellow, green,
-cyan, blue, violet and magenta. However, terminal emulators traditionally have
-escape codes for 6 colors (red, yellow, green, cyan, blue and magenta), with
-two additional codes for black and white. Therefore, terminal configs included
-in this repository don't include orange and violet. However, configs for GUI
-programs will include the full palette (as GUI programs can define as many
-colors as they want).
-
-
 Syntax highlighting design principles
 -------------------------------------
 

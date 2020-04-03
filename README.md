@@ -66,10 +66,8 @@ please comment on
 
 ### Manual installation
 
-If your application is not listed above, you can manually copy [hex
-values](the-values.md) into its preferences.  Please consider sending me a pull
-request with the resulting configuration so that I can add it to officially
-supported terminals :-)
+If your application is not listed above, it's easy to set the colors manually.
+See [this document](manual-installation.md) for guidelines.
 
 
 

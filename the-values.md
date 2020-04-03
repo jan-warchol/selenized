@@ -5,10 +5,6 @@ LAB values are canonical.  RGB values (both sRGB and Apple RGB) are calculated
 from LAB using `utils/convert-lab-palette-to-rgbs.py` script, which employs
 `python-colormath` library for color space transformations.
 
-Please note that orange and violet are not used in configs of terminal
-emulators - they are intended for use with GUI applications (see
-[FAQ](README.md#where-are-orange-and-violet)).
-
 
 
 Selenized dark
