@@ -1,5 +1,7 @@
 Palette: !!COL!{name}!
 
+Color        CIE L*a*b*   HSB           sRGB      AppleRGB
+----------   ----------   -----------   -------   --------
 bg_0        !!COL!{bg_0}!
 bg_1        !!COL!{bg_1}!
 bg_2        !!COL!{bg_2}!
