@@ -1,12 +1,12 @@
 # !!COL!{name}! colorscheme for i3
 # This must go in your i3 config
 
-set $bg !!COL!{bg.srgb}!
-set $black !!COL!{bg_bright_1.srgb}!
-set $br_black !!COL!{bg_bright_2.srgb}!
-set $white !!COL!{fg_dim.srgb}!
-set $fg !!COL!{fg.srgb}!
-set $br_white !!COL!{fg_bright.srgb}!
+set $bg_0 !!COL!{bg_0.srgb}!
+set $black !!COL!{bg_1.srgb}!
+set $br_black !!COL!{bg_2.srgb}!
+set $white !!COL!{dim_0.srgb}!
+set $fg_0 !!COL!{fg_0.srgb}!
+set $br_white !!COL!{fg_1.srgb}!
 
 set $red !!COL!{red.srgb}!
 set $green !!COL!{green.srgb}!
@@ -35,11 +35,11 @@ bar {
 
         colors {
             separator $blue
-            background $bg
+            background $bg_0
             statusline $br_white
-            focused_workspace $green $green $bg
+            focused_workspace $green $green $bg_0
             active_workspace $cyan $blue $black
-            inactive_workspace $black $black $fg
+            inactive_workspace $black $black $fg_0
             urgent_workspace $yellow $yellow $black
         }
 }
@@ -47,5 +47,5 @@ bar {
 # clientclass border backgr. text indicator
 client.focused $green $green $black $blue
 client.focused_inactive $cyan $cyan $black $violet
-client.unfocused $black $black $fg $white
+client.unfocused $black $black $fg_0 $white
 client.urgent $yellow $yellow $black $orange

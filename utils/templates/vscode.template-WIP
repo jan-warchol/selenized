@@ -2,23 +2,23 @@
 	"name": "Selenized",
 	"type": "dark",
 	"colors": {
-		"editor.background":                   "!!COL!{bg.srgb}!",
-		"editor.foreground":                   "!!COL!{fg.srgb}!",
-		"editorCursor.foreground":             "!!COL!{fg.srgb}!",
-		"editorLineNumber.foreground":         "!!COL!{fg_dim.srgb}!",
-		"editorLineNumber.activeForeground":   "!!COL!{fg.srgb}!",
-		"editorIndentGuide.background":        "!!COL!{bg_bright_2.srgb}!",
-		"editorIndentGuide.activeBackground":  "!!COL!{fg_dim.srgb}!",
-		"editor.selectionBackground":          "!!COL!{bg_bright_2.srgb}!",
-		"editor.inactiveSelectionBackground":  "!!COL!{bg_bright_1.srgb}!",
-		"editor.selectionHighlightBackground": "!!COL!{bg.srgb}!",
-		"editor.selectionHighlightBorder":     "!!COL!{bg_bright_2.srgb}!"
+		"editor.background":                   "!!COL!{bg_0.srgb}!",
+		"editor.foreground":                   "!!COL!{fg_0.srgb}!",
+		"editorCursor.foreground":             "!!COL!{fg_0.srgb}!",
+		"editorLineNumber.foreground":         "!!COL!{dim_0.srgb}!",
+		"editorLineNumber.activeForeground":   "!!COL!{fg_0.srgb}!",
+		"editorIndentGuide.background":        "!!COL!{bg_2.srgb}!",
+		"editorIndentGuide.activeBackground":  "!!COL!{dim_0.srgb}!",
+		"editor.selectionBackground":          "!!COL!{bg_2.srgb}!",
+		"editor.inactiveSelectionBackground":  "!!COL!{bg_1.srgb}!",
+		"editor.selectionHighlightBackground": "!!COL!{bg_0.srgb}!",
+		"editor.selectionHighlightBorder":     "!!COL!{bg_2.srgb}!"
 	},
 	"tokenColors": [
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "!!COL!{fg_dim.srgb}!"
+				"foreground": "!!COL!{dim_0.srgb}!"
 			}
 		},
 		{
@@ -62,7 +62,7 @@
 				"string.quoted.docstring.multi"
 			],
 			"settings": {
-				"foreground": "!!COL!{fg_dim.srgb}!"
+				"foreground": "!!COL!{dim_0.srgb}!"
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 			"scope": "storage",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "!!COL!{fg_dim.srgb}!"
+				"foreground": "!!COL!{dim_0.srgb}!"
 			}
 		},
 		{
@@ -111,7 +111,7 @@
 			"scope": "entity.name",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "!!COL!{fg_bright.srgb}!"
+				"foreground": "!!COL!{fg_1.srgb}!"
 			}
 		},
 		{
@@ -131,7 +131,7 @@
 			"name": "Almost every variable in JS is in this scope",
 			"scope": "variable.other",
 			"settings": {
-				"foreground": "!!COL!{fg.srgb}!"
+				"foreground": "!!COL!{fg_0.srgb}!"
 			}
 		},
 		{
@@ -174,7 +174,7 @@
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "!!COL!{fg_bright.srgb}!"
+				"foreground": "!!COL!{fg_1.srgb}!"
 			}
 		},
 		{

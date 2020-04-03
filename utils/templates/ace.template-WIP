@@ -9,13 +9,13 @@
 }
 
 .ace-selenized-dark {
-  background-color: !!COL!{bg.srgb}!;
-  color: !!COL!{fg.srgb}!
+  background-color: !!COL!{bg_0.srgb}!;
+  color: !!COL!{fg_0.srgb}!
 }
 
 .ace-selenized-dark .ace_entity.ace_other.ace_attribute-name,
 .ace-selenized-dark .ace_storage {
-  color: !!COL!{fg.srgb}!
+  color: !!COL!{fg_0.srgb}!
 }
 
 .ace-selenized-dark .ace_cursor,
@@ -29,7 +29,7 @@
 }
 
 .ace-selenized-dark.ace_multiselect .ace_selection.ace_start {
-  box-shadow: 0 0 3px 0px !!COL!{bg.srgb}!;
+  box-shadow: 0 0 3px 0px !!COL!{bg_0.srgb}!;
 }
 
 .ace-selenized-dark .ace_marker-layer .ace_step {
@@ -75,7 +75,7 @@
 
 .ace-selenized-dark .ace_fold {
   background-color: !!COL!{blue.srgb}!
-  border-color: !!COL!{fg.srgb}!
+  border-color: !!COL!{fg_0.srgb}!
 }
 
 .ace-selenized-dark .ace_entity.ace_name.ace_function,

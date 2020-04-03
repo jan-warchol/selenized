@@ -36,8 +36,8 @@ def generate_palette(
     ### MONOTONES
 
     monotones = {
-        "bg": [bg_l, bg_a, bg_b],
-        "fg": [fg_l, fg_a, fg_b],
+        "bg_0": [bg_l, bg_a, bg_b],
+        "fg_0": [fg_l, fg_a, fg_b],
     }
 
     if not monotone_spec:
@@ -45,10 +45,10 @@ def generate_palette(
         # (0 - lightness like in bg, 1 - like in fg)
         # For some reason bright background looks washed out without increased saturation
         monotone_spec = {
-            "bg_bright_1": [1/10,  br_bg_extra_saturation],
-            "bg_bright_2": [1/4,   br_bg_extra_saturation],
-            "fg_dim":      [5/8,   1],
-            "fg_bright":   [1+1/5, 1],
+            "bg_1":  [1/10,  br_bg_extra_saturation],
+            "bg_2":  [1/4,   br_bg_extra_saturation],
+            "dim_0": [5/8,   1],
+            "fg_1":  [1+1/5, 1],
         }
 
     # use weighted average.

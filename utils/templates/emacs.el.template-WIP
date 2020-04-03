@@ -28,7 +28,7 @@
 
  (deftheme !!COL!{name}!)
  (let ((class '((class color) (min-colors 89)))
-       (fg1      !!COL!{fg.srgb}!"#b9b9b9")
+       (fg1      !!COL!{fg_0.srgb}!"#b9b9b9")
        (fg2      !!COL!{.srgb}!"#aaaaaa")
        (fg3      !!COL!{.srgb}!"#9b9b9b")
        (fg4      !!COL!{.srgb}!"#8d8d8d")

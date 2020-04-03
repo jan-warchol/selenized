@@ -7,39 +7,39 @@
     <property name="originalScheme">stub</property>
   </metaInfo>
   <colors>
-    <option name="CARET_ROW_COLOR" value="!!COL!{bg_bright_1.srgb_no_hash}!" />
-    <option name="GUTTER_BACKGROUND" value="!!COL!{bg_bright_1.srgb_no_hash}!" />
-    <option name="LINE_NUMBERS_COLOR" value="!!COL!{fg_dim.srgb_no_hash}!" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="!!COL!{fg.srgb_no_hash}!" />
-    <option name="SELECTION_BACKGROUND" value="!!COL!{bg_bright_2.srgb_no_hash}!" />
+    <option name="CARET_ROW_COLOR" value="!!COL!{bg_1.srgb_no_hash}!" />
+    <option name="GUTTER_BACKGROUND" value="!!COL!{bg_1.srgb_no_hash}!" />
+    <option name="LINE_NUMBERS_COLOR" value="!!COL!{dim_0.srgb_no_hash}!" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="!!COL!{fg_0.srgb_no_hash}!" />
+    <option name="SELECTION_BACKGROUND" value="!!COL!{bg_2.srgb_no_hash}!" />
   </colors>
   <attributes>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0.srgb_no_hash}!" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_BRACES">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_BRACKETS">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright_2.srgb_no_hash}!" />
-        <option name="EFFECT_COLOR" value="!!COL!{fg_bright_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1_2.srgb_no_hash}!" />
+        <option name="EFFECT_COLOR" value="!!COL!{fg_1_2.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="DEFAULT_COMMA">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_CONSTANT">
@@ -50,35 +50,35 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="EFFECT_COLOR" value="!!COL!{fg_dim.srgb_no_hash}!" />
+        <option name="EFFECT_COLOR" value="!!COL!{dim_0.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0_2.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_DOC_MARKUP">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0_2.srgb_no_hash}!" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_DOT">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright_2.srgb_no_hash}!" />
-        <option name="EFFECT_COLOR" value="!!COL!{fg_bright_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1_2.srgb_no_hash}!" />
+        <option name="EFFECT_COLOR" value="!!COL!{fg_1_2.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -88,7 +88,7 @@
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_0.srgb_no_hash}!" />
         <option name="EFFECT_COLOR" value="ff0000" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
@@ -101,7 +101,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0.srgb_no_hash}!" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -112,7 +112,7 @@
     </option>
     <option name="DEFAULT_PARENTHS">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL">
@@ -123,7 +123,7 @@
     </option>
     <option name="DEFAULT_SEMICOLON">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1.srgb_no_hash}!" />
       </value>
     </option>
     <option name="DEFAULT_STATIC_FIELD">
@@ -149,21 +149,21 @@
     <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="JS.GLOBAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_0.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
     <option name="JS.LOCAL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_bright_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_1_2.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JS.PRIMITIVE.TYPE">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0_2.srgb_no_hash}!" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -191,14 +191,14 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg.srgb_no_hash}!" />
-        <option name="BACKGROUND" value="!!COL!{bg.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{fg_0.srgb_no_hash}!" />
+        <option name="BACKGROUND" value="!!COL!{bg_0.srgb_no_hash}!" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="TS.TYPE_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="!!COL!{fg_dim_2.srgb_no_hash}!" />
+        <option name="FOREGROUND" value="!!COL!{dim_0_2.srgb_no_hash}!" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>

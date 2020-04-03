@@ -1,25 +1,25 @@
 ! !!COL!{name}! color palette for urxvt.
 
-urxvt.background:  !!COL!{bg.srgb}!
-urxvt.foreground:  !!COL!{fg.srgb}!
+urxvt.background:  !!COL!{bg_0.srgb}!
+urxvt.foreground:  !!COL!{fg_0.srgb}!
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-urxvt.color0:      !!COL!{bg_bright_1.srgb}!
+urxvt.color0:      !!COL!{bg_1.srgb}!
 urxvt.color1:      !!COL!{red.srgb}!
 urxvt.color2:      !!COL!{green.srgb}!
 urxvt.color3:      !!COL!{yellow.srgb}!
 urxvt.color4:      !!COL!{blue.srgb}!
 urxvt.color5:      !!COL!{magenta.srgb}!
 urxvt.color6:      !!COL!{cyan.srgb}!
-urxvt.color7:      !!COL!{fg_dim.srgb}!
+urxvt.color7:      !!COL!{dim_0.srgb}!
 
 ! bright/bold versions of colors (in the same order)
-urxvt.color8:      !!COL!{bg_bright_2.srgb}!
+urxvt.color8:      !!COL!{bg_2.srgb}!
 urxvt.color9:      !!COL!{br_red.srgb}!
 urxvt.color10:     !!COL!{br_green.srgb}!
 urxvt.color11:     !!COL!{br_yellow.srgb}!
 urxvt.color12:     !!COL!{br_blue.srgb}!
 urxvt.color13:     !!COL!{br_magenta.srgb}!
 urxvt.color14:     !!COL!{br_cyan.srgb}!
-urxvt.color15:     !!COL!{fg_bright.srgb}!
+urxvt.color15:     !!COL!{fg_1.srgb}!
 

@@ -1,6 +1,6 @@
   [[!!COL!{name}!]]
-    palette = "!!COL!{bg_bright_1.srgb}!:!!COL!{red.srgb}!:!!COL!{green.srgb}!:!!COL!{yellow.srgb}!:!!COL!{blue.srgb}!:!!COL!{magenta.srgb}!:!!COL!{cyan.srgb}!:!!COL!{fg_dim.srgb}!:!!COL!{bg_bright_2.srgb}!:!!COL!{br_red.srgb}!:!!COL!{br_green.srgb}!:!!COL!{br_yellow.srgb}!:!!COL!{br_blue.srgb}!:!!COL!{br_magenta.srgb}!:!!COL!{br_cyan.srgb}!:!!COL!{fg_bright.srgb}!"
+    palette = "!!COL!{bg_1.srgb}!:!!COL!{red.srgb}!:!!COL!{green.srgb}!:!!COL!{yellow.srgb}!:!!COL!{blue.srgb}!:!!COL!{magenta.srgb}!:!!COL!{cyan.srgb}!:!!COL!{dim_0.srgb}!:!!COL!{bg_2.srgb}!:!!COL!{br_red.srgb}!:!!COL!{br_green.srgb}!:!!COL!{br_yellow.srgb}!:!!COL!{br_blue.srgb}!:!!COL!{br_magenta.srgb}!:!!COL!{br_cyan.srgb}!:!!COL!{fg_1.srgb}!"
     background_image = None
-    foreground_color = "!!COL!{fg.srgb}!"
-    background_color = "!!COL!{bg.srgb}!"
+    foreground_color = "!!COL!{fg_0.srgb}!"
+    background_color = "!!COL!{bg_0.srgb}!"
 

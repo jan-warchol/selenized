@@ -1,24 +1,24 @@
-BACKGROUND=#!!COL!{bg.r:02x}{bg.r:02x}{bg.g:02x}{bg.g:02x}{bg.b:02x}{bg.b:02x}!
+BACKGROUND=#!!COL!{bg_0.r:02x}{bg_0.r:02x}{bg_0.g:02x}{bg_0.g:02x}{bg_0.b:02x}{bg_0.b:02x}!
 
-FOREGROUND=#!!COL!{fg.r:02x}{fg.r:02x}{fg.g:02x}{fg.g:02x}{fg.b:02x}{fg.b:02x}!
+FOREGROUND=#!!COL!{fg_0.r:02x}{fg_0.r:02x}{fg_0.g:02x}{fg_0.g:02x}{fg_0.b:02x}{fg_0.b:02x}!
 
-BOLD=#!!COL!{fg_bright.r:02x}{fg_bright.r:02x}{fg_bright.g:02x}{fg_bright.g:02x}{fg_bright.b:02x}{fg_bright.b:02x}!
+BOLD=#!!COL!{fg_1.r:02x}{fg_1.r:02x}{fg_1.g:02x}{fg_1.g:02x}{fg_1.b:02x}{fg_1.b:02x}!
 
 PALETTE="
-#!!COL!{bg_bright_1.r:02x}{bg_bright_1.r:02x}{bg_bright_1.g:02x}{bg_bright_1.g:02x}{bg_bright_1.b:02x}{bg_bright_1.b:02x}!
+#!!COL!{bg_1.r:02x}{bg_1.r:02x}{bg_1.g:02x}{bg_1.g:02x}{bg_1.b:02x}{bg_1.b:02x}!
 #!!COL!{red.r:02x}{red.r:02x}{red.g:02x}{red.g:02x}{red.b:02x}{red.b:02x}!
 #!!COL!{green.r:02x}{green.r:02x}{green.g:02x}{green.g:02x}{green.b:02x}{green.b:02x}!
 #!!COL!{yellow.r:02x}{yellow.r:02x}{yellow.g:02x}{yellow.g:02x}{yellow.b:02x}{yellow.b:02x}!
 #!!COL!{blue.r:02x}{blue.r:02x}{blue.g:02x}{blue.g:02x}{blue.b:02x}{blue.b:02x}!
 #!!COL!{magenta.r:02x}{magenta.r:02x}{magenta.g:02x}{magenta.g:02x}{magenta.b:02x}{magenta.b:02x}!
 #!!COL!{cyan.r:02x}{cyan.r:02x}{cyan.g:02x}{cyan.g:02x}{cyan.b:02x}{cyan.b:02x}!
-#!!COL!{fg_dim.r:02x}{fg_dim.r:02x}{fg_dim.g:02x}{fg_dim.g:02x}{fg_dim.b:02x}{fg_dim.b:02x}!
-#!!COL!{bg_bright_2.r:02x}{bg_bright_2.r:02x}{bg_bright_2.g:02x}{bg_bright_2.g:02x}{bg_bright_2.b:02x}{bg_bright_2.b:02x}!
+#!!COL!{dim_0.r:02x}{dim_0.r:02x}{dim_0.g:02x}{dim_0.g:02x}{dim_0.b:02x}{dim_0.b:02x}!
+#!!COL!{bg_2.r:02x}{bg_2.r:02x}{bg_2.g:02x}{bg_2.g:02x}{bg_2.b:02x}{bg_2.b:02x}!
 #!!COL!{br_red.r:02x}{br_red.r:02x}{br_red.g:02x}{br_red.g:02x}{br_red.b:02x}{br_red.b:02x}!
 #!!COL!{br_green.r:02x}{br_green.r:02x}{br_green.g:02x}{br_green.g:02x}{br_green.b:02x}{br_green.b:02x}!
 #!!COL!{br_yellow.r:02x}{br_yellow.r:02x}{br_yellow.g:02x}{br_yellow.g:02x}{br_yellow.b:02x}{br_yellow.b:02x}!
 #!!COL!{br_blue.r:02x}{br_blue.r:02x}{br_blue.g:02x}{br_blue.g:02x}{br_blue.b:02x}{br_blue.b:02x}!
 #!!COL!{br_magenta.r:02x}{br_magenta.r:02x}{br_magenta.g:02x}{br_magenta.g:02x}{br_magenta.b:02x}{br_magenta.b:02x}!
 #!!COL!{br_cyan.r:02x}{br_cyan.r:02x}{br_cyan.g:02x}{br_cyan.g:02x}{br_cyan.b:02x}{br_cyan.b:02x}!
-#!!COL!{fg_bright.r:02x}{fg_bright.r:02x}{fg_bright.g:02x}{fg_bright.g:02x}{fg_bright.b:02x}{fg_bright.b:02x}!
+#!!COL!{fg_1.r:02x}{fg_1.r:02x}{fg_1.g:02x}{fg_1.g:02x}{fg_1.b:02x}{fg_1.b:02x}!
 "
