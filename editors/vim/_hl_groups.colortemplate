@@ -5,29 +5,41 @@ Term colors: bg_2 br_red br_green br_yellow br_blue br_magenta br_cyan fg_1
 
 Variant: gui 256 16
 
-# default syntax group
+# default coloring
 Normal               fg_0          bg_0
+
 
 # Interface elements {{{
 
 # Group              Foreground    Background    Attributes
-IncSearch            red           none          reverse
+
+# selections and highlights
+IncSearch            orange        none          reverse
 Search               yellow        none          reverse
+QuickFixLine      -> Search
 Visual               none          bg_2
-LineNr               dim_0         bg_1
-CursorLineNr         fg_1          none
+MatchParen           br_yellow     bg_2          bold
+
+# cursor-related
+Cursor               none          none          reverse
+lCursor           -> Cursor        # See `:help lCursor`
 CursorLine           none          bg_1
 CursorColumn         none          bg_1
-ColorColumn          none          bg_1
-MatchParen           br_yellow     bg_2          bold
-Folded               none          bg_1
 
-# window (pane) borders etc.
+# in-buffer borders etc.
+Folded               none          bg_1
+ColorColumn          none          bg_2
+LineNr               dim_0         bg_1
+CursorLineNr         fg_1          none
+
+# window (pane) borders
 VertSplit            dim_0         dim_0
 StatusLine           none          none          reverse
 StatusLineNC         none          bg_2
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
+
+# bars on the top
 TabLineSel           fg_1          bg_1          reverse bold
 TabLine              dim_0         none          reverse
 TabLineFill          dim_0         none          reverse
@@ -46,68 +58,70 @@ DiffChange           none          bg_1
 DiffDelete           red           bg_1
 DiffText             bg_1          yellow
 
-# commonly linked groups
-QuickFixLine      -> Search
-# See `:help lCursor`
-lCursor           -> Cursor
-
 # }}}
+
 
 # Syntax elements {{{
 
 # Group              Foreground    Background    Attributes
 Comment              dim_0         none          italic
+
 Constant             cyan          none
+String            -> Constant
+Number            -> Constant
+Boolean           -> Constant
+Character         -> Constant
+Float             -> Constant
+
 Identifier           br_blue       none
+Function          -> Identifier
+
 Statement            br_yellow     none
-PreProc              magenta       none
+Conditional       -> Statement
+Repeat            -> Statement
+Keyword           -> Statement
+Label             -> Statement
+Exception         -> Statement
+Operator          -> Statement
+
+PreProc              orange        none
+Define            -> PreProc
+PreCondit         -> PreProc
+Include           -> PreProc
+Macro             -> Include
+
 Type                 green         none
+Typedef           -> Type
+StorageClass      -> Type
+Structure         -> Type
+
 Special              red           none
+SpecialChar       -> Special
+Delimiter         -> Special
+SpecialComment    -> Special
+Debug             -> Special
+Tag               -> Special
+
 Error                red           none          bold
-Todo                 magenta       bg_1          bold reverse
-Underlined           br_blue       none          underline
+Todo                 magenta       none          bold
+Underlined           violet        none          underline
+Ignore               bg_2          none
+
+# Language-specific coloring (use sparingly)
+VimCommand           yellow        none
+RubyDefine           fg_1          none          bold
 
 #if get(g:, '@optionprefix_green_keywords', 0)
   Statement            green         none
   Type                 yellow        none
 #endif
 
-# commonly linked groups
-Function          -> Identifier
-String            -> Constant
-Number            -> Constant
-Boolean           -> Constant
-Character         -> Constant
-Float             -> Constant
-Conditional       -> Statement
-Exception         -> Statement
-Keyword           -> Statement
-Label             -> Statement
-Operator          -> Statement
-Repeat            -> Statement
-Define            -> PreProc
-Include           -> PreProc
-Macro             -> PreProc
-PreCondit         -> PreProc
-SpecialChar       -> Special
-SpecialComment    -> Special
-Debug             -> Special
-Delimiter         -> Special
-Tag               -> Special
-StorageClass      -> Type
-Structure         -> Type
-Typedef           -> Type
-# }}}
-
-# Vim
-VimCommand        -> Statement
 
 # Remaining unstyled highlight groups {{{
 
 # Group              Foreground    Background    Attributes
 Terminal             none          none
 Conceal              none          none
-Cursor               none          none
 Directory            none          none
 EndOfBuffer          none          none
 ErrorMsg             none          none
@@ -126,7 +140,5 @@ Title                none          none
 VisualNOS            none          none
 WarningMsg           none          none
 WildMenu             none          none
-
-Ignore               none          none
 
 # }}}

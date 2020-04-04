@@ -39,17 +39,18 @@ Syntax coloring choices
 -----------------------
 
 Selenized aims to have a similar feel to Solarized, but it doesn't follow all
-Solarized coloring choices. In particular, I believe that using green for
-keywords doesn't look good, so I've made them yellow (swapping with types,
+Solarized coloring choices. In particular, I believe that using **green for
+keywords** doesn't look good, so I've made them yellow (swapping with types,
 which are yellow in Solarized). If you don't like this choice, add this to your
 `.vimrc`:
 
     let g:selenized_green_keywords=1
 
-Also note that selenized doesn't use orange and violet because they are not
-available in ANSI color palette (Solarized worked around this with an [ugly
-hack](https://github.com/jan-warchol/selenized/blob/master/whats-wrong-with-solarized.md#problems-with-implementation)).
-However, I plan to use orange and violet in the GUI version of the theme.
+Also note that selenized uses **orange and violet** only in the GUI/truecolor
+version of the theme.  That's because they are not available in ANSI color
+palette (Solarized worked around this with an [ugly
+hack](https://github.com/jan-warchol/selenized/blob/master/whats-wrong-with-solarized.md#problems-with-implementation),
+but I prefer to keep compatibility).
 
 
 Contributing

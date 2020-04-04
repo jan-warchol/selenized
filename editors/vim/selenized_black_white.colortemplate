@@ -8,8 +8,11 @@ Neovim:        yes
 Option Prefix: selenized
 # }}}
 
-Background: dark
+
+
 # Color palette for selenized black {{{
+Background: dark
+
 # Color name         GUI            Base256  Base16
 
 # "base" colors (foreground/background)
@@ -35,13 +38,25 @@ Color: br_yellow     #efc541      178        LightYellow
 Color: br_blue       #4f9cfe       39        LightBlue
 Color: br_magenta    #ff81ca        ~        LightMagenta
 Color: br_cyan       #56d8c9        ~        LightCyan
+
+# Additional colors available only in GUI/truecolor version of the theme.
+# I'm using magenta as a replacement for orange in 16-color theme because it's
+# almost unused in original solarized, and it has a similar live, vibrant feel.
+# Similarly blue makes a good replacement for violet.
+Color: orange        #e67f43        ~        DarkMagenta
+Color: violet        #a580e2        ~        LightBlue
+Color: br_orange     #fa9153        ~        LightMagenta
+Color: br_violet     #b891f5        ~        LightBlue
+
 # }}}
 
 Include: _hl_groups.colortemplate
 
 
-Background: light
+
 # Color palette for selenized white {{{
+Background: light
+
 # Color name         GUI            Base256  Base16
 
 # "base" colors (foreground/background)
@@ -67,7 +82,16 @@ Color: br_yellow     #af8500        ~        LightYellow
 Color: br_blue       #0054cf        ~        LightBlue
 Color: br_magenta    #c7008b        ~        LightMagenta
 Color: br_cyan       #009a8a        ~        LightCyan
-# }}}
 
+# Additional colors available only in GUI/truecolor version of the theme.
+# I'm using magenta as a replacement for orange in 16-color theme because it's
+# almost unused in original solarized, and it has a similar live, vibrant feel.
+# Similarly blue makes a good replacement for violet.
+Color: orange        #d04a00        ~        DarkMagenta
+Color: violet        #7f51d6        ~        LightBlue
+Color: br_orange     #ba3700        ~        LightMagenta
+Color: br_violet     #6b40c3        ~        LightBlue
+
+# }}}
 
 Include: _hl_groups.colortemplate

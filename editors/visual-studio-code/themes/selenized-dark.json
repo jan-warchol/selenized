@@ -1,0 +1,307 @@
+{
+	"name": "Selenized 0.10.1-sele",
+	"type": "dark",
+	"colors": {
+		"editor.background":                   "#103c48",
+		"editor.foreground":                   "#adbcbc",
+		"editorCursor.foreground":             "#adbcbc",
+		"editorLineNumber.foreground":         "#5f7980",
+		"editorLineNumber.activeForeground":   "#adbcbc",
+		"editorIndentGuide.background":        "#325b67",
+		"editorIndentGuide.activeBackground":  "#5f7980",
+		"editor.selectionBackground":          "#325b67",
+		"editor.inactiveSelectionBackground":  "#1c4653",
+		"editor.selectionHighlightBackground": "#103c48",
+		"editor.selectionHighlightBorder":     "#325b67"
+	},
+	"tokenColors": [
+		{
+			"scope": "comment",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#71888e"
+			}
+		},
+		{
+			"scope": "string.quoted.docstring",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#71888e"
+			}
+		},
+		{
+			"name": "special elements in doc comments",
+			"scope": "storage.type.class.jsdoc",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#869a9d"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#41c7b9"
+			}
+		},
+		{
+			
+			"name": "string interpolation and escaping",
+			"scope": [
+				"string.constant.character.escape",
+				"string.interpolated.dollar.shell",
+				"string.interpolated.backtick.shell",
+				"constant.character.format",
+				"constant.character.escape",
+				"punctuation.section.embedded",
+				"punctuation.definition.template-expression"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#f9554f"
+			}
+		},
+		{
+			"name": "code embedded in string interpolation",
+			"scope": [
+				"meta.embedded"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			"name": "constant",
+			"scope": [
+				"constant",
+				"variable.other.constant"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#41c7b9"
+			}
+		},
+		{
+			"scope": "constant.numeric",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#41c7b9"
+			}
+		},
+		{
+			"scope": "constant.language",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#41c7b9"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#76ba39"
+			}
+		},
+		{
+			"name": "generic keywords",
+			"scope": [
+				"keyword.control",
+				"keyword.other"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#76ba39"
+			}
+		},
+		{
+			"name": "function and class defs",
+			"scope": [
+				"storage.type.function",
+				"storage.type.class"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#76ba39"
+			}
+		},
+		{
+			"name": "imports",
+			"scope": [
+				"keyword.control.import",
+				"keyword.control.directive.include",
+				"keyword.other.import"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#ee8649"
+			}
+		},
+		{
+			"name": "imported package/module names",
+			"scope": [
+				"storage.modifier.import.java"
+			],
+			"settings": {
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			"name": "types and type modifiers",
+			"scope": [
+				"storage",
+				"support.class",
+				"support.type"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#dbb32d"
+			}
+		},
+		{
+			"name": "keyword argument name in function call",
+			"scope": "variable.parameter.function-call",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			"name": "reserved variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#f9554f"
+			}
+		},
+		{
+			"name": "built-ins, things from library/framework",
+			"scope": "support",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#4494f6"
+			}
+		},
+		{
+			"scope": "support.type.exception",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#dbb32d"
+			}
+		},
+		{
+			"name": "Function decorator and similar elements",
+			"scope": [
+				"entity.name.function.decorator",
+				"support.type.python"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#4494f6"
+			}
+		},
+		{
+			"name": "Name of the defined class",
+			"scope": [
+				"entity.name.class",
+				"entity.name.type.class"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#4494f6"
+			}
+		},
+		{
+			"name": "Name of the defined function",
+			"scope": [
+				"entity.name.function",
+				"entity.name.function.declaration"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#4494f6"
+			}
+		},
+		{
+			"name": "function calls (works only for some languages)",
+			"scope": "meta.function-call.generic",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			"name": "function calls and defs use the same scope in JS",
+			"scope": "entity.name.function.js",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#4494f6"
+			}
+		},
+		{
+			"name": "ordinary variables (should by default use basic styling)",
+			"scope": "variable",
+			"settings": {
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			"scope": "variable.parameter",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#adbcbc"
+			}
+		},
+		{
+			
+			"name": "shell builtins",
+			"scope": "support.function.builtin.shell",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#76ba39"
+			}
+		},
+		{
+			"name": "special shell syntax",
+			"scope": [
+				"punctuation.definition.logical-expression",
+				"variable.other.special.shell"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#f9554f"
+			}
+		},
+		{
+			"name": "shell variable interpolation",
+			"scope": [
+				"variable.other.normal.shell",
+				"variable.other.bracket.shell",
+				"variable.other.positional.shell"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#ee8649"
+			}
+		},
+		{
+			"name": "dots, parens etc. (token separators)",
+			"scope": [
+				"punctuation.definition.block",
+				"punctuation.definition.parameters",
+				"punctuation.definition.arguments",
+				"punctuation.definition.list",
+				"punctuation.definition.dict",
+				"punctuation.definition.binding-pattern",
+				"punctuation.parenthesis",
+				"punctuation.separator",
+				"punctuation.accessor",
+				"punctuation.section"
+			],
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#adbcbc"
+			}
+		}
+	]
+}
