@@ -1,35 +1,33 @@
-Development
------------
+Contributing to Selenized
+=========================
 
-Selenized is still work-in-progress.  Here are some of my plans for the future:
-- add ready-to-use config files for more terminals
-- support more command-line programs (add selenized skins/configs for them - in
-  particular I'd like to fine-tune dircolors to look as good as possible with
-  Selenized)
-- add a dark-on-light variant of the palette
-- extend Selenized to 8 accent colors (add orange and violet, like in
-  Solarized)
-- add color schemes for popular IDEs
-- add a script that would allow [adjusting Selenized to your taste](#forking)
-  using a web interface
-- maybe even create a library that would allow adjusting LAB lightness in
-  arbitrary color palettes based on the experience I got creating Selenized
-- research perceptually uniform color spaces - maybe they could be used to
-  improve consistency of Selenized colors even further?  See
+Development roadmap
+-------------------
+
+Selenized is quite complete, but there are some things that could still be done.
+Some ideas for the future:
+
+- better, more nuanced syntax highlighting rules (see [issue
+  68](https://github.com/jan-warchol/selenized/issues/68))
+- web interface for [adjusting Selenized to your taste](#forking)
+- a library that would allow "fixing" existing color palettes (by adjusting Lab
+  lightness of their colors while keeping original hue and saturation)
+- learn more about perceptually uniform color spaces - maybe they could be used
+  to improve consistency of Selenized colors even further? See
   [here](www.brucelindbloom.com/UPLab.html) and
   [here](https://en.wikipedia.org/wiki/Munsell_color_system).
 
-If you'd like to help with any of these, please get in touch - open a pull
-request or contact me at jan.warchol@gmail.com.
+And of course, adding support for more programs, terminals, editors, IDEs etc.
 
-Also, open an issue if you found a program that doesn't look good with
-Selenized terminal or encountered a situation where Selenized was not readable
-enough.  Until version 1.0 I'm open to suggestions on adjusting the colors.
+If you'd like to help but are not sure where to start, contact me at
+jan.warchol@gmail.com. Also, please [open an
+issue](https://github.com/jan-warchol/selenized/issues) if you found a program
+that doesn't look good with Selenized colors in your terminal.
 
 
 
-Forking
--------
+Customization
+-------------
 
 You are welcome to adjust Selenized to your taste - I can imagine that some
 people may want to change the hue of the background/content colors or adjust
