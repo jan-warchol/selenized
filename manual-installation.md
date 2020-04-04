@@ -5,8 +5,8 @@ Guidelines for creating a selenized theme for your terminal emulator.
 
 Each Selenized variant defines 3 background shades (`bg_*`), 3 content shades
 (`dim_*`, `fg_*`) and 8 accent colors (each with a bright version). This
-document explains which color to use for what. You can find RGB values of the
-colors [here](the-values.md).
+document explains which color to use for what. You can find [RGB values of the
+colors **here**](the-values.md).
 
 
 ### Color mapping
@@ -56,8 +56,20 @@ ANSI palette:
 | 14  | bright cyan    | br_cyan         |
 | 15  | bright white   | fg_1            |
 
+
+### Creating a template
+
+Theme files should be generated from templates (so that it's easy to create
+configs for all selenized variants, and update them whenever colors change).
+
+See
+[`utils/templates/template-test.example.template`](./utils/templates/template-test.example.template)
+for an example template and [`utils/README.md`](./utils/README.md) for
+instructions on how to use templating machinery.
+
 That's it!
 
 Please send me a [pull request](https://github.com/jan-warchol/selenized/pulls)
-with the resulting configuration so that I can make your terminal officially
-supported :-)
+with the resulting configs and template so that I can make your terminal
+officially supported :-)
+

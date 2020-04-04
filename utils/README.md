@@ -9,7 +9,7 @@ templates.
 ### Requirements
 
 - [Python](https://www.python.org/) with development files. Python 3.7
-  and 2.7 is known works; 3.5 and 3.6 might work, but nobody tried yet,
+  and 2.7 is known to work; 3.5 and 3.6 might work, but nobody tried yet.
 - [Colormath](https://github.com/gtaylor/python-colormath) Python library.
 
 Example requirements installation for Debian/Ubuntu Linux and Python 2.7:
@@ -27,13 +27,13 @@ Example requirements installation for Debian/Ubuntu Linux and Python 2.7:
 To generate config file, use `evaluate_template.py` script. You need to provide
 it with two arguments: path to the palette module (with the palette you want to
 use) and path to a template config for your terminal. For example, if you
-wanted to generate selenized medium config file for iTerm, you would do it like
+wanted to generate selenized dark config file for iTerm, you would do it like
 this:
 
     selenized/utils$ python evaluate_template.py \
-                         palettes/selenized_medium.py \
+                         palettes/selenized_dark.py \
                          templates/itermcolors.template
-    [...]
+
     Processing templates/itermcolors.template...
     Result written to output/Selenized medium.itermcolors
 
