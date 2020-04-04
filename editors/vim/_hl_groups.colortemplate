@@ -132,10 +132,10 @@ NonText              none          none
 Question             none          none
 SignColumn           none          none
 SpecialKey           none          none
-SpellBad             none          none
-SpellCap             none          none
-SpellLocal           none          none
-SpellRare            none          none
+SpellBad             none          none          t=underline g=undercurl s=red
+SpellCap             none          none          t=underline g=undercurl s=red
+SpellLocal           none          none          t=underline g=undercurl s=yellow
+SpellRare            none          none          t=underline g=undercurl s=cyan
 Title                none          none
 VisualNOS            none          none
 WarningMsg           none          none
