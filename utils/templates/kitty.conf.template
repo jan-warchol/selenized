@@ -1,9 +1,10 @@
 # vim:fileencoding=utf-8:ft=conf:foldmethod=marker
 
+# !!COL!{name}! color scheme for Kitty
+
 #: Color scheme {{{
 
 #: The foreground and background colors
-!!COL!{name}! color scheme for Kitty
 foreground !!COL!{fg_0.srgb}!
 background !!COL!{bg_0.srgb}!
 
@@ -40,6 +41,12 @@ selection_foreground none
 #: The background for text selected with the mouse.
 selection_background !!COL!{bg_2.srgb}!
 
+#: Tab bar colors
+active_tab_foreground   !!COL!{fg_1.srgb}!
+active_tab_background   !!COL!{bg_2.srgb}!
+inactive_tab_foreground !!COL!{dim_0.srgb}!
+inactive_tab_background !!COL!{bg_0.srgb}!
+tab_bar_background      !!COL!{bg_0.srgb}!
 
 #: The 16 terminal colors. There are 8 basic colors, each color has a
 #: dull and bright version. You can also set the remaining colors from
