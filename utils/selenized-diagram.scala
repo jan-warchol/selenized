@@ -3,6 +3,9 @@ val plotH = 600
 val squareSize = 44
 val squareHalf = squareSize/2.0
 val lineWidth = 3
+val margin = 125
+val imgW = plotW + margin
+val imgH = plotH + margin
 
 class Color(val name: String, val hexString: String, val luminance: Int)
 
@@ -10,8 +13,8 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
     <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg"
          xmlns:svg="http://www.w3.org/2000/svg"
-         width={plotW.toString}
-         height={plotH.toString}
+         width={imgW.toString}
+         height={imgH.toString}
          font-family="Signika, sans"
          font-size={(squareHalf).toString+"px"} >
         <style>
@@ -34,9 +37,47 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
                   U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
             }}
         </style>
-        { genBgColors(bgColors.sortBy(x => x.luminance)) }
-        { genFgColors(fgColors, bgColors.head) }
+        { drawAxis() }
+        <g transform={"translate("+margin+","+margin/2+")"} >
+            { genBgColors(bgColors.sortBy(x => x.luminance)) }
+            { genFgColors(fgColors, bgColors.head) }
+        </g>
     </svg>
+}
+
+def drawAxis() = {
+    val axisColor = "#777"
+    val axisX = margin-squareSize
+    val notchHalf = squareHalf/2.0
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill={axisColor} />
+        </marker>
+    </defs>
+
+    <g stroke={axisColor} stroke-width={lineWidth.toString} >
+        <line x1={(axisX).toString} y1={(imgH-margin/4.0).toString}
+              x2={(axisX).toString} y2={(margin/4.0).toString}
+              marker-end="url(#arrowhead)" />
+        <line x1={(axisX-notchHalf).toString} y1={(margin/2.0).toString}
+              x2={(axisX+notchHalf).toString} y2={(margin/2.0).toString} />
+        <line x1={(axisX-notchHalf).toString} y1={(imgH-margin/2.0).toString}
+              x2={(axisX+notchHalf).toString} y2={(imgH-margin/2.0).toString} />
+    </g>
+
+    <text x={(axisX-1.5*notchHalf).toString} y={(imgH-margin/2.0).toString}
+          text-anchor="end" dominant-baseline="central"
+          fill={axisColor} > 0 </text>
+    <text x={(axisX-1.5*notchHalf).toString} y={(margin/2.0).toString}
+          text-anchor="end" dominant-baseline="central"
+          fill={axisColor} > 100 </text>
+    <g transform={"translate("+(axisX-notchHalf)+","+imgH/2.0+")"} >
+        <text x="0" y="0"
+              text-anchor="middle"
+              transform="rotate(-90)"
+              fill={axisColor} > luminance </text>
+    </g>
 }
 
 def genBgColors(colors: List[Color]) = {
