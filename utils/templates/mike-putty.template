@@ -1,7 +1,7 @@
 
 #: black
-color0 !!COL!{bg_bright_1.srgb}!
-color8 !!COL!{bg_bright_2.srgb}!
+color0 !!COL!{bg_1.srgb}!
+color8 !!COL!{bg_2.srgb}!
 
 #: red
 color1 !!COL!{red.srgb}!
@@ -28,7 +28,7 @@ color6  !!COL!{cyan.srgb}!
 color14 !!COL!{br_cyan.srgb}!
 
 #: white
-color7  !!COL!{fg_dim.srgb}!
-color15 !!COL!{fg_bright.srgb}!
+color7  !!COL!{dim_0.srgb}!
+color15 !!COL!{fg_1.srgb}!
 
 
