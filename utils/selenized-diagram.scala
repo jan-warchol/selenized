@@ -1,10 +1,10 @@
 val plotW = 800
 val plotH = 600
-val squareSize = 44
+val squareSize = 48
 val squareHalf = squareSize/2.0
 val lineWidth = 3
 val margin = 125
-val imgW = plotW + margin
+val imgW = plotW + margin + lineWidth  // for rightmost border
 val imgH = plotH + margin
 
 class Color(val name: String, val hexString: String, val luminance: Int)
@@ -16,7 +16,7 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
          width={imgW.toString}
          height={imgH.toString}
          font-family="Signika, sans"
-         font-size={(squareHalf).toString+"px"} >
+         font-size={(0.65*squareSize).toString+"px"} >
         <style>
             @font-face {{
                 font-family: 'Signika';
@@ -39,8 +39,12 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
         </style>
         { drawAxis() }
         <g transform={"translate("+margin+","+margin/2+")"} >
-            { genBgColors(bgColors.sortBy(x => x.luminance)) }
-            { genFgColors(fgColors, bgColors.head) }
+            <rect x={(-lineWidth/2.0).toString} y={(-lineWidth/2.0).toString}
+                  width={(plotW+lineWidth).toString} height={(plotH+lineWidth).toString}
+                  fill="#777" />
+            <rect x="0" y="0" width={plotW.toString} height={plotH.toString} fill="#000" />
+            { drawBackground(bgColors.sortBy(x => x.luminance)) }
+            { drawSwatches(fgColors, bgColors.head) }
         </g>
     </svg>
 }
@@ -80,20 +84,37 @@ def drawAxis() = {
     </g>
 }
 
-def genBgColors(colors: List[Color]) = {
-    <g transform={"translate(0,"+plotH.toString+") scale(1,-1)"} >{
-        for {color <- new Color("#000000", "000000", 0)::colors} yield {
-            <rect x="0" y={ (color.luminance*plotH/100.0).toString }
-                  width={ plotW.toString } height={ plotH.toString }
-                  style={"fill:#"+color.hexString+";fill-opacity:1;stroke:none"} />
-        }
-    }</g>
+def drawBackground(colors: List[Color]) = {
+    // we want the circles to have the same area as the squares
+    val radius = scala.math.sqrt(4/scala.math.Pi) * squareHalf
+    for {color <- colors} yield {
+        <rect x="0" y="0"
+              width={ plotW.toString }
+              height={(((100-color.luminance)/100.0)*plotH).toString}
+              fill={"#"+color.hexString} />
+        <circle cx="0" cy={(((100-color.luminance)/100.0)*plotH).toString}
+                r={radius.toString}
+                fill={"#"+color.hexString}
+                stroke="#777"
+                stroke-width={lineWidth.toString} />
+        <text x="0" y={(((100-color.luminance)/100.0)*plotH).toString}
+              fill="#777"
+              text-anchor="middle" dominant-baseline="central" >
+            { color.luminance.toString }
+        </text>
+        <text x={(radius*1.3).toString} y={(((98-color.luminance)/100.0)*plotH).toString}
+              fill="#777"
+              text-anchor="begin" >
+            { color.name }
+        </text>
+
+    }
 }
 
-def genFgColors(colors: List[Color], bgColor: Color) = {
+def drawSwatches(colors: List[Color], bgColor: Color) = {
     <g>{
         for {(color, i) <- colors.zipWithIndex} yield {
-            val xcenter = (i+1)*plotW/(colors.length+1)
+            val xcenter = (i+1.7)*plotW/(colors.length+1.5)
             val ycenter = color.luminance*plotH/100.0
 
             <!-- group is translated to the center of square with some flipping for easier translation -->
@@ -126,7 +147,7 @@ def genFgColors(colors: List[Color], bgColor: Color) = {
                       fill={"#"+color.hexString}
                       text-anchor="end"
                       dominant-baseline="central"
-                      font-weight="bold" font-size={(0.8*squareSize).toString}
+                      font-weight="bold"
                       transform={"rotate(-90)"} >
                     { color.name }
                 </text>
@@ -137,8 +158,8 @@ def genFgColors(colors: List[Color], bgColor: Color) = {
 
 println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
 val bgColors = List(
-    new Color("bg_0", "103c48", 23),
-    new Color("fg_0", "adbcbc", 75)
+    new Color("bg", "103c48", 23),
+    new Color("fg", "adbcbc", 75)
 )
 val fgColors = List(
     new Color("bg_1", "184956", 28),
