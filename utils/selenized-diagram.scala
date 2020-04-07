@@ -1,4 +1,25 @@
-val plotW = 800
+// generate color data using templates/scala-diagram-input.template
+val bg = new Color("bg", "103c48", 23)
+val fg = new Color("fg", "adbcbc", 75)
+val bgColors = List(bg, fg)
+val fgColors = List(
+    new Color("bg_0",    "103c48", 23),
+    new Color("bg_1",    "174956", 28),
+    new Color("bg_2",    "325b66", 36),
+    new Color("red",     "fa5750", 60),
+    new Color("orange",  "ed8649", 67),
+    new Color("yellow",  "dbb32d", 75),
+    new Color("green",   "75b938", 69),
+    new Color("cyan",    "41c7b9", 73),
+    new Color("blue",    "4695f7", 60),
+    new Color("violet",  "af88eb", 64),
+    new Color("magenta", "f275be", 66),
+    new Color("dim_0",   "72898f", 56),
+    new Color("fg_0",    "adbcbc", 75),
+    new Color("fg_1",    "cad8d9", 85)
+)
+
+val plotW = 1000
 val plotH = 600
 val squareSize = 48
 val squareHalf = squareSize/2.0
@@ -165,23 +186,6 @@ def drawSwatches(colors: List[Color]) = {
 }
 
 println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
-
-val bg = new Color("bg", "103c48", 23)
-val fg = new Color("fg", "adbcbc", 75)
-val bgColors = List(bg, fg)
-val fgColors = List(
-    new Color("bg_1", "184956", 28),
-    new Color("bg_2", "2d5b69", 36),
-    new Color("dim_0", "72898f", 56),
-    new Color("fg_0", "adbcbc", 75),
-    new Color("fg_1", "cad8d9", 85),
-    new Color("red", "fa5750", 60),
-    new Color("green", "75b938", 69),
-    new Color("yellow", "dbb32d", 75),
-    new Color("blue", "4695f7", 60),
-    new Color("magenta", "f275be", 66),
-    new Color("cyan", "41c7b9", 73)
-)
 
 println(genSvg(bgColors, fgColors))
 
