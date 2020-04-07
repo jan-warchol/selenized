@@ -9,6 +9,14 @@ val imgH = plotH + margin
 
 class Color(val name: String, val hexString: String, val luminance: Int)
 
+// choose either fg or bg, depending on provided luminance
+def pickContrastingShade(luminance: Int) = {
+    if (luminance > (bg.luminance + fg.luminance) / 2)
+        "#"+bg.hexString
+    else
+        "#"+fg.hexString
+}
+
 def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
     <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +52,7 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
                   fill="#777" />
             <rect x="0" y="0" width={plotW.toString} height={plotH.toString} fill="#000" />
             { drawBackground(bgColors.sortBy(x => x.luminance)) }
-            { drawSwatches(fgColors, bgColors.head) }
+            { drawSwatches(fgColors) }
         </g>
     </svg>
 }
@@ -98,12 +106,12 @@ def drawBackground(colors: List[Color]) = {
                 stroke="#777"
                 stroke-width={lineWidth.toString} />
         <text x="0" y={(((100-color.luminance)/100.0)*plotH).toString}
-              fill="#777"
+              fill={pickContrastingShade(color.luminance)}
               text-anchor="middle" dominant-baseline="central" >
             { color.luminance.toString }
         </text>
         <text x={(radius*1.3).toString} y={(((98-color.luminance)/100.0)*plotH).toString}
-              fill="#777"
+              fill={pickContrastingShade(color.luminance)}
               text-anchor="begin" >
             { color.name }
         </text>
@@ -111,7 +119,7 @@ def drawBackground(colors: List[Color]) = {
     }
 }
 
-def drawSwatches(colors: List[Color], bgColor: Color) = {
+def drawSwatches(colors: List[Color]) = {
     <g>{
         for {(color, i) <- colors.zipWithIndex} yield {
             val xcenter = (i+1.7)*plotW/(colors.length+1.5)
@@ -122,13 +130,13 @@ def drawSwatches(colors: List[Color], bgColor: Color) = {
                           "translate("+xcenter.toString+","+ycenter.toString+")" +
                           "scale(1,-1)" +
                           "translate(0, "+plotH.toString+")"} >
-                <g stroke={"#"+bgColor.hexString} stroke-width={lineWidth.toString} >
+                <g stroke={"#"+bg.hexString} stroke-width={lineWidth.toString} >
                     <rect x={(-squareHalf).toString}
                           y={(-squareHalf).toString}
                           width={squareSize.toString}
                           height={squareSize.toString}
                           fill={"#"+color.hexString}
-                          stroke={"#"+bgColor.hexString}
+                          stroke={"#"+bg.hexString}
                           stroke-width={lineWidth.toString} />
 
                     <line x1={(-squareHalf).toString} y1="0"
@@ -138,7 +146,7 @@ def drawSwatches(colors: List[Color], bgColor: Color) = {
                 </g>
 
                 <text x="0" y="0"
-                      fill={"#"+bgColor.hexString}
+                      fill={pickContrastingShade(color.luminance)}
                       text-anchor="middle" dominant-baseline="central" >
                     { color.luminance.toString }
                 </text>
@@ -157,10 +165,10 @@ def drawSwatches(colors: List[Color], bgColor: Color) = {
 }
 
 println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
-val bgColors = List(
-    new Color("bg", "103c48", 23),
-    new Color("fg", "adbcbc", 75)
-)
+
+val bg = new Color("bg", "103c48", 23)
+val fg = new Color("fg", "adbcbc", 75)
+val bgColors = List(bg, fg)
 val fgColors = List(
     new Color("bg_1", "184956", 28),
     new Color("bg_2", "2d5b69", 36),
@@ -174,5 +182,6 @@ val fgColors = List(
     new Color("magenta", "f275be", 66),
     new Color("cyan", "41c7b9", 73)
 )
+
 println(genSvg(bgColors, fgColors))
 
