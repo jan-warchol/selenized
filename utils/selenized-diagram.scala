@@ -7,6 +7,11 @@ val margin = 125
 val imgW = plotW + margin + lineWidth  // for rightmost border
 val imgH = plotH + margin
 
+// some programs (e.g. Gimp) don't handle text alignment correctly
+val adjustAlignment = true
+val adjX = if (adjustAlignment) lineWidth.toString else "0"
+val adjY = if (adjustAlignment) squareHalf*0.4 else 0
+
 class Color(val name: String, val hexString: String, val luminance: Int)
 
 // choose either fg or bg, depending on provided luminance
@@ -78,10 +83,10 @@ def drawAxis() = {
               x2={(axisX+notchHalf).toString} y2={(imgH-margin/2.0).toString} />
     </g>
 
-    <text x={(axisX-1.5*notchHalf).toString} y={(imgH-margin/2.0).toString}
+    <text x={(axisX-1.5*notchHalf).toString} y={(imgH-margin/2.0 + adjY).toString}
           text-anchor="end" dominant-baseline="central"
           fill={axisColor} > 0 </text>
-    <text x={(axisX-1.5*notchHalf).toString} y={(margin/2.0).toString}
+    <text x={(axisX-1.5*notchHalf).toString} y={(margin/2.0 + adjY).toString}
           text-anchor="end" dominant-baseline="central"
           fill={axisColor} > 100 </text>
     <g transform={"translate("+(axisX-notchHalf)+","+imgH/2.0+")"} >
@@ -105,7 +110,7 @@ def drawBackground(colors: List[Color]) = {
                 fill={"#"+color.hexString}
                 stroke="#777"
                 stroke-width={lineWidth.toString} />
-        <text x="0" y={(((100-color.luminance)/100.0)*plotH).toString}
+        <text x={adjX} y={(((100-color.luminance)/100.0)*plotH + adjY).toString}
               fill={pickContrastingShade(color.luminance)}
               text-anchor="middle" dominant-baseline="central" >
             { color.luminance.toString }
@@ -140,13 +145,13 @@ def drawSwatches(colors: List[Color]) = {
                           stroke-width={lineWidth.toString} />
                 </g>
 
-                <text x="0" y="0"
+                <text x={adjX} y={adjY.toString}
                       fill={pickContrastingShade(color.luminance)}
                       text-anchor="middle" dominant-baseline="central" >
                     { color.luminance.toString }
                 </text>
 
-                <text x={(-squareSize*0.8).toString} y="0"
+                <text x={(-squareSize*0.8).toString} y={adjY.toString}
                       fill={"#"+color.hexString}
                       text-anchor="end"
                       dominant-baseline="central"
