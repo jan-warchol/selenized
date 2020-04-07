@@ -138,11 +138,6 @@ def drawSwatches(colors: List[Color]) = {
                           fill={"#"+color.hexString}
                           stroke={"#"+bg.hexString}
                           stroke-width={lineWidth.toString} />
-
-                    <line x1={(-squareHalf).toString} y1="0"
-                          x2={(lineWidth-squareHalf).toString} y2="0" />
-                    <line x1={squareHalf.toString} y1="0"
-                          x2={(squareHalf-lineWidth).toString} y2="0" />
                 </g>
 
                 <text x="0" y="0"
