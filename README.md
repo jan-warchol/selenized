@@ -75,39 +75,6 @@ See [this document](manual-installation.md) for guidelines.
 
 
 
-Palette variants
-----------------
-
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
-
-Like _Solarized dark_, but better.
-
-
-
-### Selenized black
-
-![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
-
-Oldschool black-and-white look with a little more contrast.
-
-
-
-### Selenized light
-
-![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
-
-A warm sepia variant, corresponding to _Solarized light_.
-
-
-
-### Selenized white
-
-![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
-
-Unlike many dark-on-white palettes, yellow color is readable here.
-
 
 
 Compatibility notes
