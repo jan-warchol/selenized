@@ -1,0 +1,19 @@
+val bg = new Color("bg", "!!COL!{bg_0.srgb_no_hash}!", !!COL!{bg_0.lab.lab_l:.0f}!)
+val fg = new Color("fg", "!!COL!{fg_0.srgb_no_hash}!", !!COL!{fg_0.lab.lab_l:.0f}!)
+val bgColors = List(bg, fg)
+val fgColors = List(
+    new Color("bg_0",    "!!COL!{bg_0.srgb_no_hash}!", !!COL!{bg_0.lab.lab_l:.0f}!),
+    new Color("bg_1",    "!!COL!{bg_1.srgb_no_hash}!", !!COL!{bg_1.lab.lab_l:.0f}!),
+    new Color("bg_2",    "!!COL!{bg_2.srgb_no_hash}!", !!COL!{bg_2.lab.lab_l:.0f}!),
+    new Color("red",     "!!COL!{red.srgb_no_hash}!", !!COL!{red.lab.lab_l:.0f}!),
+    new Color("orange",  "!!COL!{orange.srgb_no_hash}!", !!COL!{orange.lab.lab_l:.0f}!),
+    new Color("yellow",  "!!COL!{yellow.srgb_no_hash}!", !!COL!{yellow.lab.lab_l:.0f}!),
+    new Color("green",   "!!COL!{green.srgb_no_hash}!", !!COL!{green.lab.lab_l:.0f}!),
+    new Color("cyan",    "!!COL!{cyan.srgb_no_hash}!", !!COL!{cyan.lab.lab_l:.0f}!),
+    new Color("blue",    "!!COL!{blue.srgb_no_hash}!", !!COL!{blue.lab.lab_l:.0f}!),
+    new Color("violet",  "!!COL!{violet.srgb_no_hash}!", !!COL!{violet.lab.lab_l:.0f}!),
+    new Color("magenta", "!!COL!{magenta.srgb_no_hash}!", !!COL!{magenta.lab.lab_l:.0f}!),
+    new Color("dim_0",   "!!COL!{dim_0.srgb_no_hash}!", !!COL!{dim_0.lab.lab_l:.0f}!),
+    new Color("fg_0",    "!!COL!{fg_0.srgb_no_hash}!", !!COL!{fg_0.lab.lab_l:.0f}!),
+    new Color("fg_1",    "!!COL!{fg_1.srgb_no_hash}!", !!COL!{fg_1.lab.lab_l:.0f}!)
+)
