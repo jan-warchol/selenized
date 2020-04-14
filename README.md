@@ -1,21 +1,25 @@
 Selenized color palette
 =======================
 
-Selenized is a color theme for terminals and text editors, carefully designed
-using professional-grade [CIE
-L*a*b*](http://en.wikipedia.org/wiki/Lab_color_space) color space for maximum
-readability and great eye comfort.
+<!--
+Solarized redesigned: fine-tuned color palette for programmers with focus on readability.
+-->
 
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
 
-Design principles
------------------
+After researching perceptually uniform color spaces, _4 years of testing_,
+refining hues and fine-tuning lightness using professional grade [CIE
+Lab](http://en.wikipedia.org/wiki/Lab_color_space) color space, the task of
+redesigning venerable Solarized is almost finished!
+Results:
 
-- make the contrast just right: strong but not tiring to the eyes
-- adjust lightness of all colors for uniform readability
-- select colors in a way that boosts code comprehension
-- make it as beautiful and visually pleasing as possible
+* Easy on the eyes.
+* **Beautiful**, vibrant and easily **distinguishable** accent colors.
+* **Great readability** and better compatibility with Web Content
+  [Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/).
 
-Read more about the design [here](features-and-design.md).
+Read more [about the design](features-and-design.md)
+and see how it [improves on Solarized](whats-wrong-with-solarized.md).
 
 
 
@@ -71,62 +75,20 @@ See [this document](manual-installation.md) for guidelines.
 
 
 
-Palette variants
-----------------
-
-### Selenized dark
-
-![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
-
-Like _Solarized dark_, but better.
 
 
+Compatibility notes
+-------------------
 
-### Selenized black
-
-![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
-
-Oldschool black-and-white look with a little more contrast.
-
-
-
-### Selenized light
-
-![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
-
-A warm sepia variant, corresponding to _Solarized light_.
-
-
-
-### Selenized white
-
-![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
-
-Unlike many dark-on-white palettes, yellow color is readable here.
-
-
-
-What about _Solarized_?
------------------------
-
-There is a popular color palette named _Solarized_. I really liked the design
-principles behind Solarized, but it has a couple issues, which [Selenized
-solves](whats-wrong-with-solarized.md).
-
-By the way, the name is derived from the greek word "selene", which means
-the moon (as opposed to the sun in Solarized).
-
-
-
-Known issues
-------------
-
-Some command-line programs need reconfiguration to look good with Selenized,
+Some command-line programs may need reconfiguration to look good with Selenized,
 because they make assumptions about the colors configured in terminal (see
 [this issue](https://github.com/janek-warchol/selenized/issues/7) for details):
 
 - [`ls`](dircolors/)
 - [Midnight Commander](mc/)
+
+However, this is quite rare; vast majority of software works great
+out-of-the-box.
 
 
 
@@ -134,3 +96,12 @@ Contributing and development
 ----------------------------
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+
+
+About the name
+--------------
+
+The name of the project is derived from the greek word "selene", which means
+_the moon_ - as opposed to _the sun_ in Solarized.
+

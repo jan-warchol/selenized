@@ -3,57 +3,71 @@ Features
 
 ### Comfortable contrast
 
-A couple years ago I noticed that my eyes quickly grew tired when I was working
-in a terminal.  It turned out that the problem was the palette I was using at
-that time - it was white text on dark violet background (default Ubuntu
-terminal colors - see [example](http://i.imgur.com/wICCS7x.png)).  High
-contrast like that tires the eye - that's why professional graphic software
-often use gray in their interfaces.
+It all started when I noticed that my eyes were quickly growing tired when
+coding.  I had been using default Ubuntu colors back then (white on dark
+magenta), and the contrast was simply _too high_.
 
 ![Selenized contrast sample](http://i.imgur.com/Y11xuwv.png)
 
-Selenized has moderate-to-low contrast - the difference in LAB lightness
-between foreground and background is 50, which is exactly half the distance
-between pure black and white.  The result is easy on eyes but still very
-readable, even on poor displays - see a [side-by-side comparison of Selenized
-and Ubuntu palettes](http://i.imgur.com/MtpKFFf.png).
+Selenized has moderately low contrast - a bit more than half the distance
+between pure black and white.  The result is easy on the eyes, but still **very
+readable:** long coding sessions are not a strain anymore!  ([compare with
+Ubuntu colors here](http://i.imgur.com/MtpKFFf.png))
 
 <!-- [selenized manpage example](http://i.imgur.com/twNvCfk.png) -->
 
 
 
-### Balanced accent colors
+### Balanced and beautiful accent colors
 
-It's not just foreground and background colors that matter. Lightness of all
-accent colors need to be carefully adjusted, too: we want them to be equally
-readable against the background, but at the same time they cannot have *exactly*
-the same lightness because that would make them harder to tell apart (for
-example, our eyes expect yellow to be brighter than orange and orange brighter
-than red).
+Lightness of accent colors needs to be carefully adjusted, so that they are
+both pleasant and present an even contrast against the background. This is
+tricky because of things like [Helmholtz–Kohlrausch
+effect](https://en.wikipedia.org/wiki/Helmholtz%E2%80%93Kohlrausch_effect) and
+eye cone sensitivity differences.
 
-<!-- ![Selenized accent colors diagram](http://i.imgur.com/kxylyHe.png) -->
+![Selenized accent colors diagram](http://i.imgur.com/QNKIw1U.png)
 
-I have fine-tuned the lightness to ensure that all colors present an even
-contrast, even red and blue (which are too dark in many palettes).  You can
-read more about accent color lightness and see a comparison between Selenized
-and other palettes [here](balancing-lightness-of-colors.md) (warning: extreme
-ugliness of some palette examples may scorch your eyes!).
+Selenized harmonizes the lightnesses while preserving each color's
+individuality (e.g. yellow should be brighter than red). This is possible
+thanks to the use of perceptually uniform CIE Lab color space.
+
+![Accent colors in xterm and ubuntu](http://i.imgur.com/wNCz40F.png)
+
+Many palettes - including default coloring in xterm, Ubuntu terminal and
+Sublime Text - [weren't designed this
+way](https://vis4.net/blog/posts/avoid-equidistant-hsv-colors/): they have a
+lot of variation in lightness. You can see above how this leads to bad
+readability.
 
 
 
-### Variants for different conditions
+### Variants for different needs
 
-Reducing contrast inside terminal window is one thing, but what about the
-contrast of the whole desktop?  If you have your terminal side-by-side with a
-window that has black text on white background (e.g. a document viewer or a
-browser), the resulting contrast between the two windows may make the terminal
-less readable.  That's why Selenized dark is has relatively light background:
-this ensures better readability and prevents eye fatigue when used next to a
-bright/high-contrast window.
+Selenized includes four variants so that everyone will find something that
+suits their taste. Thanks to the magic of CIE Lab color space, all variants
+share the same lightness relationships, resulting in exactly the same
+readability.
 
-![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
-There is also a "black" variant meant for people who need higher contrast -
-either due to especially bad display/lightness conditions, or because they are
-not yet used to low contrast palettes.
+#### Selenized dark & light
+
+![Selenized dark screenshot](http://i.imgur.com/yM0vadH.png)
+![Selenized light screenshot](http://i.imgur.com/kQVgD5U.png)
+
+Like _Solarized_, but better. Dark teal and warm sepia complement each other nicely.
+
+
+#### Selenized black & white
+
+Contrast inside terminal/editor is one thing, but what about the whole desktop?
+A window with black text on white background (e.g. a pdf document) next to your
+code will influence its perceived brightness. Also, what if you are working
+outdoors?
+
+![Selenized black screenshot](http://i.imgur.com/rXIH87x.png)
+![Selenized white screenshot](http://i.imgur.com/sc0Uv9h.png)
+
+That's why selenized has black and white variants: oldschool look with a little
+more contrast. Notice that yellow color on white background is readable here.
 
