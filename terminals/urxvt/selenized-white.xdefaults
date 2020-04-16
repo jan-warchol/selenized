@@ -1,25 +1,55 @@
-! Selenized white color palette for urxvt.
+!---------------------------------------------------------------------------
+! Selenized white color palette for urxvt and X Window System
+!
+#define    bg_0        #ffffff
+#define    bg_1        #ebebeb
+#define    bg_2        #cdcdcd
+#define    dim_0       #878787
+#define    fg_0        #474747
+#define    fg_1        #282828
 
-urxvt.background:  #ffffff
-urxvt.foreground:  #474747
+#define    red         #d6000c
+#define    green       #1d9700
+#define    yellow      #c49700
+#define    blue        #0064e4
+#define    magenta     #dd0f9d
+#define    cyan        #00ad9c
+#define    orange      #d04a00
+#define    violet      #7f51d6
+
+#define    br_red      #bf0000
+#define    br_green    #008400
+#define    br_yellow   #af8500
+#define    br_blue     #0054cf
+#define    br_magenta  #c7008b
+#define    br_cyan     #009a8a
+#define    br_orange   #ba3700
+#define    br_violet   #6b40c3
+
+*background:              bg_0
+*foreground:              fg_0
+*fading:                  40
+*fadeColor:               bg_0
+*cursorColor:             fg_1
+*pointerColorBackground:  bg_2
+*pointerColorForeground:  fg_1
 
 ! normal colors: "black", red, green, yellow, blue, magenta, cyan, "white"
-urxvt.color0:      #ebebeb
-urxvt.color1:      #d6000c
-urxvt.color2:      #1d9700
-urxvt.color3:      #c49700
-urxvt.color4:      #0064e4
-urxvt.color5:      #dd0f9d
-urxvt.color6:      #00ad9c
-urxvt.color7:      #878787
+*color0:     bg_1
+*color1:     red
+*color2:     green
+*color3:     yellow
+*color4:     blue
+*color5:     magenta
+*color6:     cyan
+*color7:     dim_0
 
 ! bright/bold versions of colors (in the same order)
-urxvt.color8:      #cdcdcd
-urxvt.color9:      #bf0000
-urxvt.color10:     #008400
-urxvt.color11:     #af8500
-urxvt.color12:     #0054cf
-urxvt.color13:     #c7008b
-urxvt.color14:     #009a8a
-urxvt.color15:     #282828
-
+*color8:     bg_2
+*color9:     br_red
+*color10:    br_green
+*color11:    br_yellow
+*color12:    br_blue
+*color13:    br_magenta
+*color14:    br_cyan
+*color15:    fg_1
