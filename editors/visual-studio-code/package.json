@@ -12,6 +12,11 @@
     "contributes": {
         "themes": [
             {
+                "label": "Selenized light",
+                "uiTheme": "vs-dark",
+                "path": "./themes/selenized-light.json"
+            },
+            {
                 "label": "Selenized dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/selenized-dark.json"
