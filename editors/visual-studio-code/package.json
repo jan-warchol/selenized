@@ -13,7 +13,7 @@
         "themes": [
             {
                 "label": "Selenized light",
-                "uiTheme": "vs-dark",
+                "uiTheme": "vs",
                 "path": "./themes/selenized-light.json"
             },
             {
