@@ -18,6 +18,7 @@ val fgColors = List(
     new Color("fg_0",    "adbcbc", 75),
     new Color("fg_1",    "cad8d9", 85)
 )
+val title = "Selenized dark"
 
 val plotW = 1000
 val plotH = 600
@@ -26,7 +27,7 @@ val squareHalf = squareSize/2.0
 val lineWidth = 3
 val margin = 125
 val imgW = plotW + margin + lineWidth  // for rightmost border
-val imgH = plotH + margin
+val imgH = plotH + margin*1.5
 
 // some programs (e.g. Gimp) don't handle text alignment correctly
 val adjustAlignment = true
@@ -71,12 +72,17 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
                   U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
             }}
         </style>
-        { drawAxis() }
-        <g transform={"translate("+margin+","+margin/2+")"} >
+        <g transform={"translate("+margin+","+margin+")"} >
+            <text x={(plotW/2.0).toString} y={(adjY/0.65-margin/2.0).toString}
+                  text-anchor="middle" dominant-baseline="central"
+                  font-size={(squareSize).toString+"px"} fill="#777" >
+                { title }
+            </text>
             <rect x={(-lineWidth/2.0).toString} y={(-lineWidth/2.0).toString}
                   width={(plotW+lineWidth).toString} height={(plotH+lineWidth).toString}
                   fill="#777" />
             <rect x="0" y="0" width={plotW.toString} height={plotH.toString} fill="#000" />
+            { drawAxis() }
             { drawBackground(bgColors.sortBy(x => x.luminance)) }
             { drawSwatches(fgColors) }
         </g>
@@ -85,7 +91,7 @@ def genSvg(bgColors: List[Color], fgColors: List[Color]) = {
 
 def drawAxis() = {
     val axisColor = "#777"
-    val axisX = margin-squareSize
+    val axisX = -squareSize
     val notchHalf = squareHalf/2.0
 
     <defs>
@@ -95,22 +101,22 @@ def drawAxis() = {
     </defs>
 
     <g stroke={axisColor} stroke-width={lineWidth.toString} >
-        <line x1={(axisX).toString} y1={(imgH-margin/4.0).toString}
-              x2={(axisX).toString} y2={(margin/4.0).toString}
+        <line x1={(axisX).toString} y1={(plotH+margin/4.0).toString}
+              x2={(axisX).toString} y2={(-margin/4.0).toString}
               marker-end="url(#arrowhead)" />
-        <line x1={(axisX-notchHalf).toString} y1={(margin/2.0).toString}
-              x2={(axisX+notchHalf).toString} y2={(margin/2.0).toString} />
-        <line x1={(axisX-notchHalf).toString} y1={(imgH-margin/2.0).toString}
-              x2={(axisX+notchHalf).toString} y2={(imgH-margin/2.0).toString} />
+        <line x1={(axisX-notchHalf).toString} y1="0"
+              x2={(axisX+notchHalf).toString} y2="0" />
+        <line x1={(axisX-notchHalf).toString} y1={plotH.toString}
+              x2={(axisX+notchHalf).toString} y2={plotH.toString} />
     </g>
 
-    <text x={(axisX-1.5*notchHalf).toString} y={(imgH-margin/2.0 + adjY).toString}
+    <text x={(axisX-1.5*notchHalf).toString} y={(plotH + adjY).toString}
           text-anchor="end" dominant-baseline="central"
           fill={axisColor} > 0 </text>
-    <text x={(axisX-1.5*notchHalf).toString} y={(margin/2.0 + adjY).toString}
+    <text x={(axisX-1.5*notchHalf).toString} y={adjY.toString}
           text-anchor="end" dominant-baseline="central"
           fill={axisColor} > 100 </text>
-    <g transform={"translate("+(axisX-notchHalf)+","+imgH/2.0+")"} >
+    <g transform={"translate("+(axisX-notchHalf)+","+plotH/2.0+")"} >
         <text x="0" y="0"
               text-anchor="middle"
               transform="rotate(-90)"

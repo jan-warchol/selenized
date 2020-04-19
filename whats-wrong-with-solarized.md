@@ -69,12 +69,13 @@ placed next to a window with high-contrast content:
 
 ![Solarized next to black&white Wikipedia](http://i.imgur.com/UlOxerG.png)
 
-This is even more visible when Solarized dark is used for a code snippets on
+This is even more visible when Solarized dark is used for code snippets on
 a website with white background:
 
 ![short code sample with Solarized](http://i.imgur.com/vStjfca.png)
 
-Selenized dark is slightly lighter and doesn't have this problem:
+Selenized dark, being slightly lighter and having more contrast,
+doesn't have this problem:
 
 ![Selenized next to black&white Wikipedia](http://i.imgur.com/OX2Ce2r.png)
 
@@ -86,7 +87,7 @@ Better terminal compatibility
 -----------------------------
 
 Solarized puts both light and dark variants in one color palette, resulting in
-a weird mapping of ANSI color codes to actual color values. For example,
+a weird mapping of ANSI color codes to actual colors. For example,
 Solarized maps color code meant for bright/bold green to "base 01" (greyish
 shade used for comments):
 

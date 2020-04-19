@@ -17,3 +17,4 @@ val fgColors = List(
     new Color("fg_0",    "!!COL!{fg_0.srgb_no_hash}!", !!COL!{fg_0.lab.lab_l:.0f}!),
     new Color("fg_1",    "!!COL!{fg_1.srgb_no_hash}!", !!COL!{fg_1.lab.lab_l:.0f}!)
 )
+val title = "!!COL!{name}!"
