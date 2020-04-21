@@ -14,7 +14,7 @@ Normal               fg_0          bg_0
 # Group              Foreground    Background    Attributes
 
 # selections and highlights
-IncSearch            orange        none          reverse
+IncSearch            red           none          reverse
 Search               yellow        none          reverse
 QuickFixLine      -> Search
 Visual               none          bg_2
@@ -68,10 +68,10 @@ Comment              dim_0         none          italic
 
 Constant             cyan          none
 String            -> Constant
-Number            -> Constant
-Boolean           -> Constant
 Character         -> Constant
 Float             -> Constant
+Number               magenta       none
+Boolean              violet        none
 
 Identifier           br_blue       none
 Function          -> Identifier
@@ -81,19 +81,21 @@ Conditional       -> Statement
 Repeat            -> Statement
 Keyword           -> Statement
 Label             -> Statement
-Exception         -> Statement
 Operator          -> Statement
+Exception            br_yellow     none          bold
 
-PreProc              orange        none
-Define            -> PreProc
-PreCondit         -> PreProc
-Include           -> PreProc
+PreProc              green         none
+Include              orange        none
+Define            -> Include
+PreCondit         -> Include
 Macro             -> Include
 
 Type                 green         none
-Typedef           -> Type
-StorageClass      -> Type
-Structure         -> Type
+Typedef              green         none          bold
+# type modifier (e.g. const)
+StorageClass         green         none          italic
+# e.g. python exceptions
+Structure            orange        none
 
 Special              red           none
 SpecialChar       -> Special
@@ -103,8 +105,8 @@ Debug             -> Special
 Tag               -> Special
 
 Error                red           none          bold
-Todo                 magenta       none          bold
-Underlined           violet        none          underline
+Todo                 magenta       bg_1          bold reverse
+Underlined           blue          none          underline
 Ignore               bg_2          none
 
 # Language-specific coloring (use sparingly)
