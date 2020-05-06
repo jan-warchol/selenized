@@ -10,5 +10,8 @@ Selenized for VS Code
 
 ### Installation
 
-copy the contents of this directory into `~/.vscode/extensions/selenized`
-folder and restart Code.
+1.  copy the contents of this directory into `~/.vscode/extensions/selenized`
+    folder
+1.  restart Code
+1.  open theme picker with `ctrl+K ctrl+T` (or using cogwheel button in lower
+    left corner) and search for "selenized".

@@ -22,26 +22,6 @@
                 "path": "./themes/selenized-dark.json"
             },
             {
-                "label": "Selenized (0.3)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Selenized.json"
-            },
-            {
-                "label": "Selenized (0.2)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Selenized-0.2.json"
-            },
-            {
-                "label": "Selenized (0.1)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Selenized-0.1.json"
-            },
-            {
-                "label": "Selenized (0.0.2)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Selenized-0.0.2.json"
-            },
-            {
                 "label": "Selenized (alternative)",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Selenized-alternative.json"
