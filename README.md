@@ -50,6 +50,7 @@ Ready-to-use config files are available for the following:
 
 - [Vim](editors/vim)
 - [VS Code](editors/visual-studio-code)
+- [Doom Emacs](editors/doom-emacs)
 
 🔥 **I need your opinion!** 🔥 There are some design decisions that need to be made
 before adding support for more editors. Your feedback would be very helpful -
