@@ -63,7 +63,7 @@
     </option>
     <option name="Abstract class">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -206,7 +206,7 @@
     </option>
     <option name="CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="COFFEESCRIPT.BAD_CHARACTER">
@@ -238,7 +238,7 @@
     </option>
     <option name="COFFEESCRIPT.CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -265,12 +265,12 @@
     </option>
     <option name="COFFEESCRIPT.FUNCTION_NAME">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="COFFEESCRIPT.IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="COFFEESCRIPT.JAVASCRIPT_ID">
@@ -292,7 +292,7 @@
     </option>
     <option name="COFFEESCRIPT.LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="COFFEESCRIPT.NUMBER">
@@ -302,13 +302,13 @@
     </option>
     <option name="COFFEESCRIPT.OBJECT_KEY">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="COFFEESCRIPT.OPERATIONS">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_CONTENT">
@@ -490,7 +490,7 @@
     </option>
     <option name="CSS.PROPERTY_NAME">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="CSS.PROPERTY_VALUE">
@@ -542,7 +542,7 @@
     </option>
     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
@@ -766,7 +766,7 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="DEFAULT_LABEL">
@@ -918,7 +918,7 @@
     </option>
     <option name="ECMAL4.CLASS">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="ECMAL4.DOC_MARKUP">
@@ -987,12 +987,12 @@
     </option>
     <option name="EL.IDENT">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="EL.KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1014,7 +1014,7 @@
     </option>
     <option name="ENUM_CONST">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="ERRORS_ATTRIBUTES">
@@ -1071,7 +1071,7 @@
     </option>
     <option name="GHERKIN_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
@@ -1146,7 +1146,7 @@
     </option>
     <option name="GO_TYPE_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="GQL_ID">
@@ -1171,7 +1171,7 @@
     </option>
     <option name="GROOVY_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="GString">
@@ -1226,7 +1226,7 @@
     </option>
     <option name="HAML_TAG">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="HAML_TEXT">
@@ -1377,7 +1377,7 @@
     </option>
     <option name="JADE_STATEMENTS">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="JADE_TAG_ID">
@@ -1407,7 +1407,7 @@
     </option>
     <option name="JAVA_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="JAVA_NUMBER">
@@ -1534,7 +1534,7 @@
     </option>
     <option name="JS.GLOBAL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="JS.GLOBAL_VARIABLE">
@@ -1871,7 +1871,7 @@
     </option>
     <option name="LUA_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="LUA_LOCAL_VAR">
@@ -2036,37 +2036,37 @@
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_1">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_2">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_3">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_4">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_5">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_6">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2226,7 +2226,7 @@
     </option>
     <option name="Object">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="PHP_COMMENT">
@@ -2268,12 +2268,12 @@
     </option>
     <option name="PHP_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="PHP_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="PHP_HEREDOC_CONTENT">
@@ -2288,7 +2288,7 @@
     </option>
     <option name="PHP_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -2399,7 +2399,7 @@
     </option>
     <option name="PROTOCOL_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2529,7 +2529,7 @@
     </option>
     <option name="QL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2612,7 +2612,7 @@
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="REGEXP.REDUNDANT_ESCAPE">
@@ -2723,12 +2723,12 @@
     </option>
     <option name="RUBY_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="RUBY_CONSTANT_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="RUBY_CVAR">
@@ -2785,7 +2785,7 @@
     </option>
     <option name="RUBY_LOCAL_VAR_ID">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="RUBY_METHOD_NAME">
@@ -2820,7 +2820,7 @@
     </option>
     <option name="RUBY_SPECIFIC_CALL">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2851,7 +2851,7 @@
     </option>
     <option name="Rainbow Parens Level 4">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Rainbow Parens Level 5">
@@ -2882,7 +2882,7 @@
     </option>
     <option name="SASS_ATTRIBUTE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="SASS_COMMENT">
@@ -3079,12 +3079,12 @@
     </option>
     <option name="SQL_DATABASE_OBJECT">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="SQL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3154,12 +3154,12 @@
     </option>
     <option name="STRUCT_LIKE">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Scala Abstract class">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Scala Annotation name">
@@ -3175,7 +3175,7 @@
     </option>
     <option name="Scala Class">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Scala Class method call">
@@ -3266,7 +3266,7 @@
     </option>
     <option name="Scala Trait">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Scala Type Alias">
@@ -3312,7 +3312,7 @@
     </option>
     <option name="Standard function">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -3391,7 +3391,7 @@
     </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3409,8 +3409,8 @@
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4695f7" />
-        <option name="ERROR_STRIPE_COLOR" value="4695f7" />
+        <option name="FOREGROUND" value="58a3ff" />
+        <option name="ERROR_STRIPE_COLOR" value="58a3ff" />
       </value>
     </option>
     <option name="TWIG_BACKGROUND">
@@ -3455,7 +3455,7 @@
     </option>
     <option name="TYPEDEF">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
@@ -3487,7 +3487,7 @@
     </option>
     <option name="Trait">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="Type Alias">
@@ -3599,7 +3599,7 @@
     </option>
     <option name="XPATH.FUNCTION">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3724,7 +3724,7 @@
     </option>
     <option name="go.keyword">
       <value>
-        <option name="FOREGROUND" value="dbb32d" />
+        <option name="FOREGROUND" value="ebc13d" />
       </value>
     </option>
     <option name="go.line.comment">
