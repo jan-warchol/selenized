@@ -1,15 +1,15 @@
 <scheme name="Selenized Dark (Darcula)" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2020-12-22T16:12:26</property>
+    <property name="created">2021-02-04T14:47:37</property>
     <property name="ide">Idea</property>
-    <property name="ideVersion">2020.3.0.0</property>
-    <property name="modified">2020-12-29T18:53:30</property>
-    <property name="originalScheme">Selenized Dark</property>
+    <property name="ideVersion">2020.3.2.0.0</property>
+    <property name="modified">2021-02-04T14:47:54</property>
+    <property name="originalScheme">Selenized Dark (Darcula)</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <font>
-    <option name="EDITOR_FONT_NAME" value="Operator Mono Lig Book" />
+    <option name="EDITOR_FONT_NAME" value="Fira Code" />
     <option name="EDITOR_FONT_SIZE" value="10" />
   </font>
   <font>
@@ -24,7 +24,7 @@
     <option name="CARET_COLOR" value="ff665c" />
     <option name="CARET_ROW_COLOR" value="184956" />
     <option name="CONSOLE_BACKGROUND_KEY" value="103c48" />
-    <option name="GUTTER_BACKGROUND" value="252525" /> <!-- This is bg_1 from selenized black -->
+    <option name="GUTTER_BACKGROUND" value="252525" />
     <option name="INDENT_GUIDE" value="184956" />
     <option name="LINE_NUMBERS_COLOR" value="777777" />
     <option name="METHOD_SEPARATORS_COLOR" value="184956" />
@@ -202,6 +202,11 @@
       <value>
         <option name="FOREGROUND" value="8f9d6a" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CLASS_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="ed8649" />
       </value>
     </option>
     <option name="CLASS_REFERENCE">
@@ -743,9 +748,7 @@
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="ed8649" />
-      </value>
+      <value />
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
       <value>
@@ -1293,27 +1296,27 @@
     </option>
     <option name="INDENT_RAINBOW_COLOR_1">
       <value>
-        <option name="BACKGROUND" value="123a37" />
+        <option name="BACKGROUND" value="214a47" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_2">
       <value>
-        <option name="BACKGROUND" value="93a3b" />
+        <option name="BACKGROUND" value="184a4c" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_3">
       <value>
-        <option name="BACKGROUND" value="123144" />
+        <option name="BACKGROUND" value="214155" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_4">
       <value>
-        <option name="BACKGROUND" value="174c57" />
+        <option name="BACKGROUND" value="144854" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_ERROR">
       <value>
-        <option name="BACKGROUND" value="27282f" />
+        <option name="BACKGROUND" value="32343c" />
       </value>
     </option>
     <option name="INFO_ATTRIBUTES">
@@ -1744,6 +1747,12 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="LAMBDA_PARAMETER_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="cad8d9" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
     <option name="LESS_INJECTED_CODE">
       <value>
         <option name="FOREGROUND" value="41c7b9" />
@@ -2124,6 +2133,11 @@
     </option>
     <option name="MESSAGE_ARGUMENT">
       <value />
+    </option>
+    <option name="METHOD_DECLARATION_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="4695f7" />
+      </value>
     </option>
     <option name="Map key">
       <value>
@@ -2805,7 +2819,7 @@
     </option>
     <option name="RUBY_PARAMDEF_CALL">
       <value>
-        <option name="FOREGROUND" value="dbb34d3" />
+        <option name="FOREGROUND" value="bb34d3" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3168,6 +3182,11 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
+    <option name="Scala Anonymous Parameter">
+      <value>
+        <option name="FOREGROUND" value="cad8d9" />
+      </value>
+    </option>
     <option name="Scala Bad character">
       <value>
         <option name="FOREGROUND" value="f275be" />
@@ -3213,6 +3232,11 @@
     <option name="Scala Number">
       <value>
         <option name="FOREGROUND" value="41c7b9" />
+      </value>
+    </option>
+    <option name="Scala Object">
+      <value>
+        <option name="FOREGROUND" value="ed8649" />
       </value>
     </option>
     <option name="Scala Object method call">
