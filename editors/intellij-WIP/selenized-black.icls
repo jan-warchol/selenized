@@ -1,11 +1,11 @@
-<scheme name="Selenized Dark (Darcula)" version="142" parent_scheme="Darcula">
+<scheme name="Selenized Black" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2021-06-23T22:16:00</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2020.3.2.0.0</property>
     <property name="modified">2021-06-23T22:16:00</property>
-    <property name="originalScheme">Selenized Black</property>
+    <property name="originalScheme">Darcula</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <font>
