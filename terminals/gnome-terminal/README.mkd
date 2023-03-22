@@ -12,7 +12,7 @@ Clone this repository, run interactive installation script and follow the
 instructions:
 
     git clone https://github.com/janek-warchol/selenized
-    ./selenized/gnome-terminal/install.sh
+    ./selenized/terminals/gnome-terminal/install.sh
 
 You can also run one of the `set_XXXX.sh` scripts to directly set the desired
 theme to the active gnome-terminal profile.
@@ -21,7 +21,7 @@ theme to the active gnome-terminal profile.
 your Gnome version) to be able to run these scripts.  This should be as easy as
 running `sudo apt-get install <package>`. 
 
-**Warning:** the colors in the target profile will be premanently overwritten -
+**Warning:** the colors in the target profile will be permanently overwritten -
 there is no undo.  Consider creating a new profile before installing Selenized.
 
 
