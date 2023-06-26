@@ -15,7 +15,7 @@ The argument can be:
 
 # Define some pretty printing for classes from colormath module.
 def lab_str(self):
-    return "{:>3.0f} {:>3.0f} {:>3.0f}".format(
+    return "{:>3.1f} {:>3.0f} {:>3.0f}".format(
         self.lab_l, self.lab_a, self.lab_b
     )
 
