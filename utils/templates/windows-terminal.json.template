@@ -1,0 +1,23 @@
+ {
+    "name": "!!COL!{name}!",
+    "foreground": "!!COL!{fg_0.srgb}!",
+    "background": "!!COL!{bg_0.srgb}!",
+    "cursorColor": "!!COL!{fg_1.srgb}!",       
+    "selectionBackground": "!!COL!{bg_2.srgb}!",
+    "black": "!!COL!{bg_1.srgb}!",
+    "red": "!!COL!{red.srgb}!",
+    "green": "!!COL!{green.srgb}!",
+    "yellow": "!!COL!{yellow.srgb}!",
+    "blue": "!!COL!{blue.srgb}!",
+    "purple": "!!COL!{magenta.srgb}!",
+    "cyan": "!!COL!{cyan.srgb}!",
+    "white": "!!COL!{dim_0.srgb}!",
+    "brightBlack": "!!COL!{bg_2.srgb}!",
+    "brightRed": "!!COL!{br_red.srgb}!",
+    "brightGreen": "!!COL!{br_green.srgb}!",
+    "brightYellow": "!!COL!{br_yellow.srgb}!",
+    "brightBlue": "!!COL!{br_blue.srgb}!",
+    "brightPurple": "!!COL!{br_magenta.srgb}!",
+    "brightCyan": "!!COL!{br_cyan.srgb}!",
+    "brightWhite": "!!COL!{fg_1.srgb}!"
+}
