@@ -50,7 +50,7 @@ get_profile_name() {
     then profile_name="$(dconf read $dconfdir/$1/visible-name | sed s/^\'// | \
         sed s/\'$//)"
   else
-    profile_name=$(gconftool-2 -g $gconfdir/$1/visible_name)
+    profile_name=$(gconftool-2 -g "$gconfdir/$1/visible_name")
   fi
   [[ -z $profile_name ]] && die "$1 (No name)" 3
   echo $profile_name
