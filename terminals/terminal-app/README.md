@@ -18,6 +18,6 @@ emulator anyway. You can find Selenized color palette for iTerm
 If you _really_ want it...
 --------------------------
 
-Copy the values from [here](../the-values.md) to Terminal.app's preferences.
+Copy the values from [here](../../the-values.md) to Terminal.app's preferences.
 Remember to use coordinates from correct color space.
 
