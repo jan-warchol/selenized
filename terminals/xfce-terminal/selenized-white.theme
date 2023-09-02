@@ -1,0 +1,9 @@
+[Scheme]
+Name=Selenized white
+ColorCursor=#282828
+ColorForeground=#282828
+ColorBackground=#ebebeb
+TabActivityColor=#d6000c
+ColorPalette=#ebebeb;#d6000c;#1d9700;#c49700;#0064e4;#dd0f9d;#00ad9c;#878787;#cdcdcd;#bf0000;#008400;#af8500;#0054cf;#c7008b;#009a8a;#282828
+ColorBold=#282828
+ColorBoldUseDefault=FALSE
