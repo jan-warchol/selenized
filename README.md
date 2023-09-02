@@ -84,8 +84,8 @@ Some command-line programs may need reconfiguration to look good with Selenized,
 because they make assumptions about the colors configured in terminal (see
 [this issue](https://github.com/janek-warchol/selenized/issues/7) for details):
 
-- [`ls`](dircolors/)
-- [Midnight Commander](mc/)
+- [`ls`](other-apps/dircolors/)
+- [Midnight Commander](other-apps/mc/)
 
 However, this is quite rare; vast majority of software works great
 out-of-the-box.
