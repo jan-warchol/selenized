@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>author</key>
+	<string>Jan Warchoł</string>
 	<key>name</key>
-	<string>Selenized</string>
+	<string>Selenized Dark</string>
+	<key>semanticClass</key>
+	<string>theme.dark.selenized</string>
+	<key>comment</key>
+	<string>Updated by Nikolas Grottendieck</string>
 	<key>settings</key>
 	<array>
 		<dict>
