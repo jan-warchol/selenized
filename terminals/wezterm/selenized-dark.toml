@@ -30,3 +30,20 @@ compose_cursor = "#ed8649"
 
 selection_fg = "none"
 selection_bg = "rgba(50 91 102 62.5%)"
+
+[colors.tab_bar]
+
+background = "#174956"
+
+active_tab.fg_color = "#cad8d9"
+active_tab.bg_color = "#103c48"
+
+inactive_tab.fg_color = "#adbcbc"
+inactive_tab.bg_color = "#174956"
+inactive_tab_hover.fg_color = "#cad8d9"
+inactive_tab_hover.bg_color = "#325b66"
+
+new_tab.fg_color = "#adbcbc"
+new_tab.bg_color = "#174956"
+new_tab_hover.fg_color = "#cad8d9"
+new_tab_hover.bg_color = "#325b66"
