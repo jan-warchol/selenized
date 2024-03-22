@@ -1,17 +1,29 @@
-Selenized skin for Midnight Commander
-=====================================
+# Selenized skin for Midnight Commander
 
-*Note: this is just a very rough initial version.  I don't use Midnight
-Commander myself, so any improvements will be welcome!*
+## Installation
 
-Installation
-------------
+Download skin file to your MC config directory to be able to use it.
 
-Download skin file and set `MC_SKIN` env variable to point to it:
+1. Download to current user directory:
+   
+       $ mkdir -p $HOME/.local/share/mc/skins/
+       $ wget https://raw.githubusercontent.com/jan-warchol/selenized/master/other-apps/mc/selenized.ini -P $HOME/.local/share/mc/skins/
 
-    mkdir -p $HOME/.mc/; cd $HOME/.mc/
-    wget https://raw.githubusercontent.com/jan-warchol/selenized/master/mc/selenized.ini
-    echo "export MC_SKIN=$HOME/.mc/selenized.ini" >> $HOME/.bashrc
+2. Or setup it system-wide:
+   
+       # wget https://raw.githubusercontent.com/jan-warchol/selenized/master/other-apps/mc/selenized.ini -P /usr/share/mc/skins/
 
-Keep in mind that you need to restart your terminal or reload your `.bashrc`
-manually for these changes to have effect.
+## Usage
+
+After that you need to choose skin in MC. There are several ways to do so:
+
+1. Configure via UI: in menu `Options -> Appearances` set `Skin` field to `selenized`.
+2. Run MC with selected theme:
+   
+       $ mc -S selenized
+   
+4. Configure selected skin via environment variable:
+
+       $ echo "export MC_SKIN=$HOME/.local/share/mc/skins/selenized.ini" >> $HOME/.bashrc
+   
+    Keep in mind that you need to restart your terminal or reload your `.bashrc` manually for these changes to have effect.
