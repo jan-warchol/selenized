@@ -1,0 +1,50 @@
+-- Colors (!!COL!{camelCaseName}!)
+
+!!COL!{camelCaseName}! :: ColourConfig (AlphaColour Double)
+!!COL!{camelCaseName}! =
+  defaultColourConfig
+    -- Set the default foreground colour of text of the terminal.
+    { foregroundColour = Set (createColour !!COL!{fg_0.r:>3d} {fg_0.g:>3d} {fg_0.b:>3d}!) -- fg_0
+    , backgroundColour = Set (createColour !!COL!{bg_0.r:>3d} {bg_0.g:>3d} {bg_0.b:>3d}!) -- bg_0
+    -- Set the extended palette that has 2 Vecs of 8 !!COL!{name}! palette colours
+    , palette = ExtendedPalette !!COL!{camelCaseName}!1 !!COL!{camelCaseName}!2
+    }
+  where
+    !!COL!{camelCaseName}!1 :: List8 (AlphaColour Double)
+    !!COL!{camelCaseName}!1 = fromMaybe defaultLightColours $ mkList8
+      [ createColour !!COL!{bg_1.r:>3d} {bg_1.g:>3d} {bg_1.b:>3d}! -- bg_1
+      , createColour !!COL!{red.r:>3d} {red.g:>3d} {red.b:>3d}! -- red
+      , createColour !!COL!{green.r:>3d} {green.g:>3d} {green.b:>3d}! -- green
+      , createColour !!COL!{yellow.r:>3d} {yellow.g:>3d} {yellow.b:>3d}! -- yellow
+      , createColour !!COL!{blue.r:>3d} {blue.g:>3d} {blue.b:>3d}! -- blue
+      , createColour !!COL!{magenta.r:>3d} {magenta.g:>3d} {magenta.b:>3d}! -- magenta
+      , createColour !!COL!{cyan.r:>3d} {cyan.g:>3d} {cyan.b:>3d}! -- cyan
+      , createColour !!COL!{dim_0.r:>3d} {dim_0.g:>3d} {dim_0.b:>3d}! -- dim_0
+      ]
+
+    !!COL!{camelCaseName}!2 :: List8 (AlphaColour Double)
+    !!COL!{camelCaseName}!2 = fromMaybe defaultLightColours $ mkList8
+      [ createColour !!COL!{bg_2.r:>3d} {bg_2.g:>3d} {bg_2.b:>3d}! -- bg_2
+      , createColour !!COL!{br_red.r:>3d} {br_red.g:>3d} {br_red.b:>3d}! -- br_red
+      , createColour !!COL!{br_green.r:>3d} {br_green.g:>3d} {br_green.b:>3d}! -- br_green
+      , createColour !!COL!{br_yellow.r:>3d} {br_yellow.g:>3d} {br_yellow.b:>3d}! -- br_yellow
+      , createColour !!COL!{br_blue.r:>3d} {br_blue.g:>3d} {br_blue.b:>3d}! -- br_blue
+      , createColour !!COL!{br_magenta.r:>3d} {br_magenta.g:>3d} {br_magenta.b:>3d}! -- br_magenta
+      , createColour !!COL!{br_cyan.r:>3d} {br_cyan.g:>3d} {br_cyan.b:>3d}! -- br_cyan
+      , createColour !!COL!{fg_1.r:>3d} {fg_1.g:>3d} {fg_1.b:>3d}! -- fg_1
+      ]
+
+fontConf :: FontConfig
+fontConf =
+  defaultFontConfig
+    { fontFamily = "Hack"
+    , fontSize = FontSizePoints 14
+    }
+
+main :: IO ()
+main = do
+  myColourExt <- createColourExtension !!COL!{camelCaseName}!
+
+  let newTMConfig = addColourExtension myTMConfig myColourExt
+  start newTMConfig
+
