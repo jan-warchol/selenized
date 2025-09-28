@@ -56,6 +56,9 @@ def load_palette_from_module(module_name):
     except AttributeError:
         palette['name'] = module_name
 
+    split_name = palette['name'].split(' ')
+    palette['camelCaseName'] = split_name[0].lower() + ''.join(word.capitalize() for word in split_name[1:])
+
     return palette
 
 
