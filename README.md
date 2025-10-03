@@ -44,6 +44,7 @@ Ready-to-use config files are available for the following:
 - [Tilda](terminals/tilda)
 - [Tilix](terminals/tilix)
 - [urxvt](terminals/urxvt)
+- [Windows Terminal](terminals/windows-terminal)
 - [xterm](terminals/xterm)
 
 ### Editors & IDEs (help wanted!)
