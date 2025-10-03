@@ -1,0 +1,23 @@
+{
+    "background":  "#181818",
+    "black":  "#252525",
+    "blue":  "#368aeb",
+    "brightBlack":  "#3b3b3b",
+    "brightBlue":  "#4f9cfe",
+    "brightCyan":  "#56d8c9",
+    "brightGreen":  "#83c746",
+    "brightPurple":  "#ff81ca",
+    "brightRed":  "#ff5e56",
+    "brightWhite":  "#dedede",
+    "brightYellow":  "#efc541",
+    "cursorColor":  "#dedede",
+    "cyan":  "#3fc5b7",
+    "foreground":  "#b9b9b9",
+    "green":  "#70b433",
+    "name":  "Selenized Black",
+    "purple":  "#eb6eb7",
+    "red":  "#ed4a46",
+    "selectionBackground":  "#3b3b3b",
+    "white":  "#777777",
+    "yellow":  "#dbb32d"
+}

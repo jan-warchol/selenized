@@ -1,0 +1,23 @@
+{
+    "background":  "#fbf3db",
+    "black":  "#ece3cc",
+    "blue":  "#0072d4",
+    "brightBlack":  "#d5cdb6",
+    "brightBlue":  "#006dce",
+    "brightCyan":  "#00978a",
+    "brightGreen":  "#428b00",
+    "brightPurple":  "#c44392",
+    "brightRed":  "#cc1729",
+    "brightWhite":  "#3a4d53",
+    "brightYellow":  "#a78300",
+    "cursorColor":  "#3a4d53",
+    "cyan":  "#009c8f",
+    "foreground":  "#53676d",
+    "green":  "#489100",
+    "name":  "Selenized Light",
+    "purple":  "#ca4898",
+    "red":  "#d2212d",
+    "selectionBackground":  "#d5cdb6",
+    "white":  "#909995",
+    "yellow":  "#ad8900"
+}

@@ -1,0 +1,23 @@
+{
+    "background":  "#ffffff",
+    "black":  "#ebebeb",
+    "blue":  "#0064e4",
+    "brightBlack":  "#cdcdcd",
+    "brightBlue":  "#0054cf",
+    "brightCyan":  "#009a8a",
+    "brightGreen":  "#008400",
+    "brightPurple":  "#c7008b",
+    "brightRed":  "#bf0000",
+    "brightWhite":  "#282828",
+    "brightYellow":  "#af8500",
+    "cursorColor":  "#282828",
+    "cyan":  "#00ad9c",
+    "foreground":  "#474747",
+    "green":  "#1d9700",
+    "name":  "Selenized White",
+    "purple":  "#dd0f9d",
+    "red":  "#d6000c",
+    "selectionBackground":  "#cdcdcd",
+    "white":  "#878787",
+    "yellow":  "#c49700"
+}
