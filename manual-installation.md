@@ -45,9 +45,9 @@ ANSI palette:
 | 4   | blue           | blue            |
 | 5   | magenta        | magenta         |
 | 6   | cyan           | cyan            |
-| 7   | white          | dim_0           |
+| 7   | white          | fg_0            |
 |     |                |                 |
-| 8   | bright black   | bg_2            |
+| 8   | bright black   | dim_0           |
 | 9   | bright red     | br_red          |
 | 10  | bright green   | br_green        |
 | 11  | bright yellow  | br_yellow       |
@@ -72,4 +72,3 @@ That's it!
 Please send me a [pull request](https://github.com/jan-warchol/selenized/pulls)
 with the resulting configs and template so that I can make your terminal
 officially supported :-)
-
