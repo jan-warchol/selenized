@@ -58,6 +58,19 @@ DiffChange           none          bg_1
 DiffDelete           red           bg_1
 DiffText             bg_1          yellow
 
+# diagnostics
+DiagnosticError      red           bg_1
+DiagnosticWarn       orange        bg_1
+DiagnosticInfo       br_blue       bg_1
+DiagnosticHint       dim_0         bg_1
+DiagnosticOk         br_green      bg_1
+DiagnosticUnderlineError      fg_0   bg_0   guisp=red underline
+DiagnosticUnderlineWarn       fg_0   bg_0   guisp=orange underline
+DiagnosticUnderlineInfo       fg_0   bg_0   guisp=br_blue underline
+DiagnosticUnderlineHint       fg_0   bg_0   guisp=dim_0 underline
+DiagnosticUnderlineOk         fg_0   bg_0   guisp=br_green underline
+DiagnosticDeprecated          fg_0   bg_0   guisp=red strikethrough
+
 # }}}
 
 
