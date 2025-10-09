@@ -1,0 +1,9 @@
+[Scheme]
+Name=Selenized dark
+ColorCursor=#cad8d9
+ColorForeground=#cad8d9
+ColorBackground=#174956
+TabActivityColor=#fa5750
+ColorPalette=#174956;#fa5750;#75b938;#dbb32d;#4695f7;#f275be;#41c7b9;#72898f;#325b66;#ff665c;#84c747;#ebc13d;#58a3ff;#ff84cd;#53d6c7;#cad8d9
+ColorBold=#cad8d9
+ColorBoldUseDefault=FALSE

@@ -1,0 +1,9 @@
+[Scheme]
+Name=!!COL!{name}!
+ColorCursor=!!COL!{fg_1.srgb}!
+ColorForeground=!!COL!{fg_1.srgb}!
+ColorBackground=!!COL!{bg_1.srgb}!
+TabActivityColor=!!COL!{red.srgb}!
+ColorPalette=!!COL!{bg_1.srgb}!;!!COL!{red.srgb}!;!!COL!{green.srgb}!;!!COL!{yellow.srgb}!;!!COL!{blue.srgb}!;!!COL!{magenta.srgb}!;!!COL!{cyan.srgb}!;!!COL!{dim_0.srgb}!;!!COL!{bg_2.srgb}!;!!COL!{br_red.srgb}!;!!COL!{br_green.srgb}!;!!COL!{br_yellow.srgb}!;!!COL!{br_blue.srgb}!;!!COL!{br_magenta.srgb}!;!!COL!{br_cyan.srgb}!;!!COL!{fg_1.srgb}!
+ColorBold=!!COL!{fg_1.srgb}!
+ColorBoldUseDefault=FALSE
