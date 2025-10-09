@@ -1,0 +1,49 @@
+[colors]
+
+foreground = "!!COL!{fg_0.srgb}!"
+background = "!!COL!{bg_0.srgb}!"
+ansi = [
+    "!!COL!{bg_1.srgb}!",
+    "!!COL!{red.srgb}!",
+    "!!COL!{green.srgb}!",
+    "!!COL!{yellow.srgb}!",
+    "!!COL!{blue.srgb}!",
+    "!!COL!{magenta.srgb}!",
+    "!!COL!{cyan.srgb}!",
+    "!!COL!{dim_0.srgb}!",
+]
+brights = [
+    "!!COL!{bg_2.srgb}!",
+    "!!COL!{br_red.srgb}!",
+    "!!COL!{br_green.srgb}!",
+    "!!COL!{br_yellow.srgb}!",
+    "!!COL!{br_blue.srgb}!",
+    "!!COL!{br_magenta.srgb}!",
+    "!!COL!{br_cyan.srgb}!",
+    "!!COL!{fg_1.srgb}!",
+]
+
+cursor_fg = "!!COL!{bg_0.srgb}!"
+cursor_bg = "!!COL!{fg_1.srgb}!"
+cursor_border = "!!COL!{fg_1.srgb}!"
+compose_cursor = "!!COL!{orange.srgb}!"
+
+selection_fg = "none"
+selection_bg = "!!COL!rgba({bg_2.r} {bg_2.g} {bg_2.b} 62.5%)!"
+
+[colors.tab_bar]
+
+background = "!!COL!{bg_1.srgb}!"
+
+active_tab.fg_color = "!!COL!{fg_1.srgb}!"
+active_tab.bg_color = "!!COL!{bg_0.srgb}!"
+
+inactive_tab.fg_color = "!!COL!{fg_0.srgb}!"
+inactive_tab.bg_color = "!!COL!{bg_1.srgb}!"
+inactive_tab_hover.fg_color = "!!COL!{fg_1.srgb}!"
+inactive_tab_hover.bg_color = "!!COL!{bg_2.srgb}!"
+
+new_tab.fg_color = "!!COL!{fg_0.srgb}!"
+new_tab.bg_color = "!!COL!{bg_1.srgb}!"
+new_tab_hover.fg_color = "!!COL!{fg_1.srgb}!"
+new_tab_hover.bg_color = "!!COL!{bg_2.srgb}!"

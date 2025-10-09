@@ -1,0 +1,49 @@
+[colors]
+
+foreground = "#53676d"
+background = "#fbf3db"
+ansi = [
+    "#e9e4d0",
+    "#d2212d",
+    "#489100",
+    "#ad8900",
+    "#0072d4",
+    "#ca4898",
+    "#009c8f",
+    "#909995",
+]
+brights = [
+    "#cfcebe",
+    "#cc1729",
+    "#428b00",
+    "#a78300",
+    "#006dce",
+    "#c44392",
+    "#00978a",
+    "#3a4d53",
+]
+
+cursor_fg = "#fbf3db"
+cursor_bg = "#3a4d53"
+cursor_border = "#3a4d53"
+compose_cursor = "#c25d1e"
+
+selection_fg = "none"
+selection_bg = "rgba(207 206 190 62.5%)"
+
+[colors.tab_bar]
+
+background = "#e9e4d0"
+
+active_tab.fg_color = "#3a4d53"
+active_tab.bg_color = "#fbf3db"
+
+inactive_tab.fg_color = "#53676d"
+inactive_tab.bg_color = "#e9e4d0"
+inactive_tab_hover.fg_color = "#3a4d53"
+inactive_tab_hover.bg_color = "#cfcebe"
+
+new_tab.fg_color = "#53676d"
+new_tab.bg_color = "#e9e4d0"
+new_tab_hover.fg_color = "#3a4d53"
+new_tab_hover.bg_color = "#cfcebe"
