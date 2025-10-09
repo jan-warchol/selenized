@@ -36,7 +36,7 @@ thanks to the use of perceptually uniform CIE Lab color space.
 
 Many palettes - including default coloring in xterm, Ubuntu terminal and
 Sublime Text - [weren't designed this
-way](https://vis4.net/blog/posts/avoid-equidistant-hsv-colors/): they have a
+way](https://web.archive.org/web/20180503023317/https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/): they have a
 lot of variation in lightness. You can see above how this leads to bad
 readability.
 
