@@ -1,0 +1,38 @@
+#
+# This goes to FreeBSD /boot/loader.conf
+#
+# Color scheme: !!COL!{name}!
+#
+
+# black
+kern.vt.color.0.rgb="!!COL!{bg_1.srgb}!"
+# dark red
+kern.vt.color.1.rgb="!!COL!{red.srgb}!"
+# dark green
+kern.vt.color.2.rgb="!!COL!{green.srgb}!"
+# dark yellow
+kern.vt.color.3.rgb="!!COL!{yellow.srgb}!"
+# dark blue
+kern.vt.color.4.rgb="!!COL!{blue.srgb}!"
+# dark magenta
+kern.vt.color.5.rgb="!!COL!{violet.srgb}!"
+# dark cyan
+kern.vt.color.6.rgb="!!COL!{cyan.srgb}!"
+# light gray
+kern.vt.color.7.rgb="!!COL!{fg_1.srgb}!"
+# dark gray
+kern.vt.color.8.rgb="!!COL!{bg_2.srgb}!"
+# light red
+kern.vt.color.9.rgb="!!COL!{br_red.srgb}!"
+# light green
+kern.vt.color.10.rgb="!!COL!{br_green.srgb}!"
+# light yellow
+kern.vt.color.11.rgb="!!COL!{br_yellow.srgb}!"
+# light blue
+kern.vt.color.12.rgb="!!COL!{br_blue.srgb}!"
+# light magenta
+kern.vt.color.13.rgb="!!COL!{br_violet.srgb}!"
+# light cyan
+kern.vt.color.14.rgb="!!COL!{br_cyan.srgb}!"
+# white
+kern.vt.color.15.rgb="!!COL!{dim_0.srgb}!"
