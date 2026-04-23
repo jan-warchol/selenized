@@ -1,10 +1,22 @@
 {
     "name": "selenized-color-theme",
+    "publisher": "Jan Warchoł",
     "displayName": "Selenized color theme",
     "description": "Color theme using selenized palette, with emphasis on readability and balanced lightness.",
-    "version": "0.2.0",
+    "version": "0.2.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jan-warchol/selenized.git"
+    },
+    "homepage": "https://github.com/jan-warchol/selenized",
+    "keywords": [
+        "theme",
+        "color-theme",
+        "selenized"
+    ],
     "engines": {
-        "vscode": "^1.30.0"
+        "vscode": "^1.80.0"
     },
     "categories": [
         "Themes"

@@ -10,8 +10,16 @@ Selenized for VS Code
 
 ### Installation
 
-1.  copy the contents of this directory into `~/.vscode/extensions/selenized`
-    folder
-1.  restart Code
-1.  open theme picker with `ctrl+K ctrl+T` (or using cogwheel button in lower
-    left corner) and search for "selenized".
+1. Install from the Extensions view in VS Code by searching for "Selenized".
+1. If installing from a local package, run `code --install-extension selenized-color-theme-<version>.vsix`
+    or use Command Palette: "Extensions: Install from VSIX...".
+1. Open the theme picker with `Ctrl+K Ctrl+T` and select one of the Selenized themes.
+
+### Manual Development Install (fallback)
+
+If you are testing local files directly without packaging a VSIX:
+
+1. Copy this directory to `~/.vscode/extensions/jan-warchol.selenized-color-theme`.
+    For VS Code Insiders use `~/.vscode-insiders/extensions/jan-warchol.selenized-color-theme`.
+1. Restart VS Code.
+1. Open the theme picker (`Ctrl+K Ctrl+T`) and search for "Selenized".
