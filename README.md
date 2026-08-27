@@ -48,6 +48,7 @@ Ready-to-use config files are available for the following:
 
 ### Editors & IDEs (help wanted!)
 
+- [Emacs](editors/emacs)
 - [Vim](editors/vim)
 - [VS Code](editors/visual-studio-code)
 
